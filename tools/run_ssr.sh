@@ -1,6 +1,6 @@
-#!/bin/bash
+﻿#!/bin/bash
 # run_ssr.sh -- SSR pipeline launcher that does NOT depend on `conda activate`.
-# Usage: bash ~/SSR/run_ssr.sh [check|smoke1|smoke20|smoke200|full]
+# Usage: bash ~/SSR/tools/run_ssr.sh [check|smoke1|smoke20|smoke200|full]
 # Every run clears artifacts/llm_cache.jsonl first; prefix SSR_KEEP_CACHE=1 to resume instead.
 # All output goes to both the terminal (tmux pane) and logs/<tag>-<MMDD-HHMM>.log
 set -u
@@ -28,7 +28,7 @@ case "$MODE" in
   smoke20)  ARGS=(--run-text-retrieval --run-graph-retrieval --run-graph-qa --sample-size 20 --concurrency 8) ;;
   smoke200) ARGS=(--run-text-retrieval --run-graph-retrieval --run-graph-qa --sample-size 200 --concurrency 8 --random-seed 7) ;;
   full)     ARGS=(--run-text-retrieval --run-graph-retrieval --run-graph-qa --concurrency 8) ;;
-  *) echo "usage: bash ~/SSR/run_ssr.sh [check|smoke1|smoke20|smoke200|full]"; exit 2 ;;
+  *) echo "usage: bash ~/SSR/tools/run_ssr.sh [check|smoke1|smoke20|smoke200|full]"; exit 2 ;;
 esac
 
 echo "[run_ssr] mode=$MODE"
