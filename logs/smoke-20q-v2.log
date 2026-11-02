@@ -1,0 +1,44 @@
+
+========== Load dataset ==========
+[Info] Loaded 20 questions from ./datasets/MultiTQ/questions/test.json
+
+========== Step 1: Text retrieval ==========
+[Step] Load cached text retrieval index: ./artifacts/multitq_text_index.pkl
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  4.57it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  4.57it/s]
+Searching similar facts:   0%|          | 0/1 [00:00<?, ?it/s]Searching similar facts: 100%|██████████| 1/1 [01:18<00:00, 78.35s/it]Searching similar facts: 100%|██████████| 1/1 [01:18<00:00, 78.35s/it]
+
+========== Step 2: Graph pattern extraction + graph retrieval ==========
+[Step] Load cached graph retriever: ./artifacts/multitq_graph_retriever.pkl
+[Step] Extract graph patterns from queries and retrieved text facts
+Extract graph patterns:   0%|          | 0/20 [00:00<?, ?it/s]Extract graph patterns:   5%|▌         | 1/20 [00:00<00:02,  6.61it/s]Extract graph patterns:  10%|█         | 2/20 [00:01<00:12,  1.44it/s]Extract graph patterns:  30%|███       | 6/20 [00:02<00:04,  2.94it/s]Extract graph patterns:  35%|███▌      | 7/20 [00:02<00:04,  3.18it/s]Extract graph patterns:  40%|████      | 8/20 [00:04<00:09,  1.32it/s]Extract graph patterns:  45%|████▌     | 9/20 [00:06<00:10,  1.02it/s]Extract graph patterns:  50%|█████     | 10/20 [00:06<00:08,  1.18it/s]Extract graph patterns:  55%|█████▌    | 11/20 [00:07<00:07,  1.17it/s]Extract graph patterns:  65%|██████▌   | 13/20 [00:08<00:04,  1.68it/s]Extract graph patterns:  70%|███████   | 14/20 [00:08<00:03,  1.82it/s]Extract graph patterns:  75%|███████▌  | 15/20 [00:10<00:04,  1.22it/s]Extract graph patterns:  80%|████████  | 16/20 [00:30<00:23,  5.96s/it]Extract graph patterns:  85%|████████▌ | 17/20 [01:27<01:00, 20.19s/it]Extract graph patterns:  95%|█████████▌| 19/20 [01:29<00:11, 11.73s/it]Extract graph patterns: 100%|██████████| 20/20 [01:31<00:00,  9.22s/it]Extract graph patterns: 100%|██████████| 20/20 [01:31<00:00,  4.55s/it]
+[Step] Retrieve graph facts with parsed graph patterns
+[GraphRetriever] Normalize relation: Engage in -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 44.42it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: relation -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.89it/s]
+Reduce relations
+[GraphRetriever] Normalize tail entity: tail entity -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.16it/s]
+Anote Tong
+[GraphRetriever] Normalize relation: Make a -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 89.32it/s]
+Make statement
+[GraphRetriever] Normalize relation: relation -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 78.22it/s]
+Reduce relations
+[GraphRetriever] Normalize tail entity: ?tail entity -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.35it/s]
+Anote Tong
+[GraphRetriever] Normalize relation: Make or endorse -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.73it/s]
+Praise or endorse
+[GraphRetriever] Normalize relation: Express intent to negotiate -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 95.68it/s]
+Express intent to meet or negotiate
+[GraphRetriever] Normalize relation: Engage in -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.52it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Praise orendorse -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.72it/s]
+Praise or endorse
+[GraphRetriever] Normalize relation: Make an appeal -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.51it/s]
+Make an appeal or request
+
+========== Step 3: QA over graph retrieval results ==========
+Run QA:   0%|          | 0/20 [00:00<?, ?it/s]Run QA:  10%|█         | 2/20 [00:06<00:58,  3.22s/it]Run QA:  20%|██        | 4/20 [00:07<00:28,  1.76s/it]Run QA:  35%|███▌      | 7/20 [00:09<00:12,  1.00it/s]Run QA:  45%|████▌     | 9/20 [00:09<00:07,  1.49it/s]Run QA:  50%|█████     | 10/20 [00:09<00:05,  1.72it/s]Run QA:  55%|█████▌    | 11/20 [00:09<00:04,  1.92it/s]Run QA:  60%|██████    | 12/20 [00:10<00:03,  2.07it/s]Run QA:  65%|██████▌   | 13/20 [00:10<00:02,  2.54it/s]Run QA:  75%|███████▌  | 15/20 [00:10<00:01,  3.82it/s]Run QA:  80%|████████  | 16/20 [00:11<00:01,  2.63it/s]Run QA:  85%|████████▌ | 17/20 [00:11<00:00,  3.05it/s]Run QA:  90%|█████████ | 18/20 [00:11<00:00,  2.95it/s]Run QA:  95%|█████████▌| 19/20 [00:31<00:05,  5.71s/it]Run QA: 100%|██████████| 20/20 [00:50<00:00,  9.45s/it]Run QA: 100%|██████████| 20/20 [00:50<00:00,  2.54s/it]
+Graph QA Accuracy: 0.4000 (8/20)
+  atype entity:   0.35714
+  atype time:     0.50000
+
+========== Done ==========

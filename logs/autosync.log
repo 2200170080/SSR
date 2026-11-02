@@ -1,0 +1,18 @@
+[autosync] root=/root/user/cs_tcci_zengdexin/SSR remote=backup branch=main interval=60s
+[autosync] tracked code only; data/models/artifacts/logs are excluded
+[autosync] commit auto: 2026-11-02 16:50:50 @ ecs-instance-e1330fb1
+[autosync] pushed d4ee45b -> backup/main
+[autosync] root=/root/user/cs_tcci_zengdexin/SSR remote=backup branch=main interval=60s
+[autosync] tracked code only; data/models/artifacts/logs are excluded
+[autosync] commit auto: 2026-11-02 17:03:32 @ ecs-instance-e1330fb1
+[autosync] pushed 70d385a -> backup/main
+[autosync] root=/root/user/cs_tcci_zengdexin/SSR remote=backup branch=main interval=60s
+[autosync] tracked code only; data/models/artifacts/logs are excluded
+[autosync] commit auto: 2026-11-02 17:15:09 @ ecs-instance-e1330fb1
+[autosync] pushed 29b3e85 -> backup/main
+[autosync] root=/root/user/cs_tcci_zengdexin/SSR remote=backup branch=main interval=60s
+[autosync] tracked code only; data/models/artifacts/logs are excluded
+[autosync] commit auto: 2026-11-02 17:21:52 @ ecs-instance-e1330fb1
+[autosync] pushed 5d32f80 -> backup/main
+[autosync] root=/root/user/cs_tcci_zengdexin/SSR remote=backup branch=main interval=60s
+[autosync] tracked code only; data/models/artifacts/logs are excluded

@@ -1,0 +1,46 @@
+
+========== Load dataset ==========
+[Info] Loaded 20 questions from ./datasets/MultiTQ/questions/test.json
+
+========== Step 1: Text retrieval ==========
+[Step] Load cached text retrieval index: ./artifacts/multitq_text_index.pkl
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  4.00it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  3.99it/s]
+Searching similar facts:   0%|          | 0/1 [00:00<?, ?it/s]Searching similar facts: 100%|██████████| 1/1 [01:17<00:00, 77.40s/it]Searching similar facts: 100%|██████████| 1/1 [01:17<00:00, 77.40s/it]
+
+========== Step 2: Graph pattern extraction + graph retrieval ==========
+[Step] Load cached graph retriever: ./artifacts/multitq_graph_retriever.pkl
+[Step] Extract graph patterns from queries and retrieved text facts
+Extract graph patterns:   0%|          | 0/20 [00:00<?, ?it/s]Extract graph patterns:   5%|▌         | 1/20 [00:00<00:02,  6.71it/s]Extract graph patterns:  10%|█         | 2/20 [00:04<00:42,  2.36s/it]Extract graph patterns:  15%|█▌        | 3/20 [00:09<01:04,  3.77s/it]Extract graph patterns:  20%|██        | 4/20 [00:11<00:49,  3.08s/it]Extract graph patterns:  25%|██▌       | 5/20 [00:19<01:10,  4.72s/it]Extract graph patterns:  30%|███       | 6/20 [00:23<01:01,  4.43s/it]Extract graph patterns:  35%|███▌      | 7/20 [00:24<00:46,  3.57s/it]Extract graph patterns:  40%|████      | 8/20 [00:29<00:47,  3.97s/it]Extract graph patterns:  45%|████▌     | 9/20 [00:30<00:32,  2.92s/it]Extract graph patterns:  50%|█████     | 10/20 [00:30<00:21,  2.12s/it]Extract graph patterns:  55%|█████▌    | 11/20 [00:33<00:22,  2.45s/it]Extract graph patterns:  60%|██████    | 12/20 [00:37<00:23,  2.95s/it]Extract graph patterns:  65%|██████▌   | 13/20 [00:44<00:27,  3.92s/it]Extract graph patterns:  70%|███████   | 14/20 [01:43<02:04, 20.74s/it]Extract graph patterns:  80%|████████  | 16/20 [01:46<00:47, 11.78s/it]Extract graph patterns:  85%|████████▌ | 17/20 [01:47<00:27,  9.12s/it]Extract graph patterns:  90%|█████████ | 18/20 [01:48<00:13,  6.94s/it]Extract graph patterns:  95%|█████████▌| 19/20 [01:51<00:05,  5.80s/it]Extract graph patterns: 100%|██████████| 20/20 [02:03<00:00,  7.52s/it]Extract graph patterns: 100%|██████████| 20/20 [02:03<00:00,  6.15s/it]
+[Step] Retrieve graph facts with parsed graph patterns
+[GraphRetriever] Normalize head entity: head entity -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 37.40it/s]
+Head of Government (Unidentified State Actor)
+[GraphRetriever] Normalize relation: relation -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 74.04it/s]
+Reduce relations
+[GraphRetriever] Normalize tail entity: tail entity -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.87it/s]
+Anote Tong
+[GraphRetriever] Normalize relation: relation -> Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.65it/s]
+Reduce relations
+Traceback (most recent call last):
+  File "/root/user/cs_tcci_zengdexin/work/SSR/src/run_pipeline.py", line 199, in <module>
+    asyncio.run(main(args))
+  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/root/user/cs_tcci_zengdexin/work/SSR/src/run_pipeline.py", line 142, in main
+    graph_patterns, graph_results_text, _ = await run_graph_retrieval(
+  File "/root/user/cs_tcci_zengdexin/work/SSR/src/run_pipeline.py", line 80, in run_graph_retrieval
+    graph_facts = graph_retriever.get_facts(fact_pattern, time_pattern)
+  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 167, in get_facts
+    return [fact for fact in candidate_facts if self._fact_matches_time(fact, start_time, end_time)]
+  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 167, in <listcomp>
+    return [fact for fact in candidate_facts if self._fact_matches_time(fact, start_time, end_time)]
+  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 138, in _fact_matches_time
+    query_start = self._parse_time(start_time)
+  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 118, in _parse_time
+    return datetime.strptime(raw_time, "%Y-%m-%d %H:%M:%S")
+  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/lib/python3.10/_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/lib/python3.10/_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'start_date' does not match format '%Y-%m-%d %H:%M:%S'

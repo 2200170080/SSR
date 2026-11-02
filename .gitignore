@@ -206,15 +206,19 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# ---- SSR local run data (never commit: 16 GB of data/models/artifacts) ----
-/datasets/
+# ---- SSR local run data ----
+# Never commit: model weights (14 GB) and the two built retrieval indexes (1.8 GB + 115 MB).
+# GitHub rejects any single file over 100 MB, and a repo over ~1 GB is unusable.
 /models/
-/artifacts/
-/logs/
-/patches/
+/artifacts/multitq_text_index.pkl
+/artifacts/multitq_graph_retriever.pkl
+# LLM response cache: ~700 MB after one full run, and it is pure cache.
+/artifacts/llm_cache.jsonl
+# Upstream dataset repo: it has its own .git and is re-clonable
+#   git clone https://github.com/czy1999/MultiTQ.git
 /MultiTQ/
 /.hf_cache/
-*.npy
-
-# /datasets/ is ignored, but datasets/MultiTQ/prompt/*.txt is force-added on purpose
-# (src/config.py reads exactly this path at runtime)
+# logs are tracked on purpose (plain text, ~16 MB). The Python template above has
+# a global "*.log" rule, so these two negations bring the run logs back.
+!/logs/
+!/logs/*.log
