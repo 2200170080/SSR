@@ -50,3 +50,9 @@ Since the question provides no time constraint, the interval is `<time>?; ?</tim
 Question: {question}
 Facts:
 {facts}
+
+Output format requirement (Qwen compatibility only):
+Do not explain your reasoning or repeat the facts.
+Output ONLY the following two tagged lines, replacing the placeholders with actual values. Use ? for unknown components.
+<fact> head entity; relation; tail entity </fact>
+<time> start date; end date </time>
