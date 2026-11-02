@@ -1,0 +1,6 @@
+
+========== Load dataset ==========
+[Info] Loaded 54584 questions from ./datasets/MultiTQ/questions/test.json
+
+========== Step 1: Text retrieval ==========
+[Step] Build text retrieval index from KG
