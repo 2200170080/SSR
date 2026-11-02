@@ -111,19 +111,28 @@ class GraphRetriever:
                 # raise ValueError(f"Year must be >= 0: {raw_time}")
             return datetime(year, 1, 1, 0, 0, 0)
         if "-" in raw_time and len(raw_time.split("-")) == 3 and " " not in raw_time:
-            y, m, d = raw_time.split("-")
-            if int(y) <= 0:
-                y = 1
-            return datetime(int(y), int(m), int(d), 0, 0, 0)
-        return datetime.strptime(raw_time, "%Y-%m-%d %H:%M:%S")
+            try:
+                y, m, d = raw_time.split("-")
+                if int(y) <= 0:
+                    y = 1
+                return datetime(int(y), int(m), int(d), 0, 0, 0)
+            except ValueError:
+                return None
+        try:
+            return datetime.strptime(raw_time, "%Y-%m-%d %H:%M:%S")
+        except ValueError:
+            return None
 
     def _sort_time_key(self, fact) -> datetime:
         fact_time = fact[-1]
         if isinstance(fact_time, tuple):
             start_time = self._parse_time(fact_time[0])
             end_time = self._parse_time(fact_time[1])
-            return min(start_time, end_time)
-        return self._parse_time(fact_time)
+        else:
+            start_time = self._parse_time(fact_time)
+            end_time = start_time
+        known = [t for t in (start_time, end_time) if t is not None]
+        return min(known) if known else datetime.max
 
     def _fact_matches_time(self, fact, start_time: str, end_time: str) -> bool:
         fact_time = fact[-1]
@@ -134,13 +143,16 @@ class GraphRetriever:
             fact_start = self._parse_time(fact_time)
             fact_end = fact_start
 
+        if fact_start is None or fact_end is None:
+            return True
+
         if start_time != "?":
             query_start = self._parse_time(start_time)
-            if fact_end < query_start:
+            if query_start is not None and fact_end < query_start:
                 return False
         if end_time != "?":
             query_end = self._parse_time(end_time)
-            if fact_start > query_end:
+            if query_end is not None and fact_start > query_end:
                 return False
         return True
 

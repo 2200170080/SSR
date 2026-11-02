@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ---- SSR local run data (never commit: 16 GB of data/models/artifacts) ----
+/datasets/
+/models/
+/artifacts/
+/logs/
+/patches/
+/MultiTQ/
+/.hf_cache/
+*.npy
