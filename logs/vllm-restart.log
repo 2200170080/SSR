@@ -33,7 +33,8 @@ ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/minicond
 ERROR 11-03 00:10:19 [core.py:396]     self.model = get_model(vllm_config=self.vllm_config)
 ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/model_loader/__init__.py", line 14, in get_model
 ERROR 11-03 00:10:19 [core.py:396]     return loader.load_model(vllm_config=vllm_config)
-ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/model_loader/loader.py", line 452, in load_model
+ERROR 11-03 00:10:19 [core.py:396]   FINFO:     127.0.0.1:38652 - "GET /v1/models HTTP/1.1" 200 OK
+thon3.10/site-packages/vllm/model_executor/model_loader/loader.py", line 452, in load_model
 ERROR 11-03 00:10:19 [core.py:396]     model = _initialize_model(vllm_config=vllm_config)
 ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/model_loader/loader.py", line 133, in _initialize_model
 ERROR 11-03 00:10:19 [core.py:396]     return model_class(vllm_config=vllm_config, prefix=prefix)
