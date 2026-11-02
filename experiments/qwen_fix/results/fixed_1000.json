@@ -1,0 +1,290 @@
+{
+  "metrics": {
+    "accuracy": 0.641,
+    "correct_count": 641,
+    "total_count": 1000,
+    "single_accuracy": 0.7991689750692521,
+    "multiple_accuracy": 0.2302158273381295,
+    "entity_accuracy": 0.5269286754002911,
+    "time_accuracy": 0.8913738019169329
+  },
+  "stats": {
+    "time_total": 313,
+    "time_incomplete_triple": 44,
+    "time_empty_answer": 7,
+    "time_non_date_answer": 2
+  },
+  "wrong_time_examples": [
+    {
+      "question": "Can you tell me the exact month in which South Sudan last negotiated with Ethiopia?",
+      "gold": [
+        "2012-07"
+      ],
+      "prediction": "2013-12",
+      "pattern": [
+        [
+          "South Sudan",
+          "Engage in negotiation",
+          "Ethiopia"
+        ],
+        [
+          "2012-07-05",
+          "2013-12-31"
+        ]
+      ],
+      "graph_fact_count": 1,
+      "qa_facts": [
+        "South Sudan, Engage in negotiation, Ethiopia in 2012-07-05"
+      ],
+      "raw_output": "Based on the provided historical facts, the last negotiation between South Sudan and Ethiopia was on 2013-12-31. Since the question asks for the exact month, we need to provide the answer in the \"yyyy-mm\" format.\n\nSo the answer is: [\"2013-12\"]"
+    },
+    {
+      "question": "In which month did China last want to participate in diplomatic cooperation with the Assemblies of Cambodia?",
+      "gold": [
+        "2013-09"
+      ],
+      "prediction": "2015-10",
+      "pattern": [
+        [
+          "China",
+          "Engage in diplomatic cooperation",
+          "Cambodia"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 45,
+      "qa_facts": [
+        "China, Engage in diplomatic cooperation, Cambodia in 2005-03-11",
+        "China, Engage in diplomatic cooperation, Cambodia in 2005-06-02",
+        "China, Engage in diplomatic cooperation, Cambodia in 2005-07-08",
+        "China, Engage in diplomatic cooperation, Cambodia in 2005-08-10",
+        "China, Engage in diplomatic cooperation, Cambodia in 2005-09-02"
+      ],
+      "raw_output": "From the provided historical facts, we can see that the latest date when China engaged in diplomatic cooperation with Cambodia is 2015-10-25. Since the question asks for the month, we need to provide the answer in the format \"yyyy-mm\".\n\nSo the answer is: [\"2015-10\"]"
+    },
+    {
+      "question": "In which year did Malaysia express its intention to meet with the business of South Korea?",
+      "gold": [
+        "2009"
+      ],
+      "prediction": "2006",
+      "pattern": [
+        [
+          "Malaysia",
+          "Express intent to meet or negotiate",
+          "South Korea"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 6,
+      "qa_facts": [
+        "Malaysia, Express intent to meet or negotiate, South Korea in 2006-06-26",
+        "Malaysia, Express intent to meet or negotiate, South Korea in 2006-07-24",
+        "Malaysia, Express intent to meet or negotiate, South Korea in 2006-07-25",
+        "Malaysia, Express intent to meet or negotiate, South Korea in 2009-09-10",
+        "Malaysia, Express intent to meet or negotiate, South Korea in 2011-03-29"
+      ],
+      "raw_output": "From the provided historical facts, we can see that Malaysia expressed its intention to meet or negotiate with South Korea multiple times starting from 2006. The question asks for the year when this expression of intent began. Therefore, we need to identify the earliest year mentioned in the historical facts.\n\nThe earliest year mentioned is 2006.\n\nSo the answer is: [\"2006\"]"
+    },
+    {
+      "question": "What month did Dominican Republic receive the visit from China?",
+      "gold": [
+        "2005-01"
+      ],
+      "prediction": "",
+      "pattern": [
+        [
+          "?",
+          "Receive a visit",
+          "China"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 4289,
+      "qa_facts": [
+        "Ma Ying Jeou, Make a visit, China in 2005-01-04",
+        "Nurse (Macao), Make a visit, China in 2005-01-04",
+        "Lawmaker (Japan), Make a visit, China in 2005-01-06",
+        "Shaukat Aziz, Make a visit, China in 2005-04-05",
+        "Envoy (United States), Make a visit, China in 2005-05-02"
+      ],
+      "raw_output": "After analyzing the provided historical facts, there is no mention of any visit to the Dominican Republic by China. Therefore, based on the available data, we cannot provide a specific month when the Dominican Republic received a visit from China.\n\nSo the answer is: [\"\"]"
+    },
+    {
+      "question": "In what year did the Ministry of Foreign Affairs of South Korea first express its intention to meet with China?",
+      "gold": [
+        "2010"
+      ],
+      "prediction": "2006",
+      "pattern": [
+        [
+          "?",
+          "Express intent to meet or negotiate",
+          "China"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 3437,
+      "qa_facts": [
+        "Kuomintang, Express intent to meet or negotiate, China in 2005-01-03",
+        "Mainland Affairs Council, Express intent to meet or negotiate, China in 2005-01-03",
+        "Mainland Affairs Council, Express intent to meet or negotiate, China in 2005-01-04",
+        "Kuomintang, Express intent to meet or negotiate, China in 2005-04-10",
+        "Japan, Express intent to meet or negotiate, China in 2005-05-09"
+      ],
+      "raw_output": "From the provided historical facts, we can see that the Ministry of Foreign Affairs of South Korea first expressed its intention to meet with China on 2006-10-09. Therefore, the answer to the question \"In what year did the Ministry of Foreign Affairs of South Korea first express its intention to meet with China?\" is:\n\nSo the answer is: [\"2006\"]"
+    },
+    {
+      "question": "When did the Senate of Romania first praise China?",
+      "gold": [
+        "2012-05-24"
+      ],
+      "prediction": "",
+      "pattern": [
+        [
+          "?",
+          "Praise or endorse",
+          "China"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 989,
+      "qa_facts": [
+        "George Yeo, Praise or endorse, China in 2005-01-05",
+        "Maumoon Abdul Gayoom, Praise or endorse, China in 2005-01-10",
+        "Mwai Kibaki, Praise or endorse, China in 2005-01-10",
+        "Japan, Praise or endorse, China in 2005-02-27",
+        "Media (India), Praise or endorse, China in 2005-04-14"
+      ],
+      "raw_output": "After analyzing the provided historical facts, there is no mention of the Senate of Romania praising China. Therefore, based on the available data, we cannot provide a specific date when the Senate of Romania first praised China.\n\nSo the answer is: []"
+    },
+    {
+      "question": "When did the Hungarian military announce its intention to negotiate with Iraq?",
+      "gold": [
+        "2005-02-18"
+      ],
+      "prediction": "",
+      "pattern": [
+        [
+          "?",
+          "Express intent to meet or negotiate",
+          "Iraq"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 425,
+      "qa_facts": [
+        "Kuwait, Express intent to meet or negotiate, Iraq in 2005-01-05",
+        "Interim Leader (Iraq), Express intent to meet or negotiate, Iraq in 2005-01-14",
+        "Military (Cyprus), Express intent to meet or negotiate, Iraq in 2005-01-22",
+        "South Korea, Express intent to meet or negotiate, Iraq in 2005-03-01",
+        "Jon Corzine, Express intent to meet or negotiate, Iraq in 2005-04-28"
+      ],
+      "raw_output": "After carefully analyzing the provided historical facts, there is no mention of the Hungarian military expressing any intent to meet or negotiate with Iraq. Therefore, based on the available data, we cannot provide a specific date for such an event involving the Hungarian military and Iraq.\n\nSo the answer is: []"
+    },
+    {
+      "question": "In which year did the reserve personnel of Kyrgyzstan praise China?",
+      "gold": [
+        "2006"
+      ],
+      "prediction": "None of the provided facts match the query.",
+      "pattern": [
+        [
+          "?",
+          "Praise or endorse",
+          "China"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 989,
+      "qa_facts": [
+        "George Yeo, Praise or endorse, China in 2005-01-05",
+        "Maumoon Abdul Gayoom, Praise or endorse, China in 2005-01-10",
+        "Mwai Kibaki, Praise or endorse, China in 2005-01-10",
+        "Japan, Praise or endorse, China in 2005-02-27",
+        "Media (India), Praise or endorse, China in 2005-04-14"
+      ],
+      "raw_output": "After analyzing the provided historical facts, there is no mention of any reserve personnel from Kyrgyzstan praising China. Therefore, based on the available data, we cannot provide a specific year when such an event took place.\n\nSo the answer is: [\"None of the provided facts match the query.\"]"
+    },
+    {
+      "question": "When did the citizens of North Korea last appeal China?",
+      "gold": [
+        "2013-06-03"
+      ],
+      "prediction": "",
+      "pattern": [
+        [
+          "?",
+          "Make an appeal or request",
+          "China"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 1175,
+      "qa_facts": [
+        "Wen Jiabao, Make an appeal or request, China in 2005-01-03",
+        "Wen Jiabao, Make an appeal or request, China in 2005-01-08",
+        "Mainland Affairs Council, Make an appeal or request, China in 2005-01-13",
+        "Lien Chan, Make an appeal or request, China in 2005-03-09",
+        "Japan, Make an appeal or request, China in 2005-04-19"
+      ],
+      "raw_output": "After analyzing the provided historical facts, there is no mention of any citizens of North Korea making an appeal to China. Therefore, based on the available data, we cannot provide a specific date when the citizens of North Korea last appealed to China.\n\nSo the answer is: []"
+    },
+    {
+      "question": "In what year did the Association of Southeast Asian Nations first ask Thailand?",
+      "gold": [
+        "2008"
+      ],
+      "prediction": "2006",
+      "pattern": [
+        [
+          "Association of Southeast Asian Nations",
+          "Consult",
+          "Thailand"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 16,
+      "qa_facts": [
+        "Association of Southeast Asian Nations, Consult, Thailand in 2006-02-12",
+        "Association of Southeast Asian Nations, Consult, Thailand in 2008-07-21",
+        "Association of Southeast Asian Nations, Consult, Thailand in 2008-07-22",
+        "Association of Southeast Asian Nations, Consult, Thailand in 2008-07-23",
+        "Association of Southeast Asian Nations, Consult, Thailand in 2008-09-16"
+      ],
+      "raw_output": "From the provided historical facts, we can see that the earliest consultation between the Association of Southeast Asian Nations and Thailand occurred on 2006-02-12. Therefore, the year when the Association of Southeast Asian Nations first consulted Thailand is 2006.\n\nSo the answer is: [\"2006\"]"
+    }
+  ],
+  "sample_sha256": "86937e3e35dc6eb7f1235f96813f830b7d1e11bde8e67611088aea524e6dbc61",
+  "model": "qwen14b",
+  "seed": 42,
+  "top_k": 100,
+  "fact_budget": 50
+}
