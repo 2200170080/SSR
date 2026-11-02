@@ -69,7 +69,7 @@ async def get_qa_result(prompt_text: str, llm_client):
     response, _ = await llm_client.request(prompt=prompt_text, temperature=0, max_tokens=4096, use_cache=True)
     answer_pattern = "So the answer is"
     if answer_pattern not in response:
-        return "ERROR", response
+        return "ERROR", "ERROR: invalid response format"
 
     answer = response.split(answer_pattern)[-1].strip()
     if answer.endswith("."):

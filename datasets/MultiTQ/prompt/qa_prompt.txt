@@ -53,6 +53,3 @@ Facts filter condition: {filter}
 Historical facts:
 {facts}
 Answer:
-You must end your response with exactly one final line of the form:
-So the answer is: ["entity1", "entity2"]
-Do not write anything after that line.

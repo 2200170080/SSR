@@ -50,7 +50,3 @@ Since the question provides no time constraint, the interval is `<time>?; ?</tim
 Question: {question}
 Facts:
 {facts}
-
-Do not explain your reasoning. Output ONLY these two lines and nothing else:
-<fact> head entity; relation; tail entity </fact>
-<time> start date; end date </time>

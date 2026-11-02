@@ -54,7 +54,6 @@ class AsyncLLMClient:
                 return result, True
 
         result = None
-        last_error = None
         for _ in range(5):
             try:
                 response = await self.async_client.chat.completions.create(
@@ -67,8 +66,7 @@ class AsyncLLMClient:
                 )
                 result = response.choices[0].message.content
                 break
-            except Exception as exc:
-                last_error = exc
+            except Exception:
                 await asyncio.sleep(0.5)
 
         if temperature == 0 and result is not None:
@@ -78,5 +76,5 @@ class AsyncLLMClient:
                 f.write(json.dumps({"input": list(cache_key), "response": result}, ensure_ascii=False) + "\n")
 
         if result is None:
-            raise RuntimeError(f"LLM请求失败: {last_error!r}") from last_error
+            return "Error", False
         return result, True
