@@ -215,3 +215,6 @@ __marimo__/
 /MultiTQ/
 /.hf_cache/
 *.npy
+
+# /datasets/ is ignored, but datasets/MultiTQ/prompt/*.txt is force-added on purpose
+# (src/config.py reads exactly this path at runtime)
