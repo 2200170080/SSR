@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 # run_ssr.sh -- SSR pipeline launcher that does NOT depend on `conda activate`.
 # Usage: bash ~/SSR/tools/run_ssr.sh [check|smoke1|smoke20|smoke200|full]
 # Every run clears artifacts/llm_cache.jsonl first; prefix SSR_KEEP_CACHE=1 to resume instead.
