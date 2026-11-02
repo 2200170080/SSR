@@ -1,0 +1,8 @@
+
+========== Load dataset ==========
+[Info] Loaded 200 questions from ./datasets/MultiTQ/questions/test.json
+
+========== Step 1: Text retrieval ==========
+[Step] Load cached text retrieval index: ./artifacts/multitq_text_index.pkl
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  1.30it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  1.30it/s]
+Searching similar facts:   0%|          | 0/2 [00:00<?, ?it/s]

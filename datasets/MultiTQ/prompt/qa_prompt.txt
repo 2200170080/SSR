@@ -53,3 +53,7 @@ Facts filter condition: {filter}
 Historical facts:
 {facts}
 Answer:
+
+Output format requirement (Qwen QA compatibility only):
+Write the final answer on the last line, starting with the exact text "So the answer is:" followed by your actual answer.
+Do not write anything after that line.
