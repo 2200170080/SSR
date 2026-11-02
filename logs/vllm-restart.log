@@ -34,18 +34,26 @@ ERROR 11-03 00:10:19 [core.py:396]     self.model = get_model(vllm_config=self.v
 ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/model_loader/__init__.py", line 14, in get_model
 ERROR 11-03 00:10:19 [core.py:396]     return loader.load_model(vllm_config=vllm_config)
 ERROR 11-03 00:10:19 [core.py:396]   FINFO:     127.0.0.1:38652 - "GET /v1/models HTTP/1.1" 200 OK
-thon3.10/site-packages/vllm/model_executor/model_loader/loader.py", line 452, in load_model
-ERROR 11-03 00:10:19 [core.py:396]     model = _initialize_model(vllm_config=vllm_config)
-ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/model_loader/loader.py", line 133, in _initialize_model
-ERROR 11-03 00:10:19 [core.py:396]     return model_class(vllm_config=vllm_config, prefix=prefix)
-ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/models/qwen2.py", line 443, in __init__
-ERROR 11-03 00:10:19 [core.py:396]     self.lm_head = ParallelLMHead(config.vocab_size,
-ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/layers/vocab_parallel_embedding.py", line 459, in __init__
-ERROR 11-03 00:10:19 [core.py:396]     super().__init__(num_embeddings, embedding_dim, params_dtype,
-ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/layers/vocab_parallel_embedding.py", line 264, in __init__
-ERROR 11-03 00:10:19 [core.py:396]     self.quant_method.create_weights(self,
-ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/layers/vocab_parallel_embedding.py", line 32, in create_weights
-ERROR 11-03 00:10:19 [core.py:396]     weight = Parameter(torch.empty(sum(output_partition_sizes),
+INFO 11-03 00:58:53 [chat_utils.py:397] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-03 00:58:59 [loggers.py:111] Engine 000: Avg prompt throughput: 1928.3 tokens/s, Avg generation throughput: 27.9 tokens/s, Running: 5 reqs, Waiting: 0 reqs, GPU KV cache usage: 4.6%, Prefix cache hit rate: 32.3%
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+orch.empty(sum(output_partition_sizes),
 ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/utils/_device.py", line 104, in __torch_function__
 ERROR 11-03 00:10:19 [core.py:396]     return func(*args, **kwargs)
 ERROR 11-03 00:10:19 [core.py:396] torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.45 GiB. GPU 0 has a total capacity of 47.53 GiB of which 334.81 MiB is free. Process 2888048 has 38.93 GiB memory in use. Process 2918959 has 8.27 GiB memory in use. Of the allocated memory 7.95 GiB is allocated by PyTorch, and 21.25 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
