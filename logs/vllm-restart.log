@@ -53,84 +53,174 @@ INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-orch.empty(sum(output_partition_sizes),
-ERROR 11-03 00:10:19 [core.py:396]   File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/utils/_device.py", line 104, in __torch_function__
-ERROR 11-03 00:10:19 [core.py:396]     return func(*args, **kwargs)
-ERROR 11-03 00:10:19 [core.py:396] torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.45 GiB. GPU 0 has a total capacity of 47.53 GiB of which 334.81 MiB is free. Process 2888048 has 38.93 GiB memory in use. Process 2918959 has 8.27 GiB memory in use. Of the allocated memory 7.95 GiB is allocated by PyTorch, and 21.25 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-Process EngineCore_0:
-Traceback (most recent call last):
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
-    self.run()
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/engine/core.py", line 400, in run_engine_core
-    raise e
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/engine/core.py", line 387, in run_engine_core
-    engine_core = EngineCoreProc(*args, **kwargs)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/engine/core.py", line 329, in __init__
-    super().__init__(vllm_config, executor_class, log_stats,
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/engine/core.py", line 64, in __init__
-    self.model_executor = executor_class(vllm_config)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 52, in __init__
-    self._init_executor()
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/executor/uniproc_executor.py", line 47, in _init_executor
-    self.collective_rpc("load_model")
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/executor/uniproc_executor.py", line 56, in collective_rpc
-    answer = run_method(self.driver_worker, method, args, kwargs)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/utils.py", line 2456, in run_method
-    return func(*args, **kwargs)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/worker/gpu_worker.py", line 162, in load_model
-    self.model_runner.load_model()
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/worker/gpu_model_runner.py", line 1332, in load_model
-    self.model = get_model(vllm_config=self.vllm_config)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/model_loader/__init__.py", line 14, in get_model
-    return loader.load_model(vllm_config=vllm_config)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/model_loader/loader.py", line 452, in load_model
-    model = _initialize_model(vllm_config=vllm_config)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/model_loader/loader.py", line 133, in _initialize_model
-    return model_class(vllm_config=vllm_config, prefix=prefix)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/models/qwen2.py", line 443, in __init__
-    self.lm_head = ParallelLMHead(config.vocab_size,
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/layers/vocab_parallel_embedding.py", line 459, in __init__
-    super().__init__(num_embeddings, embedding_dim, params_dtype,
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/layers/vocab_parallel_embedding.py", line 264, in __init__
-    self.quant_method.create_weights(self,
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/model_executor/layers/vocab_parallel_embedding.py", line 32, in create_weights
-    weight = Parameter(torch.empty(sum(output_partition_sizes),
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/utils/_device.py", line 104, in __torch_function__
-    return func(*args, **kwargs)
-torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.45 GiB. GPU 0 has a total capacity of 47.53 GiB of which 334.81 MiB is free. Process 2888048 has 38.93 GiB memory in use. Process 2918959 has 8.27 GiB memory in use. Of the allocated memory 7.95 GiB is allocated by PyTorch, and 21.25 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-[rank0]:[W1103 00:10:20.814454139 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
-Traceback (most recent call last):
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/bin/vllm", line 6, in <module>
-    sys.exit(main())
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/entrypoints/cli/main.py", line 53, in main
-    args.dispatch_function(args)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/entrypoints/cli/serve.py", line 27, in cmd
-    uvloop.run(run_server(args))
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/uvloop/__init__.py", line 69, in run
-    return loop.run_until_complete(wrapper())
-  File "uvloop/loop.pyx", line 1515, in uvloop.loop.Loop.run_until_complete
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/uvloop/__init__.py", line 48, in wrapper
-    return await main
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/entrypoints/openai/api_server.py", line 1078, in run_server
-    async with build_async_engine_client(args) as engine_client:
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/contextlib.py", line 199, in __aenter__
-    return await anext(self.gen)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/entrypoints/openai/api_server.py", line 146, in build_async_engine_client
-    async with build_async_engine_client_from_engine_args(
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/contextlib.py", line 199, in __aenter__
-    return await anext(self.gen)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/entrypoints/openai/api_server.py", line 178, in build_async_engine_client_from_engine_args
-    async_llm = AsyncLLM.from_vllm_config(
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/engine/async_llm.py", line 150, in from_vllm_config
-    return cls(
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/engine/async_llm.py", line 118, in __init__
-    self.engine_core = core_client_class(
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/engine/core_client.py", line 642, in __init__
-    super().__init__(
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/engine/core_client.py", line 398, in __init__
-    self._wait_for_engine_startup()
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/lib/python3.10/site-packages/vllm/v1/engine/core_client.py", line 430, in _wait_for_engine_startup
-    raise RuntimeError("Engine core initialization failed. "
-RuntimeError: Engine core initialization failed. See root cause above.
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-03 00:59:09 [loggers.py:111] Engine 000: Avg prompt throughput: 3400.8 tokens/s, Avg generation throughput: 60.3 tokens/s, Running: 5 reqs, Waiting: 0 reqs, GPU KV cache usage: 4.6%, Prefix cache hit rate: 35.0%
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-03 00:59:19 [loggers.py:111] Engine 000: Avg prompt throughput: 3420.7 tokens/s, Avg generation throughput: 68.9 tokens/s, Running: 5 reqs, Waiting: 0 reqs, GPU KV cache usage: 4.8%, Prefix cache hit rate: 34.8%
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-03 00:59:29 [loggers.py:111] Engine 000: Avg prompt throughput: 3489.2 tokens/s, Avg generation throughput: 57.6 tokens/s, Running: 7 reqs, Waiting: 0 reqs, GPU KV cache usage: 6.4%, Prefix cache hit rate: 35.0%
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-03 00:59:39 [loggers.py:111] Engine 000: Avg prompt throughput: 3487.5 tokens/s, Avg generation throughput: 64.7 tokens/s, Running: 7 reqs, Waiting: 0 reqs, GPU KV cache usage: 6.3%, Prefix cache hit rate: 35.2%
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-03 00:59:49 [loggers.py:111] Engine 000: Avg prompt throughput: 3440.6 tokens/s, Avg generation throughput: 62.8 tokens/s, Running: 7 reqs, Waiting: 0 reqs, GPU KV cache usage: 6.4%, Prefix cache hit rate: 35.3%
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-03 00:59:59 [loggers.py:111] Engine 000: Avg prompt throughput: 3368.6 tokens/s, Avg generation throughput: 68.1 tokens/s, Running: 6 reqs, Waiting: 0 reqs, GPU KV cache usage: 5.3%, Prefix cache hit rate: 35.6%
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-03 01:00:09 [loggers.py:111] Engine 000: Avg prompt throughput: 3609.3 tokens/s, Avg generation throughput: 61.3 tokens/s, Running: 7 reqs, Waiting: 0 reqs, GPU KV cache usage: 6.2%, Prefix cache hit rate: 35.7%
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-03 01:00:19 [loggers.py:111] Engine 000: Avg prompt throughput: 3313.2 tokens/s, Avg generation throughput: 65.4 tokens/s, Running: 6 reqs, Waiting: 0 reqs, GPU KV cache usage: 5.7%, Prefix cache hit rate: 35.7%
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-03 01:00:29 [loggers.py:111] Engine 000: Avg prompt throughput: 3405.1 tokens/s, Avg generation throughput: 68.2 tokens/s, Running: 5 reqs, Waiting: 0 reqs, GPU KV cache usage: 4.5%, Prefix cache hit rate: 35.7%
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36242 - "POST /v1/chat/completions HTTP/1.1" 200 OK
