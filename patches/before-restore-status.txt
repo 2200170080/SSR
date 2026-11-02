@@ -1,4 +1,0 @@
- M src/datasets/MultiTQ/prompt/gp_prompt.txt
- M src/retriever/graph_retriever.py
- M src/retriever/text_retriever.py
- M src/utils/query_process.py

@@ -1,38 +1,0 @@
-
-========== Load dataset ==========
-[Info] Loaded 20 questions from ./datasets/MultiTQ/questions/test.json
-
-========== Step 1: Text retrieval ==========
-[Step] Load cached text retrieval index: ./artifacts/multitq_text_index.pkl
-Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  3.93it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  3.92it/s]
-Searching similar facts:   0%|          | 0/1 [00:00<?, ?it/s]Searching similar facts: 100%|██████████| 1/1 [01:18<00:00, 78.41s/it]Searching similar facts: 100%|██████████| 1/1 [01:18<00:00, 78.41s/it]
-
-========== Step 2: Graph pattern extraction + graph retrieval ==========
-[Step] Load cached graph retriever: ./artifacts/multitq_graph_retriever.pkl
-[Step] Extract graph patterns from queries and retrieved text facts
-Extract graph patterns:   0%|          | 0/20 [00:00<?, ?it/s]Extract graph patterns: 100%|██████████| 20/20 [00:00<00:00, 790.53it/s]
-[Step] Retrieve graph facts with parsed graph patterns
-Traceback (most recent call last):
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/run_pipeline.py", line 199, in <module>
-    asyncio.run(main(args))
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
-    return future.result()
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/run_pipeline.py", line 142, in main
-    graph_patterns, graph_results_text, _ = await run_graph_retrieval(
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/run_pipeline.py", line 80, in run_graph_retrieval
-    graph_facts = graph_retriever.get_facts(fact_pattern, time_pattern)
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 167, in get_facts
-    return [fact for fact in candidate_facts if self._fact_matches_time(fact, start_time, end_time)]
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 167, in <listcomp>
-    return [fact for fact in candidate_facts if self._fact_matches_time(fact, start_time, end_time)]
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 138, in _fact_matches_time
-    query_start = self._parse_time(start_time)
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 118, in _parse_time
-    return datetime.strptime(raw_time, "%Y-%m-%d %H:%M:%S")
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/lib/python3.10/_strptime.py", line 568, in _strptime_datetime
-    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/lib/python3.10/_strptime.py", line 349, in _strptime
-    raise ValueError("time data %r does not match format %r" %
-ValueError: time data 'start_date' does not match format '%Y-%m-%d %H:%M:%S'

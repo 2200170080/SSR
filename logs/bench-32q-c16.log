@@ -1,34 +1,0 @@
-
-========== Load dataset ==========
-[Info] Loaded 32 questions from ./datasets/MultiTQ/questions/test.json
-
-========== Step 1: Text retrieval ==========
-[Step] Load cached text retrieval index: ./artifacts/multitq_text_index.pkl
-Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  4.16it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  4.16it/s]
-Searching similar facts:   0%|          | 0/1 [00:00<?, ?it/s]Searching similar facts: 100%|██████████| 1/1 [01:20<00:00, 80.81s/it]Searching similar facts: 100%|██████████| 1/1 [01:20<00:00, 80.81s/it]
-
-========== Step 2: Graph pattern extraction + graph retrieval ==========
-[Step] Load cached graph retriever: ./artifacts/multitq_graph_retriever.pkl
-[Step] Extract graph patterns from queries and retrieved text facts
-Extract graph patterns:   0%|          | 0/32 [00:00<?, ?it/s]Extract graph patterns:   3%|▎         | 1/32 [00:08<04:30,  8.72s/it]Extract graph patterns:  12%|█▎        | 4/32 [00:10<00:58,  2.07s/it]Extract graph patterns:  19%|█▉        | 6/32 [00:10<00:33,  1.30s/it]Extract graph patterns:  25%|██▌       | 8/32 [00:12<00:27,  1.16s/it]Extract graph patterns:  38%|███▊      | 12/32 [00:13<00:13,  1.50it/s]Extract graph patterns:  41%|████      | 13/32 [00:15<00:16,  1.19it/s]Extract graph patterns:  47%|████▋     | 15/32 [00:16<00:12,  1.32it/s]Extract graph patterns:  50%|█████     | 16/32 [00:17<00:12,  1.31it/s]Extract graph patterns:  53%|█████▎    | 17/32 [00:17<00:10,  1.38it/s]Extract graph patterns:  59%|█████▉    | 19/32 [00:18<00:07,  1.68it/s]Extract graph patterns:  69%|██████▉   | 22/32 [00:19<00:03,  2.58it/s]Extract graph patterns:  75%|███████▌  | 24/32 [00:19<00:02,  3.38it/s]Extract graph patterns:  81%|████████▏ | 26/32 [00:19<00:01,  4.31it/s]Extract graph patterns:  88%|████████▊ | 28/32 [00:19<00:00,  4.72it/s]Extract graph patterns:  94%|█████████▍| 30/32 [00:19<00:00,  5.70it/s]Extract graph patterns: 100%|██████████| 32/32 [00:24<00:00,  1.26it/s]Extract graph patterns: 100%|██████████| 32/32 [00:24<00:00,  1.31it/s]
-[Step] Retrieve graph facts with parsed graph patterns
-Traceback (most recent call last):
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/run_pipeline.py", line 199, in <module>
-    asyncio.run(main(args))
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
-    return future.result()
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/run_pipeline.py", line 142, in main
-    graph_patterns, graph_results_text, _ = await run_graph_retrieval(
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/run_pipeline.py", line 80, in run_graph_retrieval
-    graph_facts = graph_retriever.get_facts(fact_pattern, time_pattern)
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 179, in get_facts
-    return [fact for fact in candidate_facts if self._fact_matches_time(fact, start_time, end_time)]
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 179, in <listcomp>
-    return [fact for fact in candidate_facts if self._fact_matches_time(fact, start_time, end_time)]
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 150, in _fact_matches_time
-    query_start = self._parse_time(start_time)
-  File "/root/user/cs_tcci_zengdexin/work/SSR/src/retriever/graph_retriever.py", line 115, in _parse_time
-    if int(y) <= 0:
-ValueError: invalid literal for int() with base 10: '?2011'

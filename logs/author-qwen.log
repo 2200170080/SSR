@@ -1,13 +1,0 @@
-
-========== Load dataset ==========
-[Info] Loaded 200 questions from ./datasets/MultiTQ/questions/test.json
-
-========== Step 1: Text retrieval ==========
-[Step] Load cached text retrieval index: ./artifacts/multitq_text_index.pkl
-Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  2.68it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  2.68it/s]
-Searching similar facts:   0%|          | 0/2 [00:00<?, ?it/s]Searching similar facts:  50%|█████     | 1/2 [00:06<00:06,  6.15s/it]Searching similar facts: 100%|██████████| 2/2 [00:10<00:00,  4.94s/it]Searching similar facts: 100%|██████████| 2/2 [00:10<00:00,  5.12s/it]
-
-========== Step 2: Graph pattern extraction + graph retrieval ==========
-[Step] Load cached graph retriever: ./artifacts/multitq_graph_retriever.pkl
-[Step] Extract graph patterns from queries and retrieved text facts
-Extract graph patterns:   0%|          | 0/200 [00:00<?, ?it/s]Extract graph patterns:   0%|          | 1/200 [00:00<00:32,  6.05it/s]
