@@ -18,3 +18,7 @@
 [autosync] tracked code only; data/models/artifacts/logs are excluded
 [autosync] root=/root/user/cs_tcci_zengdexin/SSR remote=backup branch=main interval=60s
 [autosync] tracked code only; data/models/artifacts/logs are excluded
+[autosync] commit auto: 2026-11-02 17:42:44 @ ecs-instance-e1330fb1
+[autosync] pushed 1f59649 -> backup/main
+[autosync] root=/root/user/cs_tcci_zengdexin/SSR remote=backup branch=main interval=60s
+[autosync] everything except large binaries is tracked (datasets/logs/patches/prompts included)

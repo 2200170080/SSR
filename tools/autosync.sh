@@ -27,7 +27,7 @@ if ! git remote get-url "$REMOTE" >/dev/null 2>&1; then
 fi
 
 echo "[autosync] root=$ROOT remote=$REMOTE branch=$BRANCH interval=${INTERVAL}s"
-echo "[autosync] tracked code only; data/models/artifacts/logs are excluded"
+echo "[autosync] everything except large binaries is tracked (datasets/logs/patches/prompts included)"
 
 NEED_PUSH=0
 while true; do
