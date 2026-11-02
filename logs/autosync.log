@@ -16,3 +16,5 @@
 [autosync] pushed 5d32f80 -> backup/main
 [autosync] root=/root/user/cs_tcci_zengdexin/SSR remote=backup branch=main interval=60s
 [autosync] tracked code only; data/models/artifacts/logs are excluded
+[autosync] root=/root/user/cs_tcci_zengdexin/SSR remote=backup branch=main interval=60s
+[autosync] tracked code only; data/models/artifacts/logs are excluded
