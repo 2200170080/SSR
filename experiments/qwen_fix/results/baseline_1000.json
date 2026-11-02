@@ -1,0 +1,290 @@
+{
+  "metrics": {
+    "accuracy": 0.659,
+    "correct_count": 659,
+    "total_count": 1000,
+    "single_accuracy": 0.7382271468144044,
+    "multiple_accuracy": 0.45323741007194246,
+    "entity_accuracy": 0.7016011644832606,
+    "time_accuracy": 0.5654952076677316
+  },
+  "stats": {
+    "time_total": 313,
+    "time_incomplete_triple": 235,
+    "time_empty_answer": 63,
+    "time_non_date_answer": 45
+  },
+  "wrong_time_examples": [
+    {
+      "question": "When did the defector from China first accuse China?",
+      "gold": [
+        "2005-06-28"
+      ],
+      "prediction": "Defector (China)",
+      "pattern": [
+        [
+          "?",
+          "Accuse",
+          "China"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 255,
+      "qa_facts": [
+        "Head of Government (Taiwan), Accuse, China in 2005-01-10",
+        "Vietnam, Accuse, China in 2005-01-21",
+        "Japan, Accuse, China in 2005-03-16",
+        "Japan, Accuse, China in 2005-04-14",
+        "Mainland Affairs Council, Accuse, China in 2005-05-18"
+      ],
+      "raw_output": "From the provided historical facts, we can see that the first accusation by a defector from China against China occurred on 2005-07-27. Therefore, the answer is:\n\nSo the answer is: [\"Defector (China)\"]"
+    },
+    {
+      "question": "At what time did Guy Ryder visit Kuwait?",
+      "gold": [
+        "2015-04-19"
+      ],
+      "prediction": "Guy Ryder",
+      "pattern": [
+        [
+          "?",
+          "Make a visit",
+          "Kuwait"
+        ],
+        [
+          "2015-04-19",
+          "2015-04-19"
+        ]
+      ],
+      "graph_fact_count": 1,
+      "qa_facts": [
+        "Guy Ryder, Make a visit, Kuwait in 2015-04-19"
+      ],
+      "raw_output": "From the historical facts provided, Guy Ryder made a visit to Kuwait on 2015-04-19.\n\nSo the answer is: [\"Guy Ryder\"]"
+    },
+    {
+      "question": "Could you tell me the exact month when the immigrants from Myanmar first expressed their intention to negotiate with Malaysia?",
+      "gold": [
+        "2015-05"
+      ],
+      "prediction": "",
+      "pattern": [
+        [
+          "?",
+          "Express intent to meet or negotiate",
+          "Malaysia"
+        ],
+        [
+          "?",
+          "2015-06-22"
+        ]
+      ],
+      "graph_fact_count": 310,
+      "qa_facts": [
+        "Japan, Express intent to meet or negotiate, Malaysia in 2005-01-15",
+        "Moro Islamic Liberation Front, Express intent to meet or negotiate, Malaysia in 2005-01-31",
+        "Moro National Liberation Front, Express intent to meet or negotiate, Malaysia in 2005-02-14",
+        "Raúl Castro, Express intent to meet or negotiate, Malaysia in 2005-04-21",
+        "Shaukat Aziz, Express intent to meet or negotiate, Malaysia in 2005-05-05"
+      ],
+      "raw_output": "From the provided historical facts, there is no record of immigrants from Myanmar expressing their intention to negotiate with Malaysia before June 2015. Therefore, we cannot determine an earlier month for this action based on the given data.\n\nSo the answer is: []"
+    },
+    {
+      "question": "In which month did the United States Congress praise China for the first time?",
+      "gold": [
+        "2005-10"
+      ],
+      "prediction": "",
+      "pattern": [
+        [
+          "?",
+          "Praise or endorse",
+          "China"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 989,
+      "qa_facts": [
+        "George Yeo, Praise or endorse, China in 2005-01-05",
+        "Maumoon Abdul Gayoom, Praise or endorse, China in 2005-01-10",
+        "Mwai Kibaki, Praise or endorse, China in 2005-01-10",
+        "Japan, Praise or endorse, China in 2005-02-27",
+        "Media (India), Praise or endorse, China in 2005-04-14"
+      ],
+      "raw_output": "After analyzing the provided historical facts, there is no mention of the United States Congress praising China. Therefore, we cannot determine the month when this event occurred based on the given data.\n\nSo the answer is: []"
+    },
+    {
+      "question": "In which month did China last want to participate in diplomatic cooperation with the Assemblies of Cambodia?",
+      "gold": [
+        "2013-09"
+      ],
+      "prediction": "2015-04",
+      "pattern": [
+        [
+          "China",
+          "Engage in diplomatic cooperation",
+          "Assemblies of Cambodia"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 0,
+      "qa_facts": [
+        "China Engage in diplomatic cooperation Cambodia in 2005-08-10.",
+        "Assemblies (Cambodia) Express intent to engage in diplomatic cooperation (such as policy support) China in 2007-11-08.",
+        "China Engage in diplomatic cooperation Cambodia in 2005-03-11.",
+        "China Engage in diplomatic cooperation Cambodia in 2013-05-17.",
+        "China Engage in diplomatic cooperation Cambodia in 2013-04-11."
+      ],
+      "raw_output": "To answer the question \"In which month did China last want to participate in diplomatic cooperation with the Assemblies of Cambodia?\", we need to identify the latest date when China expressed an intent to engage in diplomatic cooperation with Cambodia.\n\nFrom the provided historical facts, the latest date where China expressed an intent to engage in diplomatic cooperation with Cambodia is:\n\n'China Express intent to engage in diplomatic cooperation (such as policy support) Cambodia in 2015-04-23.'\n\nTherefore, the answer is the month of April 2015.\n\nSo the answer is: [\"2015-04\"]"
+    },
+    {
+      "question": "When did Malaysia appeal to the other authorities and officials of Egypt?",
+      "gold": [
+        "2010-01-05"
+      ],
+      "prediction": "Malaysia",
+      "pattern": [
+        [
+          "?",
+          "Make an appeal or request",
+          "Other Authorities / Officials (Egypt)"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 59,
+      "qa_facts": [
+        "National Airline (Iraq), Make an appeal or request, Other Authorities / Officials (Egypt) in 2005-08-31",
+        "Lawyer/Attorney (Egypt), Make an appeal or request, Other Authorities / Officials (Egypt) in 2005-12-17",
+        "High Commission for Refugees, Make an appeal or request, Other Authorities / Officials (Egypt) in 2006-01-12",
+        "High Commission for Refugees, Make an appeal or request, Other Authorities / Officials (Egypt) in 2006-01-16",
+        "Rights Activist (Egypt), Make an appeal or request, Other Authorities / Officials (Egypt) in 2006-05-17"
+      ],
+      "raw_output": "From the provided historical facts, we can see that Malaysia made an appeal or request to the other authorities and officials of Egypt on 2010-01-05. Therefore, the answer is:\n\nSo the answer is: [\"Malaysia\"]"
+    },
+    {
+      "question": "When did the Chinese Ministry of Health last condemn China?",
+      "gold": [
+        "2011-12-14"
+      ],
+      "prediction": "",
+      "pattern": [
+        [
+          "?",
+          "Criticize or denounce",
+          "China"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 673,
+      "qa_facts": [
+        "Ma Ying Jeou, Criticize or denounce, China in 2005-01-05",
+        "Ma Ying Jeou, Criticize or denounce, China in 2005-01-07",
+        "Japan, Criticize or denounce, China in 2005-01-11",
+        "Party Member (Taiwan), Criticize or denounce, China in 2005-03-08",
+        "Japan, Criticize or denounce, China in 2005-04-09"
+      ],
+      "raw_output": "After carefully analyzing the provided historical facts, there is no mention of the Chinese Ministry of Health condemning China. Therefore, based on the available data, we cannot provide an answer to the question \"When did the Chinese Ministry of Health last condemn China?\" as there is no such event recorded.\n\nSo the answer is: []"
+    },
+    {
+      "question": "In which year did Daniel arap Moi last visit China?",
+      "gold": [
+        "2006"
+      ],
+      "prediction": "",
+      "pattern": [
+        [
+          "?",
+          "Make a visit",
+          "China"
+        ],
+        [
+          "?",
+          "?"
+        ]
+      ],
+      "graph_fact_count": 4289,
+      "qa_facts": [
+        "Ma Ying Jeou, Make a visit, China in 2005-01-04",
+        "Nurse (Macao), Make a visit, China in 2005-01-04",
+        "Lawmaker (Japan), Make a visit, China in 2005-01-06",
+        "Shaukat Aziz, Make a visit, China in 2005-04-05",
+        "Envoy (United States), Make a visit, China in 2005-05-02"
+      ],
+      "raw_output": "After analyzing the provided historical facts, there is no record of Daniel arap Moi visiting China. Therefore, based on the available data, we cannot determine the year in which Daniel arap Moi last visited China.\n\nSo the answer is: []"
+    },
+    {
+      "question": "When did UK lawmakers first express their intention to negotiate with China?",
+      "gold": [
+        "2014-09-06"
+      ],
+      "prediction": "Lawmaker (United Kingdom)",
+      "pattern": [
+        [
+          "?",
+          "Express intent to meet or negotiate",
+          "China"
+        ],
+        [
+          "?",
+          "2014-09-06"
+        ]
+      ],
+      "graph_fact_count": 3037,
+      "qa_facts": [
+        "Kuomintang, Express intent to meet or negotiate, China in 2005-01-03",
+        "Mainland Affairs Council, Express intent to meet or negotiate, China in 2005-01-03",
+        "Mainland Affairs Council, Express intent to meet or negotiate, China in 2005-01-04",
+        "Matthias Platzeck, Express intent to meet or negotiate, China in 2005-04-04",
+        "Japan, Express intent to meet or negotiate, China in 2005-05-02"
+      ],
+      "raw_output": "From the provided historical facts, we can see that the earliest entry mentioning UK lawmakers expressing their intention to negotiate with China is \"Lawmaker (United Kingdom), Express intent to meet or negotiate, China in 2014-09-06\".\n\nSo the answer is: [\"Lawmaker (United Kingdom)\"]"
+    },
+    {
+      "question": "In what month did China first express its intention to negotiate with Donald Rumsfeld?",
+      "gold": [
+        "2005-10"
+      ],
+      "prediction": "",
+      "pattern": [
+        [
+          "?",
+          "Express intent to meet or negotiate",
+          "Donald Rumsfeld"
+        ],
+        [
+          "2005-01-01",
+          "2005-02-01"
+        ]
+      ],
+      "graph_fact_count": 0,
+      "qa_facts": [
+        "Donald Rumsfeld Express intent to meet or negotiate China in 2005-02-01.",
+        "Donald Rumsfeld Express intent to meet or negotiate China in 2005-09-12.",
+        "Donald Rumsfeld Express intent to meet or negotiate China in 2005-09-07.",
+        "Donald Rumsfeld Express intent to meet or negotiate China in 2005-02-10.",
+        "Donald Rumsfeld Express intent to meet or negotiate China in 2005-10-17."
+      ],
+      "raw_output": "From the provided historical facts, there is no record of China expressing its intention to negotiate with Donald Rumsfeld within the specified timeframe from 2005-01-01 to 2005-02-01. Therefore, based on the available data, we cannot determine the month when China first expressed its intention to negotiate with Donald Rumsfeld within this period.\n\nSo the answer is: []"
+    }
+  ],
+  "sample_sha256": "86937e3e35dc6eb7f1235f96813f830b7d1e11bde8e67611088aea524e6dbc61",
+  "model": "qwen14b",
+  "seed": 42,
+  "top_k": 100,
+  "fact_budget": 50
+}
