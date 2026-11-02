@@ -51,3 +51,5 @@ while true; do
 
   sleep "$INTERVAL"
 done
+
+# install: cp tools/autosync.sh ~/SSR/tools/ && chmod +x ~/SSR/tools/autosync.sh
