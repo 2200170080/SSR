@@ -24,3 +24,5 @@
 [autosync] everything except large binaries is tracked (datasets/logs/patches/prompts included)
 [autosync] commit auto: 2026-11-02 17:43:22 @ ecs-instance-e1330fb1
 [autosync] pushed b789714 -> backup/main
+[autosync] commit auto: 2026-11-02 17:44:28 @ ecs-instance-e1330fb1
+[autosync] pushed 5beab57 -> backup/main
