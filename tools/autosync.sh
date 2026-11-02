@@ -12,7 +12,7 @@ REMOTE="${REMOTE:-backup}"
 BRANCH="${BRANCH:-main}"
 INTERVAL="${INTERVAL:-60}"
 AUTHOR_NAME="${AUTHOR_NAME:-Structured Subgraph Retrieval}"
-AUTHOR_EMAIL="${AUTHOR_EMAIL:-2200170080@users.noreply.github.com}"
+AUTHOR_EMAIL="${AUTHOR_EMAIL:-3029316776@qq.com}"
 
 export GIT_TERMINAL_PROMPT=0
 export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/github_ssr -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=15"
