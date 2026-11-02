@@ -35,7 +35,7 @@ def load_qas(file_path: str):
         else:
             raise ValueError("No Answer Value")
 
-        qtypes.append(item.get("type") or item.get("question_type"))
+        qtypes.append(item.get("qtype") or item.get("type") or item.get("question_type"))
         atypes.append(item.get("answer_type"))
 
     return queries, answers, qtypes, atypes

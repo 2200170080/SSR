@@ -222,3 +222,4 @@ __marimo__/
 # a global "*.log" rule, so these two negations bring the run logs back.
 !/logs/
 !/logs/*.log
+/artifacts/qwen_fix/

@@ -101,7 +101,7 @@ async def run_graph_qa(queries, answers, qtypes, atypes, graph_patterns, graph_r
         else:
             qa_inputs.append(graph_text)
 
-    predictions, _ = await batch_run_qa(
+    predictions, raw_outputs = await batch_run_qa(
         queries=queries,
         facts_list=qa_inputs,
         prompt_path=args.qa_prompt,
@@ -111,6 +111,35 @@ async def run_graph_qa(queries, answers, qtypes, atypes, graph_patterns, graph_r
     )
     metrics = evaluate_qa(answers, predictions, qtypes=qtypes, atypes=atypes)
     print_qa_metrics("Graph QA", metrics)
+    report_path = os.getenv("SSR_REPORT_PATH")
+    if report_path:
+        import json, hashlib, re
+        from dataclasses import asdict
+        from pathlib import Path
+        from utils.eval_utils import is_correct, parse_list_str
+        stats = dict(time_total=0, time_incomplete_triple=0,
+                     time_empty_answer=0, time_non_date_answer=0)
+        examples = []
+        for i, kind in enumerate(atypes):
+            if kind != "time":
+                continue
+            pred = parse_list_str(predictions[i])
+            stats["time_total"] += 1
+            stats["time_incomplete_triple"] += int("?" in graph_patterns[i][0])
+            stats["time_empty_answer"] += int(not pred)
+            stats["time_non_date_answer"] += int(bool(pred) and not re.fullmatch(r"\d{4}(?:-\d{2})?(?:-\d{2})?", pred))
+            if not is_correct(answers[i], predictions[i]) and len(examples) < 10:
+                examples.append(dict(question=queries[i], gold=answers[i], prediction=pred,
+                    pattern=graph_patterns[i], graph_fact_count=len(graph_results_text[i]),
+                    qa_facts=qa_inputs[i][:5], raw_output=raw_outputs[i][:1600]))
+        report = dict(metrics=asdict(metrics), stats=stats, wrong_time_examples=examples,
+            sample_sha256=hashlib.sha256(json.dumps(queries, ensure_ascii=False).encode()).hexdigest(),
+            model=args.llm_model_name, seed=args.random_seed, top_k=args.text_top_k,
+            fact_budget=args.qa_retrieve_cnt)
+        target = Path(report_path)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+        print("诊断报告:", target)
     return predictions, metrics
 
 
