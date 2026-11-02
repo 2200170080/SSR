@@ -4,13 +4,15 @@
 #
 #   tmux new -d -s sync -c ~/SSR 'bash ~/SSR/tools/autosync.sh'
 #
-# Env knobs: ROOT REMOTE BRANCH INTERVAL LOG
+# Env knobs: ROOT REMOTE BRANCH INTERVAL LOG AUTHOR_NAME AUTHOR_EMAIL
 set -uo pipefail
 
 ROOT="${ROOT:-$HOME/SSR}"
 REMOTE="${REMOTE:-backup}"
 BRANCH="${BRANCH:-main}"
 INTERVAL="${INTERVAL:-60}"
+AUTHOR_NAME="${AUTHOR_NAME:-Structured Subgraph Retrieval}"
+AUTHOR_EMAIL="${AUTHOR_EMAIL:-2200170080@users.noreply.github.com}"
 
 export GIT_TERMINAL_PROMPT=0
 export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/github_ssr -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=15"
@@ -32,7 +34,7 @@ while true; do
   git add -A >/dev/null 2>&1
   if ! git diff --cached --quiet; then
     MSG="auto: $(date '+%F %T') @ $(hostname -s)"
-    if git -c user.name="ssr-autosync" -c user.email="autosync@localhost" commit -q -m "$MSG"; then
+    if git -c user.name="$AUTHOR_NAME" -c user.email="$AUTHOR_EMAIL" commit -q -m "$MSG"; then
       echo "[autosync] commit $MSG"
       NEED_PUSH=1
     else
@@ -51,5 +53,3 @@ while true; do
 
   sleep "$INTERVAL"
 done
-
-# install: cp tools/autosync.sh ~/SSR/tools/ && chmod +x ~/SSR/tools/autosync.sh
