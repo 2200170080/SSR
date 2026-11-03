@@ -1,0 +1,2408 @@
+[
+  {
+    "quid": 3024174,
+    "question": "When did Yoshihiko Noda first praise China?",
+    "answers": [
+      "2011-11-03"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3028855,
+    "question": "In which year did China host the visit of the European Central Bank?",
+    "answers": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3020646,
+    "question": "In which year did Benedict XVI last express his intention to negotiate with China?",
+    "answers": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3024928,
+    "question": "What was the last country Kuwait wanted to meet with in 2012?",
+    "answers": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "equal_multi",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3002634,
+    "question": "In which year did Burundi last make an appeal to the other authorities and officials of Burundi?",
+    "answers": [
+      "2015"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3009199,
+    "question": "When did the Cambodian military first use conventional military force against Cambodia?",
+    "answers": [
+      "2009-11-23"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3024789,
+    "question": "In 2005, who appealed for Zanzibar?",
+    "answers": [
+      "Civic United Front"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3046280,
+    "question": "Who made the last appeal to Ethiopia in 2006?",
+    "answers": [
+      "African Union"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "equal_multi",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3010637,
+    "question": "Before 2007, who would wish to visit Djibouti?",
+    "answers": [
+      "Mwai Kibaki",
+      "Islamic Courts Union",
+      "Barack Obama",
+      "Isaias Afewerki"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3033793,
+    "question": "In which year did Yoon Jeung Hyun visit China for the first time?",
+    "answers": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3052183,
+    "question": "On 19 Aug 2009, who gave a criticism to Thailand?",
+    "answers": [
+      "International Government Organizations"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3029676,
+    "question": "On 29 May 2009, which country expressed an interest in cooperating with Cambodia?",
+    "answers": [
+      "Vietnam",
+      "Thailand",
+      "Malaysia"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3037404,
+    "question": "Could you tell me the exact month when the military of Laos first expressed its intention to negotiate with China?",
+    "answers": [
+      "2007-08"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3021668,
+    "question": "In what year did Rodrigo Rato make optimistic remarks about Iraq?",
+    "answers": [
+      "2005"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3020308,
+    "question": "In which year did Nuri al-Maliki visit China for the first time?",
+    "answers": [
+      "2011"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3042765,
+    "question": "In which month did Barack Obama last investigate Iraq?",
+    "answers": [
+      "2009-08"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3020523,
+    "question": "In which year did the African Union condemn Comoros for the first time?",
+    "answers": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3043401,
+    "question": "Who made Burundi suffer from conventional military forces on 26 June 2015?",
+    "answers": [
+      "Al-Shabaab"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3029753,
+    "question": "In August 2015, who used unconventional force against China?",
+    "answers": [
+      "Criminal (China)"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3004526,
+    "question": "In what year did Ali Abdullah Saleh first make a request to Ethiopia?",
+    "answers": [
+      "2005"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3014700,
+    "question": "Who wanted to cooperate with Burundi before 4 December 2012?",
+    "answers": [
+      "Tanzania",
+      "Angola",
+      "Government Official (Rwanda)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3004998,
+    "question": "In which year did Malaysia receive the visit from Surakiart Sathirathai?",
+    "answers": [
+      "2005"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3016058,
+    "question": "When did China reject the lawmakers of Japan?",
+    "answers": [
+      "2014-02-19"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3005910,
+    "question": "Who expressed the intention to participate in diplomatic cooperation with Cambodia in 2011-02?",
+    "answers": [
+      "Thailand",
+      "China",
+      "Association of Southeast Asian Nations"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3021675,
+    "question": "In which year did the Belgian Ministry of Foreign Affairs use small arms and light weapons to attack Burundi?",
+    "answers": [
+      "2006"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3008448,
+    "question": "Who wanted to meet with Thailand on 21 November 2012?",
+    "answers": [
+      "Wen Jiabao"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3049783,
+    "question": "In what month did China last make optimistic remarks about the Royal Administration of Jordan?",
+    "answers": [
+      "2007-10"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3037894,
+    "question": "Who negotiated with Iraq in March 2007?",
+    "answers": [
+      "Amy Klobuchar",
+      "Business (Iraq)"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3012744,
+    "question": "In which year did Takahiro Yokomichi last express his intention to negotiate with China?",
+    "answers": [
+      "2013"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3022634,
+    "question": "Who issued a condemnation of Ethiopia after 13 March 2014?",
+    "answers": [
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3016048,
+    "question": "When did Nicos Anastasiades express his intention to negotiate with China?",
+    "answers": [
+      "2015-10-09"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3013279,
+    "question": "Before Jin Renqing, which country made the last optimistic statement about China?",
+    "answers": [
+      "South Korea"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3019220,
+    "question": "In which year did Ali Jannati last express his intention to negotiate with Kuwait?",
+    "answers": [
+      "2014"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3033141,
+    "question": "In what year did Carlos Saul Menem pay a visit to Kuwait?",
+    "answers": [
+      "2011"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3050304,
+    "question": "On 6 Jan 2011, which country expressed its intention to participate in diplomatic cooperation with Iraq?",
+    "answers": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3009371,
+    "question": "In which year did Cambodia first commend the military of Cambodia?",
+    "answers": [
+      "2009"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3015910,
+    "question": "In which month did Cambodia investigate Thai citizens?",
+    "answers": [
+      "2011-01"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3019430,
+    "question": "Could you tell me the exact month when Nuri al-Maliki first expressed his intention to negotiate with China?",
+    "answers": [
+      "2011-07"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3040368,
+    "question": "When did China last visit the Philippines' naval base?",
+    "answers": [
+      "2010-04-15"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3049385,
+    "question": "Could you tell me the exact month in which Segolene Royal first expressed her intention to negotiate with China?",
+    "answers": [
+      "2006-12"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3053339,
+    "question": "In what year did China last express an intention to negotiate with the UN Security Council?",
+    "answers": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3045003,
+    "question": "Who was suffered by the conventional military forces of Ethiopia after the Hawiye of ethnic?",
+    "answers": [
+      "Armed Rebel (Somalia)",
+      "Al-Shabaab",
+      "Eritrea",
+      "China",
+      "Secret Agent (Ethiopia)",
+      "Islamic Courts Union",
+      "Combatant (Hizbul Islam)",
+      "Sudan"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3012439,
+    "question": "In which month did the Chinese space agency investigate China?",
+    "answers": [
+      "2006-07"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3037335,
+    "question": "Who appealed for Iraq after Médecins Sans Frontières?",
+    "answers": [
+      "Nuri al-Maliki",
+      "Iran",
+      "France",
+      "UN Security Council",
+      "Legislature (Iraq)",
+      "Haider Al-Abadi",
+      "Cabinet / Council of Ministers / Advisors (United States)",
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3021108,
+    "question": "When did the Australian businessman announce his intention to meet with Iraq?",
+    "answers": [
+      "2005-05-11"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3048118,
+    "question": "With which country did Ethiopia want to negotiate before 2007?",
+    "answers": [
+      "African Union",
+      "Eritrea",
+      "Djibouti",
+      "Sudan"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3020592,
+    "question": "Before the other authorities and officials of New Zealand, with which country did China last enter into negotiations?",
+    "answers": [
+      "Shivshankar Menon"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3051181,
+    "question": "Before the military of Myanmar, with which country did Thailand last express its intention to negotiate?",
+    "answers": [
+      "Malaysia"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3036117,
+    "question": "Could you tell me the exact month when the religion of China first denounced China?",
+    "answers": [
+      "2011-10"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3034283,
+    "question": "Which country last hosted the visit of the Royal Administration of Saudi Arabia before Oman?",
+    "answers": [
+      "Eritrea"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3013466,
+    "question": "What month did China last request International Monetary Fund?",
+    "answers": [
+      "2015-10"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3036564,
+    "question": "In which year did Gibran Bassil last praise Kuwait?",
+    "answers": [
+      "2009"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3040162,
+    "question": "What month did Thailand first reject the Protester of Thailand?",
+    "answers": [
+      "2008-07"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3011440,
+    "question": "In which year did Ismaïl Omar Guelleh negotiate with Djibouti for the first time?",
+    "answers": [
+      "2006"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3035310,
+    "question": "After Barack Obama, which country was the first to host a visit from Iraq?",
+    "answers": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3043745,
+    "question": "When did China first threaten Boko Haram?",
+    "answers": [
+      "2014-05-13"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3001381,
+    "question": "When did Rehman Malik visit China for the first time?",
+    "answers": [
+      "2009-06-12"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3000335,
+    "question": "In which month did the Chancellor of the Exchequer first express his intention to meet with China?",
+    "answers": [
+      "2012-01"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3016646,
+    "question": "In what year did Tony Blair first investigate Iraq?",
+    "answers": [
+      "2012"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3024720,
+    "question": "After Oct, 2015, who made a denunciation to China?",
+    "answers": [
+      "Tsai Ing-wen",
+      "Japan",
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3025879,
+    "question": "In which year did Malaysia request the police of Malaysia?",
+    "answers": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3019783,
+    "question": "With whom did Chen Bingde last negotiate before China?",
+    "answers": [
+      "Armed Separatist (China)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3025119,
+    "question": "In July 2009, who wanted to negotiate with China?",
+    "answers": [
+      "Japan",
+      "Alik L. Alik",
+      "Vietnam",
+      "Steven Chu",
+      "South Korea",
+      "Energy Department/Ministry (United States)",
+      "Admiral (China)",
+      "Indigenous People (Taiwan)",
+      "South Africa",
+      "Assemblies (Cambodia)",
+      "Ma Ying Jeou",
+      "Mexico",
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3037712,
+    "question": "On the same day as the citizens of Australia, which country expressed an interest in cooperation with China?",
+    "answers": [
+      "Iran",
+      "France"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal_multi",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3025139,
+    "question": "Before Kuwait, who last hosted the Ministry of Senegal's visit from the Ministry of Senegal?",
+    "answers": [
+      "Saud bin Faisal bin Abdul-Aziz"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3019935,
+    "question": "Who would wish to visit China on the same day of Vuk Jeremić?",
+    "answers": [
+      "Gurbanguly Berdymukhammedov",
+      "Lien Chan"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal_multi",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3035520,
+    "question": "When did Iraq investigate the Iraqi legislature?",
+    "answers": [
+      "2014-04-25"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3041083,
+    "question": "Who visited China on 28 May 2015?",
+    "answers": [
+      "Xi Jinping"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3034496,
+    "question": "When did Philip Hammond praise Ethiopia?",
+    "answers": [
+      "2015-10-22"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3038876,
+    "question": "Could you tell me the specific month when did China receive the visit from the High Ranking Military Personnel of Japan?",
+    "answers": [
+      "2008-05"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3007191,
+    "question": "In which month did Nuri al-Maliki express his intention to negotiate with Oman?",
+    "answers": [
+      "2007-04"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3011057,
+    "question": "In which month did Malaysia sign formal agreements with the Communist Party of Malaysia?",
+    "answers": [
+      "2013-09"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3012645,
+    "question": "In which year did Werner Faymann last visit China?",
+    "answers": [
+      "2011"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3015357,
+    "question": "What was the last country with which Iraq formally signed an agreement before Barack Obama?",
+    "answers": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3030711,
+    "question": "In which year did the media of Iran negotiate with Iraq?",
+    "answers": [
+      "2009"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3012857,
+    "question": "Who investigated China in August 2012?",
+    "answers": [
+      "Wen Jiabao"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3037987,
+    "question": "When did Banharn Silpa-archa express his intention to negotiate with China?",
+    "answers": [
+      "2013-08-29"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3023200,
+    "question": "On 1 September 2014, which country signed an agreement with Ethiopia?",
+    "answers": [
+      "Sudan"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3004014,
+    "question": "In which year did the Prime Minister of Kenya visit Thailand?",
+    "answers": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3046425,
+    "question": "When did the Thai Navy offer humanitarian aid to Thailand?",
+    "answers": [
+      "2011-03-30"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3005207,
+    "question": "Before December 2005, which country hosted the visit of Burundi?",
+    "answers": [
+      "Tanzania"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3010384,
+    "question": "Who visited China on 20 July 2005?",
+    "answers": [
+      "Head of Government (Guyana)",
+      "New Party (Taiwan)",
+      "Lien Chan"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3051111,
+    "question": "In which month did the Guardia Civil visit Asturias for the first time?",
+    "answers": [
+      "2007-04"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3019642,
+    "question": "After Iraq, with whom did the Iranian Foreign Ministry formally sign an agreement?",
+    "answers": [
+      "Information / Communication / Transparency Ministry (Iraq)",
+      "Business (Iran)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3005383,
+    "question": "Who would like to cooperate with Kuwait after 19 May 2011?",
+    "answers": [
+      "Iran",
+      "Yemen",
+      "France",
+      "Mauritania",
+      "United Arab Emirates",
+      "Qatar",
+      "Iraq"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3050205,
+    "question": "In what month did Malaysia announce its intention to negotiate with the citizens of Singapore?",
+    "answers": [
+      "2014-09"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3010171,
+    "question": "On 8 October 2014, which country would like to establish diplomatic cooperation with China?",
+    "answers": [
+      "Malaysia"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3005369,
+    "question": "Which year did China receive the visit from Valery Dmitrievich Zorkin?",
+    "answers": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3039900,
+    "question": "After 1 June 2015, which country did China use conventional military force against?",
+    "answers": [
+      "France",
+      "Fishermen (Vietnam)",
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3027668,
+    "question": "Which country would wish to visit China last before Kembo Dugish Campbell Mohadi did?",
+    "answers": [
+      "Vietnam"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3050945,
+    "question": "Who first investigated the Philippine military after the Inquirer?",
+    "answers": [
+      "Inspector General (Philippines)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3050035,
+    "question": "At what time did Malaysia make optimistic comments about Mahmoud Abbas?",
+    "answers": [
+      "2005-01-12"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3001094,
+    "question": "After Cambodia's lawyer, which country was the first to negotiate with Cambodia?",
+    "answers": [
+      "Thailand"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3046632,
+    "question": "When did Shaukat Aziz negotiate with Oman for the first time?",
+    "answers": [
+      "2005-03-15"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3042908,
+    "question": "Who made an appeal to Benedict XVI in the same year of Iraq?",
+    "answers": [
+      "Benjamin Netanyahu",
+      "Shimon Peres",
+      "Lee Myung Bak",
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "equal_multi",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3023644,
+    "question": "Who was the last person to endorse Malaysia before Teo Chee Hean?",
+    "answers": [
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3053838,
+    "question": "What was the last country to sign a formal agreement with China before Yoshihiko Noda?",
+    "answers": [
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3036760,
+    "question": "When did Isaias Afewerki last appeal to Ethiopia?",
+    "answers": [
+      "2009-12-02"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3032074,
+    "question": "Before 3 February 2009, who had a telephone conversation with Iraq?",
+    "answers": [
+      "Associated Press",
+      "Iran",
+      "Mahmoud Ahmadinejad"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3015190,
+    "question": "Who used conventional military force against Thailand on 18 February 2011?",
+    "answers": [
+      "Military (Cambodia)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3008019,
+    "question": "In what year did the women of Indonesia first appeal to Malaysia?",
+    "answers": [
+      "2009"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3007307,
+    "question": "Which country criticised China on 23 May 2014?",
+    "answers": [
+      "Vietnam"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3055502,
+    "question": "Before Iraq, who was the last country to suffer from the unconventional violence of the fighters of Iraqi Kurds?",
+    "answers": [
+      "Islamic (Germany)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3002474,
+    "question": "In which month did the owner or operator of Iran last express its intention to negotiate with Iraq?",
+    "answers": [
+      "2009-12"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3046022,
+    "question": "In May 2005, which country announced its intention to cooperate with Thailand?",
+    "answers": [
+      "Cambodia",
+      "Laos"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3005325,
+    "question": "Could you tell me the exact month when Kamla Persad-Bissessar expressed her intention to meet with China?",
+    "answers": [
+      "2014-02"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3013451,
+    "question": "In what month did China last provide humanitarian aid to South Sudan?",
+    "answers": [
+      "2013-12"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3030580,
+    "question": "On 8 February 2009, which country signed formal agreements with Iraq?",
+    "answers": [
+      "Kuwait"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3020814,
+    "question": "When was the last time Jeh Johnson visited China?",
+    "answers": [
+      "2015-04-13"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3042724,
+    "question": "In what year did China last negotiate with Rio Tinto?",
+    "answers": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3016663,
+    "question": "Which country negotiated last with China before Peter Pace?",
+    "answers": [
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3043736,
+    "question": "Which country was the first to ask Oman?",
+    "answers": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3031720,
+    "question": "When did Cambodia receive the visit from the Ministry of Vietnam?",
+    "answers": [
+      "2009-03-19"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3013156,
+    "question": "When did Aggrey Tisa Sabuni first praise China?",
+    "answers": [
+      "2013-12-11"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3012885,
+    "question": "Could you tell me the specific month when did China first reject Ai Weiwei?",
+    "answers": [
+      "2012-07"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3051450,
+    "question": "In what year did the US 1st Marine Expeditionary Force announce its intention to negotiate with Iraq?",
+    "answers": [
+      "2006"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3016821,
+    "question": "When was the last time Kuwait supported Anas Khalid Al Saleh?",
+    "answers": [
+      "2015-11-29"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3025441,
+    "question": "Before 9 May 2007, who praised Ethiopia?",
+    "answers": [
+      "African Union",
+      "Congress (United States)",
+      "Wen Jiabao",
+      "Eritrea",
+      "Abu Bakr Abdullah al-Qirbi",
+      "UN Security Council",
+      "USAID",
+      "Dahir Riyale Kahin"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3004377,
+    "question": "Before March 2005, which country did China make pessimistic remarks about?",
+    "answers": [
+      "Japan",
+      "Iraq",
+      "Sudan"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3055398,
+    "question": "After the year 2010, which country was supported by Cambodia?",
+    "answers": [
+      "Abhisit Vejjajiva",
+      "Thailand",
+      "Barack Obama",
+      "Iran",
+      "Japan",
+      "Military Personnel (Thailand)",
+      "Vietnam",
+      "China"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3048121,
+    "question": "In 2013, which country first wanted to participate in diplomatic cooperation with Thailand?",
+    "answers": [
+      "Malaysia"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "equal_multi",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3005869,
+    "question": "When was the last time Iraq used conventional military force against Adil Abdul-Mahdi?",
+    "answers": [
+      "2007-02-26"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3025215,
+    "question": "Who made an appeal to Thailand in 2012?",
+    "answers": [
+      "Malaysia",
+      "Activist (Thailand)",
+      "Xi Jinping",
+      "Citizen (Thailand)",
+      "Human Rights Watch",
+      "Maldives",
+      "Cambodia",
+      "Media Personnel (Thailand)"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3020621,
+    "question": "In December, 2010, who would wish to visit China?",
+    "answers": [
+      "Special Rapporteurs of the United Nations",
+      "Military (Philippines)",
+      "Lawmaker (Japan)",
+      "Vietnam",
+      "Xi Jinping",
+      "Julia Gillard",
+      "Bill Richardson",
+      "Okada Katsuya",
+      "Nigerian Communication Satellite",
+      "Cabinet / Council of Ministers / Advisors (United States)",
+      "Hui Liangyu",
+      "Japan",
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3023987,
+    "question": "When did China host the visit of the media from Myanmar?",
+    "answers": [
+      "2009-06-22"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3015301,
+    "question": "When did Malaysia last release people to the Businessman of Malaysia?",
+    "answers": [
+      "2010-04-28"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3012978,
+    "question": "Which country held negotiations with China on 25 November 2008?",
+    "answers": [
+      "South Korea"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3008947,
+    "question": "In which year did the Ministry of Defence and Security of Taiwan make a request to China?",
+    "answers": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3046776,
+    "question": "Which was the last country that Malaysia wanted to engage in diplomatic cooperation with before Cambodia?",
+    "answers": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3016075,
+    "question": "In what year was Philip J. Crowley last optimistic about China?",
+    "answers": [
+      "2009"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3021527,
+    "question": "In which country did Malaysia last repatriate persons before the Businessman of Malaysia?",
+    "answers": [
+      "Employee (Thailand)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3044294,
+    "question": "In 2009, who would like to cooperate with China?",
+    "answers": [
+      "Mexico",
+      "Malaysia",
+      "Association of Southeast Asian Nations",
+      "Vietnam",
+      "Tanzania",
+      "Sudan",
+      "South Korea",
+      "Angola",
+      "Kazakhstan",
+      "South Africa",
+      "Thailand",
+      "Malawi",
+      "France",
+      "Cabinet / Council of Ministers / Advisors (United States)",
+      "Portugal",
+      "Prachanda",
+      "Japan",
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3044006,
+    "question": "What month did China first reject Benedict XVI?",
+    "answers": [
+      "2005-09"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3000062,
+    "question": "Who was the first to visit Norodom Sihanouk after China?",
+    "answers": [
+      "Wen Jiabao"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3041261,
+    "question": "In which year did Murli Deora first make optimistic remarks about China?",
+    "answers": [
+      "2006"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3007958,
+    "question": "Before Malaysia, who hosted the visit of South Korea from South Korea?",
+    "answers": [
+      "Tanzania",
+      "Aceh",
+      "United Arab Emirates",
+      "China",
+      "Japan",
+      "Iraq"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3015913,
+    "question": "In 2011, who blamed Cambodia?",
+    "answers": [
+      "Abhisit Vejjajiva",
+      "Thailand",
+      "Citizen (Thailand)"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3029011,
+    "question": "Which country was first praised by Iraq after the militant of Syria?",
+    "answers": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3032196,
+    "question": "In what year did Thailand formally sign an agreement with the Military Personnel of Thailand?",
+    "answers": [
+      "2006"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3031296,
+    "question": "In which month did Uhuru Muigai Kenyatta first support Ethiopia?",
+    "answers": [
+      "2015-03"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3006152,
+    "question": "Who endorsed Iraq in January 2005?",
+    "answers": [
+      "Iran",
+      "Kuwait",
+      "Tony Blair",
+      "Joschka Fischer",
+      "China",
+      "Foreign Affairs (Austria)",
+      "France",
+      "Javier Solana",
+      "Media (United States)",
+      "Cabinet / Council of Ministers / Advisors (United States)",
+      "Government (France)"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3023033,
+    "question": "Who wanted to meet with China in January 2011?",
+    "answers": [
+      "Iran",
+      "Defense / Security Ministry (United States)",
+      "Association of Southeast Asian Nations",
+      "Citizen (Tanzania)",
+      "Citizen (North Korea)",
+      "Envoy (United States)",
+      "South Korea",
+      "Finance / Economy / Commerce / Trade Ministry (Japan)",
+      "Stephen W. Bosworth",
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3011945,
+    "question": "After Djibouti, which was the first country to receive humanitarian aid from China?",
+    "answers": [
+      "Sudan"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3005771,
+    "question": "When did Abdel Fattah Al-Sisi praise Iraq?",
+    "answers": [
+      "2015-01-11"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3052847,
+    "question": "On 14 February 2007, who wanted to start diplomatic cooperation with China?",
+    "answers": [
+      "Head of Government (Turkmenistan)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3050178,
+    "question": "Who visited Cambodia after 18 March 2015?",
+    "answers": [
+      "Special Rapporteurs of the United Nations",
+      "Barack Obama",
+      "Dmitry Anatolyevich Medvedev"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3001485,
+    "question": "In which year did China negotiate with the Prime Minister of Greece?",
+    "answers": [
+      "2008"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3055321,
+    "question": "In which month did Djibouti last express its intention to negotiate with Burundi?",
+    "answers": [
+      "2014-11"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3050670,
+    "question": "Who was the first to receive the visit from Kemal Unakitan after Malaysia did?",
+    "answers": [
+      "Ireland"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3036026,
+    "question": "After 28 November 2015, with which country did China want to meet?",
+    "answers": [
+      "Japan",
+      "Iran",
+      "Kazakhstan",
+      "South Korea"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3042037,
+    "question": "When did China first express its intention to engage in diplomatic cooperation with Surakiart Sathirathai?",
+    "answers": [
+      "2005-05-08"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3053820,
+    "question": "Who gave a visit to China on 7 June 2005?",
+    "answers": [
+      "Head of Government (Turkmenistan)",
+      "Iran",
+      "Jason C. Hu"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3014874,
+    "question": "Who asked for Thailand on 27 June 2013?",
+    "answers": [
+      "Activist (Thailand)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3014207,
+    "question": "Which country negotiated with the Iraqi Supreme Council before Iraq did?",
+    "answers": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3025622,
+    "question": "Could you tell me the exact month when the citizens of the United Kingdom last used unconventional force against Iraq?",
+    "answers": [
+      "2014-10"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3050522,
+    "question": "Which country did China want to cooperate with after November, the year 2015?",
+    "answers": [
+      "France",
+      "Thailand",
+      "South Korea",
+      "Iran",
+      "Japan",
+      "Romania",
+      "Vietnam",
+      "Kazakhstan",
+      "Iraq"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3011689,
+    "question": "Who paid a visit to Ethiopia in 2015?",
+    "answers": [
+      "United Nations Children's Fund",
+      "South Sudan",
+      "Sudan",
+      "Barack Obama",
+      "International Monetary Fund",
+      "Jakaya Mrisho Kikwete",
+      "Royal Administration (Spain)",
+      "Pope Tawadros II",
+      "Head of Government (Egypt)",
+      "Uhuru Muigai Kenyatta",
+      "Government Delegation (Somalia)",
+      "Yemen",
+      "Tony Blair",
+      "Abdel Fattah Al-Sisi",
+      "Foreign Affairs (Italy)",
+      "Federica Mogherini",
+      "UN Security Council",
+      "African Union",
+      "Jacob J. Lew",
+      "Abdelkader Taleb Oumar"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3047306,
+    "question": "Who was the first to negotiate with China after Abhisit Vejjajiva?",
+    "answers": [
+      "Envoy (United States)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3047834,
+    "question": "At what time did Cambodia receive the visit from the Businessperson of Taiwan?",
+    "answers": [
+      "2008-06-11"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3046501,
+    "question": "When did China praise Agence France-Presse for the first time?",
+    "answers": [
+      "2007-04-13"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3053259,
+    "question": "After Ali Abdullah Saleh, which country first expressed an intention to negotiate with Oman?",
+    "answers": [
+      "United Arab Emirates"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3047432,
+    "question": "With which country did Djibouti first express its intention to meet?",
+    "answers": [
+      "Eritrea"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3044571,
+    "question": "In which month did Islamic Courts Union first accuse Ethiopia?",
+    "answers": [
+      "2006-06"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3042450,
+    "question": "In which year did Benjamin Netanyahu declare his intention to negotiate with Ethiopia?",
+    "answers": [
+      "2011"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3001804,
+    "question": "When was the last time the leader of Egypt expressed an intention to meet with Iraq?",
+    "answers": [
+      "2012-11-10"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3028137,
+    "question": "On 27 October 2015, which country expressed an interest in cooperating with Thailand?",
+    "answers": [
+      "Laos"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3033861,
+    "question": "In which year did the United Nations Children's Fund last praise Cambodia?",
+    "answers": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3010354,
+    "question": "Who visited China on 17 March 2006?",
+    "answers": [
+      "Mikhail Yefimovich Fradkov",
+      "Sergey Vladilenovich Kiriyenko",
+      "Lien Chan"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3001675,
+    "question": "When did China release people to Vietnamese fishermen for the first time?",
+    "answers": [
+      "2007-07-19"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3006415,
+    "question": "When did Kuwait first formally sign an agreement with Ethiopia?",
+    "answers": [
+      "2007-05-14"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3048974,
+    "question": "In what year did the Association of Southeast Asian Nations formally sign an agreement with Malaysia?",
+    "answers": [
+      "2005"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3018624,
+    "question": "Who praised Cambodia in 2010-10?",
+    "answers": [
+      "Wen Jiabao"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3034600,
+    "question": "In which year did Association of Southeast Asian Nations last reject China?",
+    "answers": [
+      "2015"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3048279,
+    "question": "Who praised Iraq in the same month of the International Monetary Fund?",
+    "answers": [
+      "Iran",
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal_multi",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3036310,
+    "question": "Who made pessimistic remarks about Cambodia before Prem Tinsulanonda?",
+    "answers": [
+      "Vietnam",
+      "Laos",
+      "Human Rights Group (Cambodia)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3014178,
+    "question": "Which year did Associated Press first reject Ethiopia?",
+    "answers": [
+      "2008"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3004591,
+    "question": "At what time did the Inquirer first have a telephone conversation with Eid Kabalu?",
+    "answers": [
+      "2008-11-04"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3024129,
+    "question": "In which month did the German government first speak optimistically about China?",
+    "answers": [
+      "2013-06"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3019649,
+    "question": "Could you tell me the exact month in which Fatmir Mediu last visited Kuwait?",
+    "answers": [
+      "2007-05"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3026229,
+    "question": "In which year did Nation Media Group last accuse China?",
+    "answers": [
+      "2011"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3031266,
+    "question": "In what year did Philip Hammond last express an intention to negotiate with China?",
+    "answers": [
+      "2015"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3002963,
+    "question": "Who used unconventional force against Ethiopia in April 2007?",
+    "answers": [
+      "Armed Opposition (Ethiopia)"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3051146,
+    "question": "Before 2005-10, who used conventional military force against Ethiopia?",
+    "answers": [
+      "Police (Ethiopia)",
+      "Sudan"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3030592,
+    "question": "Who visited Ethiopia on 30 January 2012?",
+    "answers": [
+      "Kamalesh Sharma",
+      "African Union"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3048101,
+    "question": "In which month did the citizens of Greece first express their intention to meet with Iraq?",
+    "answers": [
+      "2014-08"
+    ],
+    "answer_type": "time",
+    "time_level": "month",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3000319,
+    "question": "Who wanted to negotiate with Ethiopia on 16 August 2006?",
+    "answers": [
+      "Police (Belgium)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3009872,
+    "question": "Before Iraq, who was the last British member of the party to express optimism?",
+    "answers": [
+      "Citizen (United Kingdom)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_last",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3006625,
+    "question": "On 14 May 2008, who gave humanitarian aid to China?",
+    "answers": [
+      "Health Ministry (China)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3040569,
+    "question": "In which year did El País first express its intention to negotiate with Iraq?",
+    "answers": [
+      "2014"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3001816,
+    "question": "Which country did Yoshihiko Noda want to participate in diplomatic cooperation with on the same day of Thailand?",
+    "answers": [
+      "Vietnam",
+      "Laos",
+      "Cambodia"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "equal_multi",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3005856,
+    "question": "In which year did Kuwait return people to Sheikh Ahmed Abdullah?",
+    "answers": [
+      "2012"
+    ],
+    "answer_type": "time",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3015021,
+    "question": "Who investigated China in 2009?",
+    "answers": [
+      "Xi Jinping",
+      "Prachanda",
+      "Wen Jiabao",
+      "Liu Yandong",
+      "Japan",
+      "Jiaotong University",
+      "Malaysia",
+      "Rio Tinto"
+    ],
+    "answer_type": "entity",
+    "time_level": "year",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3022509,
+    "question": "Which country first did China made pessimistic remarks on after the Foreign Affairs of India?",
+    "answers": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3006416,
+    "question": "Before 14 April 2006, to whom did Burundi make a request?",
+    "answers": [
+      "Head of Government (Burundi)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3034197,
+    "question": "After China, which country first hosted the visit from Justice and Development Party?",
+    "answers": [
+      "Iraq"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3005557,
+    "question": "At what time did Iraq first have a telephone conversation with the Royal Administration of Saudi Arabia?",
+    "answers": [
+      "2015-01-06"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "first_last",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3035825,
+    "question": "Who wanted to negotiate with Iraq in Dec, 2005?",
+    "answers": [
+      "Tony Blair",
+      "Citizen (Bulgaria)",
+      "Activist (Iraq)",
+      "Donald Rumsfeld",
+      "Jew (Israel)",
+      "Citizen (United Kingdom)",
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "time_level": "month",
+    "qtype": "equal",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3052497,
+    "question": "Who praised China after 16 October 2015?",
+    "answers": [
+      "Cambodia",
+      "Ashraf Ghani Ahmadzai",
+      "Tony Tan Keng Yam",
+      "Association of Southeast Asian Nations",
+      "Muhammadu Buhari",
+      "Foreign Affairs (Cape Verde)",
+      "Maldives",
+      "Thailand",
+      "France",
+      "China Southern Airlines",
+      "Elizabeth II",
+      "Social Party of National Unity",
+      "Government (Nigeria)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "before_after",
+    "qlabel": "Single"
+  },
+  {
+    "quid": 3040483,
+    "question": "Who wanted to meet with Iraq first, after the Energy Department/Ministry of Iran did?",
+    "answers": [
+      "Citizen (United Kingdom)"
+    ],
+    "answer_type": "entity",
+    "time_level": "day",
+    "qtype": "after_first",
+    "qlabel": "Multiple"
+  },
+  {
+    "quid": 3021566,
+    "question": "When did Le Hong Anh visit Thailand?",
+    "answers": [
+      "2010-03-03"
+    ],
+    "answer_type": "time",
+    "time_level": "day",
+    "qtype": "equal",
+    "qlabel": "Single"
+  }
+]
