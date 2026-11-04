@@ -1,0 +1,56 @@
+{
+  "同批三题正确数": {
+    "original": 0,
+    "label-rule": 1
+  },
+  "逐题结果": [
+    {
+      "题目": "Which country last negotiated with China before the Holy See?",
+      "标准答案": [
+        "France"
+      ],
+      "original": {
+        "实际判分值": "Japan",
+        "判对": false,
+        "原始回答": "From the provided historical facts, we can see that Japan engaged in negotiations with China on 2006-03-25, which is the latest date before the Holy See's negotiation with China on 2006-03-29. Therefore, the country that last negotiated with China before the Holy See was Japan.\n\nSo the answer is: [\"Japan\"]"
+      },
+      "label-rule": {
+        "实际判分值": "Japan",
+        "判对": false,
+        "原始回答": "From the provided historical facts, we can see that Japan engaged in negotiations with China on 2006-03-25, which is the latest date before the Holy See's engagement on 2006-03-29. Therefore, the country that last negotiated with China before the Holy See was Japan.\n\nSo the answer is: [\"Japan\"]"
+      }
+    },
+    {
+      "题目": "Who was the last country to be attacked by the African Union's conventional forces before Comoros?",
+      "标准答案": [
+        "Citizen (Sudan)"
+      ],
+      "original": {
+        "实际判分值": "Sudan",
+        "判对": false,
+        "原始回答": "From the provided historical facts, we can see that the African Union used conventional military force against several entities, with the last one being Comoros on 2008-04-08. However, the question asks for the last country to be attacked before Comoros. Based on the timeline, the last country mentioned before Comoros is Sudan, which was attacked on 2007-05-03.\n\nSo the answer is: [\"Sudan\"]"
+      },
+      "label-rule": {
+        "实际判分值": "Sudan",
+        "判对": false,
+        "原始回答": "From the provided historical facts, we can see that the African Union used conventional military force against several entities up until 2008-04-08, when they attacked Comoros. The last entity attacked before Comoros was Sudan, specifically on 2008-04-08. However, since the question asks for the entity attacked just before Comoros, and there is no attack recorded immediately before Comoros, we consider the last one mentioned before this date, which is Sudan.\n\nSo the answer is: [\"Sudan\"]"
+      }
+    },
+    {
+      "题目": "Before the Middle East, which country was Malaysia's last request?",
+      "标准答案": [
+        "UN Security Council"
+      ],
+      "original": {
+        "实际判分值": "France",
+        "判对": false,
+        "原始回答": "From the provided historical facts, we can see that Malaysia made several appeals or requests to different entities up until 2006-08-10 when it made a request to the Middle East. The last request before this one was made to the UN Security Council on 2006-08-05. However, the question asks for the country, not the organization. Looking at the timeline, the last country Malaysia appealed to before the Middle East was France, specifically Foreign Affairs (France) on 2006-07-18.\n\nSo the answer is: [\"France\"]"
+      },
+      "label-rule": {
+        "实际判分值": "UN Security Council",
+        "判对": true,
+        "原始回答": "From the provided historical facts, we can see that Malaysia made several appeals or requests to different entities up until 2006-08-10. The last request before the one directed at the Middle East was made to the UN Security Council on 2006-08-05. Therefore, the country Malaysia appealed to just before the Middle East was the UN Security Council.\n\nSo the answer is: [\"UN Security Council\"]"
+      }
+    }
+  ]
+}
