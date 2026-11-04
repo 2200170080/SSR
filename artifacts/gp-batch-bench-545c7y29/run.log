@@ -20,3 +20,6 @@
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-212604.log
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-212604.log
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-212604.log
+模型就绪，实际生成检查通过: qwen32b-gp
+GP warmup 2048:   0%|          | 0/8 [00:00<?, ?it/s]GP warmup 2048:  12%|█▎        | 1/8 [00:17<02:03, 17.63s/it]GP warmup 2048:  38%|███▊      | 3/8 [00:17<00:23,  4.62s/it]GP warmup 2048:  62%|██████▎   | 5/8 [00:18<00:06,  2.32s/it]GP warmup 2048:  88%|████████▊ | 7/8 [00:18<00:01,  1.37s/it]GP warmup 2048: 100%|██████████| 8/8 [00:18<00:00,  2.34s/it]
+GP measured 2048:   0%|          | 0/200 [00:00<?, ?it/s]GP measured 2048:   0%|          | 1/200 [00:21<1:12:18, 21.80s/it]GP measured 2048:   1%|          | 2/200 [00:24<34:45, 10.53s/it]  GP measured 2048:   2%|▏         | 4/200 [00:29<18:09,  5.56s/it]GP measured 2048:   2%|▎         | 5/200 [00:32<15:00,  4.62s/it]
