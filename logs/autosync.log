@@ -952,3 +952,10 @@
 [autosync] pushed d54193e -> backup/main
 [autosync] commit auto: 2026-11-04 18:43:39 @ ecs-instance-e1330fb1
 [autosync] pushed a530703 -> backup/main
+[autosync] commit auto: 2026-11-04 18:45:24 @ ecs-instance-e1330fb1
+[autosync] push failed, retry in 60s
+    git@github.com: Permission denied (publickey).
+    fatal: Could not read from remote repository.
+    
+    Please make sure you have the correct access rights
+    and the repository exists.
