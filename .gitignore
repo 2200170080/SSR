@@ -213,6 +213,7 @@ __marimo__/
 /artifacts/*.pkl
 /artifacts/llm_cache.jsonl
 /artifacts/*/llm_cache.jsonl
+!/artifacts/**/*.log
 # LLM response cache: ~700 MB after one full run, and it is pure cache.
 # Upstream dataset repo: it has its own .git and is re-clonable
 #   git clone https://github.com/czy1999/MultiTQ.git
