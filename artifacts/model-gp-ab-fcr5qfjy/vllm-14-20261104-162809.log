@@ -12,3 +12,13 @@ INFO 11-04 16:28:31 [cuda.py:221] Using Flash Attention backend on V1 engine.
 WARNING 11-04 16:28:31 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
 INFO 11-04 16:28:31 [gpu_model_runner.py:1329] Starting to load model /root/user/cs_tcci_zengdexin/SSR/models/qwen14b-awq...
 Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:14<00:29, 14.96s/it]
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:22<00:10, 10.80s/it]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:37<00:00, 12.59s/it]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:37<00:00, 12.53s/it]
+
+INFO 11-04 16:29:09 [loader.py:458] Loading weights took 37.66 seconds
+INFO 11-04 16:29:10 [gpu_model_runner.py:1347] Model loading took 9.3806 GiB and 38.792995 seconds
+INFO 11-04 16:29:22 [backends.py:420] Using cache directory: /root/user/cs_tcci_zengdexin/.cache/vllm/torch_compile_cache/1d064f5d9b/rank_0_0 for vLLM's torch.compile
+INFO 11-04 16:29:22 [backends.py:430] Dynamo bytecode transform time: 11.93 s
+INFO 11-04 16:29:28 [backends.py:136] Cache the graph of shape None for later use
