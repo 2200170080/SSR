@@ -20,3 +20,4 @@
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-191554.log
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-191554.log
 模型就绪，实际生成检查通过: qwen32b-gp
+Full gp:   0%|          | 0/54584 [00:00<?, ?it/s]Full gp:   0%|          | 1/54584 [00:22<341:29:53, 22.52s/it]Full gp:   0%|          | 2/54584 [00:25<169:04:25, 11.15s/it]Full gp:   0%|          | 5/54584 [00:33<74:51:07,  4.94s/it] Full gp:   0%|          | 7/54584 [00:38<60:24:56,  3.99s/it]Full gp:   0%|          | 8/54584 [00:40<55:56:10,  3.69s/it]Full gp:   0%|          | 9/54584 [00:44<56:48:45,  3.75s/it]Full gp:   0%|          | 10/54584 [00:47<53:16:02,  3.51s/it]Full gp:   0%|          | 12/54584 [00:50<39:23:02,  2.60s/it]Full gp:   0%|          | 13/54584 [00:55<47:25:23,  3.13s/it]
