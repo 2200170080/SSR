@@ -21,3 +21,9 @@ INFO 11-04 21:53:37 [gpu_model_runner.py:1329] Starting to load model /root/user
 
 INFO 11-04 21:54:57 [loader.py:458] Loading weights took 78.68 seconds
 INFO 11-04 21:55:02 [gpu_model_runner.py:1347] Model loading took 18.1468 GiB and 84.417381 seconds
+INFO 11-04 21:56:12 [backends.py:420] Using cache directory: /root/user/cs_tcci_zengdexin/.cache/vllm/torch_compile_cache/fbe02ba37f/rank_0_0 for vLLM's torch.compile
+INFO 11-04 21:56:12 [backends.py:430] Dynamo bytecode transform time: 70.41 s
+INFO 11-04 21:56:28 [backends.py:118] Directly load the compiled graph(s) for shape None from the cache, took 14.764 s
+INFO 11-04 21:56:32 [monitor.py:33] torch.compile takes 70.41 s in total
+INFO 11-04 21:56:34 [kv_cache_utils.py:634] GPU KV cache size: 61,872 tokens
+INFO 11-04 21:56:34 [kv_cache_utils.py:637] Maximum concurrency for 8,192 tokens per request: 7.55x
