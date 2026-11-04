@@ -152,3 +152,33 @@ INFO:     127.0.0.1:51478 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:51472 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:51442 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO 11-04 21:32:37 [loggers.py:111] Engine 000: Avg prompt throughput: 838.6 tokens/s, Avg generation throughput: 12.3 tokens/s, Running: 6 reqs, Waiting: 0 reqs, GPU KV cache usage: 14.7%, Prefix cache hit rate: 33.0%
+INFO:     127.0.0.1:51502 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51464 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-04 21:32:47 [loggers.py:111] Engine 000: Avg prompt throughput: 616.2 tokens/s, Avg generation throughput: 5.3 tokens/s, Running: 7 reqs, Waiting: 0 reqs, GPU KV cache usage: 17.0%, Prefix cache hit rate: 33.1%
+INFO:     127.0.0.1:51458 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51494 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51478 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51452 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51464 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-04 21:32:57 [loggers.py:111] Engine 000: Avg prompt throughput: 798.3 tokens/s, Avg generation throughput: 21.9 tokens/s, Running: 6 reqs, Waiting: 0 reqs, GPU KV cache usage: 14.3%, Prefix cache hit rate: 33.1%
+INFO:     127.0.0.1:51442 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51502 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-04 21:33:07 [loggers.py:111] Engine 000: Avg prompt throughput: 597.7 tokens/s, Avg generation throughput: 6.8 tokens/s, Running: 6 reqs, Waiting: 0 reqs, GPU KV cache usage: 14.0%, Prefix cache hit rate: 33.2%
+INFO:     127.0.0.1:51494 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51458 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51464 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-04 21:33:17 [loggers.py:111] Engine 000: Avg prompt throughput: 827.8 tokens/s, Avg generation throughput: 14.0 tokens/s, Running: 7 reqs, Waiting: 0 reqs, GPU KV cache usage: 16.8%, Prefix cache hit rate: 33.2%
+INFO:     127.0.0.1:51478 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51452 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51442 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-04 21:33:27 [loggers.py:111] Engine 000: Avg prompt throughput: 812.8 tokens/s, Avg generation throughput: 10.7 tokens/s, Running: 7 reqs, Waiting: 0 reqs, GPU KV cache usage: 16.7%, Prefix cache hit rate: 33.2%
+INFO:     127.0.0.1:51502 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51458 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51452 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51442 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-04 21:33:37 [loggers.py:111] Engine 000: Avg prompt throughput: 608.6 tokens/s, Avg generation throughput: 18.9 tokens/s, Running: 6 reqs, Waiting: 0 reqs, GPU KV cache usage: 14.7%, Prefix cache hit rate: 33.2%
+INFO:     127.0.0.1:51478 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51494 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "POST /v1/chat/completions HTTP/1.1" 200 OK
