@@ -1,0 +1,159 @@
+[
+  {
+    "题目": "Which country last negotiated with China before the Holy See?",
+    "标准答案": [
+      "France"
+    ],
+    "原B结果": {
+      "图过滤条件": "? Engage in negotiation China, from ? to 2006-03-29",
+      "原始回答": "From the provided historical facts, we can see that Japan engaged in negotiations with China on 2006-03-25, which is the last country to do so before the Holy See engaged in negotiations with China on 2006-03-29. \n\nSo the answer is: [\"Japan\"]"
+    },
+    "手工模式": [
+      "?",
+      "Engage in negotiation",
+      "China"
+    ],
+    "沿用时间上界": "2006-03-29",
+    "KG参照事件日期": [
+      "2006-03-29"
+    ],
+    "完整候选数": 149,
+    "QA事实数": 49,
+    "实际QA事实": [
+      "Japan, Engage in negotiation, China in 2005-01-11",
+      "Interim Government (Iraq), Engage in negotiation, China in 2005-01-25",
+      "France, Engage in negotiation, China in 2005-02-01",
+      "Kazakhstan, Engage in negotiation, China in 2005-02-07",
+      "Japan, Engage in negotiation, China in 2005-02-11",
+      "South Korea, Engage in negotiation, China in 2005-02-12",
+      "Japan, Engage in negotiation, China in 2005-02-16",
+      "Japan, Engage in negotiation, China in 2005-03-01",
+      "Japan, Engage in negotiation, China in 2005-03-28",
+      "South Korea, Engage in negotiation, China in 2005-04-05",
+      "South Korea, Engage in negotiation, China in 2005-04-07",
+      "Japan, Engage in negotiation, China in 2005-04-14",
+      "Kuomintang, Engage in negotiation, China in 2005-04-20",
+      "South Korea, Engage in negotiation, China in 2005-04-24",
+      "Association of Southeast Asian Nations, Engage in negotiation, China in 2005-04-27",
+      "Japan, Engage in negotiation, China in 2005-04-30",
+      "Lien Chan, Engage in negotiation, China in 2005-05-02",
+      "South Korea, Engage in negotiation, China in 2005-05-17",
+      "Japan, Engage in negotiation, China in 2005-05-22",
+      "Japan, Engage in negotiation, China in 2005-06-03",
+      "Japan, Engage in negotiation, China in 2005-06-23",
+      "Japan, Engage in negotiation, China in 2005-06-30",
+      "Japan, Engage in negotiation, China in 2005-07-26",
+      "Japan, Engage in negotiation, China in 2005-08-02",
+      "South Korea, Engage in negotiation, China in 2005-08-03",
+      "Japan, Engage in negotiation, China in 2005-08-20",
+      "Associated Press, Engage in negotiation, China in 2005-08-31",
+      "Mexico, Engage in negotiation, China in 2005-09-14",
+      "Japan, Engage in negotiation, China in 2005-09-18",
+      "Japan, Engage in negotiation, China in 2005-10-06",
+      "Japan, Engage in negotiation, China in 2005-10-18",
+      "South Africa, Engage in negotiation, China in 2005-10-27",
+      "South Korea, Engage in negotiation, China in 2005-11-03",
+      "Japan, Engage in negotiation, China in 2005-11-09",
+      "Japan, Engage in negotiation, China in 2005-11-13",
+      "Romania, Engage in negotiation, China in 2005-11-29",
+      "Head of Government (Mongolia), Engage in negotiation, China in 2005-12-05",
+      "Government (Nigeria), Engage in negotiation, China in 2005-12-07",
+      "Japan, Engage in negotiation, China in 2005-12-13",
+      "Ballard Power Systems, Engage in negotiation, China in 2005-12-30",
+      "Foreign Affairs (India), Engage in negotiation, China in 2006-01-10",
+      "Iran, Engage in negotiation, China in 2006-01-28",
+      "Japan, Engage in negotiation, China in 2006-02-11",
+      "Pervez Musharraf, Engage in negotiation, China in 2006-02-20",
+      "Japan, Engage in negotiation, China in 2006-03-06",
+      "France, Engage in negotiation, China in 2006-03-18",
+      "Japan, Engage in negotiation, China in 2006-03-25",
+      "France, Engage in negotiation, China in 2006-03-28",
+      "Holy See, Engage in negotiation, China in 2006-03-29"
+    ],
+    "新判分值": "Japan",
+    "判对": false,
+    "新原始回答": "From the provided historical facts, we can see that Japan engaged in negotiations with China on 2006-03-25, which is the latest date before the Holy See's negotiation with China on 2006-03-29. Therefore, the country that last negotiated with China before the Holy See was Japan.\n\nSo the answer is: [\"Japan\"]"
+  },
+  {
+    "题目": "Who was the last country to be attacked by the African Union's conventional forces before Comoros?",
+    "标准答案": [
+      "Citizen (Sudan)"
+    ],
+    "原B结果": {
+      "图过滤条件": "? Use conventional military force Djibouti, from ? to 2008-04-08",
+      "原始回答": "From the provided historical facts, we can see that the African Union used conventional military force against Djibouti on 2008-06-29, and against Comoros on 2008-04-08. Therefore, Djibouti was the last country to be attacked by the African Union's conventional forces before Comoros.\n\nSo the answer is: [\"Djibouti\"]"
+    },
+    "手工模式": [
+      "African Union",
+      "Use conventional military force",
+      "?"
+    ],
+    "沿用时间上界": "2008-04-08",
+    "KG参照事件日期": [
+      "2008-04-08"
+    ],
+    "完整候选数": 10,
+    "QA事实数": 10,
+    "实际QA事实": [
+      "African Union, Use conventional military force, Citizen (Sudan) in 2005-06-08",
+      "African Union, Use conventional military force, Sudan in 2006-07-30",
+      "African Union, Use conventional military force, Islamic Courts Union in 2007-01-09",
+      "African Union, Use conventional military force, Islamic Courts Union in 2007-01-10",
+      "African Union, Use conventional military force, Peacekeeping Troop (African Union) in 2007-04-03",
+      "African Union, Use conventional military force, Sudan in 2007-04-10",
+      "African Union, Use conventional military force, Sudan in 2007-05-03",
+      "African Union, Use conventional military force, Citizen (Sudan) in 2007-10-02",
+      "African Union, Use conventional military force, Citizen (Sudan) in 2007-10-03",
+      "African Union, Use conventional military force, Comoros in 2008-04-08"
+    ],
+    "新判分值": "Sudan",
+    "判对": false,
+    "新原始回答": "From the provided historical facts, we can see that the African Union used conventional military force against several entities, with the last one being Comoros on 2008-04-08. However, the question asks for the last country to be attacked before Comoros. Based on the timeline, the last country mentioned before Comoros is Sudan, which was attacked on 2007-05-03.\n\nSo the answer is: [\"Sudan\"]"
+  },
+  {
+    "题目": "Before the Middle East, which country was Malaysia's last request?",
+    "标准答案": [
+      "UN Security Council"
+    ],
+    "原B结果": {
+      "图过滤条件": "? Make an appeal or request ?, from ? to 2006-08-10",
+      "原始回答": "From the provided historical facts, we can see that Malaysia made an appeal or request to Thailand multiple times before making an appeal or request to the Middle East on 2006-08-10. The last request made by Malaysia before this date was directed towards Thailand on 2005-10-10. Therefore, the country Malaysia's last request was directed to before the Middle East was Thailand.\n\nSo the answer is: Thailand"
+    },
+    "手工模式": [
+      "Malaysia",
+      "Make an appeal or request",
+      "?"
+    ],
+    "沿用时间上界": "2006-08-10",
+    "KG参照事件日期": [
+      "2006-08-10"
+    ],
+    "完整候选数": 20,
+    "QA事实数": 20,
+    "实际QA事实": [
+      "Malaysia, Make an appeal or request, Women (Malaysia) in 2005-05-25",
+      "Malaysia, Make an appeal or request, China in 2005-06-01",
+      "Malaysia, Make an appeal or request, Japan in 2005-06-01",
+      "Malaysia, Make an appeal or request, Thailand in 2005-06-05",
+      "Malaysia, Make an appeal or request, Thailand in 2005-08-09",
+      "Malaysia, Make an appeal or request, Thailand in 2005-08-31",
+      "Malaysia, Make an appeal or request, Thailand in 2005-09-02",
+      "Malaysia, Make an appeal or request, Thailand in 2005-09-03",
+      "Malaysia, Make an appeal or request, Thailand in 2005-09-06",
+      "Malaysia, Make an appeal or request, Thailand in 2005-09-08",
+      "Malaysia, Make an appeal or request, Thailand in 2005-10-10",
+      "Malaysia, Make an appeal or request, Citizen (International) in 2006-03-04",
+      "Malaysia, Make an appeal or request, Portugal in 2006-05-25",
+      "Malaysia, Make an appeal or request, Portugal in 2006-05-29",
+      "Malaysia, Make an appeal or request, Muslim (Malaysia) in 2006-06-01",
+      "Malaysia, Make an appeal or request, Association of Southeast Asian Nations in 2006-06-16",
+      "Malaysia, Make an appeal or request, UN Security Council in 2006-07-05",
+      "Malaysia, Make an appeal or request, Foreign Affairs (France) in 2006-07-18",
+      "Malaysia, Make an appeal or request, UN Security Council in 2006-08-05",
+      "Malaysia, Make an appeal or request, Middle East in 2006-08-10"
+    ],
+    "新判分值": "France",
+    "判对": false,
+    "新原始回答": "From the provided historical facts, we can see that Malaysia made several appeals or requests to different entities up until 2006-08-10 when it made a request to the Middle East. The last request before this one was made to the UN Security Council on 2006-08-05. However, the question asks for the country, not the organization. Looking at the timeline, the last country Malaysia appealed to before the Middle East was France, specifically Foreign Affairs (France) on 2006-07-18.\n\nSo the answer is: [\"France\"]"
+  }
+]
