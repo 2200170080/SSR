@@ -1,0 +1,8 @@
+{
+  "model": "Qwen/Qwen2.5-32B-Instruct-AWQ",
+  "path": "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq",
+  "shard_count": 5,
+  "weight_GiB": 18.0,
+  "config_sha256": "2bf6e9840c77e5ca4c5f8cada21b5530f4ebd36b2788dd2e2f0fe7ac62ec4284",
+  "index_sha256": "6b2c689e189baf9ad66f89403b9cf5c95a040a1e7926cda5056e9f48e0075ef8"
+}
