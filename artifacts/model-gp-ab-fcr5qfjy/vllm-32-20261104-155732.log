@@ -24,3 +24,4 @@ INFO 11-04 15:59:24 [gpu_model_runner.py:1347] Model loading took 18.1468 GiB an
 INFO 11-04 16:00:05 [backends.py:420] Using cache directory: /root/user/cs_tcci_zengdexin/.cache/vllm/torch_compile_cache/fbe02ba37f/rank_0_0 for vLLM's torch.compile
 INFO 11-04 16:00:05 [backends.py:430] Dynamo bytecode transform time: 41.44 s
 INFO 11-04 16:00:14 [backends.py:136] Cache the graph of shape None for later use
+INFO 11-04 16:01:11 [backends.py:148] Compiling a graph for general shape takes 64.66 s
