@@ -223,3 +223,6 @@ __marimo__/
 # a global "*.log" rule, so these two negations bring the run logs back.
 !/logs/
 !/logs/*.log
+
+# autosync's own log would make every cycle a new commit
+/logs/autosync.log
