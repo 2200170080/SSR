@@ -107,3 +107,9 @@
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-214739.log
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-214739.log
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-214739.log
+等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-214739.log
+等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-214739.log
+等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-214739.log
+等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-214739.log
+模型就绪，实际生成检查通过: qwen32b-gp
+2048服务已恢复。可使用原全量目录的resume.sh继续。
