@@ -1,0 +1,6 @@
+{
+  "api_model": "qwen14b",
+  "api_root": "/root/user/cs_tcci_zengdexin/SSR/models/qwen14b-awq",
+  "max_model_len": 8192,
+  "common_generation_sha256": "eac556e992f51224725b9fffc60066bc60b6fd5be0fdf8bfdbb7f65b9504f4a4"
+}
