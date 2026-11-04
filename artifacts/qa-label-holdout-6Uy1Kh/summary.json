@@ -1,0 +1,26 @@
+{
+  "request_failed": {
+    "A": 0,
+    "B": 0
+  },
+  "missing_marker": {
+    "A": 0,
+    "B": 0
+  },
+  "by_type": {
+    "entity": {
+      "total": 100,
+      "A": 72,
+      "B": 69,
+      "gained": 1,
+      "lost": 4
+    },
+    "time": {
+      "total": 100,
+      "A": 91,
+      "B": 90,
+      "gained": 0,
+      "lost": 1
+    }
+  }
+}
