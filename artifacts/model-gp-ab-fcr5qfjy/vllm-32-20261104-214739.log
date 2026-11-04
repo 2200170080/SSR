@@ -16,3 +16,8 @@ INFO 11-04 21:53:37 [gpu_model_runner.py:1329] Starting to load model /root/user
 Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:33<00:49, 16.66s/it]
 Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:49<00:32, 16.39s/it]
 Loading safetensors checkpoint shards:  80% Completed | 4/5 [01:03<00:15, 15.08s/it]
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [01:18<00:00, 15.22s/it]
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [01:18<00:00, 15.70s/it]
+
+INFO 11-04 21:54:57 [loader.py:458] Loading weights took 78.68 seconds
+INFO 11-04 21:55:02 [gpu_model_runner.py:1347] Model loading took 18.1468 GiB and 84.417381 seconds
