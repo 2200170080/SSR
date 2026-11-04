@@ -210,10 +210,8 @@ __marimo__/
 # Never commit: model weights (14 GB) and the two built retrieval indexes (1.8 GB + 115 MB).
 # GitHub rejects any single file over 100 MB, and a repo over ~1 GB is unusable.
 /models/
-/artifacts/multitq_text_index.pkl
-/artifacts/multitq_graph_retriever.pkl
+/artifacts/
 # LLM response cache: ~700 MB after one full run, and it is pure cache.
-/artifacts/llm_cache.jsonl
 # Upstream dataset repo: it has its own .git and is re-clonable
 #   git clone https://github.com/czy1999/MultiTQ.git
 /MultiTQ/
