@@ -838,3 +838,10 @@
     and the repository exists.
 [autosync] commit auto: 2026-11-04 18:17:05 @ ecs-instance-e1330fb1
 [autosync] pushed 9f4292b -> backup/main
+[autosync] commit auto: 2026-11-04 18:18:33 @ ecs-instance-e1330fb1
+[autosync] push failed, retry in 60s
+    git@github.com: Permission denied (publickey).
+    fatal: Could not read from remote repository.
+    
+    Please make sure you have the correct access rights
+    and the repository exists.
