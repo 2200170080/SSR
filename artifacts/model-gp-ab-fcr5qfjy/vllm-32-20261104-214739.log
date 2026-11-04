@@ -12,3 +12,7 @@ INFO 11-04 21:53:37 [cuda.py:221] Using Flash Attention backend on V1 engine.
 WARNING 11-04 21:53:37 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
 INFO 11-04 21:53:37 [gpu_model_runner.py:1329] Starting to load model /root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq...
 Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:18<01:14, 18.58s/it]
+Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:33<00:49, 16.66s/it]
+Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:49<00:32, 16.39s/it]
+Loading safetensors checkpoint shards:  80% Completed | 4/5 [01:03<00:15, 15.08s/it]
