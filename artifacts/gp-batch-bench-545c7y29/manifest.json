@@ -1,0 +1,70 @@
+{
+  "version": "SSR-GP-batch-throughput-v1",
+  "full_run": "/root/user/cs_tcci_zengdexin/SSR/artifacts/qwen32b-full-XBGJGU",
+  "source_signature": "99ccaa3e6e6937bff5e8540c34467c101a021ed222242adf52f6f93f4e8c40e4",
+  "created": "2026-11-04T13:25:15.086641+00:00",
+  "runner_sha256": "f4bb3ea6225f4a76f6ee1abbc978d8402787303005aeb06c6af2da093ab283f4",
+  "original_service": {
+    "pid": 1406812,
+    "start": "131994326",
+    "model": "qwen32b-gp",
+    "root": "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq",
+    "command": [
+      "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/bin/vllm",
+      "serve",
+      "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq",
+      "--served-model-name",
+      "qwen32b-gp",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8000",
+      "--dtype",
+      "half",
+      "--max-model-len",
+      "8192",
+      "--max-num-seqs",
+      "8",
+      "--gpu-memory-utilization",
+      "0.80",
+      "--generation-config",
+      "/root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/sampling-defaults",
+      "--disable-log-requests"
+    ],
+    "log": "/root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-191554.log",
+    "generation_sha256": "eac556e992f51224725b9fffc60066bc60b6fd5be0fdf8bfdbb7f65b9504f4a4"
+  },
+  "original_switch_sha256": "fd079d3b9d8236ba3b20811ad1d45b2e102b117eb2f3eefd100994b50b5878cd",
+  "sampling": {
+    "input_sha256": "aea6588ae3aaeb82b51642aeec7b33a9cebfe8f6c06c3fd0be59b953ba0f39a3",
+    "source_bytes": 389371884,
+    "total_rows": 54584,
+    "unique_prompts": 54539,
+    "duplicate_rows": 45,
+    "rows_by_atype": {
+      "entity": 38700,
+      "time": 15884
+    },
+    "unique_by_atype": {
+      "entity": 38675,
+      "time": 15864
+    },
+    "seed": 42,
+    "selected_count": 200,
+    "warmup_count": 8
+  },
+  "budgets": [
+    2048,
+    4096
+  ],
+  "concurrency": 8,
+  "temperature": 0,
+  "max_tokens": 4096,
+  "jobs_sha256": "1b03681ab87ec0d6832bd9d7cb7eaa63228a444d4cc1b765de9b347e6540aab7",
+  "warmup_sha256": "0a2d85f742604c1a1bdee3bf1dedd41212d9205a5c910c0ebed6f974a4241fa1",
+  "template_sha256": "5bf19328525feebbcf27c168fc5509667bfe8b812c04f5a648958ccbd91e644a",
+  "switch_sha256": {
+    "2048": "8ca88d6cf79fb1ef860269ed0c13189e79323369fef7988b76a03be7812451a1",
+    "4096": "652e0ad8824c412b0ecef2d3e957ed828b1f23cb66fa46f70b175261ebbe6dbf"
+  }
+}

@@ -335,7 +335,7 @@ def choose_jobs(source, n=200, warmup_count=8, seed=42, expected=54584):
                 raise ValueError(f"row {index}: missing required input fields")
             if type(row["row_index"]) is not int or row["row_index"] != index:
                 raise ValueError(f"row {index}: row_index must be sequential from zero")
-            if any(not isinstance(row[key], str) for key in fields[1:]):
+            if any(not isinstance(row[key], str) for key in ("question", "atype", "prompt", "prompt_sha256")):
                 raise ValueError(f"row {index}: input text fields must be strings")
             kind, prompt, digest = row["atype"], row["prompt"], row["prompt_sha256"]
             if kind not in heaps:
