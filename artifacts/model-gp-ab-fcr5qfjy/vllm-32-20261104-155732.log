@@ -25,3 +25,31 @@ INFO 11-04 16:00:05 [backends.py:420] Using cache directory: /root/user/cs_tcci_
 INFO 11-04 16:00:05 [backends.py:430] Dynamo bytecode transform time: 41.44 s
 INFO 11-04 16:00:14 [backends.py:136] Cache the graph of shape None for later use
 INFO 11-04 16:01:11 [backends.py:148] Compiling a graph for general shape takes 64.66 s
+INFO 11-04 16:01:50 [monitor.py:33] torch.compile takes 106.09 s in total
+INFO 11-04 16:01:51 [kv_cache_utils.py:634] GPU KV cache size: 76,832 tokens
+INFO 11-04 16:01:51 [kv_cache_utils.py:637] Maximum concurrency for 8,192 tokens per request: 9.38x
+INFO 11-04 16:02:39 [gpu_model_runner.py:1686] Graph capturing finished in 48 secs, took 1.21 GiB
+INFO 11-04 16:02:39 [core.py:159] init engine (profile, create kv cache, warmup model) took 194.88 seconds
+INFO 11-04 16:02:39 [core_client.py:439] Core engine process 0 ready.
+WARNING 11-04 16:02:39 [config.py:1239] Default sampling parameters have been overridden by the model's Hugging Face generation config recommended from the model creator. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+INFO 11-04 16:02:39 [serving_chat.py:118] Using default chat sampling params from /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/sampling-defaults: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8}
+INFO 11-04 16:02:39 [serving_completion.py:61] Using default completion sampling params from /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/sampling-defaults: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8}
+INFO 11-04 16:02:39 [api_server.py:1090] Starting vLLM API server on http://127.0.0.1:8000
+INFO 11-04 16:02:39 [launcher.py:28] Available routes are:
+INFO 11-04 16:02:39 [launcher.py:36] Route: /openapi.json, Methods: HEAD, GET
+INFO 11-04 16:02:39 [launcher.py:36] Route: /docs, Methods: HEAD, GET
+INFO 11-04 16:02:39 [launcher.py:36] Route: /docs/oauth2-redirect, Methods: HEAD, GET
+INFO 11-04 16:02:39 [launcher.py:36] Route: /redoc, Methods: HEAD, GET
+INFO 11-04 16:02:39 [launcher.py:36] Route: /metrics, Methods: GET
+INFO:     Started server process [1330434]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:60610 - "GET /v1/models HTTP/1.1" 200 OK
+INFO 11-04 16:02:42 [chat_utils.py:397] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+INFO:     127.0.0.1:60622 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60634 - "GET /v1/models HTTP/1.1" 200 OK
+INFO 11-04 16:02:50 [loggers.py:111] Engine 000: Avg prompt throughput: 46.4 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 6 reqs, Waiting: 2 reqs, GPU KV cache usage: 10.7%, Prefix cache hit rate: 27.8%
+INFO:     127.0.0.1:60638 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60646 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60672 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60634 - "POST /v1/chat/completions HTTP/1.1" 200 OK

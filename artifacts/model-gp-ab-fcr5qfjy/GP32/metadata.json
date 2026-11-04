@@ -1,0 +1,28 @@
+{
+  "model": "qwen32b-gp",
+  "expected_root": "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq",
+  "runner_sha256": "83e6f06233ea62c4ac51f5b16ef24472a0f9a3f25a54b2176431a26611b45d1f",
+  "client_sha256": "1286928045d2bd67ac5171a78de5dad4f39ea240c24f3e5ed140220aa545d646",
+  "jobs_sha256": "1d32ea61156e2401442c69b4137b89f4b2d4c830467a1c519cd155e3ef6e8650",
+  "model_config_sha256": "7b115db8b9fefa3d8bb45da0b6d61f63c04fceaa0a96c68e644fdcfbdb9389a5",
+  "common_generation_sha256": "eac556e992f51224725b9fffc60066bc60b6fd5be0fdf8bfdbb7f65b9504f4a4",
+  "common_generation": {
+    "bos_token_id": 151643,
+    "do_sample": true,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "pad_token_id": 151643,
+    "repetition_penalty": 1.05,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "transformers_version": "4.41.1"
+  },
+  "base_url": "http://127.0.0.1:8000/v1",
+  "temperature": 0,
+  "max_tokens": 4096,
+  "concurrency": 8,
+  "max_format_attempts": 10
+}
