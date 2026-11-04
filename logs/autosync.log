@@ -1,0 +1,2 @@
+[autosync] root=/root/user/cs_tcci_zengdexin/SSR remote=backup branch=main interval=60s max=50MB
+[autosync] everything except large binaries is tracked; files over 50MB are skipped
