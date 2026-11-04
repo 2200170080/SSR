@@ -44,3 +44,10 @@
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-213636.log
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-213636.log
 等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-213636.log
+等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-213636.log
+等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-213636.log
+等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-213636.log
+等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-213636.log
+等待模型加载，可查看日志: /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-213636.log
+模型就绪，实际生成检查通过: qwen32b-gp
+GP warmup 4096:   0%|          | 0/8 [00:00<?, ?it/s]

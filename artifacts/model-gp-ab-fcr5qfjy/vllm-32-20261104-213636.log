@@ -27,3 +27,24 @@ INFO 11-04 21:39:44 [backends.py:118] Directly load the compiled graph(s) for sh
 INFO 11-04 21:39:49 [monitor.py:33] torch.compile takes 50.67 s in total
 INFO 11-04 21:39:55 [kv_cache_utils.py:634] GPU KV cache size: 60,608 tokens
 INFO 11-04 21:39:55 [kv_cache_utils.py:637] Maximum concurrency for 8,192 tokens per request: 7.40x
+INFO 11-04 21:40:49 [gpu_model_runner.py:1686] Graph capturing finished in 55 secs, took 1.21 GiB
+INFO 11-04 21:40:49 [core.py:159] init engine (profile, create kv cache, warmup model) took 132.65 seconds
+INFO 11-04 21:40:49 [core_client.py:439] Core engine process 0 ready.
+WARNING 11-04 21:40:50 [config.py:1239] Default sampling parameters have been overridden by the model's Hugging Face generation config recommended from the model creator. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+INFO 11-04 21:40:50 [serving_chat.py:118] Using default chat sampling params from /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/sampling-defaults: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8}
+INFO 11-04 21:40:50 [serving_completion.py:61] Using default completion sampling params from /root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/sampling-defaults: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8}
+INFO 11-04 21:40:50 [api_server.py:1090] Starting vLLM API server on http://127.0.0.1:8000
+INFO 11-04 21:40:50 [launcher.py:28] Available routes are:
+INFO 11-04 21:40:50 [launcher.py:36] Route: /openapi.json, Methods: GET, HEAD
+INFO 11-04 21:40:50 [launcher.py:36] Route: /docs, Methods: GET, HEAD
+INFO 11-04 21:40:50 [launcher.py:36] Route: /docs/oauth2-redirect, Methods: GET, HEAD
+INFO 11-04 21:40:50 [launcher.py:36] Route: /redoc, Methods: GET, HEAD
+INFO 11-04 21:40:50 [launcher.py:36] Route: /metrics, Methods: GET
+INFO:     Started server process [1465940]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49860 - "GET /v1/models HTTP/1.1" 200 OK
+INFO 11-04 21:40:52 [chat_utils.py:397] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+INFO:     127.0.0.1:49862 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49866 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49872 - "GET /metrics HTTP/1.1" 200 OK
