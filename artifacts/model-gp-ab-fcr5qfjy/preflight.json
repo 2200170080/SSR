@@ -1,0 +1,58 @@
+{
+  "gpu": "0, NVIDIA RTX A6000, 49140 MiB, 42670 MiB",
+  "gpu_error": "",
+  "disk_free_GiB": 473869.5,
+  "installed_model_dirs": [
+    "bge-m3",
+    "qwen14b-awq"
+  ],
+  "served_models": [
+    {
+      "id": "qwen14b",
+      "root": "/root/user/cs_tcci_zengdexin/SSR/models/qwen14b-awq"
+    }
+  ],
+  "model_config_path": "/root/user/cs_tcci_zengdexin/SSR/models/qwen14b-awq/config.json",
+  "model_config": {
+    "_name_or_path": null,
+    "model_type": "qwen2",
+    "architectures": [
+      "Qwen2ForCausalLM"
+    ],
+    "num_hidden_layers": 48,
+    "hidden_size": 5120,
+    "torch_dtype": "float16",
+    "dtype": null,
+    "quantization_config": {
+      "bits": 4,
+      "group_size": 128,
+      "modules_to_not_convert": null,
+      "quant_method": "awq",
+      "version": "gemm",
+      "zero_point": true
+    }
+  },
+  "generation_config.json": {
+    "bos_token_id": 151643,
+    "do_sample": true,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "pad_token_id": 151643,
+    "repetition_penalty": 1.05,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "transformers_version": "4.41.1"
+  },
+  "tokenizer_config.json": {
+    "tokenizer_class": "Qwen2Tokenizer",
+    "chat_template_present": true
+  },
+  "vllm_environment": {
+    "vllm": "0.8.5",
+    "torch": "2.6.0",
+    "transformers": "4.51.3"
+  }
+}
