@@ -228,34 +228,49 @@ git -C ~/SSR diff upstream/main --stat
 | 2 | `git fetch upstream` | 拉官方分支到本地引用 |
 | 3 | `git diff upstream/main --stat` | 看我们改了哪些文件（授权补丁、启动器、prompt、忽略规则） |
 
-数据、模型、产物、日志都住在仓库目录里面。仓库的跟踪范围是**除了大二进制以外全部纳入版本管理**：`datasets/`、`logs/`、`patches/`、`*.npy`、`tools/` 都进 git；只有下面这几样被挡住——模型权重（14 GB）、两个检索索引（1.8 GB + 115 MB）、全量跑完后约 700 MB 的 `llm_cache.jsonl`、以及上游数据集仓库 `MultiTQ/`（自带 `.git`，一条 `git clone` 可重建）。GitHub 单文件上限 100 MB，仓库超过 1 GB 就不实用了。
+数据、模型、产物、日志都住在仓库目录里面，但**只有大二进制不进 git**：`datasets/`、`logs/`、`patches/`、`tools/`、`*.npy`，以及 `artifacts/` 下面的小文件（`gp-A.txt`、`A.jsonl`、`questions.json`、`*.log` 等实验结果，实测 18 个文件共 12 MB）都在版本管理里。被挡住的只有五类：
 
-这一步**只做一次**（`.gitignore` 里已有同样一份，本机这份是兜底）：
+| 被挡住的 | 体积 | 原因 |
+|---|---|---|
+| `models/` | 14 GB | 权重，下载可重建 |
+| `artifacts/*.pkl` | 1.8 GB + 115 MB | 检索索引，跑一次自动重建 |
+| `artifacts/llm_cache.jsonl`、`artifacts/*/llm_cache.jsonl` | 单份 700 MB+ | LLM 响应缓存，随时会涨破 GitHub 上限 |
+| `MultiTQ/` | 479 MB | 上游数据集仓库，自己带 `.git` |
+| `.hf_cache/` | — | HuggingFace 下载缓存 |
+
+GitHub 单文件硬上限 100 MB，所以自动同步脚本另外设了 50 MB 的软阈值：**超过 50 MB 的文件会被跳过并打印出来，不会卡住整轮推送**。
+
+这一步**只做一次**。注意区分两份文件：`.gitignore` 是跟着仓库走的（克隆下来就已经是对的），`.git/info/exclude` 只管本机、是兜底：
 
 ```bash
 cat >> ~/SSR/.git/info/exclude <<'EOF'
 
 # never commit: model weights, built indexes, response cache, upstream dataset repo
 /models/
-/artifacts/multitq_text_index.pkl
-/artifacts/multitq_graph_retriever.pkl
+/artifacts/*.pkl
 /artifacts/llm_cache.jsonl
+/artifacts/*/llm_cache.jsonl
 /MultiTQ/
 /.hf_cache/
 EOF
+git -C ~/SSR check-ignore -v artifacts/gp-holdout-2eEr22/A.jsonl models/bge-m3
 git -C ~/SSR status --porcelain
 ```
 
 | # | 命令 | 作用 |
 |---|---|---|
-| 1 | `cat >> ~/SSR/.git/info/exclude <<'EOF' … EOF` | 把模型权重、检索索引、响应缓存、上游仓库登记为"本地运行数据"，只影响本机；`datasets/`、`logs/`、`patches/`、`*.npy` 不在此列——它们是要同步的 |
-| 2 | `git -C ~/SSR status --porcelain` | 应只剩 ` M src/retriever/graph_retriever.py`（第 6.3 节的补丁）；若列出 `models/`、`artifacts/*.pkl`，说明上面那段没写进去 |
+| 1 | `cat >> ~/SSR/.git/info/exclude <<'EOF' … EOF` | 登记"本地运行数据"：模型、索引、响应缓存、上游仓库；`artifacts/` 只排掉 `*.pkl` 与 `llm_cache.jsonl`，其余实验结果照常同步 |
+| 2 | `git -C ~/SSR check-ignore -v artifacts/.../A.jsonl models/bge-m3` | 诊断用：`A.jsonl` 应**不**被忽略（无输出），`models/bge-m3` 应被忽略（打印命中的规则行） |
+| 3 | `git -C ~/SSR status --porcelain` | 应无输出或只剩 ` M src/retriever/graph_retriever.py`；若列出 `models/`、`artifacts/*.pkl`，说明上面那段没写进去 |
+
+> `artifacts/` 下的日志之所以容易被漏掉：上游的 `.gitignore` 从 Python 模板继承了全局 `*.log`，把 `artifacts/gp-*/A.log` 也一起挡了。仓库里的 `.gitignore` 已补两行否定规则 `!/logs/`、`!/artifacts/**/*.log` 放行——这条**必须写在 `.gitignore` 里**，写在 `.git/info/exclude` 里无效（`.gitignore` 的优先级更高）。
 
 ### 本节验收
 
 - `git -C ~/SSR log --oneline | tail -1` 能看到 `1003f62`（说明历史接得上官方版本），`git log -1` 是最新提交；
 - `git -C ~/SSR status --porcelain` **无输出**（三处改动都已提交在本仓库里，不是你本地改的）；只有你自己动过文件才会列出来；
-- `git -C ~/SSR ls-files | grep -c '^datasets/'` 应为 **6**（`kg/` 三个 json+txt、`questions/test.json`、`prompt/` 两个 txt），说明数据确实在版本管理里。
+- `git -C ~/SSR ls-files | grep -c '^datasets/'` 应为 **6**（`kg/` 三个 json+txt、`questions/test.json`、`prompt/` 两个 txt），说明数据确实在版本管理里；
+- `git -C ~/SSR ls-files artifacts | wc -l` 应为 **18**（三个实验目录下的小文件），`git -C ~/SSR ls-files artifacts | grep -c pkl` 应为 **0**。
 
 > 如果你接手的是**别人已经部署好的机器**，跳过 `git clone`，只看两点：`~/SSR/src/run_pipeline.py` 在不在、上面那段 exclude 有没有。`status` 里出现 ` M src/retriever/graph_retriever.py` 是正常的（第 6.3 节的容错补丁），判断环境就绪走第 6.4 节。
 

@@ -8,9 +8,7 @@
 
 ## 0. 整体是什么
 
-
-
-```
+```text
 服务器 ~/SSR（git 仓库，仓库根 = 运行根）
         │
         │  tmux 会话 sync 里常驻 tools/autosync.sh，每 60 s：
@@ -120,9 +118,9 @@ cat >> ~/SSR/.git/info/exclude <<'EOF'
 
 # never commit: model weights, built indexes, response cache, upstream dataset repo
 /models/
-/artifacts/multitq_text_index.pkl
-/artifacts/multitq_graph_retriever.pkl
+/artifacts/*.pkl
 /artifacts/llm_cache.jsonl
+/artifacts/*/llm_cache.jsonl
 /MultiTQ/
 /.hf_cache/
 EOF
@@ -130,22 +128,36 @@ EOF
 
 | # | 命令 | 作用 |
 |---|---|---|
-| 1 | `cat >> .git/info/exclude … EOF` | 登记 6 类不进仓库的内容；前导 `/` 锚定仓库根，否则会误伤 `src/` 下的同名路径 |
+| 1 | `cat >> .git/info/exclude … EOF` | 登记 6 类不进仓库的内容；前导 `/` 锚定仓库根，否则会误伤 `src/` 下的同名路径；`artifacts/` 只排掉索引 `*.pkl` 与响应缓存 `llm_cache.jsonl`，**其余实验结果照常同步** |
 
-`.gitignore` 里对应同一套规则，外加两条**否定规则**——Python 模板默认有全局 `*.log`，不解除的话日志永远同步不上去：
+`.gitignore` 里对应同一套规则，另外还要加**否定规则**——Python 模板默认有全局 `*.log`，不解除的话 `logs/` 与 `artifacts/*/A.log` 永远同步不上去；否定规则**必须写在 `.gitignore` 里**（`.git/info/exclude` 的 `!` 压不过 `.gitignore`）：
 
-```gitignore
+```text
 # ---- SSR local run data ----
 /models/
-/artifacts/multitq_text_index.pkl
-/artifacts/multitq_graph_retriever.pkl
+/artifacts/*.pkl
 /artifacts/llm_cache.jsonl
+/artifacts/*/llm_cache.jsonl
 /MultiTQ/
 /.hf_cache/
 
 !/logs/
 !/logs/*.log
+!/artifacts/**/*.log
 ```
+
+判断某个文件到底进不进仓库，用 `git check-ignore -v <路径>` 看命中的是哪一条：
+
+```bash
+git -C ~/SSR check-ignore -v artifacts/gp-holdout-2eEr22/A.jsonl   # 期望：无输出（要同步）
+git -C ~/SSR check-ignore -v artifacts/gp-B-full-MqkyPV/llm_cache.jsonl  # 期望：命中 /artifacts/*/llm_cache.jsonl
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `git check-ignore -v artifacts/.../A.jsonl` | 无输出 = 会同步；打印规则行 = 被挡，需改规则 |
+| 2 | `git check-ignore -v artifacts/.../llm_cache.jsonl` | 应命中 `llm_cache.jsonl` 规则，证明大缓存确实挡在门外 |
+
 
 `datasets/` 在 `.gitignore` 里也被忽略，但运行时提示词要跟踪，所以强制加入：
 
@@ -307,8 +319,9 @@ GIT_SSH_COMMAND="ssh -i ~/.ssh/github_ssr -o IdentitiesOnly=yes -o BatchMode=yes
 | `! [rejected] main -> main (fetch first)` | 远端有你本地没有的提交（网页改过/另一台机器推过） | `git pull --rebase backup main` 再让脚本下轮推 |
 | `Permission denied (publickey)` | Deploy key 没配、没勾 write access，或 ssh config 指错密钥 | `ssh -T git@github.com` 复测；确认 `IdentityFile ~/.ssh/github_ssr` |
 | 改了文件但一直不提交 | 命中了忽略规则 | `git check-ignore -v <文件>` 看是哪条规则 |
-| 日志文件没进仓库 | `.gitignore` 里 Python 模板的全局 `*.log` | 末尾补 `!/logs/` 与 `!/logs/*.log` |
-| push 被拒：文件超过 100 MB | GitHub 单文件上限 | 把该文件写进忽略规则，别提交 |
+| 日志文件没进仓库 | `.gitignore` 里 Python 模板的全局 `*.log` | 末尾补 `!/logs/`、`!/logs/*.log`、`!/artifacts/**/*.log`（必须写在 `.gitignore` 里） |
+| push 被拒：文件超过 100 MB | GitHub 单文件硬上限 | 写进忽略规则；脚本另有 50 MB 软阈值，会自动跳过并打印 `skipped files bigger than 50MB` |
+| 推送一直失败、本地领先几百个提交 | 某个大文件已经进了历史（哪怕后来删了，blob 还在待推的提交里） | 别硬推：`git branch save-<date> HEAD` → `git reset --soft backup/main` → 重新 `git add -A` 提交一次 → push |
 | `logs/` 里的大日志越推越慢 | 日志本身在长大 | 定期归档或把超大日志加入忽略 |
 | 机器重启后不同步了 | 没有 cron/systemd，tmux 会话没了 | 按 4.4 手动起一次 |
 | 提交作者不对 | 脚本里 `AUTHOR_NAME/AUTHOR_EMAIL` 或仓库 `user.name/email` 没设 | 改脚本头部两行；已经提交的历史用 `git filter-branch` 重写后强推（仅限自己的仓库） |
@@ -316,7 +329,7 @@ GIT_SSH_COMMAND="ssh -i ~/.ssh/github_ssr -o IdentitiesOnly=yes -o BatchMode=yes
 
 ---
 
-## 8. 当前基线（2026-11-02 23:50 实测）
+## 8. 当前基线（2026-11-04 11:40 实测）
 
 | 项 | 值 |
 |---|---|
@@ -325,12 +338,13 @@ GIT_SSH_COMMAND="ssh -i ~/.ssh/github_ssr -o IdentitiesOnly=yes -o BatchMode=yes
 | 分支 / 远端 | `main` → `backup` = `git@github.com:2200170080/SSR.git`（`origin` 仍指官方 `zhangli-coding/SSR`） |
 | 部署密钥 | `~/.ssh/github_ssr`（ed25519，432 B） |
 | 提交身份 | `2200170080 <3029316776@qq.com>` |
-| 轮询 | 60 秒；tmux 会话 `sync`（2026-11-02 17:43:22 起） |
-| 自动提交格式 | `auto: 2026-11-02 23:45:49 @ ecs-instance-e1330fb1` |
-| 远端 tip | `2c2bf06` |
-| 跟踪文件数 | 22（`src/` 9、`datasets/` 6、`tools/` 2、`figure/` 1、`logs/` 1、`LICENSE`、`README.md`、`.gitignore`） |
-| 仓库 `.git` 体积 | 91 MB（历史里曾有 41 MB 的 `.npy` 与全量日志，已从工作树移除但留在历史中） |
-| 忽略规则 | `.git/info/exclude` 与 `.gitignore` 各 6 条：`/models/`、两个索引 `*.pkl`、`/artifacts/llm_cache.jsonl`、`/MultiTQ/`、`/.hf_cache/` |
+| 轮询 | 60 秒；tmux 会话 `sync`（2026-11-04 11:25 重启） |
+| 自动提交格式 | `auto: 2026-11-04 11:26:16 @ ecs-instance-e1330fb1` |
+| 远端 tip | `9a765f2` |
+| 跟踪文件数 | **47**（`artifacts/` 18、`src/` 9、根目录 7、`datasets/` 6、`logs/` 4、`tools/` 2、`figure/` 1） |
+| `artifacts/` 被跟踪的量 | 18 个文件、共 **12 MB**（`*.txt`、`*.jsonl`、`*.json`、`*.log`） |
+| 仓库 `.git` 体积 | 5.8 GB（历史里有 740 MB / 104 MB 的 `llm_cache.jsonl` 与 41 MB `.npy`；分支 `save-20261104` 还引用它们） |
+| 忽略规则 | 6 条：`/models/`、`/artifacts/*.pkl`、`/artifacts/llm_cache.jsonl`、`/artifacts/*/llm_cache.jsonl`、`/MultiTQ/`、`/.hf_cache/`；`.gitignore` 另有三条否定规则放行 `logs/` 与 `artifacts/**/*.log` |
 | 自动同步日志 | `~/SSR/logs/autosync.log` |
 
 ---
