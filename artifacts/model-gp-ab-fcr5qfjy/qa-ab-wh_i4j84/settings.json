@@ -1,0 +1,22 @@
+{
+  "A": "14B GP + 14B QA",
+  "B": "32B GP + 14B QA",
+  "jobs_sha256": "1d32ea61156e2401442c69b4137b89f4b2d4c830467a1c519cd155e3ef6e8650",
+  "common_generation_sha256": "eac556e992f51224725b9fffc60066bc60b6fd5be0fdf8bfdbb7f65b9504f4a4",
+  "qa_source": "artifacts/gp-B-full-MqkyPV/qa.txt",
+  "qa_model": "qwen14b",
+  "temperature": 0,
+  "max_tokens": 4096,
+  "concurrency": 8,
+  "source_sha256": {
+    "src/utils/client.py": "1286928045d2bd67ac5171a78de5dad4f39ea240c24f3e5ed140220aa545d646",
+    "src/utils/query_process.py": "f7ca177692f959044ba511a8b9a138644a4d440175b86c549874c4c0830ca492",
+    "src/utils/sample_utils.py": "25399d651257f868f859dd789b285bd7779f074c47d5ff8562707efb5aa99567",
+    "src/retriever/graph_retriever.py": "519f4ad346b561b0bc4238c33ada68eb5a998418e371da787dccda652e5e37b9",
+    "src/retriever/text_retriever.py": "366d175d8d386a3595092356e109d6a9ab36ebb6ae3f9f22fbfe372c5d145eeb"
+  },
+  "gp_result_sha256": {
+    "GP14": "d1e4eadb86a8ea30cea0a90f6a2b379ee174e80c5bd8ca853bf51c6112f5169e",
+    "GP32": "51a0c0c5d839a959c8250f46fde912ccb4e258222e0f2535051ec061ca7aa4fe"
+  }
+}
