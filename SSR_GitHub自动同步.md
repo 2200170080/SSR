@@ -1,7 +1,7 @@
 # SSR 项目自动同步到 GitHub —— 全流程
 
 > 适用环境：`A6000x1-3-168`（`ecs-instance-e1330fb1`），共享盘 `172.30.20.24:6789:/ltaidc`，运行根 `~/SSR`。
-> 这套机制让服务器上改的代码、数据、日志、提示词每 60 秒自动 commit + push 到 `git@github.com:2200170080/SSR.git`，只有大二进制（模型、检索索引、响应缓存）不进仓库。
+> 这套机制让服务器上改的代码、数据、日志、提示词每 60 秒检查一次，**有变化就** commit + push 到 `git@github.com:2200170080/SSR.git`，只有大二进制（模型、检索索引、响应缓存）和同步器自己的日志不进仓库。
 > 相关文档：部署手册 `SSR_部署手册.md`（第 3 节拉代码、第 10 节跑实验）；本文只讲**同步**。
 
 ---
@@ -111,7 +111,7 @@ git config user.email "3029316776@qq.com"
 
 ### 2.5 忽略规则：只挡大二进制
 
-两处要一致：仓库内 `.gitignore`（会同步给别人）+ 本机 `.git/info/exclude`（兜底）。规则只有 6 条——
+两处要一致：仓库内 `.gitignore`（会同步给别人）+ 本机 `.git/info/exclude`（兜底）。规则共 7 条——
 
 ```bash
 cat >> ~/SSR/.git/info/exclude <<'EOF'
@@ -123,12 +123,13 @@ cat >> ~/SSR/.git/info/exclude <<'EOF'
 /artifacts/*/llm_cache.jsonl
 /MultiTQ/
 /.hf_cache/
+/logs/autosync.log
 EOF
 ```
 
 | # | 命令 | 作用 |
 |---|---|---|
-| 1 | `cat >> .git/info/exclude … EOF` | 登记 6 类不进仓库的内容；前导 `/` 锚定仓库根，否则会误伤 `src/` 下的同名路径；`artifacts/` 只排掉索引 `*.pkl` 与响应缓存 `llm_cache.jsonl`，**其余实验结果照常同步** |
+| 1 | `cat >> .git/info/exclude … EOF` | 登记 7 类不进仓库的内容；前导 `/` 锚定仓库根，否则会误伤 `src/` 下的同名路径；`artifacts/` 只排掉索引 `*.pkl` 与响应缓存 `llm_cache.jsonl`，**其余实验结果照常同步**；`/logs/autosync.log` 必须挡——它每轮都在写，跟踪它会让同步器自己制造无穷提交 |
 
 `.gitignore` 里对应同一套规则，另外还要加**否定规则**——Python 模板默认有全局 `*.log`，不解除的话 `logs/` 与 `artifacts/*/A.log` 永远同步不上去；否定规则**必须写在 `.gitignore` 里**（`.git/info/exclude` 的 `!` 压不过 `.gitignore`）：
 
@@ -141,9 +142,13 @@ EOF
 /MultiTQ/
 /.hf_cache/
 
+# 放行日志：Python 模板有全局 *.log，不解除则 logs/ 与 artifacts/*/A.log 永远同步不上
 !/logs/
 !/logs/*.log
 !/artifacts/**/*.log
+
+# 同步器自己的工作日志：每轮都写，跟踪它 = 每轮一个新提交
+/logs/autosync.log
 ```
 
 判断某个文件到底进不进仓库，用 `git check-ignore -v <路径>` 看命中的是哪一条：
@@ -198,7 +203,8 @@ git push -u backup main
 | `REMOTE` | `backup` | 推送目标远端名 |
 | `BRANCH` | `main` | 推送分支 |
 | `INTERVAL` | `60` | 轮询间隔（秒） |
-| `LOG` | 由启动命令的 `tee` 决定 | 日志落点 |
+| `MAX_MB` | `50` | 单文件软阈值：超过就本轮跳过并打印，绝不让 GitHub 因 100 MB 上限拒收 |
+| `RETRIES` | `3` | 一轮内 push 失败的重试次数（间隔 15 秒），三次都失败才等下轮 |
 | `AUTHOR_NAME` | `2200170080` | 自动提交的作者名 |
 | `AUTHOR_EMAIL` | `3029316776@qq.com` | 自动提交的邮箱 |
 
@@ -207,15 +213,26 @@ git push -u backup main
 | 步骤 | 动作 | 说明 |
 |---|---|---|
 | 1 | `git add -A` | 每轮重新暂存，新增/删除/改名都会跟上 |
-| 2 | `git diff --cached --quiet` | 暂存区没变化就跳过，不产生空提交 |
-| 3 | `git -c user.name=… commit -m "auto: <时间> @ <主机名>"` | 有变化就提交；提交信息带时间与机器名，便于回溯是哪台机改的 |
-| 4 | `git push -q "$REMOTE" HEAD:$BRANCH` | 推送；失败（断网/密钥问题）只打印一行，`NEED_PUSH=1` 保留，下一轮重试 |
-| 5 | `sleep $INTERVAL` | 每 60 秒一轮 |
+| 2 | 超大文件守卫 | 遍历暂存区，超过 `MAX_MB` 的 `git reset` 撤下并打印 `skipped files bigger than 50MB`——挡在提交之前，不会被 GitHub 拒 |
+| 3 | `git diff --cached --quiet` | 暂存区没变化就跳过，**不产生空提交**（所以「没有新提交」通常意味着服务器真的没有文件变化） |
+| 4 | `git -c user.name=… commit -m "auto: <时间> @ <主机名>"` | 有变化就提交；提交信息带时间与机器名，便于回溯是哪台机改的 |
+| 5 | `git push "$REMOTE" HEAD:$BRANCH` | 推送；失败打印 `push attempt n/3 failed` + stderr 末 4 行，轮内重试 3 次，仍失败则 `NEED_PUSH=1` 留给下一轮 |
+| 6 | `sleep $INTERVAL` | 每 60 秒一轮 |
 
-设计上有两点值得记住：
+设计上有三点值得记住：
 
 - **推送失败不丢数据**：提交已经在本地，下轮继续推；
-- **不碰工作区**：只做 add/commit/push，不做 reset/checkout，不会覆盖你正在改的文件。
+- **不碰工作区**：只做 add/commit/push，不做 reset/checkout，不会覆盖你正在改的文件；
+- **只认变化**：没有文件变化就没有提交，日志里也会安静——这不等于同步坏了。
+
+### 3.3 密钥为什么要复制到本地盘、为什么要复用连接
+
+两件事都是踩坑后加的：
+
+1. **密钥复制到 `/tmp/.autosync_gh_key`**：家目录 `~` 在 CephFS（`172.30.20.24:6789:/ltaidc`）上，共享盘读小文件偶发抖动；脚本启动时把 `~/.ssh/github_ssr` 复制一份到本地盘（600 权限），ssh 只用这份。原密钥仍保留，重装/换机不受影响。
+2. **`ControlMaster` 复用连接**：每分钟新建一条 ssh 连接去 GitHub，会触发**认证限流**——表现是随机 `Permission denied (publickey)`，而手动 `ssh -T` 又是通的。脚本用 `ControlMaster=auto` + `ControlPath=/tmp/.autosync_ssh/gh-%r@%h:%p` + `ControlPersist=10m`，10 分钟内复用同一条连接，认证次数从「每分钟 1 次」降到「十分钟 1 次」。
+
+脚本里对应的两段（`tools/autosync.sh` 第 21–34 行）：复制密钥 → 导出 `GIT_SSH_COMMAND`；再加 `ServerAliveInterval=15` 防止连接被中间设备静默断开。
 
 ---
 
@@ -233,7 +250,7 @@ tmux ls
 | 1 | `tmux new -d -s sync -c ~/SSR '…'` | 在后台会话 `sync` 里启动脚本，工作目录固定 `~/SSR`；输出同时进屏幕和 `logs/autosync.log` |
 | 2 | `tmux ls` | 应看到 `sync: 1 windows (created …)` |
 
-> `logs/autosync.log` 本身也被跟踪，所以「同步器自己的工作日志」也会进仓库——这正是想要的效果：看得见它每轮做了什么。
+> `logs/autosync.log` **不进仓库**（已加入忽略规则）：它每轮都在写，跟踪它会让同步器自己制造无穷提交——这是踩过的坑，见 7 节「每分钟都冒出 `auto:` 提交」。
 
 ### 4.2 查看 / 进入 / 退出
 
@@ -297,6 +314,17 @@ GIT_SSH_COMMAND="ssh -i ~/.ssh/github_ssr -o IdentitiesOnly=yes -o BatchMode=yes
 
 判据一句话：**本地 HEAD 的 sha == `git ls-remote backup main` 的 sha**。
 
+反过来，如果两边 sha 一致但你在网页上看不到“新东西”，先确认服务器上**有没有文件真的变了**：
+
+```bash
+cd ~/SSR && find . -path ./.git -prune -o -type f -newermt '-10 minutes' -print | grep -v '^./models' | head
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `find … -newermt '-10 minutes'` | 列出最近 10 分钟内被写过的文件；**空输出 = 没有内容可同步**，此时没有新提交是正常的 |
+| 2 | `head` | 只看前几条，避免日志目录刷屏 |
+
 ---
 
 ## 6. 日常操作
@@ -326,26 +354,31 @@ GIT_SSH_COMMAND="ssh -i ~/.ssh/github_ssr -o IdentitiesOnly=yes -o BatchMode=yes
 | 机器重启后不同步了 | 没有 cron/systemd，tmux 会话没了 | 按 4.4 手动起一次 |
 | 提交作者不对 | 脚本里 `AUTHOR_NAME/AUTHOR_EMAIL` 或仓库 `user.name/email` 没设 | 改脚本头部两行；已经提交的历史用 `git filter-branch` 重写后强推（仅限自己的仓库） |
 | 改脚本后服务器执行报 `#!/bin/bash: No such file or directory` | 用了带 BOM 的工具写文件 | 用 UTF-8 **无 BOM** 写回（`UTF8Encoding($false)` / `write` 工具），`head -c 3 \| od -c` 确认是 `# ! /` |
+| 每分钟都冒出一条 `auto:` 提交、日志越滚越大 | `logs/autosync.log` 曾被跟踪，同步器每轮写日志 → 每轮新提交 → 每轮新推送 | 已加入忽略并从索引移除：`git rm --cached logs/autosync.log` + 规则 `/logs/autosync.log`；自激循环就此断掉 |
+| 每隔几轮 `Permission denied (publickey)`，手动 `ssh -T` 却是通的 | 每分钟新建 ssh 连接，触发 GitHub 认证限流（突发测试连发 10 次全被拒，隔一会儿单次成功） | 已改连接复用：`ControlMaster=auto` + `ControlPath=/tmp/.autosync_ssh/…` + `ControlPersist=10m`，并把密钥复制到本地盘 `/tmp/.autosync_gh_key` |
+| `remote: Internal Server Error` / `[remote rejected] … (Internal Server Error)` | GitHub 侧瞬时故障，不是你的配置问题 | 脚本轮内重试 3 次（间隔 15 秒）；连续出现只需等，别改配置 |
+| 服务器在跑实验，但 GitHub 上没有新提交 | 跑批已停或没写文件——**没有变化就没有提交** | 先 `ps` 看进程、再看目标日志 mtime，最后才怀疑同步；用第 5 节那条 `find -newermt` 一秒判定 |
 
 ---
 
-## 8. 当前基线（2026-11-04 11:40 实测）
+## 8. 当前基线（2026-11-04 20:35 实测）
 
 | 项 | 值 |
 |---|---|
 | 主机 | `A6000x1-3-168`（`ecs-instance-e1330fb1`） |
 | 运行根 / 仓库根 | `~/SSR`（`/root/user/cs_tcci_zengdexin/SSR`） |
 | 分支 / 远端 | `main` → `backup` = `git@github.com:2200170080/SSR.git`（`origin` 仍指官方 `zhangli-coding/SSR`） |
-| 部署密钥 | `~/.ssh/github_ssr`（ed25519，432 B） |
+| 部署密钥 | `~/.ssh/github_ssr`（ed25519，432 B）；运行时副本 `/tmp/.autosync_gh_key`（600） |
 | 提交身份 | `2200170080 <3029316776@qq.com>` |
-| 轮询 | 60 秒；tmux 会话 `sync`（2026-11-04 11:25 重启） |
-| 自动提交格式 | `auto: 2026-11-04 11:26:16 @ ecs-instance-e1330fb1` |
-| 远端 tip | `9a765f2` |
-| 跟踪文件数 | **47**（`artifacts/` 18、`src/` 9、根目录 7、`datasets/` 6、`logs/` 4、`tools/` 2、`figure/` 1） |
-| `artifacts/` 被跟踪的量 | 18 个文件、共 **12 MB**（`*.txt`、`*.jsonl`、`*.json`、`*.log`） |
-| 仓库 `.git` 体积 | 5.8 GB（历史里有 740 MB / 104 MB 的 `llm_cache.jsonl` 与 41 MB `.npy`；分支 `save-20261104` 还引用它们） |
-| 忽略规则 | 6 条：`/models/`、`/artifacts/*.pkl`、`/artifacts/llm_cache.jsonl`、`/artifacts/*/llm_cache.jsonl`、`/MultiTQ/`、`/.hf_cache/`；`.gitignore` 另有三条否定规则放行 `logs/` 与 `artifacts/**/*.log` |
-| 自动同步日志 | `~/SSR/logs/autosync.log` |
+| 轮询 | 60 秒；tmux 会话 `sync`（2026-11-04 19:25 起） |
+| 自动提交格式 | `auto: 2026-11-04 20:35:09 @ ecs-instance-e1330fb1` |
+| 远端 tip | `f852e71`（与本地 HEAD 相同） |
+| 跟踪文件数 | **93**（`artifacts/` 66、`src/` 9、`datasets/` 6、`logs/` 3、`tools/` 2、`figure/` 1、根目录 6） |
+| `artifacts/` 被跟踪的量 | 66 个文件、共 **22 MB**（`*.txt`、`*.jsonl`、`*.json`、`*.log`） |
+| 仓库 `.git` 体积 | **997 MB**（历史里仍有 740 MB / 104 MB 的 `llm_cache.jsonl` 与 41 MB `.npy` blob） |
+| 忽略规则 | 7 条：`/models/`、`/artifacts/*.pkl`、`/artifacts/llm_cache.jsonl`、`/artifacts/*/llm_cache.jsonl`、`/MultiTQ/`、`/.hf_cache/`、`/logs/autosync.log`；`.gitignore` 另有三条否定规则放行 `logs/` 与 `artifacts/**/*.log` |
+| 脚本 | `~/SSR/tools/autosync.sh`，`INTERVAL=60 MAX_MB=50 RETRIES=3`，md5 `4781ea195ec2891eba669af320072d5f` |
+| 自动同步日志 | `~/SSR/logs/autosync.log`（**不跟踪**，仅本地查看） |
 
 ---
 
