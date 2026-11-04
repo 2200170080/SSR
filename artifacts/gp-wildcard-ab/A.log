@@ -1,22 +1,0 @@
-
-========== Load dataset ==========
-[Info] Loaded 18 questions from artifacts/gp-wildcard-ab/questions.json
-
-========== Step 1: Text retrieval ==========
-[Step] Load cached text retrieval index: ./artifacts/multitq_text_index.pkl
-Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  3.06it/s]Encoding texts: 100%|██████████| 1/1 [00:00<00:00,  3.06it/s]
-Searching similar facts:   0%|          | 0/1 [00:00<?, ?it/s]Searching similar facts: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]Searching similar facts: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
-
-========== Step 2: Graph pattern extraction + graph retrieval ==========
-[Step] Load cached graph retriever: ./artifacts/multitq_graph_retriever.pkl
-[Step] Extract graph patterns from queries and retrieved text facts
-Extract graph patterns:   0%|          | 0/18 [00:00<?, ?it/s]Extract graph patterns:   6%|▌         | 1/18 [00:08<02:22,  8.37s/it]Extract graph patterns:  39%|███▉      | 7/18 [00:11<00:14,  1.34s/it]Extract graph patterns:  44%|████▍     | 8/18 [00:11<00:11,  1.19s/it]Extract graph patterns:  50%|█████     | 9/18 [00:12<00:09,  1.08s/it]Extract graph patterns:  67%|██████▋   | 12/18 [00:13<00:04,  1.41it/s]Extract graph patterns:  72%|███████▏  | 13/18 [00:13<00:03,  1.59it/s]Extract graph patterns:  78%|███████▊  | 14/18 [00:13<00:02,  1.90it/s]Extract graph patterns:  83%|████████▎ | 15/18 [00:14<00:01,  2.15it/s]Extract graph patterns:  89%|████████▉ | 16/18 [00:14<00:00,  2.62it/s]Extract graph patterns:  94%|█████████▍| 17/18 [00:14<00:00,  3.22it/s]Extract graph patterns: 100%|██████████| 18/18 [00:14<00:00,  1.25it/s]
-[Step] Retrieve graph facts with parsed graph patterns
-
-========== Step 3: QA over graph retrieval results ==========
-Run QA:   0%|          | 0/18 [00:00<?, ?it/s]Run QA:   6%|▌         | 1/18 [00:04<01:18,  4.61s/it]Run QA:  11%|█         | 2/18 [00:05<00:36,  2.28s/it]Run QA:  17%|█▋        | 3/18 [00:05<00:22,  1.47s/it]Run QA:  22%|██▏       | 4/18 [00:05<00:13,  1.05it/s]Run QA:  33%|███▎      | 6/18 [00:06<00:08,  1.47it/s]Run QA:  44%|████▍     | 8/18 [00:08<00:06,  1.47it/s]Run QA:  50%|█████     | 9/18 [00:08<00:06,  1.42it/s]Run QA:  61%|██████    | 11/18 [00:10<00:04,  1.48it/s]Run QA:  72%|███████▏  | 13/18 [00:10<00:02,  1.97it/s]Run QA:  83%|████████▎ | 15/18 [00:11<00:01,  2.47it/s]Run QA:  89%|████████▉ | 16/18 [00:11<00:00,  2.85it/s]Run QA:  94%|█████████▍| 17/18 [00:11<00:00,  2.72it/s]Run QA: 100%|██████████| 18/18 [00:11<00:00,  3.00it/s]Run QA: 100%|██████████| 18/18 [00:11<00:00,  1.52it/s]
-Graph QA Accuracy: 0.2222 (4/18)
-  atype entity:   1.00000
-  atype time:     0.00000
-
-========== Done ==========

@@ -1,5 +1,0 @@
-
-For entity answers, return the original entity label from the selected
-fact. Do not replace it with its country name. Do not exclude an entity
-solely because its label denotes an organization, person, or population
-group when it otherwise matches the event requested by the question.
