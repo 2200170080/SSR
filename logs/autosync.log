@@ -806,3 +806,10 @@
     error: failed to push some refs to 'github.com:2200170080/SSR.git'
 [autosync] commit auto: 2026-11-04 18:08:08 @ ecs-instance-e1330fb1
 [autosync] pushed aa3f862 -> backup/main
+[autosync] commit auto: 2026-11-04 18:09:29 @ ecs-instance-e1330fb1
+[autosync] push failed, retry in 60s
+    git@github.com: Permission denied (publickey).
+    fatal: Could not read from remote repository.
+    
+    Please make sure you have the correct access rights
+    and the repository exists.
