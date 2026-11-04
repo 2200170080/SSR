@@ -1,6 +1,6 @@
 {
-  "pid": 1330434,
-  "start": "130804150",
+  "pid": 1406812,
+  "start": "131994326",
   "model": "qwen32b-gp",
   "root": "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq",
   "command": [
@@ -25,6 +25,6 @@
     "/root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/sampling-defaults",
     "--disable-log-requests"
   ],
-  "log": "/root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-155732.log",
+  "log": "/root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/vllm-32-20261104-191554.log",
   "generation_sha256": "eac556e992f51224725b9fffc60066bc60b6fd5be0fdf8bfdbb7f65b9504f4a4"
 }

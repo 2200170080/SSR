@@ -1,0 +1,82 @@
+{
+  "version": "SSR-GP32-QA32-full-v1",
+  "n": 54584,
+  "input_path": "/root/user/cs_tcci_zengdexin/SSR/artifacts/qwen32b-full-XBGJGU/bulk/inputs.jsonl",
+  "source_sha256": "c0a5c872064e7c0dba94e1a15f34074a47ab62e3d1233909afabfa594d181e93",
+  "input_sha256": "aea6588ae3aaeb82b51642aeec7b33a9cebfe8f6c06c3fd0be59b953ba0f39a3",
+  "template_sha256": "5bf19328525feebbcf27c168fc5509667bfe8b812c04f5a648958ccbd91e644a",
+  "duplicate_question_rows": 90,
+  "source_size": 740587093,
+  "source_mtime_ns": 1793760730867149080,
+  "unique_questions": 54539,
+  "duplicates": 45,
+  "created": "2026-11-04T11:15:48.093953+00:00",
+  "assets": {
+    "/root/user/cs_tcci_zengdexin/SSR/src/config.py": "65bfa4edd5d951cc629d9691c9071316eb08f0c003eb8d5d3d6138bffd86c95a",
+    "/root/user/cs_tcci_zengdexin/SSR/src/run_pipeline.py": "e6cd9e76b878fbd47437ad5c1041f0424a1dfc670468d7bc4d82126ad70cec5c",
+    "/root/user/cs_tcci_zengdexin/SSR/src/utils/client.py": "1286928045d2bd67ac5171a78de5dad4f39ea240c24f3e5ed140220aa545d646",
+    "/root/user/cs_tcci_zengdexin/SSR/src/utils/io_utils.py": "f14614da4da14ba4327f0914f796f381cddf55a2a8f8d3a2b44caf4224d41487",
+    "/root/user/cs_tcci_zengdexin/SSR/src/utils/query_process.py": "f7ca177692f959044ba511a8b9a138644a4d440175b86c549874c4c0830ca492",
+    "/root/user/cs_tcci_zengdexin/SSR/src/utils/eval_utils.py": "db4a6283978df35c4c72fb198a6dbbf3fe9ce6942017e906d1a5541a7b75dcbf",
+    "/root/user/cs_tcci_zengdexin/SSR/src/utils/sample_utils.py": "25399d651257f868f859dd789b285bd7779f074c47d5ff8562707efb5aa99567",
+    "/root/user/cs_tcci_zengdexin/SSR/src/retriever/graph_retriever.py": "519f4ad346b561b0bc4238c33ada68eb5a998418e371da787dccda652e5e37b9",
+    "/root/user/cs_tcci_zengdexin/SSR/src/retriever/text_retriever.py": "366d175d8d386a3595092356e109d6a9ab36ebb6ae3f9f22fbfe372c5d145eeb",
+    "/root/user/cs_tcci_zengdexin/SSR/datasets/MultiTQ/questions/test.json": "d9bf3bf23b489ecc76c7940510c718260a42350d934a6edc1c1c7efcd5238fee",
+    "/root/user/cs_tcci_zengdexin/SSR/datasets/MultiTQ/kg/full.txt": "b94b31a86dc9f8dd40c8a95ec5c224f85a9a0793df0d40efad710cfda2f3944e",
+    "/root/user/cs_tcci_zengdexin/SSR/datasets/MultiTQ/kg/entity2id.json": "50529c68e783dbc684eb2dfe249df6f5d49bf571cd24000e9aaad747b7f130bf",
+    "/root/user/cs_tcci_zengdexin/SSR/datasets/MultiTQ/kg/relation2id.json": "4b655249097806633197ce996460c67cda688f560b460fc31a07028c954b8671",
+    "/root/user/cs_tcci_zengdexin/SSR/artifacts/multitq_graph_retriever.pkl": "72c53325206be9caceb38098b79470d7ad4f8e2758cb10e0d53310e424de5f19",
+    "/root/user/cs_tcci_zengdexin/SSR/MultiTQ_entity_embeddings.npy": "ccd7b5c16e35486f083ba42146d0e8e7884f20042de32898d6142837cef505bb",
+    "/root/user/cs_tcci_zengdexin/SSR/MultiTQ_relation_embeddings.npy": "66fc434dd6701d0bdab34b28b744813cbd6aac8bcd6a0ed4afd6e0ec67f41268",
+    "/root/user/cs_tcci_zengdexin/SSR/models/bge-m3/config.json": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+    "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq/config.json": "2bf6e9840c77e5ca4c5f8cada21b5530f4ebd36b2788dd2e2f0fe7ac62ec4284",
+    "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq/model.safetensors.index.json": "6b2c689e189baf9ad66f89403b9cf5c95a040a1e7926cda5056e9f48e0075ef8",
+    "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq/tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq/generation_config.json": "9df8ac8558514924f3481a609f1e5590ab4416efc600b12ad805155d79581c59",
+    "/root/user/cs_tcci_zengdexin/SSR/artifacts/model-gp-ab-fcr5qfjy/sampling-defaults/generation_config.json": "699858ef160fa05615c56d223536b9e17ce5b21a2b2bde8eefaa050bd8d2164f"
+  },
+  "weight_stats": {
+    "/root/user/cs_tcci_zengdexin/SSR/models/bge-m3/pytorch_model.bin": [
+      2271145830,
+      1793500896746158584
+    ],
+    "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq/model-00001-of-00005.safetensors": [
+      3943575336,
+      1793772906794768769
+    ],
+    "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq/model-00002-of-00005.safetensors": [
+      3980134208,
+      1793772898142623662
+    ],
+    "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq/model-00003-of-00005.safetensors": [
+      3947411392,
+      1793772903646716234
+    ],
+    "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq/model-00004-of-00005.safetensors": [
+      3980134240,
+      1793772896166590199
+    ],
+    "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq/model-00005-of-00005.safetensors": [
+      3477738728,
+      1793773041972764934
+    ]
+  },
+  "runner_sha256": "4c0c675e83d5c207c686e6556badf28fded91a2f18077a5370f07569af0b09e8",
+  "gp_template_sha256": "5bf19328525feebbcf27c168fc5509667bfe8b812c04f5a648958ccbd91e644a",
+  "qa_template_sha256": "0fde26e6887f96b7974443fd4f4cacd63ff13628c9dddba32b52ba32256cddb4",
+  "models": {
+    "gp": "qwen32b-gp",
+    "qa": "qwen32b-gp"
+  },
+  "temperature": 0,
+  "max_tokens": 4096,
+  "concurrency": 8,
+  "environment": {
+    "openai": "1.109.1",
+    "torch": "2.4.1",
+    "transformers": "4.44.2",
+    "numpy": "1.26.4",
+    "tqdm": "4.70.1"
+  },
+  "signature": "99ccaa3e6e6937bff5e8540c34467c101a021ed222242adf52f6f93f4e8c40e4"
+}
