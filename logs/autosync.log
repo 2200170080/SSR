@@ -921,3 +921,9 @@
     To github.com:2200170080/SSR.git
      ! [remote rejected] HEAD -> main (Internal Server Error)
     error: failed to push some refs to 'github.com:2200170080/SSR.git'
+[autosync] commit auto: 2026-11-04 18:34:13 @ ecs-instance-e1330fb1
+[autosync] push failed, retry in 60s
+    remote: fatal error in commit_refs        
+    To github.com:2200170080/SSR.git
+     ! [remote rejected] HEAD -> main (failure)
+    error: failed to push some refs to 'github.com:2200170080/SSR.git'
