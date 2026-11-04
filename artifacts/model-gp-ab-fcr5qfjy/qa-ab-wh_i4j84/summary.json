@@ -1,0 +1,37 @@
+{
+  "A": "14B GP + 14B QA",
+  "B": "32B GP + 14B QA",
+  "request_failed": {
+    "A": 0,
+    "B": 0
+  },
+  "missing_marker": {
+    "A": 1,
+    "B": 0
+  },
+  "shared_input": 121,
+  "by_type": {
+    "entity": {
+      "total": 100,
+      "A": 65,
+      "B": 71,
+      "gained": 10,
+      "lost": 4,
+      "fallback": {
+        "A": 20,
+        "B": 4
+      }
+    },
+    "time": {
+      "total": 100,
+      "A": 82,
+      "B": 97,
+      "gained": 15,
+      "lost": 0,
+      "fallback": {
+        "A": 2,
+        "B": 0
+      }
+    }
+  }
+}

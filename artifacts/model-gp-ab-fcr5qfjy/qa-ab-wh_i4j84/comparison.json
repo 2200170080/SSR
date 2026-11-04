@@ -1,0 +1,4606 @@
+[
+  {
+    "question": "When did China last want to establish diplomatic cooperation with North America?",
+    "answer": [
+      "2014-07-30"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2014-07-30",
+      "response": "So the answer is: 2014-07-30",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2014-07-30",
+      "response": "So the answer is: 2014-07-30",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what month did the representatives of Tanzania last criticise Zanzibar?",
+    "answer": [
+      "2013-05"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2013-05",
+      "response": "From the historical facts provided, we can see that the representatives of Tanzania criticized Zanzibar on 2013-05-03. This is the latest date among the given dates where representatives from Tanzania criticized Zanzibar. Therefore, the month in question is May 2013.\n\nSo the answer is: 2013-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2013-05",
+      "response": "So the answer is: 2013-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who used conventional military force against Iraq after Iran's air force?",
+    "answer": [
+      "Iran",
+      "Air Force (Syria)",
+      "France",
+      "Middle East",
+      "Qatar",
+      "Royal Air Force",
+      "Military (Russia)"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"France\"]",
+      "response": "From the provided historical facts, we can see that after Iran's air force used conventional military force against Iraq, France was one of the entities that used conventional military force against Iraq. The first instance of this is recorded as \"French Defense / Security Ministry, Use conventional military force, Iraq in 2014-08-09\".\n\nSo the answer is: [\"France\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Activist (Iraq)\", \"City Mayor (Iraq)\", \"Extremist (Al Qaeda)\", \"Israeli Defense Forces\", \"Qatar\", \"Islamic Preacher (Saudi Arabia)\", \"Defense / Security Ministry (United States)\", \"France\", \"Extremist (Islamic State of Iraq and the Levant)\", \"Bolivia\", \"Air Force (Syria)\", \"Royal Air Force\", \"Legislature (Turkey)\", \"Military (Russia)\"]",
+      "response": "From the provided historical facts, we can see that after Iran's air force used conventional military force against Iraq, several entities used such force against Iraq. These include Activist (Iraq), City Mayor (Iraq), Extremist (Al Qaeda), Israeli Defense Forces, Qatar, Islamic Preacher (Saudi Arabia), Defense / Security Ministry (United States), France, Extremist (Islamic State of Iraq and the Levant), Bolivia, Air Force (Syria), Royal Air Force, Legislature (Turkey), and Military (Russia).\n\nSo the answer is: [\"Activist (Iraq)\", \"City Mayor (Iraq)\", \"Extremist (Al Qaeda)\", \"Israeli Defense Forces\", \"Qatar\", \"Islamic Preacher (Saudi Arabia)\", \"Defense / Security Ministry (United States)\", \"France\", \"Extremist (Islamic State of Iraq and the Levant)\", \"Bolivia\", \"Air Force (Syria)\", \"Royal Air Force\", \"Legislature (Turkey)\", \"Military (Russia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "In what year did the Syrian Air Force use conventional military force against Iraq for the first time?",
+    "answer": [
+      "2014"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2014",
+      "response": "So the answer is: 2014",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2014",
+      "response": "So the answer is: 2014",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who first did Philipp Rösler appeal for after China?",
+    "answer": [
+      "Free Democratic Party"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Business (Germany)\"]",
+      "response": "From the provided historical facts, we can see that Philipp Rösler made an appeal or request to Business (Germany) on 2011-01-23, which is the first appeal or request he made after appealing to China on 2012-08-30. Therefore, the entity he appealed to after China is \"Business (Germany)\". \n\nSo the answer is: [\"Business (Germany)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Free Democratic Party\"]",
+      "response": "From the historical facts provided, Philipp Rösler made his first appeal or request to the Free Democratic Party after appealing to China on 2012-08-30. Therefore, the answer is:\n\nSo the answer is: [\"Free Democratic Party\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After 2013, who asked for Cambodia?",
+    "answer": [
+      "Vietnam",
+      "Human Rights Watch",
+      "Thailand"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Foreign Affairs (India)\", \"Representatives (Cambodia)\", \"Laos\", \"Thailand\", \"Vietnam\", \"Qatar\", \"China\", \"Malaysia\"]",
+      "response": "So the answer is: [\"Foreign Affairs (India)\", \"Representatives (Cambodia)\", \"Laos\", \"Thailand\", \"Vietnam\", \"Qatar\", \"China\", \"Malaysia\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Foreign Affairs (India)\", \"Representatives (Cambodia)\", \"Laos\", \"Thailand\", \"Vietnam\", \"Qatar\", \"China\", \"Malaysia\"]",
+      "response": "So the answer is: [\"Foreign Affairs (India)\", \"Representatives (Cambodia)\", \"Laos\", \"Thailand\", \"Vietnam\", \"Qatar\", \"China\", \"Malaysia\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Iraq was rejected by the Council of Representatives in the same month?",
+    "answer": [
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "2008-11",
+      "response": "From the provided historical facts, we can see that the Council of Representatives rejected Iraq on 2008-11-18. The question asks for the month when Iraq was rejected by the Council of Representatives. Therefore, the answer is the timestamp representing the month and year.\n\nSo the answer is: 2008-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2008-11\n\nExplanation: The question asks for the month when Iraq was rejected by the Council of Representatives. According to the provided historical fact, this event took place on 2008-11-18. Therefore, the answer should be in the format \"yyyy-mm\", which is 2008-11",
+      "response": "So the answer is: 2008-11\n\nExplanation: The question asks for the month when Iraq was rejected by the Council of Representatives. According to the provided historical fact, this event took place on 2008-11-18. Therefore, the answer should be in the format \"yyyy-mm\", which is 2008-11.",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "When did the Vietnamese Minister of the Interior last visit China?",
+    "answer": [
+      "2015-12-13"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2015-12-27",
+      "response": "From the provided historical facts, we can see multiple visits made by Vietnam to China over several years. To determine the last visit made by the Vietnamese Minister of the Interior, we need to identify the latest date among the given dates.\n\nThe latest date mentioned in the historical facts is 2015-12-27.\n\nSo the answer is: 2015-12-27",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2015-12-13",
+      "response": "From the historical facts provided, we can see that the Vietnamese Minister of the Interior made visits to China on multiple dates. The latest visit among those listed is on 2015-12-13. \n\nSo the answer is: 2015-12-13",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Could you tell me the exact month when China negotiated with Marcio Cuevas?",
+    "answer": [
+      "2005-06"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005-06",
+      "response": "So the answer is: 2005-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-06",
+      "response": "So the answer is: 2005-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "On 1 April 2008, who wanted to meet with China?",
+    "answer": [
+      "Cambodia",
+      "Thailand",
+      "Laos",
+      "Henry M. Paulson"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Cambodia\", \"Henry M. Paulson\", \"Laos\", \"Thailand\"]",
+      "response": "So the answer is: [\"Cambodia\", \"Henry M. Paulson\", \"Laos\", \"Thailand\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Cambodia\", \"Henry M. Paulson\", \"Laos\", \"Thailand\"]",
+      "response": "So the answer is: [\"Cambodia\", \"Henry M. Paulson\", \"Laos\", \"Thailand\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did the Barisan Revolusi Nasional use conventional military force against Thailand?",
+    "answer": [
+      "2015"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2015",
+      "response": "So the answer is: 2015",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2015",
+      "response": "So the answer is: 2015",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what month did Bill Richardson last visit Iraq?",
+    "answer": [
+      "2008-12"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2008-12",
+      "response": "From the historical facts provided, we can see that Bill Richardson made visits to Iraq on two occasions: 2007-10-22 and 2008-12-03. The last visit occurred in December 2008. \n\nSo the answer is: 2008-12",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2008-12",
+      "response": "From the historical facts provided, we can see that Bill Richardson made visits to Iraq on two occasions: 2007-10-22 and 2008-12-03. The last visit occurred in December 2008. \n\nSo the answer is: 2008-12",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who did Philipp Roesler last appeal to before China?",
+    "answer": [
+      "Business (Germany)"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[]",
+      "response": "From the provided historical facts, we can see that Philipp Rösler made an appeal or request to China on 2012-08-30. To determine who he appealed to before China, we need to look at the entries preceding this date. The closest entry before his appeal to China is Philipp Rösler making an appeal or request to Angela Merkel on 2013-06-15, but this is after the date in question. There are no other appeals or requests listed for Philipp Rösler prior to his appeal to China on 2012-08-30.\n\nTherefore, there is no record of Philipp Rösler appealing to anyone else before China within the given timeframe.\n\nSo the answer is: []",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Business (Germany)\"]",
+      "response": "From the historical facts provided, Philipp Rösler made an appeal or request to Business (Germany) on 2011-01-23 and to China on 2012-08-30. Therefore, the entity he appealed to just before China was Business (Germany).\n\nSo the answer is: [\"Business (Germany)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After Cambodia, which country was the first to express optimism about the International Court of Justice?",
+    "answer": [
+      "Colombia"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Colombia",
+      "response": "From the provided historical facts, we can see that after Cambodia expressed an optimistic comment about the International Court of Justice on 2012-03-05, the next country to do so was Colombia on 2012-10-12. \n\nSo the answer is: Colombia",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "Colombia",
+      "response": "From the provided historical facts, we can see that after Cambodia expressed an optimistic comment about the International Court of Justice on 2012-03-05, the next country to do so was Colombia on 2012-10-12. \n\nSo the answer is: Colombia",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In October 18th, 2005, who would wish to visit China?",
+    "answer": [
+      "Defense / Security Ministry (United States)",
+      "Japan",
+      "Donald Rumsfeld",
+      "Lien Chan"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Defense / Security Ministry (United States)\", \"Donald Rumsfeld\", \"Lien Chan\"]",
+      "response": "So the answer is: [\"Defense / Security Ministry (United States)\", \"Donald Rumsfeld\", \"Lien Chan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Defense / Security Ministry (United States)\", \"Donald Rumsfeld\", \"Lien Chan\"]",
+      "response": "So the answer is: [\"Defense / Security Ministry (United States)\", \"Donald Rumsfeld\", \"Lien Chan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did Zawahiri denounce the armed rebels of Syria?",
+    "answer": [
+      "2014-04-08"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2014-04-08",
+      "response": "So the answer is: 2014-04-08",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2014-04-08",
+      "response": "So the answer is: 2014-04-08",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did the Egyptian Railway Authority visit China?",
+    "answer": [
+      "2013-05"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2013-05",
+      "response": "So the answer is: 2013-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2013-05",
+      "response": "So the answer is: 2013-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did Joschka Fischer make his first appeal to China?",
+    "answer": [
+      "2005-04-15"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005-04-15",
+      "response": "So the answer is: 2005-04-15",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-04-15",
+      "response": "So the answer is: 2005-04-15",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Could you tell me the exact month when Djibouti last signed an agreement with Kuwait?",
+    "answer": [
+      "2010-03"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2010-03",
+      "response": "So the answer is: 2010-03",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010-03",
+      "response": "So the answer is: 2010-03",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "At what time did the United States Senate endorse Iraq?",
+    "answer": [
+      "2006-07-13"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2006-07-13",
+      "response": "So the answer is: 2006-07-13",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2006-07-13",
+      "response": "So the answer is: 2006-07-13",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In February, 2005, who expressed the intention to negotiate with Thailand?",
+    "answer": [
+      "Malaysia",
+      "Party Member (Thailand)",
+      "Citizen (Thailand)",
+      "Justice Department/Ministery (Thailand)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Malaysia\"]",
+      "response": "So the answer is: [\"Malaysia\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Malaysia\"]",
+      "response": "So the answer is: [\"Malaysia\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who visited Iraq before 18 February 2005?",
+    "answer": [
+      "Defense / Security Ministry (United States)",
+      "Media Personnel (International)",
+      "Congress (United States)",
+      "Donald Rumsfeld",
+      "Military (Lithuania)",
+      "Mitch McConnell"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"France\", \"Member of Legislative (Govt) (Lebanon)\"]",
+      "response": "From the historical facts provided, we can see that France hosted visits to Iraq on 2005-01-14 and 2005-01-29, and a Member of Legislative (Government) from Lebanon hosted a visit to Iraq on 2005-02-17. All these events took place before 2005-02-18.\n\nSo the answer is: [\"France\", \"Member of Legislative (Govt) (Lebanon)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"France\", \"Member of Legislative (Govt) (Lebanon)\"]",
+      "response": "From the historical facts provided, we can see that France hosted visits to Iraq on 2005-01-14 and 2005-01-29, and a Member of Legislative (Government) from Lebanon hosted a visit to Iraq on 2005-02-17. All these events took place before 2005-02-18.\n\nSo the answer is: [\"France\", \"Member of Legislative (Govt) (Lebanon)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "In which year was China's space agency the first to study China?",
+    "answer": [
+      "2006"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2006",
+      "response": "So the answer is: 2006",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2006",
+      "response": "So the answer is: 2006",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Before Thailand, which country expressed its willingness to negotiate with Iranian business?",
+    "answer": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Iran",
+      "response": "From the provided historical facts, we can see that Thailand expressed its willingness to negotiate with Iranian business on 2013-10-28. To find the country that expressed its willingness to negotiate with Iranian business before Thailand, we need to look at the entries prior to this date.\n\nThe last entry before Thailand is:\n'Ministry (Iran), Express intent to meet or negotiate, Iran in 2013-10-20'\n\nTherefore, the country that expressed its willingness to negotiate with Iranian business before Thailand is Iran.\n\nSo the answer is: Iran",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "Iran",
+      "response": "From the provided historical facts, we can see that Thailand expressed its willingness to negotiate with Iranian business on 2013-10-28. To find the country that expressed its willingness to negotiate with Iranian business before Thailand, we need to look at the entries prior to this date.\n\nThe last entry before Thailand is:\n'Ministry (Iran), Express intent to meet or negotiate, Iran in 2013-10-20'\n\nTherefore, the country that expressed its willingness to negotiate with Iranian business before Thailand is Iran.\n\nSo the answer is: Iran",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Before Thailand, who was the last country to be praised by the French Foreign Minister?",
+    "answer": [
+      "Ali Abdullah Saleh"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Congress (United States)\"]",
+      "response": "From the provided historical facts, we can see that the last country to praise Thailand before the French Foreign Minister did so on 2007-10-08 was Congress (United States) on 2007-10-08. Therefore, the answer is Congress (United States).\n\nSo the answer is: [\"Congress (United States)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Kazakhstan\"]",
+      "response": "From the provided historical facts, we can see that the last country to be praised by the French Foreign Minister before Thailand on 2007-10-08 was China. The relevant fact is \"France Praise or endorse China in 2015-11-10.\" However, since this date is after 2007-10-08, we need to look for earlier dates. The closest date before 2007-10-08 is \"France Praise or endorse China in 2009-02-10,\" but this is also after 2007-10-08. The next relevant fact is \"France Praise or endorse China in 2007-11-26,\" which is also after 2007-10-08. Therefore, we need to look at other countries mentioned before 2007-10-08. The relevant fact here is \"France Praise or endorse Cambodia in 2008-07-25,\" which is also after 2007-10-08. The next relevant fact is \"France Praise or endorse Kazakhstan in 2010-04-09,\" which is also after 2007-10-08. The next relevant fact is \"France Praise or endorse Kazakhstan in 2006-12-04,\" which is before 2007-10-08. Since there are no other countries mentioned between 2006-12-04 and 2007-10-08, the last country to be praised by the French Foreign Minister before Thailand is Kazakhstan.\n\nSo the answer is: [\"Kazakhstan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Who announced his intention to meet with Iraq in May 2008?",
+    "answer": [
+      "Nuri al-Maliki",
+      "Iran",
+      "Council of Representatives",
+      "Citizen (Saudi Arabia)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Iran\", \"Council of Representatives\", \"Nuri al-Maliki\", \"Citizen (Saudi Arabia)\"]",
+      "response": "So the answer is: [\"Iran\", \"Council of Representatives\", \"Nuri al-Maliki\", \"Citizen (Saudi Arabia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Iran\", \"Council of Representatives\", \"Nuri al-Maliki\", \"Citizen (Saudi Arabia)\"]",
+      "response": "So the answer is: [\"Iran\", \"Council of Representatives\", \"Nuri al-Maliki\", \"Citizen (Saudi Arabia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what month did the Inquirer first express an intention to meet with Iraq?",
+    "answer": [
+      "2005-04"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2005-04",
+      "response": "From the historical facts provided, we can see that the Inquirer expressed an intention to meet with Iraq on 2005-04-20. The question asks for the month, so the answer should be in the format \"yyyy-mm\".\n\nSo the answer is: 2005-04",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-04",
+      "response": "From the historical facts provided, we can see that the Inquirer expressed an intention to meet with Iraq on 2005-04-20. The question asks for the month, so the answer should be in the format \"yyyy-mm\".\n\nSo the answer is: 2005-04",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who did Djibouti make a request to last?",
+    "answer": [
+      "Indigenous People (Yemen)"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Vietnam\", \"UN Security Council\"]",
+      "response": "So the answer is: [\"Vietnam\", \"UN Security Council\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Indigenous People (Yemen)\", \"UN Security Council\"]",
+      "response": "So the answer is: [\"Indigenous People (Yemen)\", \"UN Security Council\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what month did Kuwait last appeal to the leader of Ethiopia?",
+    "answer": [
+      "2007-05"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2007-05",
+      "response": "So the answer is: 2007-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2007-05",
+      "response": "So the answer is: 2007-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Could you tell me the specific month when did China receive the visit from Chung Dong-young?",
+    "answer": [
+      "2005-01"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2005-01",
+      "response": "So the answer is: 2005-01",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-01",
+      "response": "So the answer is: 2005-01",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who made an appeal to Cambodia before 9 August 2007?",
+    "answer": [
+      "Vietnam",
+      "Human Rights Watch",
+      "Thailand",
+      "Roh Moo Hyun"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Human Rights Watch\", \"Thailand\", \"Vietnam\", \"Roh Moo Hyun\"]",
+      "response": "From the historical facts provided, we can see several entities making appeals or requests to Cambodia before 2007-08-09. These include Human Rights Watch, Thailand, Vietnam, Roh Moo Hyun, and the Office of the United Nations High Commissioner for Human Rights. However, the Office of the United Nations High Commissioner for Human Rights made their appeal on 2007-08-09, which is not before the specified date. Therefore, the entities that made appeals before 2007-08-09 are Human Rights Watch, Thailand, Vietnam, and Roh Moo Hyun.\n\nSo the answer is: [\"Human Rights Watch\", \"Thailand\", \"Vietnam\", \"Roh Moo Hyun\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Human Rights Watch\", \"Thailand\", \"Vietnam\", \"Roh Moo Hyun\"]",
+      "response": "From the historical facts provided, we can see several entities making appeals or requests to Cambodia before 2007-08-09. These include Human Rights Watch, Thailand, Vietnam, Roh Moo Hyun, and the Office of the United Nations High Commissioner for Human Rights. However, the Office of the United Nations High Commissioner for Human Rights made their appeal on 2007-08-09, which is not before the specified date. Therefore, the entities that made appeals before 2007-08-09 are Human Rights Watch, Thailand, Vietnam, and Roh Moo Hyun.\n\nSo the answer is: [\"Human Rights Watch\", \"Thailand\", \"Vietnam\", \"Roh Moo Hyun\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country did China want to meet after 2015-11-27?",
+    "answer": [
+      "South Korea",
+      "Iran",
+      "Japan",
+      "South Africa",
+      "Government Official (Taiwan)",
+      "Kazakhstan"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"South Korea\", \"Japan\"]",
+      "response": "So the answer is: [\"South Korea\", \"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Government Official (Taiwan)\", \"South Africa\", \"Japan\", \"Kazakhstan\", \"Iran\", \"South Korea\"]",
+      "response": "From the historical facts provided, we can see that China expressed an intent to meet or negotiate with several countries after 2015-11-27. These countries include Government Official (Taiwan), South Africa, Japan, Kazakhstan, Iran, and South Korea. \n\nSo the answer is: [\"Government Official (Taiwan)\", \"South Africa\", \"Japan\", \"Kazakhstan\", \"Iran\", \"South Korea\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did China give a condemnation to the Dissident of China?",
+    "answer": [
+      "2010-12-10"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005-08-26",
+      "response": "So the answer is: 2005-08-26",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2010-12-10",
+      "response": "So the answer is: 2010-12-10",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did China accuse Cambodia for the first time?",
+    "answer": [
+      "2012"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2012",
+      "response": "So the answer is: 2012",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2012",
+      "response": "So the answer is: 2012",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Could you tell me the exact month when the President of the Senate of Australia paid a visit to Cambodia?",
+    "answer": [
+      "2007-02"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2007-02",
+      "response": "So the answer is: 2007-02",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2007-02",
+      "response": "So the answer is: 2007-02",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who did Zawahiri criticise before the Middle East?",
+    "answer": [
+      "Benedict XVI",
+      "Pervez Musharraf"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Iran\", \"Mahmoud Abbas\", \"Barack Obama\", \"Pervez Musharraf\", \"Benedict XVI\", \"Citizen (Saudi Arabia)\"]",
+      "response": "From the provided historical facts, we can see that Zawahiri criticized or denounced several entities before criticizing the Middle East on 2007-12-14. These include Iran, Mahmoud Abbas, Barack Obama, Pervez Musharraf, Benedict XVI, and Citizen (Saudi Arabia). \n\nSo the answer is: [\"Iran\", \"Mahmoud Abbas\", \"Barack Obama\", \"Pervez Musharraf\", \"Benedict XVI\", \"Citizen (Saudi Arabia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Pervez Musharraf\", \"Benedict XVI\"]",
+      "response": "From the historical facts provided, we can see that Zawahiri criticized Pervez Musharraf on 2005-10-24 and Benedict XVI on 2006-09-30, both of which occurred before he criticized the Middle East on 2007-12-14. Therefore, the answer includes both entities he criticized prior to the Middle East.\n\nSo the answer is: [\"Pervez Musharraf\", \"Benedict XVI\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did the Undersecretary of the United Arab Emirates start negotiations with China?",
+    "answer": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Could you tell me the exact month when Abdelkader Taleb Oumar visited Ethiopia?",
+    "answer": [
+      "2015-01"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2015-01",
+      "response": "So the answer is: 2015-01",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2015-01",
+      "response": "So the answer is: 2015-01",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country was threatened by China in the same year as Boko Haram?",
+    "answer": [
+      "Vietnam",
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Vietnam\"]",
+      "response": "From the provided historical facts, we can see that China threatened Boko Haram on 2014-05-13. Additionally, there is another fact indicating that China threatened Vietnam in 2014-10-11. Therefore, the country threatened by China in the same year as Boko Haram is Vietnam.\n\nSo the answer is: [\"Vietnam\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Vietnam\"]",
+      "response": "So the answer is: [\"Vietnam\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who praised China on 29 Oct 2014?",
+    "answer": [
+      "Ashraf Ghani Ahmadzai"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Ashraf Ghani Ahmadzai\"]",
+      "response": "So the answer is: [\"Ashraf Ghani Ahmadzai\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Ashraf Ghani Ahmadzai\"]",
+      "response": "So the answer is: [\"Ashraf Ghani Ahmadzai\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After Iraq, with whom did Juan Carlos I negotiate?",
+    "answer": [
+      "Wen Jiabao",
+      "Mahmoud Abbas",
+      "Bill Richardson",
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "Vietnam",
+      "response": "From the provided historical facts, we can see that Juan Carlos I engaged in negotiations with various countries and individuals after his engagement with Iraq on 2006-04-24. The next negotiation listed after Iraq is with Vietnam, expressed through several intents to meet between February 9th and February 22nd, 2006. Therefore, the answer is Vietnam.\n\nSo the answer is: Vietnam",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "Wen Jiabao",
+      "response": "From the historical facts provided, we can see that Juan Carlos I engaged in negotiations with Iraq on 2006-04-24. The next negotiation listed after Iraq is with Wen Jiabao on 2007-06-28. Therefore, after Iraq, Juan Carlos I negotiated with Wen Jiabao.\n\nSo the answer is: Wen Jiabao",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who was the first to express the intention to negotiate with Kuwait in 2009?",
+    "answer": [
+      "Military (El Salvador)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Military (El Salvador)\"]",
+      "response": "From the provided historical facts, we can see that the earliest expression of intent to negotiate with Kuwait in 2009 was made by Military (El Salvador) on 2009-01-22. Therefore, the first entity to express the intention to negotiate with Kuwait in 2009 was Military (El Salvador).\n\nSo the answer is: [\"Military (El Salvador)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Military (El Salvador)\"]",
+      "response": "From the provided historical facts, we can see that the earliest expression of intent to negotiate with Kuwait in 2009 was made by Military (El Salvador) on 2009-01-22. Therefore, the first entity to express the intention to negotiate with Kuwait in 2009 was Military (El Salvador).\n\nSo the answer is: [\"Military (El Salvador)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "With which country did Kuwait last wish to establish diplomatic cooperation in 2011?",
+    "answer": [
+      "Iraq"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"United Arab Emirates\"]",
+      "response": "From the provided historical facts, we can see that Kuwait expressed an intent to cooperate with several countries throughout 2011. The last country listed as having expressed such an intent is the United Arab Emirates on 2011-12-08.\n\nSo the answer is: [\"United Arab Emirates\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"United Arab Emirates\"]",
+      "response": "From the provided historical facts, we can see that Kuwait expressed an intent to cooperate with several countries throughout 2011. The last country listed as having expressed such an intent is the United Arab Emirates on 2011-12-08.\n\nSo the answer is: [\"United Arab Emirates\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Who denounced Malaysia after 13 March 2014?",
+    "answer": [
+      "Police (Malaysia)",
+      "Rights Activist (Malaysia)",
+      "Human Rights Watch",
+      "Villager (Thailand)",
+      "Nurul Izzah Anwar",
+      "High Commission for Refugees",
+      "Office of the United Nations High Commissioner for Human Rights",
+      "China",
+      "Tan Sri Muhyiddin Yassin"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"China\", \"High Commission for Refugees\", \"Human Rights Watch\", \"Rights Activist (Malaysia)\", \"Nurul Izzah Anwar\", \"Office of the United Nations High Commissioner for Human Rights\", \"Tan Sri Muhyiddin Yassin\", \"Police (Malaysia)\", \"Villager (Thailand)\"]",
+      "response": "So the answer is: [\"China\", \"High Commission for Refugees\", \"Human Rights Watch\", \"Rights Activist (Malaysia)\", \"Nurul Izzah Anwar\", \"Office of the United Nations High Commissioner for Human Rights\", \"Tan Sri Muhyiddin Yassin\", \"Police (Malaysia)\", \"Villager (Thailand)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"China\", \"High Commission for Refugees\", \"Human Rights Watch\", \"Rights Activist (Malaysia)\", \"Nurul Izzah Anwar\", \"Office of the United Nations High Commissioner for Human Rights\", \"Tan Sri Muhyiddin Yassin\", \"Police (Malaysia)\", \"Villager (Thailand)\"]",
+      "response": "So the answer is: [\"China\", \"High Commission for Refugees\", \"Human Rights Watch\", \"Rights Activist (Malaysia)\", \"Nurul Izzah Anwar\", \"Office of the United Nations High Commissioner for Human Rights\", \"Tan Sri Muhyiddin Yassin\", \"Police (Malaysia)\", \"Villager (Thailand)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Could you tell me the exact month when the leader of Sri Lanka made negative remarks about the Sinhalese?",
+    "answer": [
+      "2008-01"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2008-01",
+      "response": "From the historical facts provided, the exact date when the Head of Government (Sri Lanka) made negative remarks about the Sinhalese is 2008-01-21. Since the question asks for the month, the answer should be in \"yyyy-mm\" format.\n\nSo the answer is: 2008-01",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2008-01",
+      "response": "From the historical facts provided, the exact date when the Head of Government (Sri Lanka) made negative remarks about the Sinhalese is 2008-01-21. Since the question asks for the month, the answer should be in \"yyyy-mm\" format.\n\nSo the answer is: 2008-01",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did the Iranian media staff last negotiate with Iraq?",
+    "answer": [
+      "2009"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2009",
+      "response": "Answer:\nFrom the historical facts provided, there is only one entry indicating that Iranian media staff engaged in negotiations with Iraq on 2009-01-19. Since no other dates are mentioned, this can be considered both the first and last instance of such negotiations according to the given data.\n\nSo the answer is: 2009",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2009",
+      "response": "So the answer is: 2009",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who expressed the intention to meet with Oman in 2015?",
+    "answer": [
+      "Armed Rebel (Oman)",
+      "Algirdas Butkevičius",
+      "Men (Oman)",
+      "Nikos Christodoulides",
+      "Foreign Affairs (Syria)",
+      "Taavi Rõivas",
+      "Ministry (Iran)",
+      "Qatar"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Ministry (Iran)\", \"Algirdas Butkevičius\", \"Nikos Christodoulides\", \"Qatar\", \"Men (Oman)\", \"Foreign Affairs (Syria)\", \"Armed Rebel (Oman)\", \"Taavi Rõivas\"]",
+      "response": "So the answer is: [\"Ministry (Iran)\", \"Algirdas Butkevičius\", \"Nikos Christodoulides\", \"Qatar\", \"Men (Oman)\", \"Foreign Affairs (Syria)\", \"Armed Rebel (Oman)\", \"Taavi Rõivas\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Ministry (Iran)\", \"Algirdas Butkevičius\", \"Nikos Christodoulides\", \"Qatar\", \"Men (Oman)\", \"Foreign Affairs (Syria)\", \"Armed Rebel (Oman)\", \"Taavi Rõivas\"]",
+      "response": "So the answer is: [\"Ministry (Iran)\", \"Algirdas Butkevičius\", \"Nikos Christodoulides\", \"Qatar\", \"Men (Oman)\", \"Foreign Affairs (Syria)\", \"Armed Rebel (Oman)\", \"Taavi Rõivas\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did Kuwait sign formal agreements with the US Department of Defense?",
+    "answer": [
+      "2005-08-18"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2005-08-18",
+      "response": "So the answer is: 2005-08-18",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-08-18",
+      "response": "So the answer is: 2005-08-18",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did China last make a request to the military ruler of Myanmar?",
+    "answer": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who made Thailand suffer from unconventional violence in June 2005?",
+    "answer": [
+      "Insurgent (Thailand)",
+      "Armed Gang (Thailand)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Insurgent (Thailand)\", \"Armed Gang (Thailand)\"]",
+      "response": "So the answer is: [\"Insurgent (Thailand)\", \"Armed Gang (Thailand)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Insurgent (Thailand)\", \"Armed Gang (Thailand)\"]",
+      "response": "So the answer is: [\"Insurgent (Thailand)\", \"Armed Gang (Thailand)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "On 25 Sep 2006, which country asked for China?",
+    "answer": [
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"France\", \"Japan\", \"South Korea\"]",
+      "response": "So the answer is: [\"France\", \"Japan\", \"South Korea\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"France\", \"Japan\", \"South Korea\"]",
+      "response": "So the answer is: [\"France\", \"Japan\", \"South Korea\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "In which month did China receive the visit from the Member of Parliament of Australia?",
+    "answer": [
+      "2005-03"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005-03",
+      "response": "From the historical facts provided, we can see that China hosted a visit from the Member of Parliament of Australia on 2005-03-18. Therefore, the month in which this event took place is March 2005.\n\nSo the answer is: 2005-03",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-03",
+      "response": "From the historical facts provided, we can see that China hosted a visit from the Member of Parliament of Australia on 2005-03-18. Therefore, the month in which this event took place is March 2005.\n\nSo the answer is: 2005-03",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did the Internal Security Operations Command first express its intention to engage in diplomatic cooperation with Thailand?",
+    "answer": [
+      "2009-08"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2007-06",
+      "response": "From the provided historical facts, the earliest instance where the Internal Security Operations Command expressed its intention to engage in diplomatic cooperation with Thailand is recorded as \"Internal Security Operations Command Express intent to engage in diplomatic cooperation (such as policy support) Thailand in 2009-08-28.\" However, there are earlier instances of engagement between the Internal Security Operations Command and Thailand, such as \"Internal Security Operations Command Appeal for diplomatic cooperation (such as policy support) Military Personnel (Thailand) in 2007-06-16\" and \"Internal Security Operations Command Appeal for diplomatic cooperation (such as policy support) Military Personnel (Thailand) in 2007-06-18.\"\n\nSince the question asks for the first expression of intent to engage in diplomatic cooperation, we need to focus on the month when the first expression of intent was made. Given the available data, the earliest expressions of intent were in June 2007.\n\nSo the answer is: 2007-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2009-08",
+      "response": "From the historical facts provided, we can see that the Internal Security Operations Command expressed its intention to engage in diplomatic cooperation with Thailand on 2009-08-28. Since the question asks for the month, the answer should be in the format \"yyyy-mm\".\n\nSo the answer is: 2009-08",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did the African Union negotiate with Ethiopia?",
+    "answer": [
+      "2009"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2009",
+      "response": "So the answer is: 2009",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2009",
+      "response": "So the answer is: 2009",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did Valdis Dombrovskis first visit China?",
+    "answer": [
+      "2010-06-05"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2010-06-05",
+      "response": "So the answer is: 2010-06-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010-06-05",
+      "response": "So the answer is: 2010-06-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country did Iraq threaten the police of Turkmenistan in the same month?",
+    "answer": [
+      "Iran"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[]",
+      "response": "From the provided historical facts, we can see that Iraq threatened the police of Turkmenistan on 2015-06-13. There is no mention of any other country being threatened in the same month. Therefore, the answer is:\n\nSo the answer is: []",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Iraq\"]",
+      "response": "So the answer is: [\"Iraq\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "After the militant of Hizbul Islam, who suffered from the conventional military forces of Ethiopia?",
+    "answer": [
+      "Al-Shabaab",
+      "Eritrea",
+      "Islamic Courts Union",
+      "Secret Agent (Ethiopia)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "2010-08-06",
+      "response": "From the historical facts provided, we can see that Ethiopia used conventional military force against Combatant (Hizbul Islam) starting from 2010-03-16. The next event involving conventional military force against Combatant (Hizbul Islam) was conducted by the African Union on 2010-08-06. \n\nSo the answer is: 2010-08-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2010-08-06",
+      "response": "From the historical facts provided, we can see that Ethiopia used conventional military force against Combatant (Hizbul Islam) starting from 2010-03-16. The next event involving conventional military force against Combatant (Hizbul Islam) was conducted by the African Union on 2010-08-06. \n\nSo the answer is: 2010-08-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "When did the citizens of Bulgaria first express their intention to meet with Iraq?",
+    "answer": [
+      "2005-12-11"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005-12-11",
+      "response": "So the answer is: 2005-12-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-12-11",
+      "response": "So the answer is: 2005-12-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country wanted to cooperate with Cambodia in 2008-11?",
+    "answer": [
+      "Vietnam",
+      "Thailand",
+      "Laos"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Thailand\", \"Vietnam\", \"Laos\"]",
+      "response": "So the answer is: [\"Thailand\", \"Vietnam\", \"Laos\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Thailand\", \"Vietnam\", \"Laos\"]",
+      "response": "So the answer is: [\"Thailand\", \"Vietnam\", \"Laos\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After 2014, who expressed the intention to participate in diplomatic cooperation with Ethiopia?",
+    "answer": [
+      "Mauritania",
+      "China",
+      "Osama Mohamed Abdul Shafy Shaltout",
+      "Sudan"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"China\", \"Sudan\", \"Osama Mohamed Abdul Shafy Shaltout\", \"Mauritania\"]",
+      "response": "So the answer is: [\"China\", \"Sudan\", \"Osama Mohamed Abdul Shafy Shaltout\", \"Mauritania\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"China\", \"Sudan\", \"Osama Mohamed Abdul Shafy Shaltout\", \"Mauritania\"]",
+      "response": "So the answer is: [\"China\", \"Sudan\", \"Osama Mohamed Abdul Shafy Shaltout\", \"Mauritania\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who visited Kuwait in the same month as Saifur Rahman?",
+    "answer": [
+      "Tony Blair",
+      "Head of Government (Bangladesh)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Head of Government (Bangladesh)\", \"Tony Blair\"]",
+      "response": "From the historical facts provided, we can see that Saifur Rahman made a visit to Kuwait on 2006-05-06. Other individuals who also made visits to Kuwait in the same month include the Head of Government (Bangladesh) on 2006-05-09 and Tony Blair on 2006-05-22. \n\nSo the answer is: [\"Head of Government (Bangladesh)\", \"Tony Blair\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Head of Government (Bangladesh)\", \"Tony Blair\"]",
+      "response": "From the historical facts provided, we can see that Saifur Rahman made a visit to Kuwait on 2006-05-06. Other individuals who also made visits to Kuwait in the same month include the Head of Government (Bangladesh) on 2006-05-09 and Tony Blair on 2006-05-22. \n\nSo the answer is: [\"Head of Government (Bangladesh)\", \"Tony Blair\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did Benjamin Netanyahu last express an intention to meet with Ethiopia?",
+    "answer": [
+      "2011-12-12"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011-12-12",
+      "response": "So the answer is: 2011-12-12",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011-12-12",
+      "response": "So the answer is: 2011-12-12",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did the Quds Force express its intention to meet with Iraq?",
+    "answer": [
+      "2015-03"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2015-03",
+      "response": "From the historical facts provided, we can see that the Quds Force expressed its intention to meet with Iraq on 2015-03-02. Since the question asks for the month, the answer should be in the format \"yyyy-mm\".\n\nSo the answer is: 2015-03",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2015-03",
+      "response": "From the historical facts provided, we can see that the Quds Force expressed its intention to meet with Iraq on 2015-03-02. Since the question asks for the month, the answer should be in the format \"yyyy-mm\".\n\nSo the answer is: 2015-03",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Before Koya Nishikawa, who wanted to meet with China last?",
+    "answer": [
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Andrew Robb",
+      "response": "From the provided historical facts, we can see that Koya Nishikawa expressed an intent to meet or negotiate with China on 2014-09-19. To determine who wanted to meet with China last before Koya Nishikawa, we need to look at the entries before this date. The entry immediately preceding Koya Nishikawa's is Andrew Robb, who expressed an intent to meet or negotiate with China on 2014-06-20.\n\nSo the answer is: Andrew Robb",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "Andrew Robb",
+      "response": "From the provided historical facts, we can see that Koya Nishikawa expressed an intent to meet or negotiate with China on 2014-09-19. To determine who wanted to meet with China last before Koya Nishikawa, we need to look at the entries before this date. The entry immediately preceding Koya Nishikawa's is Andrew Robb, who expressed an intent to meet or negotiate with China on 2014-06-20.\n\nSo the answer is: Andrew Robb",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "After 25 May 2015, which country did Malaysia announce its intention to cooperate with?",
+    "answer": [
+      "Vietnam",
+      "Thailand"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"China\"]",
+      "response": "From the provided historical facts, we can see that after 25 May 2015, Malaysia expressed an intent to cooperate with several countries. However, the closest date to 25 May 2015 where Malaysia expressed an intent to cooperate with another country is 26 May 2015, when Malaysia expressed an intent to cooperate with China.\n\nSo the answer is: [\"China\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2015-08-10",
+      "response": "From the historical facts provided, we can see that after 25 May 2015, Malaysia expressed its intention to cooperate with Vietnam on 2015-08-10. So the answer is: 2015-08-10.",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Who negotiated with Barack Obama on the same day as Cambodia?",
+    "answer": [
+      "China",
+      "Wen Jiabao"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Cambodia\", \"China\", \"Wen Jiabao\"]",
+      "response": "So the answer is: [\"Cambodia\", \"China\", \"Wen Jiabao\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Cambodia\", \"China\", \"Wen Jiabao\"]",
+      "response": "So the answer is: [\"Cambodia\", \"China\", \"Wen Jiabao\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "At what time did Thailand receive the visit from the Tourist of Africa?",
+    "answer": [
+      "2015-03-15"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2015-03-15",
+      "response": "So the answer is: 2015-03-15",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2015-03-15",
+      "response": "So the answer is: 2015-03-15",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who paid a visit to Cambodia in 2006-11?",
+    "answer": [
+      "Head of Government (South Korea)",
+      "Thailand",
+      "Head of Government (Sri Lanka)",
+      "Roh Moo Hyun"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Thailand\", \"Head of Government (South Korea)\", \"Head of Government (Sri Lanka)\"]",
+      "response": "So the answer is: [\"Thailand\", \"Head of Government (South Korea)\", \"Head of Government (Sri Lanka)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Thailand\", \"Head of Government (South Korea)\", \"Head of Government (Sri Lanka)\"]",
+      "response": "So the answer is: [\"Thailand\", \"Head of Government (South Korea)\", \"Head of Government (Sri Lanka)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After Andrew Robb, which country was the first to express an intention to negotiate with Kuwait?",
+    "answer": [
+      "Qatar"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Qatar",
+      "response": "From the historical facts provided, we can see that Andrew Robb expressed an intention to negotiate with Kuwait on 2015-04-15. The next country to express such an intention was Qatar, which did so on 2015-05-11 and 2015-05-12. Therefore, the first country to express an intention to negotiate with Kuwait after Andrew Robb was Qatar.\n\nSo the answer is: Qatar",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "Qatar",
+      "response": "From the historical facts provided, we can see that Andrew Robb expressed an intention to negotiate with Kuwait on 2015-04-15. The next country to express such an intention was Qatar, which did so on 2015-05-11 and 2015-05-12. Therefore, the first country to express an intention to negotiate with Kuwait after Andrew Robb was Qatar.\n\nSo the answer is: Qatar",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who wanted to negotiate with the Non-Aligned Movement first, after Malaysia?",
+    "answer": [
+      "A.P. Sharma"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Iran\"]",
+      "response": "From the provided historical facts, we can see that Foreign Affairs (Malaysia) expressed an intent to meet or negotiate with the Non-Aligned Movement on 2008-07-28. However, the question asks who wanted to negotiate with the Non-Aligned Movement first, after Malaysia. Therefore, we need to find the next earliest date after 2008-07-28 where another entity expressed an intent to meet or negotiate with the Non-Aligned Movement.\n\nLooking at the dates, the next earliest date is 2009-05-01, where Iran expressed an intent to meet or negotiate with the Non-Aligned Movement.\n\nSo the answer is: [\"Iran\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"South Africa\", \"A.P. Sharma\"]",
+      "response": "From the provided historical facts, we can see that both South Africa and A.P. Sharma expressed their intent to meet or negotiate with the Non-Aligned Movement on the same day, 2006-01-29, immediately following Malaysia's expression of intent on the same day. Therefore, the answer includes both entities.\n\nSo the answer is: [\"South Africa\", \"A.P. Sharma\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Which country signed an agreement with Swaziland first, after Ethiopia?",
+    "answer": [
+      "Vietnam"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011-07-18",
+      "response": "From the historical facts provided, we can see that Ethiopia signed a formal agreement with Swaziland on 2011-07-18. After Ethiopia, South Africa also signed a formal agreement with Swaziland on the same day, 2011-07-18. Therefore, South Africa signed an agreement with Swaziland first after Ethiopia.\n\nSo the answer is: 2011-07-18",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2011-07-18",
+      "response": "From the historical facts provided, we can see that Ethiopia signed a formal agreement with Swaziland on 2011-07-18. After Ethiopia, South Africa also signed a formal agreement with Swaziland on the same day, 2011-07-18. Therefore, South Africa signed an agreement with Swaziland first after Ethiopia.\n\nSo the answer is: 2011-07-18",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "In which year did the Council of Advisors to the Thai Cabinet make the first negative remarks about Thailand?",
+    "answer": [
+      "2012"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2012",
+      "response": "From the provided historical facts, the earliest mention of the Council of Advisors to the Thai Cabinet making negative remarks about Thailand is on 2012-09-19. Therefore, the year in which this occurred is 2012.\n\nSo the answer is: 2012",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2012",
+      "response": "So the answer is: 2012",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country announced its intention to establish diplomatic cooperation with Thailand on 22 August 2007?",
+    "answer": [
+      "Malaysia"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Laos\", \"Malaysia\"]",
+      "response": "So the answer is: [\"Laos\", \"Malaysia\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Laos\", \"Malaysia\"]",
+      "response": "So the answer is: [\"Laos\", \"Malaysia\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Which country did China make optimistic comments about after 18 December 2015?",
+    "answer": [
+      "Association of Southeast Asian Nations"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "None",
+      "response": "From the provided historical facts, we can see that China made optimistic comments about Iraq on 2015-12-18, which is just before the specified date of 18 December 2015. However, there are no entries where China made optimistic comments about any country after this date. Therefore, based on the available data, there is no country that fits the criteria of receiving optimistic comments from China after 18 December 2015.\n\nSo the answer is: None",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Iraq\", \"Association of Southeast Asian Nations\"]",
+      "response": "So the answer is: [\"Iraq\", \"Association of Southeast Asian Nations\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "In what year did the UN Security Council make pessimistic comments about Comoros?",
+    "answer": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country praised Thailand on 29 April 2011?",
+    "answer": [
+      "China"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"China\"]",
+      "response": "So the answer is: [\"China\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"China\"]",
+      "response": "So the answer is: [\"China\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Could you tell me the exact month when the armed gang of Syria used unconventional violence against Iraq for the first time?",
+    "answer": [
+      "2013-11"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2013-11",
+      "response": "From the provided historical facts, the first instance of an armed gang from Syria using unconventional violence against Iraq is recorded as \"Armed Gang (Syria), Use unconventional violence, Iraq in 2013-11-18\". However, this does not indicate it was the first time such actions were taken by Syrian armed gangs. To find the first time, we need to look for any earlier instances involving Syrian armed gangs. Upon reviewing the data, there are no earlier records of Syrian armed gangs using unconventional violence against Iraq. Therefore, the exact month when the armed gang of Syria used unconventional violence against Iraq for the first time is November 2013.\n\nSo the answer is: 2013-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2013-11",
+      "response": "So the answer is: 2013-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Before the Government of Djibouti, with whom did Djibouti last express an intention to negotiate?",
+    "answer": [
+      "Yemen"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "ERROR",
+      "response": "From the provided historical facts, we need to identify the last entity with whom Djibouti expressed an intention to negotiate before the Government of Djibouti on 2010-08-13. Looking through the dates, the closest and latest expression of intent to negotiate before 2010-08-13 was Djibouti expressing an intention to negotiate with Ethiopia on 2012-04-16, but this is after the specified date. The next closest date is Djibouti expressing an intention to negotiate with Iran on 2010-10-19, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also after the specified date. The next one is Djibouti expressing an intention to negotiate with Iran on 2010-10-18, which is also",
+      "request_failed": false,
+      "missing_marker": true,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Japan\"]",
+      "response": "From the provided historical facts, we can see that the last entity expressing an intention to negotiate with Djibouti before August 13, 2010, was Japan on 2009-01-13. Therefore, the answer is based on the latest expression of intent to negotiate prior to the specified date.\n\nSo the answer is: [\"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Who did China support after 17 October 2015?",
+    "answer": [
+      "Cambodia",
+      "Ashraf Ghani Ahmadzai",
+      "Tony Tan Keng Yam",
+      "Association of Southeast Asian Nations",
+      "Muhammadu Buhari",
+      "Foreign Affairs (Cape Verde)",
+      "Thailand",
+      "France",
+      "China Southern Airlines",
+      "Elizabeth II",
+      "Social Party of National Unity",
+      "Government (Nigeria)"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"France\"]",
+      "response": "From the provided historical facts, we can see that China rallied support on behalf of France multiple times after October 17, 2015. Specifically, the dates mentioned are November 13, 14, and 15, 2015. Therefore, the entity China supported after October 17, 2015, was France.\n\nSo the answer is: [\"France\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"France\", \"International Court of Justice\", \"Vietnam\", \"Helmut Schmidt\", \"Malaysia\", \"South Korea\", \"African Union\", \"Djibouti\", \"Bank (China)\", \"Iraq\"]",
+      "response": "So the answer is: [\"France\", \"International Court of Justice\", \"Vietnam\", \"Helmut Schmidt\", \"Malaysia\", \"South Korea\", \"African Union\", \"Djibouti\", \"Bank (China)\", \"Iraq\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who would wish to visit China first after Charles Mwando Nsimba did?",
+    "answer": [
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Barack Obama\", \"Bev Perdue\"]",
+      "response": "From the provided historical facts, we can see that Charles Mwando Nsimba made a visit to China on 2009-10-27. Following this visit, both Barack Obama and Bev Perdue also made visits to China on the same day. Since the question asks who would wish to visit China first after Charles Mwando Nsimba, and both visited on the same day, we include both entities in the answer.\n\nSo the answer is: [\"Barack Obama\", \"Bev Perdue\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Barack Obama\", \"Bev Perdue\"]",
+      "response": "From the provided historical facts, we can see that Charles Mwando Nsimba made a visit to China on 2009-10-27. Following this visit, both Barack Obama and Bev Perdue also made visits to China on the same day. Since the question asks who would wish to visit China first after Charles Mwando Nsimba, and both visited on the same day, we include both entities in the answer.\n\nSo the answer is: [\"Barack Obama\", \"Bev Perdue\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In June 2008, which country wanted to cooperate with Cambodia?",
+    "answer": [
+      "Vietnam",
+      "Thailand",
+      "Laos"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Vietnam\", \"Laos\", \"Thailand\"]",
+      "response": "So the answer is: [\"Vietnam\", \"Laos\", \"Thailand\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Vietnam\", \"Laos\", \"Thailand\"]",
+      "response": "So the answer is: [\"Vietnam\", \"Laos\", \"Thailand\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did the Egyptian leader last express his intention to negotiate with Iraq?",
+    "answer": [
+      "2012-11"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2012-11",
+      "response": "From the historical facts provided, we can see that the Head of Government of Egypt expressed an intention to negotiate with Iraq on three occasions: 2011-07-10, 2012-09-08, and 2012-11-10. The last expression of intent to negotiate with Iraq was on 2012-11-10. Therefore, the month in question is November 2012.\n\nSo the answer is: 2012-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2012-11",
+      "response": "From the historical facts provided, we can see that the Head of Government of Egypt expressed an intention to negotiate with Iraq on three occasions: 2011-07-10, 2012-09-08, and 2012-11-10. The latest occurrence is on 2012-11-10. Since the question asks for the month, the answer should be in the format \"yyyy-mm\".\n\nSo the answer is: 2012-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did Thailand offer cooperation to Ethiopia?",
+    "answer": [
+      "2007-10"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2007-10",
+      "response": "From the historical facts provided, we can see that Thailand expressed its intent to cooperate with Ethiopia on 2007-10-10. Therefore, the month in which this occurred is October.\n\nSo the answer is: 2007-10",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2007-10",
+      "response": "So the answer is: 2007-10",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country signed an agreement with Malaysia before South Africa?",
+    "answer": [
+      "Thailand",
+      "Japan",
+      "United Arab Emirates"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Thailand\", \"United Arab Emirates\"]",
+      "response": "From the historical facts provided, we can see that several countries signed formal agreements with Malaysia before South Africa did on 2005-07-26. These countries include Thailand and the United Arab Emirates. Specifically, Thailand signed an agreement with Malaysia on 2005-01-28, and the United Arab Emirates signed an agreement with Malaysia on 2005-03-19. Therefore, the countries that signed an agreement with Malaysia before South Africa are Thailand and the United Arab Emirates.\n\nSo the answer is: [\"Thailand\", \"United Arab Emirates\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Thailand\", \"United Arab Emirates\"]",
+      "response": "From the historical facts provided, we can see that several countries signed formal agreements with Malaysia before South Africa did on 2005-07-26. These countries include Thailand and the United Arab Emirates. Specifically, Thailand signed an agreement with Malaysia on 2005-01-28, and the United Arab Emirates signed an agreement with Malaysia on 2005-03-19. Therefore, the countries that signed an agreement with Malaysia before South Africa are Thailand and the United Arab Emirates.\n\nSo the answer is: [\"Thailand\", \"United Arab Emirates\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did Iraq first pay a visit to the Member of Legislative of Govt Lebanon?",
+    "answer": [
+      "2005-02"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2005-02",
+      "response": "So the answer is: 2005-02",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-02",
+      "response": "So the answer is: 2005-02",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what year did the Governor of Thailand threaten Thailand?",
+    "answer": [
+      "2011"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011",
+      "response": "So the answer is: 2011",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011",
+      "response": "So the answer is: 2011",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who made optimistic remarks about Thailand in 2013-12?",
+    "answer": [
+      "Citizen (Thailand)",
+      "Iran",
+      "Julie Bishop",
+      "China",
+      "Media Personnel (Thailand)"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"China\", \"Citizen (Thailand)\", \"Iran\", \"Media Personnel (Thailand)\", \"Julie Bishop\"]",
+      "response": "So the answer is: [\"China\", \"Citizen (Thailand)\", \"Iran\", \"Media Personnel (Thailand)\", \"Julie Bishop\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Citizen (Thailand)\", \"Iran\", \"Media Personnel (Thailand)\", \"China\", \"Julie Bishop\"]",
+      "response": "So the answer is: [\"Citizen (Thailand)\", \"Iran\", \"Media Personnel (Thailand)\", \"China\", \"Julie Bishop\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who requested a meeting with China in the same month as Carlos Lage Dávila?",
+    "answer": [
+      "Mexico",
+      "Iran",
+      "Kuomintang",
+      "Lien Chan",
+      "Abdullah Gül",
+      "South Korea",
+      "Wen Jiabao",
+      "Donald Rumsfeld",
+      "Isaias Afewerki",
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Abdullah Gül\", \"Donald Rumsfeld\", \"Iran\", \"Japan\", \"Wen Jiabao\"]",
+      "response": "From the historical facts provided, we can see that Carlos Lage Dávila expressed an intent to meet or negotiate with China on 2005-02-04. Other entities also expressed their intent to meet or negotiate with China in February 2005, including Abdullah Gül, Donald Rumsfeld, Iran, Japan, Wen Jiabao, and others.\n\nSo the answer is: [\"Abdullah Gül\", \"Donald Rumsfeld\", \"Iran\", \"Japan\", \"Wen Jiabao\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Abdullah Gül\", \"Donald Rumsfeld\", \"Iran\", \"Japan\", \"Wen Jiabao\"]",
+      "response": "From the historical facts provided, we can see that Carlos Lage Dávila expressed an intent to meet or negotiate with China on 2005-02-04. Other entities also expressed their intent to meet or negotiate with China in February 2005, including Abdullah Gül, Donald Rumsfeld, Iran, Japan, Wen Jiabao, and others.\n\nSo the answer is: [\"Abdullah Gül\", \"Donald Rumsfeld\", \"Iran\", \"Japan\", \"Wen Jiabao\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what year did China announce its intention to meet with Evo Morales?",
+    "answer": [
+      "2011"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011",
+      "response": "So the answer is: 2011",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011",
+      "response": "So the answer is: 2011",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did the armed gang of Saudi Arabia first use unconventional force against Iraq?",
+    "answer": [
+      "2010-08-27"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2008-05-26",
+      "response": "So the answer is: 2008-05-26",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2010-08-27",
+      "response": "So the answer is: 2010-08-27",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did the leader of Guyana first express the intention to negotiate with China?",
+    "answer": [
+      "2005"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005",
+      "response": "From the provided historical facts, we can see that the earliest expression of intent to negotiate with China by the Head of Government (Guyana) was on 2005-04-07, expressed by Oluṣẹgun Ọbasanjọ. Therefore, the year in which the leader of Guyana first expressed the intention to negotiate with China is 2005.\n\nSo the answer is: 2005",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005",
+      "response": "So the answer is: 2005",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did Cambodia last release people to the villagers of Thailand?",
+    "answer": [
+      "2010-12-29"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2010-12-29",
+      "response": "So the answer is: 2010-12-29",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010-12-29",
+      "response": "So the answer is: 2010-12-29",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what year did China formally sign an agreement with Abdel Fattah Al-Sisi?",
+    "answer": [
+      "2014"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2014",
+      "response": "So the answer is: 2014",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2014",
+      "response": "So the answer is: 2014",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In 2011-05, which country signed formal agreements with Oman?",
+    "answer": [
+      "Iran",
+      "Qatar"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Iran\", \"Qatar\"]",
+      "response": "So the answer is: [\"Iran\", \"Qatar\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Iran\", \"Qatar\"]",
+      "response": "So the answer is: [\"Iran\", \"Qatar\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who denounced Malaysia in 2014?",
+    "answer": [
+      "Rights Activist (Malaysia)",
+      "Human Rights Watch",
+      "Achmad Sukarno",
+      "High Commission for Refugees",
+      "China"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Achmad Sukarno\", \"China\", \"High Commission for Refugees\", \"Human Rights Watch\", \"Rights Activist (Malaysia)\"]",
+      "response": "So the answer is: [\"Achmad Sukarno\", \"China\", \"High Commission for Refugees\", \"Human Rights Watch\", \"Rights Activist (Malaysia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Achmad Sukarno\", \"China\", \"High Commission for Refugees\", \"Human Rights Watch\", \"Rights Activist (Malaysia)\"]",
+      "response": "So the answer is: [\"Achmad Sukarno\", \"China\", \"High Commission for Refugees\", \"Human Rights Watch\", \"Rights Activist (Malaysia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country signed formal agreements with Cambodia on 20 July 2006?",
+    "answer": [
+      "Thailand"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Thailand\"]",
+      "response": "So the answer is: [\"Thailand\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Thailand\"]",
+      "response": "So the answer is: [\"Thailand\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did China last praise Helmut Schmidt?",
+    "answer": [
+      "2015-11-11"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2015-11-11",
+      "response": "So the answer is: 2015-11-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2015-11-11",
+      "response": "So the answer is: 2015-11-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In 2014, which country was the first to denounce China?",
+    "answer": [
+      "Vietnam"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Vietnam",
+      "response": "So the answer is: Vietnam",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "Vietnam",
+      "response": "So the answer is: Vietnam",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what month did Robert Hill first express his intention to meet with China?",
+    "answer": [
+      "2005-06"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005-06",
+      "response": "So the answer is: 2005-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-06",
+      "response": "So the answer is: 2005-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did Malaysia negotiate with the representatives of Malaysia?",
+    "answer": [
+      "2013-04"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"2007-10\", \"2010-01\", \"2013-04\"]",
+      "response": "From the historical facts provided, we can see that Malaysia engaged in negotiations with representatives of Malaysia on three different occasions: 2007-10-22, 2010-01-22, and 2013-04-06. Each of these dates falls within a specific month. Since the question asks for the month, we need to extract the month part from these timestamps.\n\nThe months involved are October (2007-10), January (2010-01), and April (2013-04). Therefore, the answer should include all these months.\n\nSo the answer is: [\"2007-10\", \"2010-01\", \"2013-04\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2013-04",
+      "response": "From the historical facts provided, we can see that the negotiation between Representatives (Malaysia) and Malaysia took place on 2013-04-06. Since the question asks for the month, the answer should be in \"yyyy-mm\" format.\n\nSo the answer is: 2013-04",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "On 15 November 2005, who criticised Iraq?",
+    "answer": [
+      "Donald Rumsfeld"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Donald Rumsfeld\"]",
+      "response": "So the answer is: [\"Donald Rumsfeld\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Donald Rumsfeld\"]",
+      "response": "So the answer is: [\"Donald Rumsfeld\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did the Mekong River Commission first visit Thailand?",
+    "answer": [
+      "2010-03"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2010-03",
+      "response": "From the historical facts provided, the first visit by the Mekong River Commission to Thailand was on 2010-03-25. Therefore, the month in which the Mekong River Commission first visited Thailand is March 2010.\n\nSo the answer is: 2010-03",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010-03",
+      "response": "From the historical facts provided, the first visit by the Mekong River Commission to Thailand was on 2010-03-25. Therefore, the month in which the Mekong River Commission first visited Thailand is March 2010.\n\nSo the answer is: 2010-03",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did Ahmed el-Tayeb express his intention to meet with Malaysia?",
+    "answer": [
+      "2012"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "None",
+      "response": "After reviewing the provided historical facts, there is no mention of Ahmed el-Tayeb expressing an intention to meet with Malaysia. Therefore, based on the available data, we cannot determine the year when Ahmed el-Tayeb expressed his intention to meet with Malaysia.\n\nSo the answer is: None",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2012",
+      "response": "So the answer is: 2012",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did the other authorities and officials of Turkey provide humanitarian aid to Iraq?",
+    "answer": [
+      "2014-06"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2014-06",
+      "response": "From the historical facts provided, we can see that Other Authorities / Officials (Turkey) provided humanitarian aid to Iraq on 2014-06-16. Therefore, the month in which this event took place is June 2014.\n\nSo the answer is: 2014-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2014-06",
+      "response": "From the historical facts provided, we can see that Other Authorities / Officials (Turkey) provided humanitarian aid to Iraq on 2014-06-16. Therefore, the month in which this event took place is June 2014.\n\nSo the answer is: 2014-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did the Maoist Communist Centre of India last visit China?",
+    "answer": [
+      "2008"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "None",
+      "response": "After reviewing the provided historical facts, there is no mention of the Maoist Communist Centre of India making a visit to China. Therefore, based on the available information, we cannot determine the year when the Maoist Communist Centre of India last visited China.\n\nSo the answer is: None",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2008",
+      "response": "So the answer is: 2008",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what year did Malaysia last accuse Thailand?",
+    "answer": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2007",
+      "response": "From the historical facts provided, we can see that Malaysia accused Thailand on two occasions: 2005-10-26 and 2007-02-01. The last accusation was on 2007-02-01. Therefore, the year in which Malaysia last accused Thailand is 2007.\n\nSo the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2007",
+      "response": "From the historical facts provided, we can see that Malaysia accused Thailand on two occasions: 2005-10-26 and 2007-02-01. The last accusation was on 2007-02-01. Therefore, the year in which Malaysia last accused Thailand is 2007.\n\nSo the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did the Malaysian police want to start diplomatic cooperation with Malaysia?",
+    "answer": [
+      "2015-10"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2015-10",
+      "response": "So the answer is: 2015-10",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2015-10",
+      "response": "So the answer is: 2015-10",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did Liu Yandong make his first appeal to China?",
+    "answer": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2010",
+      "response": "So the answer is: 2010",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010",
+      "response": "So the answer is: 2010",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did Winston Peters visit Malaysia for the first time?",
+    "answer": [
+      "2005"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2005",
+      "response": "So the answer is: 2005",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005",
+      "response": "So the answer is: 2005",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who visited Thailand in the same month as the King of Jordan?",
+    "answer": [
+      "Association of Southeast Asian Nations",
+      "Head of Government (Bahrain)"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Royal Administration (Jordan)\", \"Association of Southeast Asian Nations\"]",
+      "response": "From the provided historical facts, we can see that both the Royal Administration (Jordan) and the Association of Southeast Asian Nations made visits to Thailand in December 2005. Therefore, the entities that visited Thailand in the same month as the King of Jordan are the Royal Administration (Jordan) and the Association of Southeast Asian Nations.\n\nSo the answer is: [\"Royal Administration (Jordan)\", \"Association of Southeast Asian Nations\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Royal Administration (Jordan)\"]",
+      "response": "From the provided historical facts, we can see that the Royal Administration of Jordan made a visit to Thailand on 2005-12-16. Since no other visits to Thailand are mentioned within the same month, the answer includes only the Royal Administration of Jordan.\n\nSo the answer is: [\"Royal Administration (Jordan)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Who made threats against Thailand before 3 October 2006?",
+    "answer": [
+      "Citizen (Thailand)",
+      "Protester (Thailand)",
+      "Pattani United Liberation Organization"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Pattani United Liberation Organization\"]",
+      "response": "From the historical facts provided, we can see that the Pattani United Liberation Organization made threats against Thailand before 2006-10-03, specifically on 2006-08-11 and 2006-08-15. \n\nSo the answer is: [\"Pattani United Liberation Organization\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Pattani United Liberation Organization\"]",
+      "response": "From the historical facts provided, we can see that the Pattani United Liberation Organization made threats against Thailand before 2006-10-03, specifically on 2006-08-11 and 2006-08-15. \n\nSo the answer is: [\"Pattani United Liberation Organization\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did Maumoon Abdul Gayoom last praise China?",
+    "answer": [
+      "2006-09"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2006-09",
+      "response": "From the historical facts provided, we can see that Maumoon Abdul Gayoom last praised China on 2006-09-12. Therefore, the month in question is September 2006.\n\nSo the answer is: 2006-09",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2006-09",
+      "response": "From the historical facts provided, we can see that Maumoon Abdul Gayoom last praised China on 2006-09-12. Therefore, the month in question is September 2006.\n\nSo the answer is: 2006-09",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country formally signed an agreement with China on 2 April 2006?",
+    "answer": [
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Japan\"]",
+      "response": "So the answer is: [\"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Japan\"]",
+      "response": "So the answer is: [\"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did China praise the Italian government for the first time?",
+    "answer": [
+      "2008"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2008",
+      "response": "So the answer is: 2008",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2008",
+      "response": "So the answer is: 2008",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what month did Abdullah Gül first praise Iraq?",
+    "answer": [
+      "2005-11"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2005-11",
+      "response": "From the historical facts provided, we can see that Abdullah Gül first praised Iraq on 2005-11-08. Therefore, the month in which he first praised Iraq is November 2005.\n\nSo the answer is: 2005-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-11",
+      "response": "From the historical facts provided, we can see that Abdullah Gül first praised Iraq on 2005-11-08. Therefore, the month in which he first praised Iraq is November 2005.\n\nSo the answer is: 2005-11",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After Isaias Afewerki, who was the first to speak optimistically about China?",
+    "answer": [
+      "Jian Yu"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Jian Yu",
+      "response": "From the provided historical facts, Jian Yu was the first to make an optimistic comment about China after Isaias Afewerki on 2006-11-07. \n\nSo the answer is: Jian Yu",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "Jian Yu",
+      "response": "From the provided historical facts, Jian Yu was the first to make an optimistic comment about China after Isaias Afewerki on 2006-11-07. \n\nSo the answer is: Jian Yu",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who negotiated with Malaysia before Oct 2008?",
+    "answer": [
+      "Iran",
+      "Yemen",
+      "Surakiart Sathirathai",
+      "Mwai Kibaki",
+      "Pervez Musharraf",
+      "Thailand",
+      "Cambodia",
+      "Governor (Malaysia)",
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Japan\", \"Moro Islamic Liberation Front\", \"Moro National Liberation Front\", \"Raúl Castro\", \"Shaukat Aziz\", \"Cabinet / Council of Ministers / Advisors (United States)\", \"Cambodia\", \"Anand Panyarachun\", \"George Yeo\", \"Islam Karimov\", \"Thailand\", \"Wen Jiabao\", \"Roh Moo Hyun\", \"Representatives (Malaysia)\", \"Malaysian People's Party\", \"Mahmoud Ahmadinejad\", \"Elmar Mammadyarov\", \"Nonaligned Movement\", \"Mahmoud Abbas\", \"Citizen (Thailand)\", \"Emperor Akihito\", \"South Korea\", \"Jian Yu\", \"Association of Southeast Asian Nations\", \"China\", \"Foreign Affairs (Israel)\"]",
+      "response": "So the answer is: [\"Japan\", \"Moro Islamic Liberation Front\", \"Moro National Liberation Front\", \"Raúl Castro\", \"Shaukat Aziz\", \"Cabinet / Council of Ministers / Advisors (United States)\", \"Cambodia\", \"Anand Panyarachun\", \"George Yeo\", \"Islam Karimov\", \"Thailand\", \"Wen Jiabao\", \"Roh Moo Hyun\", \"Representatives (Malaysia)\", \"Malaysian People's Party\", \"Mahmoud Ahmadinejad\", \"Elmar Mammadyarov\", \"Nonaligned Movement\", \"Mahmoud Abbas\", \"Citizen (Thailand)\", \"Emperor Akihito\", \"South Korea\", \"Jian Yu\", \"Association of Southeast Asian Nations\", \"China\", \"Foreign Affairs (Israel)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Japan\", \"Moro Islamic Liberation Front\", \"Moro National Liberation Front\", \"Raúl Castro\", \"Shaukat Aziz\", \"Cabinet / Council of Ministers / Advisors (United States)\", \"Cambodia\", \"Anand Panyarachun\", \"George Yeo\", \"Islam Karimov\", \"Thailand\", \"Wen Jiabao\", \"Roh Moo Hyun\", \"Representatives (Malaysia)\", \"Malaysian People's Party\", \"Mahmoud Ahmadinejad\", \"Elmar Mammadyarov\", \"Nonaligned Movement\", \"Mahmoud Abbas\", \"Citizen (Thailand)\", \"Emperor Akihito\", \"South Korea\", \"Jian Yu\", \"Association of Southeast Asian Nations\", \"China\", \"Foreign Affairs (Israel)\"]",
+      "response": "So the answer is: [\"Japan\", \"Moro Islamic Liberation Front\", \"Moro National Liberation Front\", \"Raúl Castro\", \"Shaukat Aziz\", \"Cabinet / Council of Ministers / Advisors (United States)\", \"Cambodia\", \"Anand Panyarachun\", \"George Yeo\", \"Islam Karimov\", \"Thailand\", \"Wen Jiabao\", \"Roh Moo Hyun\", \"Representatives (Malaysia)\", \"Malaysian People's Party\", \"Mahmoud Ahmadinejad\", \"Elmar Mammadyarov\", \"Nonaligned Movement\", \"Mahmoud Abbas\", \"Citizen (Thailand)\", \"Emperor Akihito\", \"South Korea\", \"Jian Yu\", \"Association of Southeast Asian Nations\", \"China\", \"Foreign Affairs (Israel)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "On 19 October 2007, who wanted to meet with China?",
+    "answer": [
+      "Yasuo Fukuda",
+      "Tzipi Livni"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Tzipi Livni\", \"Yasuo Fukuda\"]",
+      "response": "So the answer is: [\"Tzipi Livni\", \"Yasuo Fukuda\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Tzipi Livni\", \"Yasuo Fukuda\"]",
+      "response": "So the answer is: [\"Tzipi Livni\", \"Yasuo Fukuda\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who visited Ethiopia before 12 March 2005?",
+    "answer": [
+      "African Union",
+      "Mwai Kibaki"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"African Union\", \"Mwai Kibaki\"]",
+      "response": "From the historical facts provided, we can see that both the African Union and Mwai Kibaki made visits to Ethiopia before 2005-03-12. Specifically, the African Union visited on 2005-01-30 and 2005-02-22, while Mwai Kibaki visited on 2005-03-10.\n\nSo the answer is: [\"African Union\", \"Mwai Kibaki\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"African Union\", \"Foreign Affairs (Italy)\"]",
+      "response": "From the provided historical facts, we can see several visits to Ethiopia that occurred before March 12, 2005. These include:\n\n- African Union Make a visit Ethiopia in 2005-02-22.\n- Foreign Affairs (Italy) Make a visit Ethiopia in 2005-10-25.\n- Mwai Kibaki Make a visit Ethiopia in 2005-03-12.\n- Joao Miranda Make a visit Ethiopia in 2005-03-18.\n\nSince the question asks who visited Ethiopia before March 12, 2005, we exclude Mwai Kibaki and Joao Miranda as their visits were on March 12 and March 18 respectively, which are not before March 12.\n\nSo the answer is: [\"African Union\", \"Foreign Affairs (Italy)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who was the last person Djibouti wanted to meet before The Hague?",
+    "answer": [
+      "Ethiopia"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Djibouti\"]",
+      "response": "From the provided historical facts, we can see that Djibouti expressed an intent to meet or negotiate with The Hague on 2006-10-04. There is no other entry indicating any subsequent meeting intent from Djibouti. Therefore, Djibouti was the last entity listed as wanting to meet before The Hague.\n\nSo the answer is: [\"Djibouti\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Lawyer/Attorney (Uganda)\", \"Environment Department/Ministry (India)\", \"Ethiopia\"]",
+      "response": "So the answer is: [\"Lawyer/Attorney (Uganda)\", \"Environment Department/Ministry (India)\", \"Ethiopia\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "In what year did China last criticise Rio Tinto?",
+    "answer": [
+      "2009"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2009",
+      "response": "So the answer is: 2009",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2009",
+      "response": "So the answer is: 2009",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did Amin Makki Madani visit Ethiopia for the first time?",
+    "answer": [
+      "2014-12"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2014-12",
+      "response": "So the answer is: 2014-12",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2014-12",
+      "response": "So the answer is: 2014-12",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Could you tell me the exact month when Malaysia made pessimistic comments about the Israeli Defence Forces?",
+    "answer": [
+      "2011-04"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011-04",
+      "response": "So the answer is: 2011-04",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011-04",
+      "response": "So the answer is: 2011-04",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did Yoon Sang-jick express the intention to participate in diplomatic cooperation with China?",
+    "answer": [
+      "2014-05"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2014-05",
+      "response": "So the answer is: 2014-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2014-05",
+      "response": "So the answer is: 2014-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After China, who was the first to praise Antonio Paulo Kassoma?",
+    "answer": [
+      "Indigenous People (Portugal)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Indigenous People (Portugal)",
+      "response": "So the answer is: Indigenous People (Portugal)",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "Indigenous People (Portugal)",
+      "response": "So the answer is: Indigenous People (Portugal)",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who blamed Iraq after the US government commission?",
+    "answer": [
+      "Nuri al-Maliki",
+      "Kuwait",
+      "Foreign Affairs (Syria)",
+      "Member of Parliament (Iraq)",
+      "Salim Idris",
+      "Haider Al-Abadi",
+      "Cabinet / Council of Ministers / Advisors (United States)"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Kuwait\", \"Member of Parliament (Iraq)\", \"Foreign Affairs (Syria)\", \"Salim Idris\", \"Nuri al-Maliki\", \"Haider Al-Abadi\"]",
+      "response": "From the provided historical facts, we can see that after the US government commission accused Iraq on December 16, 2008, several entities blamed Iraq subsequently. These include Kuwait, Members of Parliament from Iraq, Foreign Affairs from Syria, Salim Idris, Nuri al-Maliki, and Haider Al-Abadi.\n\nSo the answer is: [\"Kuwait\", \"Member of Parliament (Iraq)\", \"Foreign Affairs (Syria)\", \"Salim Idris\", \"Nuri al-Maliki\", \"Haider Al-Abadi\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Government Commission (United States)\"]",
+      "response": "So the answer is: [\"Government Commission (United States)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "After 2 Aug 2015, who signed formal agreements with Malaysia?",
+    "answer": [
+      "Oman",
+      "Trinidad and Tobago",
+      "Vietnam",
+      "Kuwait",
+      "South Korea",
+      "China",
+      "Laos",
+      "Belize",
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Vietnam\", \"Belize\", \"China\", \"Japan\", \"Laos\", \"South Korea\", \"Trinidad and Tobago\", \"Oman\", \"Kuwait\"]",
+      "response": "So the answer is: [\"Vietnam\", \"Belize\", \"China\", \"Japan\", \"Laos\", \"South Korea\", \"Trinidad and Tobago\", \"Oman\", \"Kuwait\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Belize\", \"China\", \"Japan\", \"Laos\", \"South Korea\", \"Trinidad and Tobago\", \"Oman\", \"Kuwait\"]",
+      "response": "So the answer is: [\"Belize\", \"China\", \"Japan\", \"Laos\", \"South Korea\", \"Trinidad and Tobago\", \"Oman\", \"Kuwait\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who visited China in Apr, 2014?",
+    "answer": [
+      "Defense / Security Ministry (United States)",
+      "Malaysia",
+      "Governor (Japan)",
+      "Naval (Bangladesh)",
+      "Shimon Peres",
+      "Xi Jinping",
+      "Business (South Korea)",
+      "Head of Government (South Korea)",
+      "Chuck Hagel",
+      "Foreign Affairs (Malaysia)",
+      "Lawmaker (Hong Kong)",
+      "Japan",
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Japan\", \"Chuck Hagel\", \"Shimon Peres\", \"Head of Government (South Korea)\", \"Barack Obama\", \"Lawmaker (Hong Kong)\", \"Governor (Japan)\", \"Naval (Bangladesh)\", \"Business (South Korea)\", \"Foreign Affairs (Malaysia)\"]",
+      "response": "So the answer is: [\"Japan\", \"Chuck Hagel\", \"Shimon Peres\", \"Head of Government (South Korea)\", \"Barack Obama\", \"Lawmaker (Hong Kong)\", \"Governor (Japan)\", \"Naval (Bangladesh)\", \"Business (South Korea)\", \"Foreign Affairs (Malaysia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Japan\", \"Chuck Hagel\", \"Shimon Peres\", \"Head of Government (South Korea)\", \"Barack Obama\", \"Lawmaker (Hong Kong)\", \"Governor (Japan)\", \"Naval (Bangladesh)\", \"Business (South Korea)\", \"Foreign Affairs (Malaysia)\"]",
+      "response": "So the answer is: [\"Japan\", \"Chuck Hagel\", \"Shimon Peres\", \"Head of Government (South Korea)\", \"Barack Obama\", \"Lawmaker (Hong Kong)\", \"Governor (Japan)\", \"Naval (Bangladesh)\", \"Business (South Korea)\", \"Foreign Affairs (Malaysia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After 22 May 2014, which country did Iraq accuse?",
+    "answer": [
+      "Haider Al-Abadi",
+      "UN Security Council",
+      "Mahmoud Abbas",
+      "Combatant (Islamic State of Iraq and the Levant)"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Mahmoud Abbas\"]",
+      "response": "From the provided historical facts, we need to find an accusation made by Iraq after 22 May 2014. The relevant fact is: \"Iraq Accuse Mahmoud Abbas in 2014-06-22.\"\n\nSo the answer is: [\"Mahmoud Abbas\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Mahmoud Abbas\"]",
+      "response": "From the historical facts provided, we can see that after 22 May 2014, Iraq accused Mahmoud Abbas on 2014-06-22. Therefore, the answer is:\n\nSo the answer is: [\"Mahmoud Abbas\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country was the last to visit China before the media representatives from Greece?",
+    "answer": [
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Latvia\"]",
+      "response": "From the provided historical facts, we can see that the last country to visit China before the media representatives from Greece were the media representatives from Greece themselves on 2007-10-17. However, since we need to identify the last country before them, we look at the entry immediately preceding theirs, which is Aigars Kalvitis from Latvia who visited China on 2007-09-17.\n\nSo the answer is: [\"Latvia\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Latvia\"]",
+      "response": "From the provided historical facts, we can see that the last country to visit China before the media representatives from Greece were the media representatives from Greece themselves on 2007-10-17. However, since we need to identify the last country before them, we look at the entry immediately preceding theirs, which is Aigars Kalvitis from Latvia who visited China on 2007-09-17.\n\nSo the answer is: [\"Latvia\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Who visited Thailand in 2012-06?",
+    "answer": [
+      "Vietnam",
+      "Thongsing Thammavong",
+      "Japan",
+      "Al Jazeera"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Thongsing Thammavong\", \"Vietnam\", \"Al Jazeera\", \"Japan\"]",
+      "response": "So the answer is: [\"Thongsing Thammavong\", \"Vietnam\", \"Al Jazeera\", \"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Thongsing Thammavong\", \"Vietnam\", \"Al Jazeera\", \"Japan\"]",
+      "response": "So the answer is: [\"Thongsing Thammavong\", \"Vietnam\", \"Al Jazeera\", \"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who investigated China on 6 July 2008?",
+    "answer": [
+      "Xi Jinping"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Xi Jinping\"]",
+      "response": "So the answer is: [\"Xi Jinping\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Xi Jinping\"]",
+      "response": "So the answer is: [\"Xi Jinping\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who recommended Malaysia before Kuwait?",
+    "answer": [
+      "Iran",
+      "Defense / Security Ministry (United States)",
+      "Mwai Kibaki",
+      "Awad Ahmed al-Jaz",
+      "Donald Rumsfeld",
+      "Islam Karimov",
+      "Nonaligned Movement",
+      "Undersecretary (United States)",
+      "Thailand",
+      "Ali Abdullah Saleh",
+      "Gerhard Schröder"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Gerhard Schröder\", \"Ali Abdullah Saleh\"]",
+      "response": "From the provided historical facts, we can see that the earliest endorsement of Malaysia was by Gerhard Schröder on 2005-05-18, followed by Ali Abdullah Saleh on two occasions: 2005-05-24 and 2005-05-25. Kuwait endorsed Malaysia later, specifically on 2005-11-19. Therefore, the entities recommending Malaysia before Kuwait are Gerhard Schröder and Ali Abdullah Saleh.\n\nSo the answer is: [\"Gerhard Schröder\", \"Ali Abdullah Saleh\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Gerhard Schröder\", \"Ali Abdullah Saleh\"]",
+      "response": "From the provided historical facts, we can see that several entities praised or endorsed Malaysia before Kuwait did so on 2010-08-11. The earliest endorsements were made by Gerhard Schröder on 2005-05-18 and Ali Abdullah Saleh on 2005-05-24 and 2005-05-25. Therefore, the entities who recommended Malaysia before Kuwait are Gerhard Schröder and Ali Abdullah Saleh.\n\nSo the answer is: [\"Gerhard Schröder\", \"Ali Abdullah Saleh\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what year did Tharit Pengdit appeal to Thailand?",
+    "answer": [
+      "2011"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011",
+      "response": "So the answer is: 2011",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011",
+      "response": "So the answer is: 2011",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did Najm-al-Din Karim last condemn Iraq?",
+    "answer": [
+      "2015-05"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2015-05",
+      "response": "So the answer is: 2015-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2015-05",
+      "response": "So the answer is: 2015-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "With whom did Lee Myung Bak last negotiate before Thailand?",
+    "answer": [
+      "Barack Obama"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"China\"]",
+      "response": "From the provided historical facts, we can see that Lee Myung Bak engaged in negotiations with Thailand on 2009-04-11. The question asks who he last negotiated with before this date. Looking at the dates prior to 2009-04-11, we see that Lee Myung Bak expressed intent to meet or negotiate with China several times, but the last actual negotiation was with China on 2008-05-29. Therefore, the answer is:\n\nSo the answer is: [\"China\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Barack Obama\"]",
+      "response": "From the provided historical facts, we can see that Lee Myung Bak engaged in negotiations with various individuals and organizations up until his last negotiation before Thailand, which was with the Association of Southeast Asian Nations on 2009-04-11. The last negotiation before this one was with Barack Obama on 2009-04-03.\n\nSo the answer is: [\"Barack Obama\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did China host the visit of the President of the Senate of Jordan?",
+    "answer": [
+      "2014-11-06"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2014-11-06",
+      "response": "So the answer is: 2014-11-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2014-11-06",
+      "response": "So the answer is: 2014-11-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Before the Government of Pakistan, who was the last to appeal China?",
+    "answer": [
+      "Wen Jiabao"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Wen Jiabao",
+      "response": "From the provided historical facts, we can see that the last entity to make an appeal or request to China before the Government of Pakistan did so on 2011-05-22 was Wen Jiabao on 2011-05-18. Therefore, the answer is:\n\nSo the answer is: Wen Jiabao",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "Wen Jiabao",
+      "response": "From the provided historical facts, we can see that the last entity to make an appeal or request to China before the Government of Pakistan did so on 2011-05-22 was Wen Jiabao on 2011-05-18. Therefore, the answer is:\n\nSo the answer is: Wen Jiabao",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did Wang Ching-feng visit China?",
+    "answer": [
+      "2010-04-29"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2010-04-29",
+      "response": "So the answer is: 2010-04-29",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010-04-29",
+      "response": "So the answer is: 2010-04-29",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did the Cambodian military investigate Thailand?",
+    "answer": [
+      "2011-02"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2011-02",
+      "response": "From the provided historical facts, we can see that the Cambodian military investigated Thailand on 2011-02-16. Therefore, the month in which the Cambodian military investigated Thailand is February 2011.\n\nSo the answer is: 2011-02",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011-02",
+      "response": "From the historical facts provided, we can see that the investigation by the Cambodian military into Thailand started on 2011-02-16. Therefore, the month in question is February 2011.\n\nSo the answer is: 2011-02",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did the Austrian police investigate China?",
+    "answer": [
+      "2008-04-28"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2008-04-28",
+      "response": "So the answer is: 2008-04-28",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2008-04-28",
+      "response": "So the answer is: 2008-04-28",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country was investigated by Cambodia after January 2005?",
+    "answer": [
+      "Men (Singapore)",
+      "Citizen (Thailand)",
+      "Thailand",
+      "Kuwait",
+      "Wen Jiabao",
+      "Qatar"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Thailand\"]",
+      "response": "From the provided historical facts, we can see that Police (Cambodia) investigated Citizens (Thailand) multiple times after January 2005. Therefore, the country investigated by Cambodia after January 2005 is Thailand.\n\nSo the answer is: [\"Thailand\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Thailand\"]",
+      "response": "From the provided historical facts, we can see that Police (Cambodia) investigated Citizens (Thailand) multiple times after January 2005. Therefore, the country investigated by Cambodia after January 2005 is Thailand.\n\nSo the answer is: [\"Thailand\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did Thailand request the office of the Attorney General?",
+    "answer": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2010",
+      "response": "So the answer is: 2010",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010",
+      "response": "So the answer is: 2010",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After the Undersecretary of the United Arab Emirates, who negotiated with China first?",
+    "answer": [
+      "Envoy (United States)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "2007-01-22",
+      "response": "From the provided historical facts, we can see that the Undersecretary of the United Arab Emirates engaged in negotiations with China on 2007-01-21. The next entity to engage in negotiations with China was the Envoy (United States) on 2007-01-22. Therefore, the Envoy (United States) was the first to negotiate with China after the Undersecretary of the United Arab Emirates.\n\nSo the answer is: 2007-01-22",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2007-01-22",
+      "response": "From the provided historical facts, we can see that the Undersecretary of the United Arab Emirates engaged in negotiations with China on 2007-01-21. The next entity to engage in negotiations with China was the Envoy (United States) on 2007-01-22. Therefore, the Envoy (United States) was the first to negotiate with China after the Undersecretary of the United Arab Emirates.\n\nSo the answer is: 2007-01-22",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Which country wanted to negotiate with China on 27 October 2007?",
+    "answer": [
+      "France"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"France\"]",
+      "response": "So the answer is: [\"France\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"France\"]",
+      "response": "So the answer is: [\"France\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who received Iraq's visit from Iraq after Dec 9th, 2014?",
+    "answer": [
+      "Iran",
+      "Oman",
+      "International Government Organizations",
+      "Royal Administration (Saudi Arabia)",
+      "France"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Chuck Hagel\", \"Federica Mogherini\", \"Haider Al-Abadi\"]",
+      "response": "From the provided historical facts, we can see that Iraq hosted several visits after December 9th, 2014. Specifically, the entities that received visits from Iraq include:\n\n- Chuck Hagel\n- Federica Mogherini\n- Haider Al-Abadi\n\nSo the answer is: [\"Chuck Hagel\", \"Federica Mogherini\", \"Haider Al-Abadi\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Iran\", \"International Government Organizations\", \"France\", \"Royal Administration (Saudi Arabia)\", \"Oman\"]",
+      "response": "From the historical facts provided, we can see that Iraq made visits to several countries and organizations after December 9th, 2014. These include Iran, International Government Organizations, France, Royal Administration (Saudi Arabia), Oman, and others. \n\nSo the answer is: [\"Iran\", \"International Government Organizations\", \"France\", \"Royal Administration (Saudi Arabia)\", \"Oman\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what month did the citizens of Denmark accuse China?",
+    "answer": [
+      "2008-04"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "None",
+      "response": "After analyzing the provided historical facts, there is no mention of citizens from Denmark accusing China. Therefore, based on the available data, we cannot determine the month when Danish citizens accused China.\n\nSo the answer is: None",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2008-04",
+      "response": "So the answer is: 2008-04",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did Alexis Tsipras last express his intention to meet with China?",
+    "answer": [
+      "2015"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2015",
+      "response": "So the answer is: 2015",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2015",
+      "response": "So the answer is: 2015",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In 2009-06, who wanted to meet with Cambodia?",
+    "answer": [
+      "Thailand",
+      "Abhisit Vejjajiva",
+      "Laos"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Abhisit Vejjajiva\", \"Laos\", \"Thailand\"]",
+      "response": "So the answer is: [\"Abhisit Vejjajiva\", \"Laos\", \"Thailand\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Abhisit Vejjajiva\", \"Laos\", \"Thailand\"]",
+      "response": "So the answer is: [\"Abhisit Vejjajiva\", \"Laos\", \"Thailand\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After China, with which country did François Bozizé want to negotiate?",
+    "answer": [
+      "South Africa",
+      "Angola"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "Sudan",
+      "response": "From the provided historical facts, François Bozizé expressed his intent to meet or negotiate with Sudan multiple times before 2009-09-03. After expressing his intent to meet or negotiate with China on 2009-09-03, the next country he wanted to negotiate with was Sudan. \n\nSo the answer is: Sudan",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "Angola",
+      "response": "From the historical facts provided, François Bozizé expressed his intent to meet or negotiate with China on 2009-09-03. Following this, the next country he wanted to negotiate with was Angola on 2010-10-14. \n\nSo the answer is: Angola",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did China last denounce Chen Wei?",
+    "answer": [
+      "2011-12"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011-12",
+      "response": "So the answer is: 2011-12",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011-12",
+      "response": "So the answer is: 2011-12",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "To whom did China last repatriate people?",
+    "answer": [
+      "Media Personnel (China)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Criminal (China)\"]",
+      "response": "So the answer is: [\"Criminal (China)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Criminal (China)\"]",
+      "response": "So the answer is: [\"Criminal (China)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "After international governmental organisations, with which country did Iraq want to establish diplomatic cooperation?",
+    "answer": [
+      "Kuwait",
+      "China",
+      "Iran",
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Croatia\"]",
+      "response": "So the answer is: [\"Croatia\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "Kuwait",
+      "response": "So the answer is: Kuwait",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which year did John Dramani Mahama commend Ethiopia?",
+    "answer": [
+      "2014"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2014",
+      "response": "So the answer is: 2014",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2014",
+      "response": "So the answer is: 2014",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did China last provide humanitarian aid to African citizens?",
+    "answer": [
+      "2011-09"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011-09",
+      "response": "So the answer is: 2011-09",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011-09",
+      "response": "So the answer is: 2011-09",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "On 26 April 2007, which country wanted to establish diplomatic cooperation with China?",
+    "answer": [
+      "Vietnam"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Vietnam\"]",
+      "response": "So the answer is: [\"Vietnam\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Vietnam\"]",
+      "response": "So the answer is: [\"Vietnam\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country was the first to denounce China after Sengoku Yoshito?",
+    "answer": [
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Japan",
+      "response": "So the answer is: Japan",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "Japan",
+      "response": "So the answer is: Japan",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After 29 May 2015, who wanted to meet with Djibouti?",
+    "answer": [
+      "Iran",
+      "Citizen (Djibouti)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Iran\", \"Citizen (Djibouti)\"]",
+      "response": "So the answer is: [\"Iran\", \"Citizen (Djibouti)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Iran\", \"Citizen (Djibouti)\"]",
+      "response": "So the answer is: [\"Iran\", \"Citizen (Djibouti)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did Shigeru Ishiba threaten China for the first time?",
+    "answer": [
+      "2014"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2014",
+      "response": "So the answer is: 2014",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2014",
+      "response": "So the answer is: 2014",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "On 9 December 2005, who praised China?",
+    "answer": [
+      "Branko Crvenkovski",
+      "Association of Southeast Asian Nations"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Association of Southeast Asian Nations\", \"Branko Crvenkovski\"]",
+      "response": "So the answer is: [\"Association of Southeast Asian Nations\", \"Branko Crvenkovski\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Association of Southeast Asian Nations\", \"Branko Crvenkovski\"]",
+      "response": "So the answer is: [\"Association of Southeast Asian Nations\", \"Branko Crvenkovski\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did the leader of Ghana last visit China?",
+    "answer": [
+      "2010-09"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2010-09",
+      "response": "From the historical facts provided, we can see that the Head of Government of Ghana made visits to China in 2006-11-15 and 2010-09-20. The last visit mentioned was in September 2010. \n\nSo the answer is: 2010-09",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010-09",
+      "response": "From the historical facts provided, we can see that the Head of Government of Ghana made visits to China in 2006-11-15 and 2010-09-20. The last visit mentioned was in September 2010. \n\nSo the answer is: 2010-09",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did the Thai Ministry of Justice/Ministry of Foreign Affairs express its intention to meet with Cambodia?",
+    "answer": [
+      "2009"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005",
+      "response": "From the provided historical facts, Thailand expressed its intention to meet with Cambodia in 2005-07-05, 2005-08-10, and 2005-11-01. Therefore, the year in which the Thai Ministry of Justice/Ministry of Foreign Affairs expressed its intention to meet with Cambodia is 2005.\n\nSo the answer is: 2005",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2009",
+      "response": "So the answer is: 2009",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what year did Abhisit Vejjajiva last negotiate with Thailand?",
+    "answer": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011",
+      "response": "So the answer is: 2011",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2011",
+      "response": "So the answer is: 2011",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "After the Thai workers, which country did Thailand appeal to first?",
+    "answer": [
+      "Cambodia"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Japan\"]",
+      "response": "After filtering the historical facts for events where Thailand appealed for aid from 2005-02-04 onwards, we find that the next country Thailand appealed to was Japan on 2005-02-04. However, since the question asks for the first country Thailand appealed to after the Thai workers, and there are no other appeals listed immediately after this date, we need to consider the closest subsequent appeal. The closest subsequent appeal is also to Japan, but on a different date. Therefore, the answer is Japan.\n\nSo the answer is: [\"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "Japan",
+      "response": "So the answer is: Japan",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Who requested a meeting with China in 2006-02?",
+    "answer": [
+      "Mexico",
+      "Police (Peru)",
+      "Iran",
+      "Thanong Bidaya",
+      "Angela Merkel",
+      "Ali Abdullah Saleh",
+      "Head of Government (Togo)",
+      "Treasury/Finance Ministry (Japan)",
+      "Finance / Economy / Commerce / Trade Ministry (Japan)",
+      "Mahmoud Ahmadinejad",
+      "Pervez Musharraf",
+      "Chang Song Taek",
+      "South Africa",
+      "Robert Jones Portman",
+      "Citizen (United Kingdom)",
+      "Japan",
+      "Roh Moo Hyun"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"France\", \"Japan\", \"South Africa\", \"South Korea\", \"Representatives (Ethiopia)\", \"Vietnam\", \"Finance / Economy / Commerce / Trade Ministry (Japan)\", \"Kuomintang\", \"Pervez Musharraf\"]",
+      "response": "So the answer is: [\"France\", \"Japan\", \"South Africa\", \"South Korea\", \"Representatives (Ethiopia)\", \"Vietnam\", \"Finance / Economy / Commerce / Trade Ministry (Japan)\", \"Kuomintang\", \"Pervez Musharraf\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"France\", \"Japan\", \"South Africa\", \"South Korea\", \"Representatives (Ethiopia)\", \"Vietnam\", \"Finance / Economy / Commerce / Trade Ministry (Japan)\", \"Kuomintang\", \"Pervez Musharraf\"]",
+      "response": "So the answer is: [\"France\", \"Japan\", \"South Africa\", \"South Korea\", \"Representatives (Ethiopia)\", \"Vietnam\", \"Finance / Economy / Commerce / Trade Ministry (Japan)\", \"Kuomintang\", \"Pervez Musharraf\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "In which year did Wang Yi last make optimistic comments about Malaysia?",
+    "answer": [
+      "2015"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2015",
+      "response": "So the answer is: 2015",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2015",
+      "response": "So the answer is: 2015",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "On what date did the United States' Council of Advisors to the Cabinet make its first appeal to Cambodia?",
+    "answer": [
+      "2011-04-26"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2011-04-26",
+      "response": "From the provided historical facts, we can see that the Council of Advisors to the Cabinet of the United States made an appeal or request to Cambodia on 2011-04-26. \n\nSo the answer is: 2011-04-26",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011-04-26",
+      "response": "So the answer is: 2011-04-26",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which month did Nuon Chea make a request to Cambodia?",
+    "answer": [
+      "2012-04"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2012-04",
+      "response": "From the historical facts provided, we can see that Nuon Chea made an appeal or request to Cambodia on 2012-04-18. Therefore, the month in which this occurred is April 2012.\n\nSo the answer is: 2012-04",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2012-04",
+      "response": "From the historical facts provided, we can see that Nuon Chea made an appeal or request to Cambodia on 2012-04-18. Therefore, the month in which this occurred is April 2012.\n\nSo the answer is: 2012-04",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country was the last to give a visit to Malaysia?",
+    "answer": [
+      "Oman"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Oman",
+      "response": "From the provided historical facts, we can see that the latest visit to Malaysia was made by Oman on 2015-12-16. Therefore, the last country to give a visit to Malaysia is Oman.\n\nSo the answer is: Oman",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "Oman",
+      "response": "From the provided historical facts, we can see that the latest visit to Malaysia was made by Oman on 2015-12-16. Therefore, the last country to give a visit to Malaysia is Oman.\n\nSo the answer is: Oman",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who praised China in the same month as Gerhard Schröder?",
+    "answer": [
+      "Vanuatu",
+      "Iran",
+      "Association of Southeast Asian Nations",
+      "Sudan",
+      "South Korea",
+      "Kazakhstan",
+      "Thailand",
+      "Djibouti",
+      "Guatemala",
+      "France",
+      "Japan",
+      "Business (Taiwan)"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"South Africa\", \"Yasuo Fukuda\", \"Ma Ying Jeou\", \"Kabinga Pande\"]",
+      "response": "From the provided historical facts, we can see that several individuals praised China during the month of July 2008. These individuals include South Africa, Yasuo Fukuda, Ma Ying Jeou, and Kabinga Pande. Since the question does not specify any particular individual other than mentioning Gerhard Schröder, who is not listed in the provided facts, we can conclude that the answer includes all those who praised China in July 2008.\n\nSo the answer is: [\"South Africa\", \"Yasuo Fukuda\", \"Ma Ying Jeou\", \"Kabinga Pande\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"Gerhard Schröder\"]",
+      "response": "From the provided historical facts, we can see that Gerhard Schröder praised China on 2006-03-21. There are no other entities mentioned as praising China in the same month. Therefore, there are no additional entities to include in the answer besides Gerhard Schröder.\n\nSo the answer is: [\"Gerhard Schröder\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "After China, which country first hosted the Defense Security Ministry of Spain's visit from the Defense Security Ministry of Spain?",
+    "answer": [
+      "Mexico"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "Mexico",
+      "response": "From the provided historical facts, we can see that China hosted the Defense/Security Ministry of Spain on 2006-10-23. After China, the next country to host the Defense/Security Ministry of Spain was Mexico, which hosted them on 2013-11-25. \n\nSo the answer is: Mexico",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "Mexico",
+      "response": "From the provided historical facts, we can see that China hosted the Defense/Security Ministry of Spain on 2006-10-23. After China, the next country to host the Defense/Security Ministry of Spain was Mexico, which hosted them on 2013-11-25. \n\nSo the answer is: Mexico",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Could you tell me the exact month when Chris Bowen praised Malaysia?",
+    "answer": [
+      "2011-05"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011-05",
+      "response": "So the answer is: 2011-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011-05",
+      "response": "So the answer is: 2011-05",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "On 21 Feb 2006, which country expressed its intention to establish diplomatic cooperation with Thailand?",
+    "answer": [
+      "France",
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"France\"]",
+      "response": "So the answer is: [\"France\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"France\", \"Japan\"]",
+      "response": "So the answer is: [\"France\", \"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After Winston Peters, which country wanted to negotiate with Malaysia first?",
+    "answer": [
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "Japan",
+      "response": "From the provided historical facts, we can see that Winston Peters expressed an intent to meet or negotiate with Malaysia on 2005-12-07. The next entry in chronological order is Japan expressing an intent to meet or negotiate with Malaysia on 2005-12-08. Therefore, the country that wanted to negotiate with Malaysia first after Winston Peters was Japan.\n\nSo the answer is: Japan",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Iran\"]",
+      "response": "From the provided historical facts, we can see that Iran was the first country to engage in negotiations with Malaysia after Winston Peters' mention. The earliest engagement listed is on 2006-05-13. \n\nSo the answer is: [\"Iran\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "In which year did Ethiopia last praise the Government of Sudan?",
+    "answer": [
+      "2012"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2012",
+      "response": "From the historical facts provided, the latest year Ethiopia praised the Government of Sudan was 2012. So the answer is: 2012.",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2012",
+      "response": "From the historical facts provided, the latest year Ethiopia praised the Government of Sudan was 2012. So the answer is: 2012.",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who supported Malaysia after Teo Chee Hean?",
+    "answer": [
+      "China",
+      "Naval (United States)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Naval (United States)\", \"China\"]",
+      "response": "From the historical facts provided, we can see that after Teo Chee Hean praised or endorsed Malaysia on 2015-06-10, two other entities also expressed support for Malaysia: Naval (United States) on 2015-11-03 and China on 2015-11-17. \n\nSo the answer is: [\"Naval (United States)\", \"China\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Naval (United States)\", \"China\"]",
+      "response": "From the historical facts provided, we can see that after Teo Chee Hean praised or endorsed Malaysia on 2015-06-10, two other entities also expressed support for Malaysia: Naval (United States) on 2015-11-03 and China on 2015-11-17. \n\nSo the answer is: [\"Naval (United States)\", \"China\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did Jordan's top military official negotiate with Iraq?",
+    "answer": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "None",
+      "response": "After reviewing the provided historical facts, there is no mention of Jordan's top military official negotiating with Iraq. Therefore, based on the available information, we cannot determine the year when such an event took place.\n\nSo the answer is: None",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country was the first to start negotiations with China in 2006?",
+    "answer": [
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Japan\"]",
+      "response": "From the provided historical facts, we can see that Japan engaged in negotiations with China on 2006-01-09, which is the earliest date in 2006 when any country started negotiations with China. Therefore, Japan was the first country to start negotiations with China in 2006.\n\nSo the answer is: [\"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Japan\"]",
+      "response": "From the provided historical facts, we can see that Japan engaged in negotiations with China on 2006-01-09, which is the earliest date among the listed events. Therefore, Japan was the first country to start negotiations with China in 2006.\n\nSo the answer is: [\"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did Deval Patrick first visit Iraq?",
+    "answer": [
+      "2010-07-21"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2010-07-21",
+      "response": "So the answer is: 2010-07-21",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010-07-21",
+      "response": "So the answer is: 2010-07-21",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In what year did Bangladeshi officials first express their intention to negotiate with Malaysia?",
+    "answer": [
+      "2009"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005",
+      "response": "From the provided historical facts, there is no direct mention of Bangladeshi officials expressing their intention to negotiate with Malaysia before 2005-03-08. However, the closest related fact is about Indigenous People (Bangladesh) expressing their intent to meet or negotiate with Malaysia on 2005-03-08. Since this is the first and only instance mentioned in the historical facts, we can conclude that the year is 2005.\n\nSo the answer is: 2005",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2005",
+      "response": "So the answer is: 2005",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Who was the first country to criticise the government of Italy, after Thailand?",
+    "answer": [
+      "High Commission for Refugees"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"High Commission for Refugees\"]",
+      "response": "From the provided historical facts, we can see that Thailand criticized the Government of Italy on 2008-11-29. The next country to criticize the Italian government was the High Commission for Refugees on 2009-05-18. Therefore, the High Commission for Refugees was the first entity to criticize the Italian government after Thailand.\n\nSo the answer is: [\"High Commission for Refugees\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"High Commission for Refugees\"]",
+      "response": "From the provided historical facts, we can see that Thailand criticized the Government of Italy on 2008-11-29. The next country to criticize the Italian government was the High Commission for Refugees on 2009-05-18. Therefore, the High Commission for Refugees was the first entity to criticize the Italian government after Thailand.\n\nSo the answer is: [\"High Commission for Refugees\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which country receive Christine Lagarde's visit from Christine Lagarde before Iraq did?",
+    "answer": [
+      "China",
+      "South Korea",
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "Japan",
+      "response": "From the historical facts provided, we can see the sequence of visits made by Christine Lagarde to different countries before her visit to Iraq on 2009-07-02. The countries listed in chronological order are South Korea, China, Japan, and finally Iraq. Therefore, the country that received Christine Lagarde's visit before Iraq is Japan.\n\nSo the answer is: Japan",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Japan\"]",
+      "response": "From the provided historical facts, we can see that Christine Lagarde made several visits to different countries before her visit to Iraq on 2009-07-02. The earliest visit among those listed is to Japan on 2008-02-08. Therefore, the country that received Christine Lagarde's visit before Iraq did is Japan.\n\nSo the answer is: [\"Japan\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did the indigenous people of Syria support China?",
+    "answer": [
+      "2011-11-26"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2011-11-26",
+      "response": "So the answer is: 2011-11-26",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2011-11-26",
+      "response": "So the answer is: 2011-11-26",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did the Islamic preacher of Iran support Iraq?",
+    "answer": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005",
+      "response": "From the provided historical facts, we can see that Iran first supported Iraq in 2005-07-16. Therefore, the year in which the Islamic preacher of Iran supported Iraq is 2005.\n\nSo the answer is: 2005",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did Ali Jannati praise Kuwait?",
+    "answer": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2010",
+      "response": "So the answer is: 2010",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010",
+      "response": "So the answer is: 2010",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did the Taiwanese businessman criticise China?",
+    "answer": [
+      "2006"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005",
+      "response": "From the provided historical facts, Ma Ying Jeou criticized or denounced China in 2005. Therefore, the answer is the year 2005.\n\nSo the answer is: 2005",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2006",
+      "response": "So the answer is: 2006",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who last blamed the Party Member of Iraq before Iraq did?",
+    "answer": [
+      "Nuri al-Maliki"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Nuri al-Maliki\"]",
+      "response": "From the provided historical facts, we can see that the last entity to blame the Party Member of Iraq before November 20, 2014, was Nuri al-Maliki, who accused Iraq on 2014-07-11.\n\nSo the answer is: [\"Nuri al-Maliki\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Member of Parliament (Iraq)\"]",
+      "response": "From the provided historical facts, we can see the timeline of accusations against Iraq. The last accusation made by an Iraqi entity before 2009-09-17 was made by \"Member of Parliament (Iraq)\" on 2008-06-30. \n\nSo the answer is: [\"Member of Parliament (Iraq)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "Who was praised by Sheikh Ahmed Abdullah before Iraq?",
+    "answer": [
+      "Maldives"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"United Arab Emirates\", \"Tony Blair\", \"Ahmed Abdallah Sambi\"]",
+      "response": "From the provided historical facts, we can see that Sheikh Ahmed Abdullah praised several entities before he praised Iraq on 2007-02-08. These entities include the United Arab Emirates, Tony Blair, and Ahmed Abdallah Sambi. Therefore, the answer includes these entities.\n\nSo the answer is: [\"United Arab Emirates\", \"Tony Blair\", \"Ahmed Abdallah Sambi\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[]",
+      "response": "From the provided historical facts, we can see that Sheikh Ahmed Abdullah praised Iraq on 2007-02-08. There is no mention of anyone else praising Iraq immediately before this date according to the given data. Therefore, based on the available information, there is no entity that fits the description of being praised by Sheikh Ahmed Abdullah before Iraq.\n\nSo the answer is: []",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "In which year did the Burma Union Solidarity and Development Association first express its intention to negotiate with China?",
+    "answer": [
+      "2006"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2006",
+      "response": "So the answer is: 2006",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2006",
+      "response": "So the answer is: 2006",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Which year did the Business of Kuwait commend Iraq?",
+    "answer": [
+      "2011"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2015",
+      "response": "From the provided historical facts, we can see that Kuwait praised or endorsed Iraq on 2015-05-27. However, the question asks about the Business of Kuwait, which is not directly mentioned in the historical facts. Since the closest match is Kuwait itself, we infer that the Business of Kuwait is represented by Kuwait in this context.\n\nSo the answer is: 2015",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2011",
+      "response": "So the answer is: 2011",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did Jian Yu last express his intention to negotiate with Malaysia?",
+    "answer": [
+      "2006"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2006",
+      "response": "So the answer is: 2006",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2006",
+      "response": "So the answer is: 2006",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After the Malaysian Ministry of Health, who was the first to investigate Malaysia?",
+    "answer": [
+      "Police (Malaysia)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Police (Malaysia)\"]",
+      "response": "From the historical facts provided, we can see that the Malaysian Ministry of Health investigated Malaysia on 2013-07-23. The next investigation by another entity was conducted by the Police (Malaysia) on 2013-08-29. Therefore, the first entity to investigate Malaysia after the Malaysian Ministry of Health was the Police (Malaysia).\n\nSo the answer is: [\"Police (Malaysia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Police (Malaysia)\"]",
+      "response": "From the historical facts provided, we can see that the Malaysian Ministry of Health investigated Malaysia on 2013-07-23. The next investigation by another entity was conducted by the Police (Malaysia) on 2013-08-29. Therefore, the first entity to investigate Malaysia after the Malaysian Ministry of Health was the Police (Malaysia).\n\nSo the answer is: [\"Police (Malaysia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "Who was the last to endorse Djibouti before Lee Myung Bak?",
+    "answer": [
+      "UN Security Council"
+    ],
+    "answer_type": "entity",
+    "shared_input": false,
+    "A": {
+      "prediction": "[\"Head of Government (Ethiopia)\"]",
+      "response": "From the provided historical facts, we can see that Lee Myung Bak praised or endorsed Djibouti on 2008-05-26. The next endorsement for Djibouti happened on 2008-06-14 by the Head of Government (Ethiopia). Therefore, the last entity to endorse Djibouti before Lee Myung Bak was not listed, but the one immediately following him was the Head of Government (Ethiopia).\n\nSo the answer is: [\"Head of Government (Ethiopia)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "[\"UN Security Council\"]",
+      "response": "From the provided historical facts, we can see that UN Security Council praised or endorsed Djibouti on 2008-05-06, which is the latest endorsement before Lee Myung Bak's endorsement on 2008-05-26.\n\nSo the answer is: [\"UN Security Council\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When was the last time Myanmar officials visited Thailand?",
+    "answer": [
+      "2008-04-14"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "None",
+      "response": "After reviewing the provided historical facts, there is no record of Myanmar officials visiting Thailand. The closest entry related to Myanmar is \"Immigrants (Myanmar), Make a visit, Thailand in 2009-06-09,\" but this does not refer to official representatives of Myanmar.\n\nSo the answer is: None",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2013-09-06",
+      "response": "So the answer is: 2013-09-06",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    }
+  },
+  {
+    "question": "When was the last time Egypt's main opposition party visited Iraq?",
+    "answer": [
+      "2005-03-20"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2005-03-20",
+      "response": "So the answer is: 2005-03-20",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2005-03-20",
+      "response": "So the answer is: 2005-03-20",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "When did the leader of Colombia last sign formal agreements with China?",
+    "answer": [
+      "2009-02-17"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "None of the provided historical facts mention any formal agreements signed between the leader of Colombia and China",
+      "response": "So the answer is: None of the provided historical facts mention any formal agreements signed between the leader of Colombia and China.",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2009-02-17",
+      "response": "So the answer is: 2009-02-17",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "After the Ministry of the Czech Republic, who was the first to visit China?",
+    "answer": [
+      "Foreign Affairs (South Korea)"
+    ],
+    "answer_type": "entity",
+    "shared_input": true,
+    "A": {
+      "prediction": "[\"Foreign Affairs (South Korea)\"]",
+      "response": "From the provided historical facts, we can see that the Ministry of the Czech Republic made a visit to China on 2009-01-16. The next visit after this date was made by Foreign Affairs (South Korea) and Yuriy Yekhanurov on 2009-01-19. Therefore, the first entity to visit China after the Ministry of the Czech Republic was Foreign Affairs (South Korea).\n\nSo the answer is: [\"Foreign Affairs (South Korea)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "[\"Foreign Affairs (South Korea)\"]",
+      "response": "From the provided historical facts, we can see that the Ministry of the Czech Republic made a visit to China on 2009-01-16. The next visit after this date was made by Foreign Affairs (South Korea) and Yuriy Yekhanurov on 2009-01-19. Therefore, the first entity to visit China after the Ministry of the Czech Republic was Foreign Affairs (South Korea).\n\nSo the answer is: [\"Foreign Affairs (South Korea)\"]",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did China host the visit of the Norwegian Ministry of Finance?",
+    "answer": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "shared_input": true,
+    "A": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did the Inquirer have its first telephone conversation with José Aponte?",
+    "answer": [
+      "2010"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2010",
+      "response": "So the answer is: 2010",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    },
+    "B": {
+      "prediction": "2010",
+      "response": "So the answer is: 2010",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  },
+  {
+    "question": "In which year did China first express its intention to meet with the businessman from China?",
+    "answer": [
+      "2007"
+    ],
+    "answer_type": "time",
+    "shared_input": false,
+    "A": {
+      "prediction": "2005",
+      "response": "From the provided historical facts, the earliest instance where an entity expressed its intention to meet or negotiate with China was on 2005-01-03. This includes both Kuomintang and Mainland Affairs Council expressing their intent to meet or negotiate with China on this date.\n\nSo the answer is: 2005",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": false
+    },
+    "B": {
+      "prediction": "2007",
+      "response": "So the answer is: 2007",
+      "request_failed": false,
+      "missing_marker": false,
+      "correct": true
+    }
+  }
+]
