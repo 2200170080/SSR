@@ -775,3 +775,5 @@ Traceback (most recent call last):
   File "/root/user/cs_tcci_zengdexin/SSR/artifacts/qwen32b-full-XBGJGU/run_full.py", line 261, in freeze_evidence
     pattern = gp[idx]
 KeyError: 53832
+仅补齐GP索引: [53832, 53834]
+目标模型已经就绪: qwen32b-gp
