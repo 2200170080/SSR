@@ -1,0 +1,209 @@
+[
+  {
+    "row_index": 16,
+    "question": "Before the military of Taiwan, which country did China threaten last?",
+    "answer": [
+      "Angela Merkel"
+    ],
+    "answer_type": "entity",
+    "prediction": "[\"Defense / Security Ministry (United States)\"]",
+    "response_tail": "The question asks for the last entity to threaten China before the military of Taiwan. From the historical facts provided, we can see a series of threats up until 2007-10-31. The last threat before this date was made by the Defense / Security Ministry (United States) on 2007-05-29. So the answer is: [\"Defense / Security Ministry (United States)\"]"
+  },
+  {
+    "row_index": 27,
+    "question": "In which month did the African Union last ask Ethiopia?",
+    "answer": [
+      "2008-12"
+    ],
+    "answer_type": "time",
+    "prediction": "2015-01",
+    "response_tail": "The question asks for the last month when the African Union consulted with Ethiopia. Reviewing the historical facts provided, the latest consultation took place on 2015-01-30. Therefore, the last month the African Union consulted with Ethiopia was January 2015. So the answer is: 2015-01."
+  },
+  {
+    "row_index": 31,
+    "question": "Before Thailand, who last wanted to negotiate with the Governor of Thailand?",
+    "answer": [
+      "Citizen (Thailand)"
+    ],
+    "answer_type": "entity",
+    "prediction": "[\"Abhisit Vejjajiva\"]",
+    "response_tail": "The question asks for the entity that last wanted to negotiate with the Governor of Thailand before Thailand itself engaged in such negotiations. According to the historical facts provided, the latest date before Thailand's engagement was on 2009-01-28, when Abhisit Vejjajiva engaged in negotiation with the Governor (Thailand). So the answer is: [\"Abhisit Vejjajiva\"]"
+  },
+  {
+    "row_index": 32,
+    "question": "When did Jatuporn Prompan make his first appeal to Thailand?",
+    "answer": [
+      "2010-04-24"
+    ],
+    "answer_type": "time",
+    "prediction": "2008-11-29",
+    "response_tail": "The question asks for the first appeal made by Jatuporn Prompan to the citizens of Thailand. From the historical facts provided, the earliest date listed is 2008-11-29. So the answer is: 2008-11-29."
+  },
+  {
+    "row_index": 36,
+    "question": "Which country did China study before the religion of China?",
+    "answer": [
+      "Japan"
+    ],
+    "answer_type": "entity",
+    "prediction": "None of the provided facts directly answer the question",
+    "response_tail": "The question asks which country China studied before the religion of China. However, the provided historical facts do not contain any direct information about China studying another country's religion before its own. The facts only show various consultations between China and different countries or entities up until 2005-06-09. Therefore, based on the given information, there isn't a direct answer to the question. So the answer is: None of the provided facts directly answer the question."
+  },
+  {
+    "row_index": 41,
+    "question": "Before the Asian Disaster Preparedness Centre, who did Thailand make optimistic comments about?",
+    "answer": [
+      "Citizen (Thailand)"
+    ],
+    "answer_type": "entity",
+    "prediction": "[\"Military Personnel (Thailand)\"]",
+    "response_tail": "So the answer is: [\"Military Personnel (Thailand)\"]"
+  },
+  {
+    "row_index": 50,
+    "question": "In which year did Federica Mogherini last express her intention to meet with China?",
+    "answer": [
+      "2015"
+    ],
+    "answer_type": "time",
+    "prediction": "2015-05-04",
+    "response_tail": "So the answer is: 2015-05-04"
+  },
+  {
+    "row_index": 51,
+    "question": "Which country receive China's visit from China last before Bruno Stagno Ugarte did?",
+    "answer": [
+      "Sudan"
+    ],
+    "answer_type": "entity",
+    "prediction": "[\"Japan\"]",
+    "response_tail": "The question asks for the country that received a visit from China just before Bruno Stagno Ugarte's visit. However, there is no mention of Bruno Stagno Ugarte in the provided historical facts. The latest visit to China mentioned in the facts is by Shaukat Aziz on 2007-06-18. Since there is no record of Bruno Stagno Ugarte's visit, we can't determine the visit immediately preceding his. Therefore, based on the available data, the last visit recorded is by Japan on 2007-06-16. So the answer is: [\"Japan\"]"
+  },
+  {
+    "row_index": 55,
+    "question": "Before Kuwait, which country received the Government Delegation of North Korea's visit from the Government Delegation of North Korea last?",
+    "answer": [
+      "South Korea"
+    ],
+    "answer_type": "entity",
+    "prediction": "None provided",
+    "response_tail": "The question asks for the country that received the Government Delegation of North Korea's visit immediately before Kuwait. According to the historical facts provided, the last visit to Kuwait by the Government Delegation of North Korea was on 2014-06-04. To find the country that received the visit right before this, we need to look at the visits just prior to this date. However, the historical facts do not provide a direct visit by the Government Delegation of North Korea to any other country immediately before Kuwait. Therefore, based on the available information, we cannot determine the country that received the visit right before Kuwait. So the answer is: None provided."
+  },
+  {
+    "row_index": 64,
+    "question": "To which country did Malaysia send an appeal after 2012-11-20?",
+    "answer": [
+      "UN Security Council",
+      "Citizen (Unidentified State Actor)",
+      "Citizen (Thailand)",
+      "Barack Obama",
+      "Chuck Hagel",
+      "Maldives",
+      "Vietnam",
+      "China"
+    ],
+    "answer_type": "entity",
+    "prediction": "[\"United States\"]",
+    "response_tail": "The question asks for the country to which Malaysia sent an appeal after 2012-11-20. Reviewing the historical facts provided, the first entry after 2012-11-20 is \"Malaysia, Make an appeal or request, Barack Obama in 2012-11-21\". Since Barack Obama represents the United States, the first country to receive an appeal from Malaysia after 2012-11-20 is the United States. So the answer is: [\"United States\"]"
+  },
+  {
+    "row_index": 79,
+    "question": "Before the Governor of Japan, who was the last to condemn China?",
+    "answer": [
+      "Ai Weiwei"
+    ],
+    "answer_type": "entity",
+    "prediction": "[\"Japan\"]",
+    "response_tail": "The question asks for the last entity to condemn China before the Governor of Japan did so on 2012-10-11. Reviewing the historical facts, the last condemnation before this date was by Japan on 2012-08-24. So the answer is: [\"Japan\"]"
+  },
+  {
+    "row_index": 80,
+    "question": "Before the royal administration of Saudi Arabia, which country did China praise last?",
+    "answer": [
+      "Malaysia"
+    ],
+    "answer_type": "entity",
+    "prediction": "[\"United Arab Emirates\"]",
+    "response_tail": "The question asks for the last country China praised before praising the royal administration of Saudi Arabia on 2014-03-14. Reviewing the historical facts, the last praise before this date was directed towards the United Arab Emirates on 2014-11-10, but since this date is after 2014-03-14, we need to look for the latest date before March 14, 2014. The latest praise before this date was towards the United Arab Emirates on 2011-02-11. So the answer is: [\"United Arab Emirates\"]."
+  },
+  {
+    "row_index": 101,
+    "question": "Before the Cambodian military, which country did Cambodia last praise?",
+    "answer": [
+      "Vietnam"
+    ],
+    "answer_type": "entity",
+    "prediction": "[\"Foreign Affairs (South Korea)\"]",
+    "response_tail": "The question asks for the last entity to praise Cambodia before the Cambodian military did so, but there is no record of the Cambodian military praising Cambodia in the provided historical facts. Therefore, we need to identify the last entity to praise Cambodia before the cutoff date of 2009-06-20. The last entry in the list before this date is \"Foreign Affairs (South Korea), Praise or endorse, Cambodia in 2009-03-14\". So the answer is: [\"Foreign Affairs (South Korea)\"]"
+  },
+  {
+    "row_index": 134,
+    "question": "In what year did the Foreign Ministry of Ethiopia last declare its intention to negotiate with Ethiopia?",
+    "answer": [
+      "2014"
+    ],
+    "answer_type": "time",
+    "prediction": "2014-02-13",
+    "response_tail": "So the answer is: 2014-02-13"
+  },
+  {
+    "row_index": 142,
+    "question": "When did Ethiopia praise the citizens of Djibouti for the first time?",
+    "answer": [
+      "2013-06-28"
+    ],
+    "answer_type": "time",
+    "prediction": "2015-07-02",
+    "response_tail": "So the answer is: 2015-07-02"
+  },
+  {
+    "row_index": 166,
+    "question": "When did the Iranian ministry first praise Iraq?",
+    "answer": [
+      "2012-03-13"
+    ],
+    "answer_type": "time",
+    "prediction": "2005-01-30",
+    "response_tail": "The earliest date when Iran first praised Iraq is 2005-01-30. So the answer is: 2005-01-30."
+  },
+  {
+    "row_index": 259,
+    "question": "In which year did Philip Hammond last visit Iraq?",
+    "answer": [
+      "2014"
+    ],
+    "answer_type": "time",
+    "prediction": "2014-10-13",
+    "response_tail": "So the answer is: 2014-10-13"
+  },
+  {
+    "row_index": 310,
+    "question": "When did Haider Al-Abadi make a request to Iraq?",
+    "answer": [
+      "2014-09-04"
+    ],
+    "answer_type": "time",
+    "prediction": "2014-09-07",
+    "response_tail": "So the answer is: 2014-09-07"
+  },
+  {
+    "row_index": 327,
+    "question": "In which month did the Prime Minister of Pakistan ask for China?",
+    "answer": [
+      "2006-02"
+    ],
+    "answer_type": "time",
+    "prediction": "2008-10",
+    "response_tail": "So the answer is: 2008-10"
+  },
+  {
+    "row_index": 422,
+    "question": "When did Thongsing Thammavong first recommend China?",
+    "answer": [
+      "2010-10-02"
+    ],
+    "answer_type": "time",
+    "prediction": "None of the provided historical facts mention Thongsing Thammavong recommending China",
+    "response_tail": "The question asks for the first recommendation of China by Thongsing Thammavong. However, none of the provided historical facts mention Thongsing Thammavong recommending China. The earliest interaction between Thongsing Thammavong and China mentioned is a consultation on 2010-10-02. Since there is no direct recommendation event listed, we cannot provide a specific date for when Thongsing Thammavong first recommended China based on the given historical facts. So the answer is: None of the provided historical facts mention Thongsing Thammavong recommending China."
+  }
+]

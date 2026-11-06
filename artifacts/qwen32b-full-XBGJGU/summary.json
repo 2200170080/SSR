@@ -1,0 +1,15 @@
+{
+  "configuration": "32B GP + 32B QA",
+  "total_records": 54584,
+  "metrics": {
+    "accuracy": 0.8302982558991646,
+    "correct_count": 45321,
+    "total_count": 54584,
+    "single_accuracy": null,
+    "multiple_accuracy": null,
+    "entity_accuracy": 0.7804392764857881,
+    "time_accuracy": 0.9517753714429614
+  },
+  "missing_marker": 18,
+  "signature": "99ccaa3e6e6937bff5e8540c34467c101a021ed222242adf52f6f93f4e8c40e4"
+}
