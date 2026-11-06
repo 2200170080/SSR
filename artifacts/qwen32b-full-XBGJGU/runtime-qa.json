@@ -1,0 +1,7 @@
+{
+  "model": "qwen32b-gp",
+  "api_root": "/root/user/cs_tcci_zengdexin/SSR/models/qwen32b-awq",
+  "hostname": "ecs-instance-e1330fb1",
+  "temperature": 0,
+  "max_tokens": 4096
+}
