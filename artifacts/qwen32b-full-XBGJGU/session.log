@@ -782,3 +782,4 @@ gp阶段完成: 54584/54584
 GP落盘覆盖已核实: 54584/54584；现有证据保留。
 已准备完整输入: 54584
 目标模型已经就绪: qwen32b-gp
+[Step] Load cached graph retriever: /root/user/cs_tcci_zengdexin/SSR/artifacts/multitq_graph_retriever.pkl
