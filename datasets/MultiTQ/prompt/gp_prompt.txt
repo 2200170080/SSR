@@ -5,17 +5,17 @@ Your task is to analyze the given **question** together with a set of **retrieve
 Based on your reasoning, produce:
 
 1. A **target triple** that captures what needs to be retrieved next.
-   - Output this inside `<fact> head entity; relation; tail entity </fact>`.
-   - If any component is unknown, replace it with `?`.
-   - Preserve entity/relation names exactly as they appear in the relevant facts.
-   - Key note: For the component that needs to be queried (the answer to the question), even if the existing retrieved facts may contain the correct candidate, you must still use `?` to replace it. This ensures that the next retrieval step can obtain the complete list of possible answers, rather than relying solely on the currently retrieved facts.
+- Output this inside `<fact> head entity; relation; tail entity </fact>`.
+- If any component is unknown, replace it with `?`.
+- Preserve entity/relation names exactly as they appear in the relevant facts.
+- Key note: For the component that needs to be queried (the answer to the question), even if the existing retrieved facts may contain the correct candidate, you must still use `?` to replace it. This ensures that the next retrieval step can obtain the complete list of possible answers, rather than relying solely on the currently retrieved facts.
 
 
 2. A **time interval constraint** for retrieval.
-   - Output this inside `<time> start_date; end_date </time>`.
-   - Use a closed interval.
-   - If a boundary is unknown or cannot be inferred, use `?`.
-   - All dates must strictly follow the **yyyy-mm-dd** format.
+- Output this inside `<time> start_date; end_date </time>`.
+- Use a closed interval.
+- If a boundary is unknown or cannot be inferred, use `?`.
+- All dates must strictly follow the **yyyy-mm-dd** format.
 
 ### Important rules:
 1. Evaluate the relevance of the retrieved facts. Remove any facts that are not genuinely related to the question.
@@ -50,6 +50,17 @@ Since the question provides no time constraint, the interval is `<time>?; ?</tim
 Question: {question}
 Facts:
 {facts}
+
+Slot selection:
+Use ? in <fact> only for a slot that the question asks you to identify
+or that the question does not specify. In time questions, preserve the
+head entity, relation, and tail entity whenever they are specified.
+For first/last questions, do not invent a date bound.
+
+For example, "When did Alice praise Cambodia?" gives
+<fact> Alice; Praise; Cambodia </fact> and <time> ?; ? </time>.
+"Who praised Cambodia?" gives
+<fact> ?; Praise; Cambodia </fact> and <time> ?; ? </time>.
 
 Output format requirement (Qwen compatibility only):
 Do not explain your reasoning or repeat the facts.
