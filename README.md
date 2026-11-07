@@ -6,7 +6,7 @@
 
 ![SSR 方法框架](figure/main.png)
 
-**已有环境：**直接阅读[快速开始](#1-快速开始)。**首次部署：**按第 3–5 节准备环境、数据、模型和索引，再回到第 1 节。常用操作见[缓存与续跑](#9-缓存续跑与完成判据)、[目录维护](#10-历史归档与日常维护)和[故障排查](#11-常见问题)。
+**已有环境：**直接阅读[快速开始](#1-快速开始)。**首次部署：**按第 3–5 节准备环境、数据、模型和索引，再回到第 1 节。常用操作见[缓存与续跑](#9-缓存续跑与完成判据)、[目录维护](#10-历史归档与日常维护)、[GitHub 同步](#122-github-自动同步完整流程)和[故障排查](#11-常见问题)。
 
 ## 0. 项目概览与实验结果
 
@@ -110,6 +110,7 @@ tmux attach -t ssr-14b-full
 ```text
 SSR/
 ├── README.md
+├── SSR_GitHub自动同步.md
 ├── LICENSE
 ├── datasets/MultiTQ/
 │   ├── kg/                         # KG、entity2id.json、relation2id.json
@@ -747,31 +748,332 @@ tmux attach -t ssr-32b-full
 
 会话内 Ctrl+b、d 脱离；Ctrl+C 中断前台任务。模型服务是独立进程，管线退出不等于模型服务退出。全量启动器使用 `remain-on-exit` 保留结束画面，最终完成仍以第 9 节判据为准。
 
-### 12.2 GitHub 自动同步与换机
+### 12.2 GitHub 自动同步完整流程
 
-同步脚本和自身日志集中在 `scripts/github-sync/`。现有服务器沿用已配置的 `sync` 会话；不要重复配置密钥或启动第二个同步器。
+以下包含同步的配置、启动、验证、恢复和排障流程；独立文件 [SSR_GitHub自动同步.md](SSR_GitHub自动同步.md) 保留同样的实用内容，便于单独查阅。
+
+#### 12.2.0. 使用方式与同步方向
+
+```text
+服务器 $HOME/SSR
+  └─ tmux 会话 sync
+       └─ scripts/github-sync/autosync.sh
+            ├─ git add -A：收集新增、修改和删除
+            ├─ 检查本轮暂存文件的大小
+            ├─ 有暂存变化时创建 auto 提交
+            └─ 有待推标记时推送当前 HEAD → backup/main
+
+同步器日志：scripts/github-sync/autosync.log（不跟踪）
+```
+
+已配置的服务器先读第 12.2.1、12.2.5、12.2.6 节；首次配置再执行第 12.2.2 节。以下命令均在服务器终端运行，仓库根与运行根统一为 `$HOME/SSR`。
+
+这是**服务器向 GitHub 推送**的机制。脚本不从 GitHub 自动拉取、合并或检出文件；在网页或另一台机器修改同一分支后，需要按第 12.2.7 节处理分歧。
+
+#### 12.2.1. 已有环境先检查
 
 ```bash
 cd "$HOME/SSR"
-git log -1 --oneline
-git status --short
-pgrep -af '[s]cripts/github-sync/autosync.sh' || true
+git rev-parse --show-toplevel
+git branch --show-current
+git remote -v
+tmux list-sessions 2>&1 || true
+pgrep -u "$(id -u)" -af '[s]cripts/github-sync/autosync.sh' || true
 tail -n 20 scripts/github-sync/autosync.log
 ```
 
 | # | 命令 | 作用 |
 |---|---|---|
-| 1 | `cd "$HOME/SSR"` | 进入同步根目录 |
-| 2 | `git log -1 --oneline` | 查看本机最新提交 |
-| 3 | `git status --short` | 查看尚未提交的变化 |
-| 4 | `pgrep -af ...autosync.sh` | 检查现有同步进程 |
-| 5 | `tail -n 20 .../autosync.log` | 查看提交和推送情况；新克隆未启动同步时可能没有此文件 |
+| 1 | `cd "$HOME/SSR"` | 进入实际同步的仓库 |
+| 2 | `git rev-parse --show-toplevel` | 确认仓库根与运行根一致 |
+| 3 | `git branch --show-current` | 确认当前分支；本项目约定为 main |
+| 4 | `git remote -v` | 核对 backup 指向自己的 SSR 仓库，不假定 origin 的地址 |
+| 5 | `tmux list-sessions` | 查看当前节点是否已有 sync 会话 |
+| 6 | `pgrep -u ... -af ...` | 查看当前用户的同步进程；包装 shell 与脚本可能分别显示 |
+| 7 | `tail -n 20 .../autosync.log` | 查看实际提交、推送或错误；尚未启动过时可能没有此文件 |
 
-当前脚本默认每 60 秒检查，远程名默认 `backup`，分支默认 `main`，可由环境变量覆盖。具体连接与推送权限属于服务器配置，复制脚本本身不会自动获得权限。详见 [GitHub 自动同步说明](SSR_GitHub自动同步.md)。
+已有同步进程正常工作时继续使用，不重复生成密钥、添加 remote 或启动实例。会话存在不能单独证明推送成功，还需第 12.2.6 节的提交与远端核对。当前脚本没有单实例锁，同一节点及共享工作区应只运行一套同步器。
 
-换机器时除了克隆源码，还需准备模型、两个 PKL、需要保留的请求缓存和历史 `bulk/` 等未上传资产。共享 HOME 不共享 localhost 模型服务、GPU 进程和 tmux 会话；切换节点后重新核对本机状态，并避免两个节点同时写同一运行目录。
+#### 12.2.2. 首次配置权限与远端
 
-Git 标签固定受跟踪文件的版本；它不是模型、索引和全部原始回答的完整备份。查看历史代码可用独立 worktree，恢复实验还需对应运行资产。不要在正常部署流程中使用强制还原或强推覆盖自动同步分支。
+##### 12.2.2.1. 准备专用密钥
+
+已有 `$HOME/.ssh/github_ssr` 时优先复用。下面的生成命令仅在私钥、公钥都不存在时执行；如果只剩其中一个文件，先核对原配置，不覆盖已有密钥。
+
+```bash
+mkdir -p "$HOME/.ssh"
+chmod 700 "$HOME/.ssh"
+if [ ! -e "$HOME/.ssh/github_ssr" ] && [ ! -e "$HOME/.ssh/github_ssr.pub" ]; then ssh-keygen -t ed25519 -f "$HOME/.ssh/github_ssr" -N '' -C "ssr-autosync@$(hostname -s)"; else printf '密钥文件已存在，请核对并复用。\n'; fi
+chmod 600 "$HOME/.ssh/github_ssr"
+cat "$HOME/.ssh/github_ssr.pub"
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `mkdir -p "$HOME/.ssh"` | 准备 SSH 目录 |
+| 2 | `chmod 700 "$HOME/.ssh"` | 限制目录访问权限 |
+| 3 | `if ...; then ssh-keygen ...; else ...; fi` | 仅在两个文件均不存在时生成无口令的专用密钥 |
+| 4 | `chmod 600 .../github_ssr` | 设置私钥权限 |
+| 5 | `cat .../github_ssr.pub` | 显示公钥，供添加到 GitHub；私钥不放入仓库或文档 |
+
+在 GitHub 仓库的 **Settings → Deploy keys → Add deploy key** 中添加公钥，并启用 **Allow write access**。Deploy key 默认只读，自动推送需要写权限；具体配置见 [GitHub 官方说明](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys)。
+
+##### 12.2.2.2. 首次连接与读取检查
+
+首次 SSH 连接出现主机指纹确认时，先与 [GitHub 官方 SSH 指纹](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)核对，再确认连接。已有正确 known_hosts 时沿用，不盲目追加扫描到的主机密钥。
+
+```bash
+ssh -T -i "$HOME/.ssh/github_ssr" -o IdentitiesOnly=yes git@github.com
+cd "$HOME/SSR"
+git remote get-url backup || git remote add backup git@github.com:2200170080/SSR.git
+GIT_SSH_COMMAND="ssh -i $HOME/.ssh/github_ssr -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=15" \
+  git ls-remote backup
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `ssh -T -i ... git@github.com` | 核对专用密钥认证；GitHub 不提供 shell，认证成功后返回码仍可能为 1 |
+| 2 | `cd "$HOME/SSR"` | 进入要推送的仓库 |
+| 3 | `git remote get-url backup ...` | 已有则显示地址，缺失才新增 backup；已有错误地址时先人工核对 |
+| 4 | `GIT_SSH_COMMAND=... git ls-remote backup` | 验证该密钥能读取目标仓库引用 |
+
+`ssh -T` 证明身份认证，`git ls-remote` 证明读取；二者都不能单独证明写权限或绕过分支保护。真实推送成功和第 12.2.6 节核对才构成推送证据。`origin` 可以指向自己的仓库或其他来源，以实际输出为准；自动脚本默认推送的是 `backup`。
+
+同步器会显式指定密钥，无需为了本脚本覆盖全局 `~/.ssh/config`。自动提交身份由脚本的 `AUTHOR_NAME`、`AUTHOR_EMAIL` 控制，不要求把旧文档中的邮箱写进全局 Git 配置。
+
+#### 12.2.3. 哪些文件同步
+
+| 文件类别 | 当前处理 | 说明 |
+|---|---|---|
+| README、同步说明、src、scripts | 跟踪并同步 | 包括本次更新的两份 Markdown |
+| `datasets/MultiTQ/` | 跟踪并同步 | KG、ID、测试问题、生效提示词；当前没有整体忽略 datasets |
+| 两份 `artifacts/shared/indexes/MultiTQ_*_embeddings.npy` | 显式放行并跟踪 | 两份向量均低于默认单文件阈值 |
+| `artifacts/shared/indexes/*.pkl` | 忽略 | 大型文本索引和图缓存，保留在服务器 |
+| `models/`、`.hf_cache/`、上游 `MultiTQ/` 下载目录 | 忽略 | 权重与下载缓存不作为代码同步内容 |
+| `artifacts/**/llm_cache.jsonl`、`cache.jsonl` | 忽略 | 请求缓存单独保留和迁移 |
+| `artifacts/shared/locks/`、`run.json.tmp` | 忽略 | 运行锁与临时状态 |
+| `artifacts/**/*.log` | 通常放行 | 仍受单文件大小守卫及目录局部忽略规则影响 |
+| `scripts/github-sync/autosync.log` | 忽略 | 避免同步器自身输出形成重复提交链 |
+| 历史目录的 `bulk/` 等 | 按对应局部 `.gitignore` | GitHub 不一定包含完整实验原始产物 |
+
+当前共享索引规则的要点如下，这是说明性摘录；已有正确规则无需重复追加：
+
+```gitignore
+/artifacts/shared/indexes/*
+!/artifacts/shared/indexes/MultiTQ_entity_embeddings.npy
+!/artifacts/shared/indexes/MultiTQ_relation_embeddings.npy
+/artifacts/**/llm_cache.jsonl
+/artifacts/**/cache.jsonl
+/artifacts/shared/locks/
+/artifacts/**/run.json.tmp
+!/artifacts/**/*.log
+/scripts/github-sync/autosync.log
+```
+
+核对规则与跟踪状态：
+
+```bash
+cd "$HOME/SSR"
+git ls-files -- datasets/MultiTQ scripts/github-sync/autosync.sh artifacts/shared/indexes
+git check-ignore --no-index -v artifacts/shared/indexes/multitq_text_index.pkl scripts/github-sync/autosync.log
+git check-ignore --no-index -v artifacts/shared/indexes/MultiTQ_entity_embeddings.npy artifacts/shared/indexes/MultiTQ_relation_embeddings.npy
+cat .git/info/exclude
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `cd "$HOME/SSR"` | 固定检查的仓库 |
+| 2 | `git ls-files -- ...` | 查看实际已跟踪的输入、脚本和两份向量 |
+| 3 | `git check-ignore --no-index -v ...PKL ...autosync.log` | 查看应被忽略文件的命中规则 |
+| 4 | `git check-ignore --no-index -v ...两份NPY` | 查看向量的精确放行规则 |
+| 5 | `cat .git/info/exclude` | 查看仅本机生效的额外规则；不写入新的兜底规则 |
+
+带 `!` 的匹配规则表示放行，不能把 `git check-ignore -v` 的所有输出都理解为“被忽略”。单文件用 `--no-index -q` 检查时，返回码 0 表示被忽略，1 表示未被忽略，其他返回码需排查错误。已跟踪文件不会仅因新增 ignore 规则就自动停止跟踪；用 `git ls-files` 同时核对。规则解释参考 [Git 官方文档](https://git-scm.com/docs/git-check-ignore)。
+
+#### 12.2.4. 脚本参数与真实行为
+
+| 变量 | 默认值或来源 | 作用 |
+|---|---|---|
+| `ROOT` | `$HOME/SSR` | 同步的仓库根 |
+| `REMOTE` | `backup` | 推送远程名 |
+| `BRANCH` | `main` | 远端目标分支 |
+| `INTERVAL` | `60` | 每轮结束后的等待秒数 |
+| `MAX_MB` | `50` | 文件阈值；实际按 `50 × 1024 × 1024` 字节，即 50 MiB 判断 |
+| `RETRIES` | `3` | 本轮推送尝试次数，失败尝试间隔 15 秒 |
+| `AUTHOR_NAME` | `2200170080` | 自动提交作者名，可用环境变量覆盖 |
+| `AUTHOR_EMAIL` | 脚本中的提交邮箱 | 可覆盖为本人提交邮箱；自动 commit 使用命令级 Git 配置 |
+
+每轮先执行 `git add -A`，因此受跟踪文件的**删除和改名也会被提交**。随后检查本轮暂存列表：若对应工作文件仍存在且大于阈值，脚本用按路径的 `git reset` 将其撤出暂存区，保留工作文件；其余暂存变化才生成 `auto: 时间 @ 主机名` 提交。
+
+大小守卫不是完整历史清理：它不会删除工作区大文件，不会移除已经进入提交历史的大 blob，也不会阻止已跟踪大文件的删除记录被提交。日志被放行也可能因超过阈值而停止更新。不要把“当前文件已删除”理解为“旧大对象已从待推历史中消失”。
+
+有新提交时，内存变量 `NEED_PUSH` 置为 1，脚本推送**当前本地 HEAD** 到指定远程分支；它不会自动切换本地分支。推送失败后，同一进程会在下一轮继续尝试。每轮还有 Git 操作、网络和重试耗时，不能保证严格每 60 秒完成一次推送。
+
+**待推标记不持久化。** 脚本每次启动都把 `NEED_PUSH` 初始化为 0；若重启时本地已经领先远端，但没有新的成功自动提交，或者提交由外部手动创建，脚本不保证自动补推这些提交。遇到这种情况按第 12.2.7 节核对并补推已有提交。
+
+脚本会尝试将 `$HOME/.ssh/github_ssr` 复制到当前节点的 `/tmp/.autosync_gh_key`，设置私钥权限为 600，并通过 `/tmp/.autosync_ssh/` 的连接复用减少重复握手。`/tmp` 是节点本地运行资料，不作为 GitHub 同步内容；连接复用不能保证消除所有认证或网络错误。
+
+#### 12.2.5. 启动、查看、停止与重启
+
+##### 12.2.5.1. 启动一套同步器
+
+仅在第 12.2.1 节确认本项目没有同步进程时执行。以下固定使用 `backup/main`；有意使用其他目标时应同时调整后续验证命令。
+
+```bash
+cd "$HOME/SSR"
+mkdir -p scripts/github-sync
+tmux has-session -t '=sync' 2>/dev/null || \
+  tmux new-session -d -s sync -c "$HOME/SSR" \
+    bash -c 'set -o pipefail; ROOT="$HOME/SSR" REMOTE=backup BRANCH=main INTERVAL=60 MAX_MB=50 RETRIES=3 bash "$HOME/SSR/scripts/github-sync/autosync.sh" 2>&1 | tee -a "$HOME/SSR/scripts/github-sync/autosync.log"'
+tmux list-sessions
+tail -n 20 scripts/github-sync/autosync.log
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `cd "$HOME/SSR"` | 进入同步仓库 |
+| 2 | `mkdir -p scripts/github-sync` | 确保日志目录存在，脚本应已随仓库准备好 |
+| 3 | `tmux has-session ... \|\| tmux new-session ...` | 同名会话不存在时才创建；传入明确参数，将输出追加到同步器日志 |
+| 4 | `tmux list-sessions` | 确认会话是否仍在 |
+| 5 | `tail -n 20 .../autosync.log` | 查看初始化、提交或推送错误；创建会话不等于推送成功 |
+
+这个会话检查不能代替进程检查；如果已有在别的会话或前台运行的同步器，应继续使用或先正常停止它，不再启动第二份。
+
+##### 12.2.5.2. 查看与脱离
+
+```bash
+tmux attach -t sync
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `tmux attach -t sync` | 查看实时输出；按 Ctrl+b，再按 d 脱离并保持后台运行 |
+
+##### 12.2.5.3. 暂停与恢复
+
+确认 `sync` 就是本项目的同步会话后，以下只停止同步器；实验会话 `ssr-14b-full`、`ssr-32b-full` 分别管理。
+
+```bash
+tmux kill-session -t '=sync'
+pgrep -u "$(id -u)" -af '[s]cripts/github-sync/autosync.sh' || true
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `tmux kill-session -t '=sync'` | 结束已确认的同步会话 |
+| 2 | `pgrep -u ... -af ...` | 确认同步脚本是否仍有残留；有残留时先核对，不立即重启 |
+
+确认同步及相关 Git 子进程已退出后，再处理远端分歧或本地提交；恢复时重新执行第 12.2.5.1 节。重启节点后，tmux 本身不自动恢复会话，先检查是否已有其他恢复机制，再决定是否手动启动。
+
+#### 12.2.6. 只读验证同步结果
+
+等本轮提交和推送处理结束后执行。使用同步器的节点本地密钥副本查询，与正在运行的脚本保持一致：
+
+```bash
+cd "$HOME/SSR"
+set -o pipefail
+git status --short
+git log -1 --format='%h %s'
+git rev-parse HEAD
+GIT_SSH_COMMAND='ssh -i /tmp/.autosync_gh_key -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=15' \
+  git ls-remote --exit-code backup refs/heads/main
+tail -n 20 scripts/github-sync/autosync.log
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `cd "$HOME/SSR"` | 固定核对仓库 |
+| 2 | `set -o pipefail` | 为当前 shell 启用管道失败传播 |
+| 3 | `git status --short` | 查看是否还有未提交变化或被守卫跳过的文件 |
+| 4 | `git log -1 ...` | 查看最新实际提交 |
+| 5 | `git rev-parse HEAD` | 显示本地完整提交 SHA |
+| 6 | `GIT_SSH_COMMAND=... git ls-remote --exit-code ...` | 只读查询远端 main 的完整 SHA；同时确认查询没有报错 |
+| 7 | `tail -n 20 .../autosync.log` | 结合 pushed 或失败信息判断本轮结果 |
+
+远端输出第一列 SHA 与本地 HEAD 相同，表示远端分支指向同一提交；还应核对预期文件已经提交，而不是仅比较两个旧提交。如果恰好遇到同步器创建新提交，可能出现短暂不一致，待本轮完成后再查。新空仓库没有 `main` 时，`ls-remote --exit-code` 会报告找不到该引用。
+
+这些检查不会向 README 追加测试行。工作区没有待提交变化、日志暂时安静，可能只是没有新内容；也可能是改动被忽略、超过阈值、提交失败或存在待补推提交，需要联合核对。远端 SHA 相等不能证明模型、PKL、响应缓存和历史 bulk 已备份。
+
+#### 12.2.7. 补推已有提交与处理分歧
+
+先按第 12.2.5.3 节停止同步，确认没有并行 Git 写操作。以下检查使用 HOME 中的原专用密钥，避免依赖节点重启后可能不存在的 `/tmp` 副本：
+
+```bash
+cd "$HOME/SSR"
+export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/github_ssr -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=15"
+git fetch backup main
+git status --short
+git log --oneline --left-right HEAD...FETCH_HEAD
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `cd "$HOME/SSR"` | 进入待检查仓库 |
+| 2 | `export GIT_SSH_COMMAND=...` | 为当前终端的后续 Git 连接指定专用密钥 |
+| 3 | `git fetch backup main` | 获取远端引用，不合并或覆盖工作文件 |
+| 4 | `git status --short` | 查看需要先保存或确认的本地变化 |
+| 5 | `git log --oneline --left-right HEAD...FETCH_HEAD` | `<` 表示仅本地有的提交，`>` 表示仅远端有的提交 |
+
+只有 `<` 时，检查这些本地提交确实需要推送，先预演：
+
+```bash
+git push --dry-run backup HEAD:refs/heads/main
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `git push --dry-run ...` | 检查推送目标和预期更新，不实际更新远端；不能代替真实写入结果 |
+
+预演结果符合预期后，再推送现有本地提交：
+
+```bash
+git push backup HEAD:refs/heads/main
+```
+
+| # | 命令 | 作用 |
+|---|---|---|
+| 1 | `git push backup HEAD:refs/heads/main` | 补推已经存在的本地提交，不重新暂存全部文件 |
+
+如果存在 `>` 或两边都有提交，先核对网页／另一节点的变更及本地工作文件，再按具体情况合并或 rebase、处理冲突。脚本没有自动处理这类分歧的能力。不要把强制推送、重写历史或删除大文件历史作为日常同步步骤。
+
+补推成功后按第 12.2.6 节复核，再恢复同步器。推送因旧大对象被拒时，暂停并定位具体对象，单独制定历史整理方案；只增加 ignore 或删除当前文件不能自动解决历史对象问题。
+
+#### 12.2.8. 换机与版本保存
+
+代码、文档和被跟踪输入可从 GitHub 获取；模型、PKL、请求缓存及被忽略的实验原始文件需要单独迁移。两份 NPY 已受跟踪，但仍应核对新位置和实际文件内容。
+
+共享 HOME 不共享节点的 GPU、tmux 和 `/tmp`。换节点后核对专用密钥、backup 地址、当前分支和单实例状态；不让两个节点同时对同一个共享工作区运行同步器或共写同一实验目录。
+
+Git 标签保存受跟踪版本。它不会自动保存 ignored 资产，也不会自动把工作区恢复到标签。需要恢复历史代码时，先独立核对版本和运行资料，再处理当前工作区与同步任务。
+
+#### 12.2.9. 常见问题与验收
+
+| 现象 | 原因或待核实项 | 处理 |
+|---|---|---|
+| 有 sync 会话但没有 pushed | 会话存在不代表认证、提交或推送成功 | 看日志、工作区状态、本地与远端 SHA |
+| 没有新提交 | 可能没有暂存变化，也可能被忽略、超过阈值或提交失败 | 联合 status、ignore 和同步日志判断 |
+| 重启同步器后仍未补推 | 内存待推标记已清零，且没有新自动提交 | 停同步后按第 12.2.7 节核对并补推已有提交 |
+| `fetch first` / non-fast-forward | 远端有本地没有的提交 | 停同步，fetch 并检查分歧，再针对性整合 |
+| `Permission denied (publickey)` | 密钥、授权、权限、连接等需要排查 | 用同一专用密钥复测，核对 Deploy key 写权限与日志，不直接认定认证限流 |
+| `Host key verification failed` | known_hosts 缺失或指纹变化 | 对照 GitHub 官方指纹确认原因，避免盲目信任扫描结果 |
+| `ls-remote` 成功却 push 失败 | 读取与写入权限、分支策略不同 | 核对写权限、分支保护和真实 push 报错 |
+| 文件被跳过，日志含 skipped files | 本轮文件超过 MAX_MB | 判断是否应单独归档；不要直接提高阈值来绕过仓库限制 |
+| 当前大文件删了，push 仍被拒 | 旧对象仍在待推历史中 | 定位被拒对象，单独处理历史，保留本地工作资料 |
+| 同步器自身日志不断产生提交 | 日志被跟踪后，输出可能形成重复提交链 | 先停同步，核对 ignore 和 `git ls-files`；确认后只移除该日志的 Git 跟踪，保留服务器文件 |
+| 实验日志停止更新到 GitHub | 可能超阈值、局部忽略或实验不再写入 | 看本地日志、大小与规则，再判断同步问题 |
+| 文档中改了 ROOT 等参数但实例没变 | 环境变量在进程启动时读取 | 查看启动日志的实际参数，需要变更时正常重启 |
+| 节点重启后没有 sync | tmux 不自动恢复，其他恢复机制未核实 | 确认无实例后按第 12.2.5 节启动 |
+| `.git/index.lock` 冲突 | 可能并行 Git 操作或异常退出 | 先核对相关进程，避免与活动写入竞争，不盲目删除锁 |
+
+| 检查项 | 验收判据 |
+|---|---|
+| 路径 | 脚本和日志均在 `scripts/github-sync/` |
+| 实例 | 当前节点与共享工作区没有重复同步器 |
+| 目标 | 当前 HEAD 的用途明确，目标远程和分支正确 |
+| 规则 | 两份 NPY 与生效提示词受跟踪；PKL、模型、缓存、运行锁、同步日志被忽略 |
+| 结果 | 本地与远端 SHA 对应，预期文件已提交，无未解释的跳过或失败 |
+
+核对日期：**2026-11-07 15:24:32（Asia/Shanghai）**；默认分支 `main` 的源码基线为 [`09c70c49382239dd6b1700705f146ee03b9d4cf0`](https://github.com/2200170080/SSR/commit/09c70c49382239dd6b1700705f146ee03b9d4cf0)，依据为该提交的同步脚本、忽略规则与仓库树。服务器当前进程、密钥权限、remote 配置及推送状态未实时核对。本次仅维护说明文档，没有实际执行密钥配置、启动或推送。
 
 ### 12.3 来源、许可与核对范围
 
@@ -780,7 +1082,7 @@ Git 标签固定受跟踪文件的版本；它不是模型、索引和全部原�
 - 模型：[BGE-M3](https://huggingface.co/BAAI/bge-m3)、[Qwen2.5-14B-Instruct-AWQ](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct-AWQ)、[Qwen2.5-32B-Instruct-AWQ](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct-AWQ)。
 - 代码许可见 [LICENSE](LICENSE)；数据和权重遵循各来源方的使用条款。引用 SSR 时请使用论文正式书目信息，本 README 不补造原项目尚未给出的 BibTeX。
 
-本 README 更新日期为 **2026-11-07**，GitHub 核对时间为 **2026-11-07 15:11:07（Asia/Shanghai）**，源码基线为默认分支 `main` 的固定提交 [`a8d634f514baf1d7c00506f90c297b45624b6ea6`](https://github.com/2200170080/SSR/commit/a8d634f514baf1d7c00506f90c297b45624b6ea6)。
+本 README 更新日期为 **2026-11-07**，GitHub 核对时间为 **2026-11-07 15:24:32（Asia/Shanghai）**，源码基线为默认分支 `main` 的固定提交 [`09c70c49382239dd6b1700705f146ee03b9d4cf0`](https://github.com/2200170080/SSR/commit/09c70c49382239dd6b1700705f146ee03b9d4cf0)。
 
 文档结合现行源码、已有部署步骤、已同步历史结果和用户服务器输出整理。用户最近一次输出确认两份向量迁移成功且 14B／32B 静态预检通过；该证据不表示迁移后已经重新完成全量实验。当前服务器的实时进程、GPU、端口和工作区状态未实时核对。本文命令仅作说明，本次文档维护没有部署、启动服务或调用模型。
 
