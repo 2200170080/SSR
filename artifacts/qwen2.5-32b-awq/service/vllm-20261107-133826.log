@@ -52,3 +52,9 @@ INFO:     127.0.0.1:52054 - "GET /v1/models HTTP/1.1" 200 OK
 INFO:     127.0.0.1:52070 - "GET /v1/models HTTP/1.1" 200 OK
 INFO:     127.0.0.1:35354 - "GET /v1/models HTTP/1.1" 200 OK
 INFO:     127.0.0.1:35374 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45478 - "GET /v1/models HTTP/1.1" 200 OK
+INFO 11-07 15:44:21 [launcher.py:79] Shutting down FastAPI HTTP server.
+[rank0]:[W1107 15:44:22.265651037 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
