@@ -45,3 +45,5 @@ INFO:     Started server process [2868405]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     127.0.0.1:53564 - "GET /v1/models HTTP/1.1" 200 OK
+INFO 11-07 13:07:08 [chat_utils.py:397] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+INFO 11-07 13:07:13 [loggers.py:111] Engine 000: Avg prompt throughput: 789.3 tokens/s, Avg generation throughput: 0.7 tokens/s, Running: 5 reqs, Waiting: 3 reqs, GPU KV cache usage: 8.1%, Prefix cache hit rate: 27.9%
