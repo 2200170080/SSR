@@ -26,3 +26,69 @@ INFO 11-07 13:36:43 [backends.py:148] Compiling a graph for general shape takes 
 INFO 11-07 13:37:09 [monitor.py:33] torch.compile takes 63.93 s in total
 INFO 11-07 13:37:10 [kv_cache_utils.py:634] GPU KV cache size: 151,632 tokens
 INFO 11-07 13:37:10 [kv_cache_utils.py:637] Maximum concurrency for 8,192 tokens per request: 18.51x
+INFO 11-07 13:37:47 [gpu_model_runner.py:1686] Graph capturing finished in 37 secs, took 0.87 GiB
+INFO 11-07 13:37:47 [core.py:159] init engine (profile, create kv cache, warmup model) took 129.01 seconds
+INFO 11-07 13:37:47 [core_client.py:439] Core engine process 0 ready.
+WARNING 11-07 13:37:47 [config.py:1239] Default sampling parameters have been overridden by the model's Hugging Face generation config recommended from the model creator. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+INFO 11-07 13:37:47 [serving_chat.py:118] Using default chat sampling params from /root/user/cs_tcci_zengdexin/SSR/artifacts/shared/generation-config: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8}
+INFO 11-07 13:37:47 [serving_completion.py:61] Using default completion sampling params from /root/user/cs_tcci_zengdexin/SSR/artifacts/shared/generation-config: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8}
+INFO 11-07 13:37:47 [api_server.py:1090] Starting vLLM API server on http://127.0.0.1:8000
+INFO 11-07 13:37:47 [launcher.py:28] Available routes are:
+INFO 11-07 13:37:47 [launcher.py:36] Route: /openapi.json, Methods: HEAD, GET
+INFO 11-07 13:37:47 [launcher.py:36] Route: /docs, Methods: HEAD, GET
+INFO 11-07 13:37:47 [launcher.py:36] Route: /docs/oauth2-redirect, Methods: HEAD, GET
+INFO 11-07 13:37:47 [launcher.py:36] Route: /redoc, Methods: HEAD, GET
+INFO 11-07 13:37:47 [launcher.py:36] Route: /metrics, Methods: GET
+INFO:     Started server process [2883378]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:47078 - "GET /v1/models HTTP/1.1" 200 OK
+INFO 11-07 13:37:47 [chat_utils.py:397] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+INFO:     127.0.0.1:47082 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-07 13:37:57 [loggers.py:111] Engine 000: Avg prompt throughput: 0.2 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+INFO 11-07 13:38:07 [loggers.py:111] Engine 000: Avg prompt throughput: 1565.0 tokens/s, Avg generation throughput: 15.5 tokens/s, Running: 8 reqs, Waiting: 0 reqs, GPU KV cache usage: 7.3%, Prefix cache hit rate: 31.0%
+INFO:     127.0.0.1:37108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37074 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37100 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37116 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37124 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37082 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37086 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37074 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37116 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37082 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37100 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37124 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37086 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37116 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37082 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37074 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-07 13:38:17 [loggers.py:111] Engine 000: Avg prompt throughput: 3262.4 tokens/s, Avg generation throughput: 57.1 tokens/s, Running: 6 reqs, Waiting: 2 reqs, GPU KV cache usage: 2.3%, Prefix cache hit rate: 38.4%
+INFO:     127.0.0.1:37082 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37100 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37124 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37074 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37100 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37074 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37100 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37082 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37100 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37116 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37124 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37074 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37086 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-07 13:38:22 [launcher.py:79] Shutting down FastAPI HTTP server.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
