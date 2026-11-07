@@ -206,4 +206,6 @@ class GraphRetriever:
 
     def _emb_path(self, name: str) -> str:
         prefix = self.dataset_name or "dataset"
-        return f"{prefix}_{name}_embeddings.npy"
+        folder = os.path.join("artifacts", "shared", "indexes")
+        os.makedirs(folder, exist_ok=True)
+        return os.path.join(folder, f"{prefix}_{name}_embeddings.npy")

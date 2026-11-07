@@ -155,7 +155,7 @@ def preflight(root: Path, profile: dict) -> dict:
     if type(dimension) is not int or dimension <= 0:
         raise RuntimeError('BGE hidden_size配置异常。')
     for kind in ('entity', 'relation'):
-        path = checked(f'MultiTQ_{kind}_embeddings.npy', False)
+        path = checked(f'artifacts/shared/indexes/MultiTQ_{kind}_embeddings.npy', False)
         array = np.load(path, mmap_mode='r', allow_pickle=False)
         if array.shape != (len(ids[kind]), dimension) or array.dtype != np.float32:
             raise RuntimeError(f'{kind}嵌入行数、维度或dtype异常：{array.shape}/{array.dtype}')

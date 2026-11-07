@@ -226,7 +226,7 @@ __marimo__/
 
 # autosync's own log would make every cycle a new commit
 /logs/autosync.log
-/artifacts/shared/indexes/
+/artifacts/shared/indexes/*
 /artifacts/**/llm_cache.jsonl
 /artifacts/**/cache.jsonl
 /artifacts/shared/history/legacy-cache/
@@ -236,3 +236,5 @@ __marimo__/
 /scripts/github-sync/autosync.log
 /artifacts/shared/locks/
 /artifacts/**/run.json.tmp
+!/artifacts/shared/indexes/MultiTQ_entity_embeddings.npy
+!/artifacts/shared/indexes/MultiTQ_relation_embeddings.npy
