@@ -2,7 +2,7 @@
 # autosync.sh - poll ~/SSR for tracked changes, commit and push to a mirror.
 # Runs anywhere (no cron / systemd needed): start it inside tmux.
 #
-#   tmux new -d -s sync -c ~/SSR 'bash ~/SSR/tools/autosync.sh'
+#   tmux new -d -s sync -c ~/SSR 'bash ~/SSR/scripts/github-sync/autosync.sh'
 #
 # Env knobs: ROOT REMOTE BRANCH INTERVAL MAX_MB RETRIES AUTHOR_NAME AUTHOR_EMAIL
 set -uo pipefail

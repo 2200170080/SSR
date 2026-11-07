@@ -230,3 +230,7 @@ __marimo__/
 /artifacts/**/llm_cache.jsonl
 /artifacts/**/cache.jsonl
 /artifacts/shared/history/legacy-cache/
+!/scripts/
+!/scripts/github-sync/
+!/scripts/github-sync/autosync.sh
+/scripts/github-sync/autosync.log

@@ -11,7 +11,7 @@
 ```text
 服务器 ~/SSR（git 仓库，仓库根 = 运行根）
         │
-        │  tmux 会话 sync 里常驻 tools/autosync.sh，每 60 s：
+        │  tmux 会话 sync 里常驻 scripts/github-sync/autosync.sh，每 60 s：
         │    git add -A → 有变更则 commit（作者 2200170080）→ git push backup main
         ▼
 GitHub 2200170080/SSR  （远端名 backup，分支 main）
@@ -123,13 +123,13 @@ cat >> ~/SSR/.git/info/exclude <<'EOF'
 /artifacts/*/llm_cache.jsonl
 /MultiTQ/
 /.hf_cache/
-/logs/autosync.log
+/scripts/github-sync/autosync.log
 EOF
 ```
 
 | # | 命令 | 作用 |
 |---|---|---|
-| 1 | `cat >> .git/info/exclude … EOF` | 登记 7 类不进仓库的内容；前导 `/` 锚定仓库根，否则会误伤 `src/` 下的同名路径；`artifacts/` 只排掉索引 `*.pkl` 与响应缓存 `llm_cache.jsonl`，**其余实验结果照常同步**；`/logs/autosync.log` 必须挡——它每轮都在写，跟踪它会让同步器自己制造无穷提交 |
+| 1 | `cat >> .git/info/exclude … EOF` | 登记 7 类不进仓库的内容；前导 `/` 锚定仓库根，否则会误伤 `src/` 下的同名路径；`artifacts/` 只排掉索引 `*.pkl` 与响应缓存 `llm_cache.jsonl`，**其余实验结果照常同步**；`/scripts/github-sync/autosync.log` 必须挡——它每轮都在写，跟踪它会让同步器自己制造无穷提交 |
 
 `.gitignore` 里对应同一套规则，另外还要加**否定规则**——Python 模板默认有全局 `*.log`，不解除的话 `logs/` 与 `artifacts/*/A.log` 永远同步不上去；否定规则**必须写在 `.gitignore` 里**（`.git/info/exclude` 的 `!` 压不过 `.gitignore`）：
 
@@ -148,7 +148,7 @@ EOF
 !/artifacts/**/*.log
 
 # 同步器自己的工作日志：每轮都写，跟踪它 = 每轮一个新提交
-/logs/autosync.log
+/scripts/github-sync/autosync.log
 ```
 
 判断某个文件到底进不进仓库，用 `git check-ignore -v <路径>` 看命中的是哪一条：
@@ -193,7 +193,7 @@ git push -u backup main
 
 ---
 
-## 3. 自动同步脚本 `tools/autosync.sh`
+## 3. 自动同步脚本 `scripts/github-sync/autosync.sh`
 
 ### 3.1 关键配置（脚本头部，全部可用环境变量覆盖）
 
@@ -232,7 +232,7 @@ git push -u backup main
 1. **密钥复制到 `/tmp/.autosync_gh_key`**：家目录 `~` 在 CephFS（`172.30.20.24:6789:/ltaidc`）上，共享盘读小文件偶发抖动；脚本启动时把 `~/.ssh/github_ssr` 复制一份到本地盘（600 权限），ssh 只用这份。原密钥仍保留，重装/换机不受影响。
 2. **`ControlMaster` 复用连接**：每分钟新建一条 ssh 连接去 GitHub，会触发**认证限流**——表现是随机 `Permission denied (publickey)`，而手动 `ssh -T` 又是通的。脚本用 `ControlMaster=auto` + `ControlPath=/tmp/.autosync_ssh/gh-%r@%h:%p` + `ControlPersist=10m`，10 分钟内复用同一条连接，认证次数从「每分钟 1 次」降到「十分钟 1 次」。
 
-脚本里对应的两段（`tools/autosync.sh` 第 21–34 行）：复制密钥 → 导出 `GIT_SSH_COMMAND`；再加 `ServerAliveInterval=15` 防止连接被中间设备静默断开。
+脚本里对应的两段（`scripts/github-sync/autosync.sh` 第 21–34 行）：复制密钥 → 导出 `GIT_SSH_COMMAND`；再加 `ServerAliveInterval=15` 防止连接被中间设备静默断开。
 
 ---
 
@@ -241,23 +241,23 @@ git push -u backup main
 ### 4.1 启动
 
 ```bash
-tmux new -d -s sync -c ~/SSR 'bash ~/SSR/tools/autosync.sh 2>&1 | tee -a ~/SSR/logs/autosync.log'
+tmux new -d -s sync -c ~/SSR 'bash ~/SSR/scripts/github-sync/autosync.sh 2>&1 | tee -a ~/SSR/scripts/github-sync/autosync.log'
 tmux ls
 ```
 
 | # | 命令 | 作用 |
 |---|---|---|
-| 1 | `tmux new -d -s sync -c ~/SSR '…'` | 在后台会话 `sync` 里启动脚本，工作目录固定 `~/SSR`；输出同时进屏幕和 `logs/autosync.log` |
+| 1 | `tmux new -d -s sync -c ~/SSR '…'` | 在后台会话 `sync` 里启动脚本，工作目录固定 `~/SSR`；输出同时进屏幕和 `scripts/github-sync/autosync.log` |
 | 2 | `tmux ls` | 应看到 `sync: 1 windows (created …)` |
 
-> `logs/autosync.log` **不进仓库**（已加入忽略规则）：它每轮都在写，跟踪它会让同步器自己制造无穷提交——这是踩过的坑，见 7 节「每分钟都冒出 `auto:` 提交」。
+> `scripts/github-sync/autosync.log` **不进仓库**（已加入忽略规则）：它每轮都在写，跟踪它会让同步器自己制造无穷提交——这是踩过的坑，见 7 节「每分钟都冒出 `auto:` 提交」。
 
 ### 4.2 查看 / 进入 / 退出
 
 ```bash
 tmux ls                              # 有没有 sync
 tmux attach -t sync                  # 进去看实时输出，Ctrl+B 然后 D 脱离（不影响运行）
-tail -5 ~/SSR/logs/autosync.log      # 不进会话也能看最近几条
+tail -5 ~/SSR/scripts/github-sync/autosync.log      # 不进会话也能看最近几条
 ```
 
 | # | 命令 | 作用 |
@@ -283,14 +283,14 @@ pgrep -af autosync.sh || echo "stopped"
 这台机器没有 cron，也没有 systemd user session，重启后 `sync` 会话不会自己回来。开机后第一件事：
 
 ```bash
-tmux new -d -s sync -c ~/SSR 'bash ~/SSR/tools/autosync.sh 2>&1 | tee -a ~/SSR/logs/autosync.log'
+tmux new -d -s sync -c ~/SSR 'bash ~/SSR/scripts/github-sync/autosync.sh 2>&1 | tee -a ~/SSR/scripts/github-sync/autosync.log'
 ```
 
 | # | 命令 | 作用 |
 |---|---|---|
 | 1 | `tmux new -d -s sync -c ~/SSR '…'` | 重新拉起常驻会话；日志追加到同一个 `autosync.log`，不覆盖之前的记录 |
 
-如果希望它跟着实验一起起来，可以写进 `~/SSR/tools/` 的一个小包装脚本，但**别用 `@reboot` cron**——这个账号在共享节点上没有 crontab 权限。
+如果希望它跟着实验一起起来，可以写进 `~/SSR/scripts/` 的一个小包装脚本，但**别用 `@reboot` cron**——这个账号在共享节点上没有 crontab 权限。
 
 ---
 
@@ -335,7 +335,7 @@ cd ~/SSR && find . -path ./.git -prune -o -type f -newermt '-10 minutes' -print 
 | 只想看远端到了哪 | `git ls-remote backup main` |
 | 远端有别人的提交（比如你在网页上改过） | `git pull --rebase backup main` |
 | 看某个文件为什么没同步 | `git check-ignore -v 路径` |
-| 看自动同步最近做了什么 | `tail -20 ~/SSR/logs/autosync.log` |
+| 看自动同步最近做了什么 | `tail -20 ~/SSR/scripts/github-sync/autosync.log` |
 | 临时停掉再改历史（如改署名） | `tmux kill-session -t sync` → 改 → 重启 |
 
 ---
@@ -354,7 +354,7 @@ cd ~/SSR && find . -path ./.git -prune -o -type f -newermt '-10 minutes' -print 
 | 机器重启后不同步了 | 没有 cron/systemd，tmux 会话没了 | 按 4.4 手动起一次 |
 | 提交作者不对 | 脚本里 `AUTHOR_NAME/AUTHOR_EMAIL` 或仓库 `user.name/email` 没设 | 改脚本头部两行；已经提交的历史用 `git filter-branch` 重写后强推（仅限自己的仓库） |
 | 改脚本后服务器执行报 `#!/bin/bash: No such file or directory` | 用了带 BOM 的工具写文件 | 用 UTF-8 **无 BOM** 写回（`UTF8Encoding($false)` / `write` 工具），`head -c 3 \| od -c` 确认是 `# ! /` |
-| 每分钟都冒出一条 `auto:` 提交、日志越滚越大 | `logs/autosync.log` 曾被跟踪，同步器每轮写日志 → 每轮新提交 → 每轮新推送 | 已加入忽略并从索引移除：`git rm --cached logs/autosync.log` + 规则 `/logs/autosync.log`；自激循环就此断掉 |
+| 每分钟都冒出一条 `auto:` 提交、日志越滚越大 | `scripts/github-sync/autosync.log` 曾被跟踪，同步器每轮写日志 → 每轮新提交 → 每轮新推送 | 已加入忽略并从索引移除：`git rm --cached scripts/github-sync/autosync.log` + 规则 `/scripts/github-sync/autosync.log`；自激循环就此断掉 |
 | 每隔几轮 `Permission denied (publickey)`，手动 `ssh -T` 却是通的 | 每分钟新建 ssh 连接，触发 GitHub 认证限流（突发测试连发 10 次全被拒，隔一会儿单次成功） | 已改连接复用：`ControlMaster=auto` + `ControlPath=/tmp/.autosync_ssh/…` + `ControlPersist=10m`，并把密钥复制到本地盘 `/tmp/.autosync_gh_key` |
 | `remote: Internal Server Error` / `[remote rejected] … (Internal Server Error)` | GitHub 侧瞬时故障，不是你的配置问题 | 脚本轮内重试 3 次（间隔 15 秒）；连续出现只需等，别改配置 |
 | 服务器在跑实验，但 GitHub 上没有新提交 | 跑批已停或没写文件——**没有变化就没有提交** | 先 `ps` 看进程、再看目标日志 mtime，最后才怀疑同步；用第 5 节那条 `find -newermt` 一秒判定 |
@@ -376,14 +376,14 @@ cd ~/SSR && find . -path ./.git -prune -o -type f -newermt '-10 minutes' -print 
 | 跟踪文件数 | **93**（`artifacts/` 66、`src/` 9、`datasets/` 6、`logs/` 3、`tools/` 2、`figure/` 1、根目录 6） |
 | `artifacts/` 被跟踪的量 | 66 个文件、共 **22 MB**（`*.txt`、`*.jsonl`、`*.json`、`*.log`） |
 | 仓库 `.git` 体积 | **997 MB**（历史里仍有 740 MB / 104 MB 的 `llm_cache.jsonl` 与 41 MB `.npy` blob） |
-| 忽略规则 | 7 条：`/models/`、`/artifacts/*.pkl`、`/artifacts/llm_cache.jsonl`、`/artifacts/*/llm_cache.jsonl`、`/MultiTQ/`、`/.hf_cache/`、`/logs/autosync.log`；`.gitignore` 另有三条否定规则放行 `logs/` 与 `artifacts/**/*.log` |
-| 脚本 | `~/SSR/tools/autosync.sh`，`INTERVAL=60 MAX_MB=50 RETRIES=3`，md5 `4781ea195ec2891eba669af320072d5f` |
-| 自动同步日志 | `~/SSR/logs/autosync.log`（**不跟踪**，仅本地查看） |
+| 忽略规则 | 7 条：`/models/`、`/artifacts/*.pkl`、`/artifacts/llm_cache.jsonl`、`/artifacts/*/llm_cache.jsonl`、`/MultiTQ/`、`/.hf_cache/`、`/scripts/github-sync/autosync.log`；`.gitignore` 另有三条否定规则放行 `logs/` 与 `artifacts/**/*.log` |
+| 脚本 | `~/SSR/scripts/github-sync/autosync.sh`，`INTERVAL=60 MAX_MB=50 RETRIES=3` |
+| 自动同步日志 | `~/SSR/scripts/github-sync/autosync.log`（**不跟踪**，仅本地查看） |
 
 ---
 
 ## 9. 与部署手册的关系
 
-- **部署手册**负责「从零把环境跑起来」：拉代码（第 3 节，克隆的就是 `2200170080/SSR`，所以 `tools/autosync.sh` 与 `tools/run_ssr.sh` 随仓库下来）、数据、模型、vLLM、跑实验（第 10 节）。
+- **部署手册**负责「从零把环境跑起来」：拉代码（第 3 节，克隆的就是 `2200170080/SSR`，所以 `scripts/github-sync/autosync.sh` 随仓库下来）、数据、模型、vLLM、跑实验（第 10 节）。
 - **本文**负责「跑起来之后代码怎么持续回到 GitHub」：密钥、remote、忽略规则、脚本、tmux、验证与排错。
 - 两者共用的两条铁律：① 仓库根即运行根 `~/SSR`，不要多套一层；② 只挡大二进制，其余全同步。
