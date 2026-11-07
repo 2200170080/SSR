@@ -92,3 +92,8 @@ INFO:     127.0.0.1:34690 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:34684 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO 11-07 13:07:53 [loggers.py:111] Engine 000: Avg prompt throughput: 727.7 tokens/s, Avg generation throughput: 40.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 50.0%
 INFO 11-07 13:08:03 [loggers.py:111] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 50.0%
+INFO:     127.0.0.1:47484 - "GET /v1/models HTTP/1.1" 200 OK
+INFO 11-07 13:34:24 [launcher.py:79] Shutting down FastAPI HTTP server.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
