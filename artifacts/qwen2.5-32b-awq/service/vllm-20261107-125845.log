@@ -25,3 +25,6 @@ INFO 11-07 13:02:48 [backends.py:420] Using cache directory: /root/user/cs_tcci_
 INFO 11-07 13:02:48 [backends.py:430] Dynamo bytecode transform time: 52.03 s
 INFO 11-07 13:03:00 [backends.py:136] Cache the graph of shape None for later use
 INFO 11-07 13:03:59 [backends.py:148] Compiling a graph for general shape takes 69.32 s
+INFO 11-07 13:04:37 [monitor.py:33] torch.compile takes 121.35 s in total
+INFO 11-07 13:04:40 [kv_cache_utils.py:634] GPU KV cache size: 76,832 tokens
+INFO 11-07 13:04:40 [kv_cache_utils.py:637] Maximum concurrency for 8,192 tokens per request: 9.38x
