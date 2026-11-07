@@ -234,3 +234,5 @@ __marimo__/
 !/scripts/github-sync/
 !/scripts/github-sync/autosync.sh
 /scripts/github-sync/autosync.log
+/artifacts/shared/locks/
+/artifacts/**/run.json.tmp
