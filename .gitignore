@@ -226,3 +226,7 @@ __marimo__/
 
 # autosync's own log would make every cycle a new commit
 /logs/autosync.log
+/artifacts/shared/indexes/
+/artifacts/**/llm_cache.jsonl
+/artifacts/**/cache.jsonl
+/artifacts/shared/history/legacy-cache/
