@@ -28,3 +28,20 @@ INFO 11-07 13:03:59 [backends.py:148] Compiling a graph for general shape takes 
 INFO 11-07 13:04:37 [monitor.py:33] torch.compile takes 121.35 s in total
 INFO 11-07 13:04:40 [kv_cache_utils.py:634] GPU KV cache size: 76,832 tokens
 INFO 11-07 13:04:40 [kv_cache_utils.py:637] Maximum concurrency for 8,192 tokens per request: 9.38x
+INFO 11-07 13:05:32 [gpu_model_runner.py:1686] Graph capturing finished in 52 secs, took 1.21 GiB
+INFO 11-07 13:05:32 [core.py:159] init engine (profile, create kv cache, warmup model) took 215.97 seconds
+INFO 11-07 13:05:32 [core_client.py:439] Core engine process 0 ready.
+WARNING 11-07 13:05:32 [config.py:1239] Default sampling parameters have been overridden by the model's Hugging Face generation config recommended from the model creator. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+INFO 11-07 13:05:32 [serving_chat.py:118] Using default chat sampling params from /root/user/cs_tcci_zengdexin/SSR/artifacts/shared/generation-config: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8}
+INFO 11-07 13:05:32 [serving_completion.py:61] Using default completion sampling params from /root/user/cs_tcci_zengdexin/SSR/artifacts/shared/generation-config: {'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8}
+INFO 11-07 13:05:32 [api_server.py:1090] Starting vLLM API server on http://127.0.0.1:8000
+INFO 11-07 13:05:32 [launcher.py:28] Available routes are:
+INFO 11-07 13:05:32 [launcher.py:36] Route: /openapi.json, Methods: HEAD, GET
+INFO 11-07 13:05:32 [launcher.py:36] Route: /docs, Methods: HEAD, GET
+INFO 11-07 13:05:32 [launcher.py:36] Route: /docs/oauth2-redirect, Methods: HEAD, GET
+INFO 11-07 13:05:32 [launcher.py:36] Route: /redoc, Methods: HEAD, GET
+INFO 11-07 13:05:32 [launcher.py:36] Route: /metrics, Methods: GET
+INFO:     Started server process [2868405]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53564 - "GET /v1/models HTTP/1.1" 200 OK
