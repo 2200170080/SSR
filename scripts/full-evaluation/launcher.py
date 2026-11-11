@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SSR 14B/32B 全量评测：预检、模型服务、tmux 与独立缓存。"""
+"""SSR 全量评测：预检、模型服务、tmux 与独立缓存。"""
 
 import hashlib
 import json
@@ -11,6 +11,9 @@ import subprocess
 import string
 import sys
 from pathlib import Path
+
+
+QWEN_GENERATION_REL = "artifacts/shared/generation-config"
 
 
 def _pf_json(path):
@@ -163,12 +166,19 @@ def preflight(root: Path, profile: dict) -> dict:
     model = profile['model_rel'].rstrip('/') + '/'
     config = _pf_json(checked(model + 'config.json'))
     quant = config.get('quantization_config') or {}
-    if quant.get('quant_method') != 'awq' or quant.get('bits') != 4:
-        raise RuntimeError('所选Qwen权重必须为4bit AWQ。')
+    if profile.get('model_type') == 'llama':
+        if (config.get('model_type') != 'llama'
+                or 'LlamaForCausalLM' not in config.get('architectures', [])
+                or config.get('hidden_size') != 4096 or config.get('num_hidden_layers') != 32
+                or (config.get('rope_scaling') or {}).get('rope_type') != 'llama3'
+                or config.get('torch_dtype', config.get('dtype')) != 'bfloat16' or quant):
+            raise RuntimeError('所选权重必须为未量化的 Llama 3.1 8B BF16。')
+    elif quant.get('quant_method') != 'awq' or quant.get('bits') != 4:
+        raise RuntimeError('所选 Qwen 权重必须为 4bit AWQ。')
     for directory in (bge, model):
         tokenizer = _pf_json(checked(directory + 'tokenizer_config.json'))
         if directory == model and not tokenizer.get('chat_template'):
-            raise RuntimeError('Qwen缺少chat_template。')
+            raise RuntimeError(f'模型缺少 chat_template：{directory}')
         vocabulary = [n for n in ('tokenizer.json', 'sentencepiece.bpe.model', 'tokenizer.model', 'vocab.json', 'merges.txt') if (root / directory / n).is_file()]
         if not vocabulary or ('vocab.json' in vocabulary and 'merges.txt' not in vocabulary):
             raise RuntimeError(f'本地tokenizer文件不完整：{directory}')
@@ -189,14 +199,15 @@ def preflight(root: Path, profile: dict) -> dict:
         checked(bge + name, False)
     mapping = _pf_json(checked(model + 'model.safetensors.index.json')).get('weight_map')
     if not isinstance(mapping, dict) or not mapping:
-        raise RuntimeError('Qwen权重索引为空。')
+        raise RuntimeError(f'模型权重索引为空：{model}')
     for shard in sorted(set(mapping.values())):
         if not isinstance(shard, str) or Path(shard).name != shard:
-            raise RuntimeError('Qwen权重索引含非法路径。')
+            raise RuntimeError(f'模型权重索引含非法路径：{model}')
         keys = _pf_tensor_header(checked(model + shard, False))
         if keys != {name for name, filename in mapping.items() if filename == shard}:
-            raise RuntimeError(f'Qwen分片张量名与索引不符：{shard}')
-    _pf_json(checked('artifacts/shared/generation-config/generation_config.json'))
+            raise RuntimeError(f'模型分片张量名与索引不符：{shard}')
+    generation_dir = profile.get('generation_rel', QWEN_GENERATION_REL)
+    _pf_json(checked(f'{generation_dir}/generation_config.json'))
     for folder, patterns in (('src', ('*.py',)), ('scripts/full-evaluation', ('*.py', '*.sh'))):
         for pattern in patterns:
             for path in sorted((root / folder).rglob(pattern)):
@@ -217,9 +228,6 @@ import subprocess
 import time
 from datetime import datetime
 from urllib.request import Request, urlopen
-
-_ALLOWED = {"models/qwen14b-awq": ("qwen14b", "14"),
-            "models/qwen32b-awq": ("qwen32b-gp", "32")}
 
 def _proc(pid):
     folder = Path("/proc") / str(pid)
@@ -258,8 +266,8 @@ def _api(path="/v1/models", payload=None):
 
 def _wanted(root, profile):
     relative = profile["model_rel"]
-    if relative not in _ALLOWED or profile["alias"] != _ALLOWED[relative][0]:
-        raise RuntimeError("仅支持本项目的 qwen14b / qwen32b-gp 及对应模型目录")
+    if _ALLOWED.get(relative) != profile["alias"]:
+        raise RuntimeError("模型目录与本项目登记的服务别名不匹配")
     for key in ("max_seqs", "batched_tokens"):
         if key in profile and (type(profile[key]) is not int or profile[key] < 1):
             raise RuntimeError("无效服务参数: " + key)
@@ -287,7 +295,7 @@ def _inspect(root, profile):
         roots = {str(Path(item["root"]).resolve()) for item in served}
         allowed = {str((root / rel).resolve()) for rel in _ALLOWED}
         if len(roots) != 1 or not roots <= allowed:
-            raise RuntimeError("8000端口不是本项目唯一的14B/32B服务")
+            raise RuntimeError("8000 端口不是本项目登记的单模型服务")
         snapshot = _snapshot()
         owners = set(map(int, re.findall(r"pid=(\d+)", subprocess.check_output(
             ["ss", "-ltnp", "sport = :8000"], text=True, timeout=10))))
@@ -367,7 +375,7 @@ def ensure_service(root, profile, log):
     root = Path(root).resolve()
     wanted = _wanted(root, profile)
     executable = Path.home() / "miniconda3/envs/vllm/bin/vllm"
-    generation = root / "artifacts/shared/generation-config"
+    generation = root / profile.get("generation_rel", QWEN_GENERATION_REL)
     if not executable.is_file() or not wanted.is_dir() or not (generation / "generation_config.json").is_file():
         raise RuntimeError("vLLM、模型目录或公共生成配置缺失")
     state = _inspect(root, profile)
@@ -388,11 +396,12 @@ def ensure_service(root, profile, log):
         if time.monotonic() > deadline:
             raise RuntimeError("显存尚未充分释放，未启动新模型")
         time.sleep(2)
-    folder = root / ("artifacts/qwen2.5-" + _ALLOWED[profile["model_rel"]][1] + "b-awq/service")
+    folder = root / profile["artifact_rel"] / "service"
     folder.mkdir(parents=True, exist_ok=True)
     logfile = folder / ("vllm-" + datetime.now().strftime("%Y%m%d-%H%M%S-%f") + ".log")
     command = [str(executable), "serve", str(wanted), "--served-model-name", profile["alias"],
-        "--host", "127.0.0.1", "--port", "8000", "--dtype", "half", "--max-model-len", "8192",
+        "--host", "127.0.0.1", "--port", "8000", "--dtype", profile.get("dtype", "half"),
+        "--max-model-len", str(profile.get("max_model_len", 8192)),
         "--max-num-seqs", str(profile["max_seqs"]), "--gpu-memory-utilization", "0.80",
         "--generation-config", str(generation), "--disable-log-requests"]
     if "batched_tokens" in profile:
@@ -459,7 +468,16 @@ PROFILES = {
     '32': dict(alias='qwen32b-gp', model_rel='models/qwen32b-awq',
                artifact_rel='artifacts/qwen2.5-32b-awq', max_seqs=8,
                batched_tokens=2048),
+    'llama31-8b': dict(
+        alias='llama31-8b', model_type='llama', dtype='bfloat16',
+        model_rel='models/llama-3.1-8b-instruct',
+        generation_rel='models/llama-3.1-8b-instruct',
+        artifact_rel='artifacts/llama-3.1-8b-instruct',
+        max_seqs=8, max_model_len=16384, batched_tokens=2048,
+        session='ssr-llama31-8b-full',
+    ),
 }
+_ALLOWED = {profile["model_rel"]: profile["alias"] for profile in PROFILES.values()}
 
 
 def say(message):
@@ -557,7 +575,7 @@ def execute(root, profile, resume):
         try:
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
-            raise RuntimeError('已有 14B 或 32B 全量任务占用运行锁。')
+            raise RuntimeError('已有 SSR 全量任务占用运行锁。')
         check_processes(root)
         fingerprint = preflight(root, profile)
         run, state = choose_run(root, profile, resume, fingerprint)
@@ -640,7 +658,7 @@ def main():
     elif args.worker:
         execute(root, profile, args.resume)
     else:
-        session = f'ssr-{args.model}b-full'
+        session = profile.get('session', f'ssr-{args.model}b-full')
         if subprocess.run(['tmux', 'has-session', '-t', '=' + session],
                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0:
             panes = subprocess.check_output(['tmux', 'list-panes', '-s', '-t', '=' + session,
