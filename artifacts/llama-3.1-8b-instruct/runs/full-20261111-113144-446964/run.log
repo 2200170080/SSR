@@ -73557,3 +73557,19 @@ Searching similar facts:  98%|█████████▊| 417/427 [40:14<00:
 Searching similar facts:  98%|█████████▊| 418/427 [40:19<00:50,  5.61s/it]
 Searching similar facts:  98%|█████████▊| 419/427 [40:25<00:44,  5.55s/it]
 Searching similar facts:  98%|█████████▊| 420/427 [40:31<00:39,  5.58s/it]
+Searching similar facts:  99%|█████████▊| 421/427 [40:36<00:33,  5.63s/it]
+Searching similar facts:  99%|█████████▉| 422/427 [40:42<00:27,  5.58s/it]
+Searching similar facts:  99%|█████████▉| 423/427 [40:47<00:22,  5.59s/it]
+Searching similar facts:  99%|█████████▉| 424/427 [40:53<00:16,  5.57s/it]
+Searching similar facts: 100%|█████████▉| 425/427 [40:59<00:11,  5.63s/it]
+Searching similar facts: 100%|█████████▉| 426/427 [41:04<00:05,  5.63s/it]
+Searching similar facts: 100%|██████████| 427/427 [41:07<00:00,  4.74s/it]
+Searching similar facts: 100%|██████████| 427/427 [41:07<00:00,  5.78s/it]
+
+========== Step 2: Graph pattern extraction + graph retrieval ==========
+[Step] Load cached graph retriever: artifacts/shared/indexes/multitq_graph_retriever.pkl
+[Step] Extract graph patterns from queries and retrieved text facts
+
+Extract graph patterns:   0%|          | 0/54584 [00:00<?, ?it/s]
+Extract graph patterns:   0%|          | 1/54584 [00:10<152:07:28, 10.03s/it]
+Extract graph patterns: 100%|█████████▉| 54578/54584 [00:12<00:00, 5747.55it/s]
