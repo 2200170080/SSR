@@ -11,3 +11,11 @@ INFO 11-11 11:41:24 [cuda.py:221] Using Flash Attention backend on V1 engine.
 WARNING 11-11 11:41:24 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
 INFO 11-11 11:41:24 [gpu_model_runner.py:1329] Starting to load model /root/user/cs_tcci_zengdexin/SSR/models/llama-3.1-8b-instruct...
 Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:20<01:01, 20.44s/it]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:39<00:39, 19.60s/it]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:44<00:12, 12.78s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [01:03<00:00, 15.37s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [01:03<00:00, 15.86s/it]
+
+INFO 11-11 11:42:30 [loader.py:458] Loading weights took 63.60 seconds
+INFO 11-11 11:42:30 [gpu_model_runner.py:1347] Model loading took 14.9889 GiB and 65.831204 seconds
