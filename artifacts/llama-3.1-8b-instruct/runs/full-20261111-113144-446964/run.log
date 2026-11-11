@@ -73018,3 +73018,10 @@ Run QA:  17%|█▋        | 9323/54584 [4:40:56<20:13:34,  1.61s/it]
 Run QA:  17%|█▋        | 9324/54584 [4:41:00<27:14:11,  2.17s/it]
 Run QA:  17%|█▋        | 9325/54584 [4:41:00<21:29:48,  1.71s/it]
 Run QA:  17%|█▋        | 9326/54584 [4:41:02<22:10:50,  1.76s/it]
+
+=== attempt 2026-11-11T22:49:54 ===
+
+========== Load dataset ==========
+[Info] Loaded 54584 questions from datasets/MultiTQ/questions/test.json
+
+========== Step 1: Text retrieval ==========
