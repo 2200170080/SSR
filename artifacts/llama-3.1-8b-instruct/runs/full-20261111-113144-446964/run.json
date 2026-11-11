@@ -118,7 +118,7 @@
     "verification": "大权重/索引/NPY仅结构与size/mtime校验，非全文件哈希。"
   },
   "created_at": "2026-11-11T11:31:44",
-  "status": "failed",
+  "status": "checking_service",
   "command": [
     "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/bin/python",
     "-u",
@@ -165,6 +165,5 @@
     "--cache-path",
     "/root/user/cs_tcci_zengdexin/SSR/artifacts/llama-3.1-8b-instruct/runs/full-20261111-113144-446964/llm_cache.jsonl"
   ],
-  "updated_at": "2026-11-11T11:31:44",
-  "error": "HTTP Error 404: Not Found"
+  "updated_at": "2026-11-11T11:39:05"
 }
