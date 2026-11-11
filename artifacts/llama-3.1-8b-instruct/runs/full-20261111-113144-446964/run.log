@@ -98713,3 +98713,2097 @@ Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
 Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.09it/s]
 Provide aid
 [GraphRetriever] Normalize relation: last support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.23it/s]
+Appeal for aid
+[GraphRetriever] Normalize head entity: China's space agency -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.70it/s]
+Space Agency (China)
+[GraphRetriever] Normalize relation: last visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.28it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.85it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 43.92it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.29it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Accuse or denounce -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.54it/s]
+Criticize or denounce
+[GraphRetriever] Normalize tail entity: United States -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.56it/s]
+United Arab Emirates
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.55it/s]
+Provide aid
+[GraphRetriever] Normalize relation: Blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.45it/s]
+Accuse
+[GraphRetriever] Normalize relation: Seek diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.66it/s]
+Engage in diplomatic cooperation
+[GraphRetriever] Normalize relation: Request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.28it/s]
+Demand
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.63it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 65.39it/s]
+Make a visit
+[GraphRetriever] Normalize relation: last support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 74.78it/s]
+Appeal for aid
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.37it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Request a meeting -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.60it/s]
+Appeal to others to meet or negotiate
+[GraphRetriever] Normalize relation: Ask to visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.78it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Ask for -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.87it/s]
+Make an appeal or request
+[GraphRetriever] Normalize head entity: Foreign Ministry of South Korea -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.62it/s]
+Foreign Affairs (South Korea)
+[GraphRetriever] Normalize relation: Express its intention to meet with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.46it/s]
+Express intent to meet or negotiate
+[GraphRetriever] Normalize relation: Use unconventional force -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 85.25it/s]
+Use unconventional violence
+[GraphRetriever] Normalize relation: Want to cooperate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.76it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 96.57it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Express intent to establish diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.56it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.35it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Royal Government of Japan -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.71it/s]
+Royal Administration (Japan)
+[GraphRetriever] Normalize relation: Ask for -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.62it/s]
+Make an appeal or request
+[GraphRetriever] Normalize tail entity: India -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 95.42it/s]
+Rajya Sabha
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.25it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.21it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: India Foreign Ministry -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.27it/s]
+Foreign Affairs (India)
+[GraphRetriever] Normalize tail entity: Foreign Minister (France) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.55it/s]
+Foreign Affairs (France)
+[GraphRetriever] Normalize tail entity: Prime Minister of Greece -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.07it/s]
+Alexis Tsipras
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.51it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Denounce -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 91.17it/s]
+Accuse
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation (such as policy support) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.62it/s]
+Express intent to engage in diplomatic cooperation (such as policy support)
+[GraphRetriever] Normalize relation: Decline -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.97it/s]
+Decline comment
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.07it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.52it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 86.58it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.37it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Use small arms and light weapons -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.12it/s]
+fight with small arms and light weapons
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.50it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.00it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: National Unity Party -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 80.59it/s]
+Social Party of National Unity
+[GraphRetriever] Normalize relation: Negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.42it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.54it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.27it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.37it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Declare intention to negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.09it/s]
+Express intent to meet or negotiate
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 94.93it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize tail entity: International -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.00it/s]
+International Court of Justice
+[GraphRetriever] Normalize relation: Negotiate with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.94it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.77it/s]
+Accuse
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.69it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.56it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Condemn -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.96it/s]
+Accuse
+[GraphRetriever] Normalize relation: Meet or negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.58it/s]
+Express intent to meet or negotiate
+[GraphRetriever] Normalize tail entity: Foreign Minister of France -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.36it/s]
+France
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.27it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.25it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 67.49it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Appeal for -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 92.10it/s]
+Appeal for aid
+[GraphRetriever] Normalize relation: Wish to visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.39it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.62it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Foreign Minister of Israel -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.29it/s]
+Foreign Affairs (Israel)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.89it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 95.39it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.32it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.87it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Release, return person(s) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.50it/s]
+Return, release person(s)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.17it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Make his first request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.90it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Express pessimism about -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.17it/s]
+Make pessimistic comment
+[GraphRetriever] Normalize relation: want to cooperate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.24it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize tail entity: Bulgaria -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.25it/s]
+Burundi
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.05it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Denounce -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.70it/s]
+Accuse
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.75it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Mayor of Indonesia -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.87it/s]
+City Mayor (Indonesia)
+[GraphRetriever] Normalize relation: Make the request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.55it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.29it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.46it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Denounce -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.25it/s]
+Accuse
+[GraphRetriever] Normalize tail entity: United Nations Special Rapporteurs -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.33it/s]
+Special Rapporteurs of the United Nations
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.01it/s]
+Make a visit
+[GraphRetriever] Normalize relation: last wish to engage in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.02it/s]
+Engage in diplomatic cooperation
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.81it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.68it/s]
+Accuse
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.83it/s]
+Make a visit
+[GraphRetriever] Normalize relation: last negotiate with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 85.57it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.06it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.02it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.52it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.24it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Ask -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.69it/s]
+Investigate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 92.23it/s]
+Make a visit
+[GraphRetriever] Normalize relation: last negotiate with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.74it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Express optimism -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.78it/s]
+Make optimistic comment
+[GraphRetriever] Normalize relation: Use unconventional force -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.88it/s]
+Use unconventional violence
+[GraphRetriever] Normalize tail entity: UN High Commission for Refugees -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.63it/s]
+High Commission for Refugees
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.10it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Make negative remarks -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.70it/s]
+Make pessimistic comment
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.09it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Request a meeting with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 87.09it/s]
+Appeal to others to meet or negotiate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.67it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Make a request to -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.06it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.83it/s]
+Make a visit
+[GraphRetriever] Normalize relation: last visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.86it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Ministry (South Africa) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.72it/s]
+Education Ministry (South Africa)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.46it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.69it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Offer cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.23it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize tail entity: Media of United States -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.26it/s]
+Media (United States)
+[GraphRetriever] Normalize tail entity: Pakistan -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.11it/s]
+Pakistan People's Party
+[GraphRetriever] Normalize relation: Offer cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 86.41it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 97.62it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.79it/s]
+Accuse
+[GraphRetriever] Normalize relation: Sue -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.25it/s]
+Sexually assault
+[GraphRetriever] Normalize relation: Repatriate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.25it/s]
+Investigate
+[GraphRetriever] Normalize relation: Make optimistic remark -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.22it/s]
+Make optimistic comment
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.75it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.73it/s]
+Accuse
+[GraphRetriever] Normalize relation: Express intent to negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.66it/s]
+Express intent to meet or negotiate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.27it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Offer cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.52it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.93it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.48it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Want -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 94.25it/s]
+Demand
+[GraphRetriever] Normalize head entity: King Mohammed VI -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.25it/s]
+Muhammad VI
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.80it/s]
+Make a visit
+[GraphRetriever] Normalize relation: last negotiate with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.86it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.70it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 78.81it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Use unconventional force -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.44it/s]
+Use unconventional violence
+[GraphRetriever] Normalize head entity: National Security Council -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.50it/s]
+Council for National Security
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.22it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.46it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.41it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Apply for -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 90.92it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.27it/s]
+Demand
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.43it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Request a meeting with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.44it/s]
+Appeal to others to meet or negotiate
+[GraphRetriever] Normalize tail entity: Constitutional Drafting Commission -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.20it/s]
+Constitution Drafting Commission
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.51it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 97.10it/s]
+Make a visit
+[GraphRetriever] Normalize relation: suffer from -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.76it/s]
+Provide aid
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.47it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.30it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Ministry of Foreign Affairs of Sri Lanka -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.83it/s]
+Ministry of Tourism (Sri Lanka)
+[GraphRetriever] Normalize relation: Express the intention to engage in diplomatic cooperation with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.68it/s]
+Express intent to cooperate economically
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.16it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Sister of India -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.44it/s]
+Ministry of Women (India)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.08it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Business of Iraq -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.90it/s]
+Business (Iraq)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.74it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Condemn -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.74it/s]
+Accuse
+[GraphRetriever] Normalize relation: Blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.46it/s]
+Accuse
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.38it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.68it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 30.01it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.90it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Sign formal agreements -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.49it/s]
+Sign formal agreement
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.55it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Ministry of Justice/Ministry of Foreign Affairs (Thailand) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.11it/s]
+Justice Department/Ministery (Thailand)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.40it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Prime Minister of India -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.86it/s]
+Rajya Sabha
+[GraphRetriever] Normalize tail entity: Court Judge (International Court of Justice) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.45it/s]
+Court Judge (United Kingdom)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.41it/s]
+Make a visit
+[GraphRetriever] Normalize relation: sentence -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.86it/s]
+Make statement
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.37it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Make the first request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.20it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.58it/s]
+Provide aid
+[GraphRetriever] Normalize tail entity: Japan's Self-Defence Forces -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.38it/s]
+Japan Self-Defense Forces
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 93.51it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Want to meet -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.92it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.42it/s]
+Provide aid
+[GraphRetriever] Normalize tail entity: United States -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.97it/s]
+United Arab Emirates
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.90it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.65it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Ministry of Sudan -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.21it/s]
+South Sudan
+[GraphRetriever] Normalize relation: First visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.71it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.89it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to establish diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.01it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.99it/s]
+Accuse
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.65it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Ministry of Foreign Affairs of Vietnam -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 89.19it/s]
+Vietnam
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 70.72it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.28it/s]
+Accuse
+[GraphRetriever] Normalize tail entity: Kosovo -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.47it/s]
+United Nations Interim Administration in Kosovo
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 90.13it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.80it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Cuba's lawyer -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.05it/s]
+Lawyer/Attorney (Cuba)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.03it/s]
+Make a visit
+[GraphRetriever] Normalize relation: repatriate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.92it/s]
+Expel or deport individuals
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.19it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 97.61it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Ask for -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.32it/s]
+Make an appeal or request
+[GraphRetriever] Normalize tail entity: Japan's Ministry of Finance -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.16it/s]
+Treasury/Finance Ministry (Japan)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.29it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.53it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Kosovo -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 110.31it/s]
+United Nations Interim Administration in Kosovo
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 95.26it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.73it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Citizen (State Actor) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.13it/s]
+Citizen (Unidentified State Actor)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.12it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Use unconventional force -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.98it/s]
+Use unconventional violence
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.82it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Canadian Ministry of Finance, Economy, Trade and Industry -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 80.84it/s]
+Finance / Economy / Commerce / Trade Ministry (Canada)
+[GraphRetriever] Normalize relation: Ask for help -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.86it/s]
+Appeal for aid
+[GraphRetriever] Normalize relation: Request a meeting with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.15it/s]
+Appeal to others to meet or negotiate
+[GraphRetriever] Normalize relation: Establish diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.37it/s]
+Engage in diplomatic cooperation
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.87it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 82.47it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.04it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.05it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 110.14it/s]
+Provide aid
+[GraphRetriever] Normalize head entity: Médecins Sans Frontières -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.18it/s]
+Reporters Sans Frontieres
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 78.35it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.63it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 92.82it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.90it/s]
+Make a visit
+[GraphRetriever] Normalize relation: suffer from -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.10it/s]
+Provide aid
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.75it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.14it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize tail entity: Foreign Ministry of Ethiopia -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.89it/s]
+Supreme Court of Ethiopia
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 73.29it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.93it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.89it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Make optimistic remark -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.78it/s]
+Make optimistic comment
+[GraphRetriever] Normalize relation: Express interest in working with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.94it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.55it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Foreign Minister of Hungary -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.75it/s]
+Human Rights Activist (Hungary)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.62it/s]
+Make a visit
+[GraphRetriever] Normalize relation: last spoke optimistically about -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 95.94it/s]
+Make optimistic comment
+[GraphRetriever] Normalize relation: Negotiate with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.81it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Express intent to establish diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.01it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: wish to visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 95.98it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Condemn -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 73.35it/s]
+Accuse
+[GraphRetriever] Normalize relation: Condemn -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 85.69it/s]
+Accuse
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.29it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.04it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Council of Ministers of Thailand -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.72it/s]
+Member of Parliament (Thailand)
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.19it/s]
+Provide aid
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 78.03it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Anti-Corruption and Economic Malpractices Observatory -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.07it/s]
+Anti-corruption and Economic Malpractice Observatory
+[GraphRetriever] Normalize relation: Offer cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.24it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.93it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.21it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.75it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Denounce -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 80.25it/s]
+Accuse
+[GraphRetriever] Normalize relation: Want to start diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 92.95it/s]
+Engage in diplomatic cooperation
+[GraphRetriever] Normalize tail entity: Singhalese -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.57it/s]
+Sinhalese
+[GraphRetriever] Normalize relation: Want to negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.48it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Make the first request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.09it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.07it/s]
+Provide aid
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.05it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Ukraine -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.17it/s]
+Our Ukraine
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 84.84it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.20it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.87it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.74it/s]
+Make a visit
+[GraphRetriever] Normalize relation: last negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 94.99it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 75.23it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.13it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express interest in cooperating -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 79.21it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 79.12it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 78.18it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Ministry of Defence Security of the United States -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 90.24it/s]
+Ministry for International Security Strategy
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.20it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Leader of Government (Turkmenistan) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.58it/s]
+Head of Government (Turkmenistan)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.15it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Offer cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 92.53it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize head entity: Vietnam's Ministry of Industry, Textile and Mining -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.08it/s]
+Industrial / Textiles / Mining Ministry (Vietnam)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 96.67it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.01it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 97.63it/s]
+Demand
+[GraphRetriever] Normalize relation: Request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.64it/s]
+Demand
+[GraphRetriever] Normalize head entity: Organisation of Petroleum Exporting Countries -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.45it/s]
+Organization of Petroleum Exporting Countries
+[GraphRetriever] Normalize relation: Ask for help -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.16it/s]
+Appeal for aid
+[GraphRetriever] Normalize head entity: Foreign Ministry of South Korea -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 82.87it/s]
+Foreign Affairs (South Korea)
+[GraphRetriever] Normalize relation: Praise -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 83.83it/s]
+Praise or endorse
+[GraphRetriever] Normalize relation: Ask to join -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.07it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.26it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Request a meeting -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.01it/s]
+Appeal to others to meet or negotiate
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 97.90it/s]
+Provide aid
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 81.95it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.94it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Ministry of Finance of Japan -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.10it/s]
+Treasury/Finance Ministry (Japan)
+[GraphRetriever] Normalize tail entity: Party member (United Kingdom) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.02it/s]
+Party Member (United Kingdom)
+[GraphRetriever] Normalize relation: meet or negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.02it/s]
+Express intent to meet or negotiate
+[GraphRetriever] Normalize relation: Blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 75.02it/s]
+Accuse
+[GraphRetriever] Normalize tail entity: Italy -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.82it/s]
+Human Rights Activist (Italy)
+[GraphRetriever] Normalize relation: Announce intention to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 97.07it/s]
+Express intent to engage in diplomatic cooperation (such as policy support)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.69it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Foreign Minister of Liberia -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 86.85it/s]
+People's Democratic Party of Liberia
+[GraphRetriever] Normalize relation: Release -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 78.58it/s]
+Express intent to release persons or property
+[GraphRetriever] Normalize tail entity: Syria -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.60it/s]
+Middle East
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.00it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Request a meeting -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.41it/s]
+Appeal to others to meet or negotiate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.96it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Request a meeting with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.48it/s]
+Appeal to others to meet or negotiate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 75.53it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.94it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.50it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.98it/s]
+Engage in negotiation
+[GraphRetriever] Normalize tail entity: Thailand Military -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 78.94it/s]
+Royal Thai Navy
+[GraphRetriever] Normalize relation: wish to visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.20it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Condemn -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.08it/s]
+Accuse
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.49it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to establish diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.82it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Want to cooperate with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.72it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 77.10it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Foreign Ministry of Ethiopia -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 77.53it/s]
+Supreme Court of Ethiopia
+[GraphRetriever] Normalize tail entity: Sergey Mikhailovich Ignatyev -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 77.20it/s]
+Sergey Mikhaylovich Ignatyev
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 77.11it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 77.02it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.40it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: US Department of Defense -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.82it/s]
+Department of Transportation
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.32it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.55it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.11it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express optimism about -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 80.43it/s]
+Make optimistic comment
+[GraphRetriever] Normalize relation: Announce intention to cooperate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.02it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: last visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.51it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Ministry of Finance of Guatemala -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.09it/s]
+Treasury/Finance Ministry (Guatemala)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.71it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.92it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.89it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 68.43it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.02it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.51it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.82it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Men of the United States -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.88it/s]
+Men (United States)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 77.78it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Prime Minister of Pakistan -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.73it/s]
+National Assembly of Pakistan
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.78it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Use unconventional force against -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.08it/s]
+Use unconventional violence
+[GraphRetriever] Normalize head entity: Ministry of Information and Communications (Singapore) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.10it/s]
+Information / Communication / Transparency Ministry (Singapore)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 76.11it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to establish diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.68it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Appeal for -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.78it/s]
+Appeal for aid
+[GraphRetriever] Normalize relation: Express intent to establish diplomatic cooperation with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.98it/s]
+Express intent to cooperate economically
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.91it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Ask for -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 89.93it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Recommend -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 88.64it/s]
+Investigate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.62it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 90.70it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Condemnation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.75it/s]
+Torture
+[GraphRetriever] Normalize relation: Express intent to engage in diplomatic cooperation (such as policy support) or meet or negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 74.63it/s]
+Express intent to engage in diplomatic cooperation (such as policy support)
+[GraphRetriever] Normalize tail entity: Maoist Nepal -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.31it/s]
+Maoist People's Liberation Army Nepal
+[GraphRetriever] Normalize relation: Make a request or request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.67it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: first investigate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.98it/s]
+Investigate
+[GraphRetriever] Normalize tail entity: Ukraine -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.95it/s]
+Our Ukraine
+[GraphRetriever] Normalize tail entity: Ministry of Taiwan Affairs Office -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.86it/s]
+Taiwan Affairs Office
+[GraphRetriever] Normalize relation: Negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.13it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.48it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Engage in diplomatic cooperation (such as policy support) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.26it/s]
+Appeal for diplomatic cooperation (such as policy support)
+[GraphRetriever] Normalize relation: last appeal or request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.47it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.75it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Foreign Minister of France -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.21it/s]
+France
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 91.85it/s]
+Make an appeal or request
+[GraphRetriever] Normalize tail entity: United Arab Emirates Armed Forces -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.80it/s]
+UAE Armed Forces
+[GraphRetriever] Normalize relation: Express intent to engage in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.19it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.47it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.55it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 76.08it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.21it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Host a visit / Make a visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.28it/s]
+Host a visit
+[GraphRetriever] Normalize relation: Negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 96.20it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.41it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Praise -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.11it/s]
+Praise or endorse
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.15it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Médecins Sans Frontières -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.42it/s]
+Reporters Sans Frontieres
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 96.18it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 89.73it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.02it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.66it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Express intent to meet or negotiate/Engage in negotiation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.00it/s]
+Express intent to meet or negotiate
+[GraphRetriever] Normalize relation: Receive a visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.56it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: High Military Staff of Pakistan -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.60it/s]
+High Ranking Military Personnel (Pakistan)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.79it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.24it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.93it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Foreign Minister of India -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.88it/s]
+Foreign Affairs (India)
+[GraphRetriever] Normalize relation: Make optimistic remarks -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.01it/s]
+Make optimistic comment
+[GraphRetriever] Normalize tail entity: Ministry of Defence and Security of Taiwan -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.66it/s]
+Taiwan Affairs Office
+[GraphRetriever] Normalize head entity: Australia -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.53it/s]
+Australia Greens
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.58it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: United Nations Special Rapporteurs -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 96.33it/s]
+Special Rapporteurs of the United Nations
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.55it/s]
+Provide aid
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.75it/s]
+Make an appeal or request
+[GraphRetriever] Normalize head entity: Sister of Macao -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 97.58it/s]
+Monastery (Taiwan)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.19it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Ask for -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 93.10it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: last wish to visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 98.33it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 81.74it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Italy -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.10it/s]
+Human Rights Activist (Italy)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.91it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 90.47it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 97.36it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Receive humanitarian aid from -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.16it/s]
+Provide humanitarian aid
+[GraphRetriever] Normalize relation: Condemn -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 91.37it/s]
+Accuse
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 96.65it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express cooperation with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.42it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.88it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Ministry of Foreign Affairs of Senegal -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.92it/s]
+Foreign Affairs (Senegal)
+[GraphRetriever] Normalize head entity: North Korea -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.60it/s]
+South Korea
+[GraphRetriever] Normalize relation: Express intent to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 86.54it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 76.82it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.24it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Médecins Sans Frontières -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.03it/s]
+Reporters Sans Frontieres
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 99.65it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Umbutfo Swaziland Defence Force -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 78.78it/s]
+Umbutfo Swaziland Defense Force
+[GraphRetriever] Normalize relation: Receive humanitarian aid -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.03it/s]
+Provide humanitarian aid
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 96.30it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.99it/s]
+Make a visit
+[GraphRetriever] Normalize relation: repatriate people -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.40it/s]
+Expel or deport individuals
+[GraphRetriever] Normalize relation: Offer cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.58it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize tail entity: India -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 79.65it/s]
+Rajya Sabha
+[GraphRetriever] Normalize tail entity: United Nations Special Rapporteurs -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.31it/s]
+Special Rapporteurs of the United Nations
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.24it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Foreign Ministry of South Korea -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.51it/s]
+Foreign Affairs (South Korea)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.26it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Make a request to -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 75.30it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 84.38it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Belgium Foreign Ministry -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.91it/s]
+Foreign Affairs (Belgium)
+[GraphRetriever] Normalize relation: Use small arms and light weapons -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.18it/s]
+fight with small arms and light weapons
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.60it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to engage in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 94.69it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 85.30it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.38it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to establish diplomatic cooperation with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.86it/s]
+Express intent to cooperate economically
+[GraphRetriever] Normalize relation: Express intent to engage in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.93it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.93it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.12it/s]
+Make an appeal or request
+[GraphRetriever] Normalize tail entity: French Foreign Ministry -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.15it/s]
+French Armed Forces
+[GraphRetriever] Normalize relation: wish to visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 72.85it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.76it/s]
+Provide aid
+[GraphRetriever] Normalize relation: Wish to establish diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.83it/s]
+Engage in diplomatic cooperation
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.21it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.07it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Use unconventional force -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 96.15it/s]
+Use unconventional violence
+[GraphRetriever] Normalize relation: Engage in diplomatic cooperation (such as policy support) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.20it/s]
+Appeal for diplomatic cooperation (such as policy support)
+[GraphRetriever] Normalize relation: Make negative comments -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.98it/s]
+Make pessimistic comment
+[GraphRetriever] Normalize relation: Request a meeting with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.85it/s]
+Appeal to others to meet or negotiate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.59it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Israel -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.30it/s]
+Benjamin Netanyahu
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 81.76it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: National Security Council -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.53it/s]
+Council for National Security
+[GraphRetriever] Normalize head entity: UN High Commission for Refugees -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.62it/s]
+High Commission for Refugees
+[GraphRetriever] Normalize relation: Offer cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.79it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: wish to negotiate with first -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.03it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.03it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.81it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Sign formal agreements -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 88.26it/s]
+Sign formal agreement
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.22it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Seek diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.08it/s]
+Engage in diplomatic cooperation
+[GraphRetriever] Normalize relation: Express intent to establish diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 97.49it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 62.60it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.16it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.46it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.13it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express interest in cooperating -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.61it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Engage in diplomatic cooperation (such as policy support) -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.66it/s]
+Appeal for diplomatic cooperation (such as policy support)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.91it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Taiwan -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 103.15it/s]
+Taiwan Labour Front
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 101.00it/s]
+Make a visit
+[GraphRetriever] Normalize relation: want to meet -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.04it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.54it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Communist Party of Iraq -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.87it/s]
+Iraqi Communist Party
+[GraphRetriever] Normalize relation: Use unconventional force -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.75it/s]
+Use unconventional violence
+[GraphRetriever] Normalize relation: Apply for -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.28it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.02it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.99it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.86it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.82it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Offer cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.51it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.02it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 105.36it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Praise -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.58it/s]
+Praise or endorse
+[GraphRetriever] Normalize relation: Use unconventional force -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 90.20it/s]
+Use unconventional violence
+[GraphRetriever] Normalize relation: Ask -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 102.22it/s]
+Investigate
+[GraphRetriever] Normalize head entity: Singapore's Ministry of Education -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 84.88it/s]
+Education Ministry (Singapore)
+[GraphRetriever] Normalize relation: Express intent to establish diplomatic cooperation with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.19it/s]
+Express intent to cooperate economically
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 92.97it/s]
+Provide aid
+[GraphRetriever] Normalize relation: Recommend -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 104.55it/s]
+Investigate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.00it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Express intent to engage in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.42it/s]
+Express intent to cooperate
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.61it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Appeal to -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 84.22it/s]
+Appeal for aid
+[GraphRetriever] Normalize relation: Blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.47it/s]
+Accuse
+[GraphRetriever] Normalize relation: Negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.08it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Seek diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.52it/s]
+Engage in diplomatic cooperation
+[GraphRetriever] Normalize head entity: Japan's Chief Cabinet Secretary -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.93it/s]
+Government Official (Japan)
+[GraphRetriever] Normalize tail entity: Indian foreign minister -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.50it/s]
+Foreign Affairs (India)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.69it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Saudi Arabia -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.90it/s]
+Saudi Army
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.53it/s]
+Make a visit
+[GraphRetriever] Normalize relation: last visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.79it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.41it/s]
+Make a visit
+[GraphRetriever] Normalize relation: Negotiate -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.84it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Want to participate in diplomatic cooperation -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.87it/s]
+Engage in diplomatic cooperation
+[GraphRetriever] Normalize relation: want to negotiate with -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.19it/s]
+Engage in negotiation
+[GraphRetriever] Normalize relation: Make a request -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.30it/s]
+Make an appeal or request
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.64it/s]
+Make a visit
+[GraphRetriever] Normalize tail entity: Party member from the United Kingdom -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 108.75it/s]
+Party Member (United Kingdom)
+[GraphRetriever] Normalize relation: Support -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.93it/s]
+Provide aid
+[GraphRetriever] Normalize tail entity: US Council of Ministers -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 109.40it/s]
+Council of Representatives
+[GraphRetriever] Normalize relation: First blame -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.78it/s]
+Accuse
+[GraphRetriever] Normalize tail entity: Ministry of Industrial Textiles Mining of Vietnam -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 106.79it/s]
+Industrial / Textiles / Mining Ministry (Vietnam)
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.89it/s]
+Make a visit
+[GraphRetriever] Normalize head entity: Foreign Affairs of Malaysia -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 89.81it/s]
+Foreign Affairs (Malaysia)
+[GraphRetriever] Normalize head entity: Bank of China -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 107.81it/s]
+Agricultural Bank of China
+[GraphRetriever] Normalize relation: Visit -> 
+Encoding texts:   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding texts: 100%|██████████| 1/1 [00:00<00:00, 100.03it/s]
+Make a visit
+
+========== Step 3: QA over graph retrieval results ==========
+
+Run QA:   0%|          | 0/54584 [00:00<?, ?it/s]
+Run QA:   0%|          | 1/54584 [00:04<73:06:52,  4.82s/it]
+Run QA:   0%|          | 2/54584 [00:06<46:02:59,  3.04s/it]
+Run QA:   0%|          | 3/54584 [00:07<32:02:51,  2.11s/it]
+Run QA:   0%|          | 4/54584 [00:08<22:07:15,  1.46s/it]
+Run QA:   0%|          | 5/54584 [00:08<19:08:58,  1.26s/it]
+Run QA:   0%|          | 7/54584 [00:09<10:55:14,  1.39it/s]
+Run QA:   0%|          | 10/54584 [00:11<11:02:12,  1.37it/s]
+Run QA:   0%|          | 11/54584 [00:11<9:51:59,  1.54it/s] 
+Run QA:   0%|          | 12/54584 [00:14<15:22:06,  1.01s/it]
+Run QA:   0%|          | 13/54584 [00:14<12:47:23,  1.19it/s]
+Run QA:   0%|          | 14/54584 [00:14<10:25:35,  1.45it/s]
+Run QA:   0%|          | 15/54584 [00:15<10:42:13,  1.42it/s]
+Run QA:   0%|          | 16/54584 [00:16<11:45:18,  1.29it/s]
+Run QA:   0%|          | 17/54584 [00:18<19:11:05,  1.27s/it]
+Run QA:   0%|          | 18/54584 [00:19<16:42:07,  1.10s/it]
+Run QA:   0%|          | 19/54584 [00:21<18:55:56,  1.25s/it]
+Run QA:   0%|          | 20/54584 [00:22<16:39:51,  1.10s/it]
+Run QA:   0%|          | 21/54584 [00:22<15:43:44,  1.04s/it]
+Run QA:   0%|          | 22/54584 [00:24<19:15:34,  1.27s/it]
+Run QA:   0%|          | 23/54584 [00:27<27:34:59,  1.82s/it]
+Run QA:   0%|          | 24/54584 [00:31<33:57:14,  2.24s/it]
+Run QA:   0%|          | 25/54584 [00:34<37:03:45,  2.45s/it]
+Run QA:   0%|          | 26/54584 [00:37<43:50:59,  2.89s/it]
+Run QA:   0%|          | 27/54584 [00:38<32:15:31,  2.13s/it]
+Run QA:   0%|          | 28/54584 [00:41<36:32:08,  2.41s/it]
+Run QA:   0%|          | 29/54584 [00:41<28:14:07,  1.86s/it]
+Run QA:   0%|          | 30/54584 [00:44<30:15:18,  2.00s/it]
