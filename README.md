@@ -439,6 +439,8 @@ PY
 
 Qwen 保留原本地提示词。Llama 目录在迁移时使用同一对文件初始化，之后可独立维护。新实验使用所选目录下的文件。提示词迁移前的运行指纹仍记录原路径，需为新配置创建独立运行目录。
 
+[Llama 提示词配对验证](artifacts/llama-3.1-8b-instruct/runs/prompt-ab-20261113-004353-Rh1nZLzo/report.json)记录了试跑、独立复验和实际采用的版本。 Llama QA 首次作答使用基线模板，成功返回但缺少答案标记时使用同文件的补答模板重试一次。
+
 GPT 文件逐字节保留作者仓库固定提交 `1003f62206869613f0e22084bbf2b5620ad65cff` 中的原版：
 
 - [GP 原文件](https://github.com/zhangli-coding/SSR/blob/1003f62206869613f0e22084bbf2b5620ad65cff/src/datasets/MultiTQ/prompt/gp_prompt.txt)，SHA-256 `8bf56862b15df9d3efbfd1e0a4932244f13a019645a5bf5918a1e1f190b34d75`

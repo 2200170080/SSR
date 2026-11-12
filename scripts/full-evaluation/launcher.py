@@ -143,13 +143,17 @@ def preflight(root: Path, profile: dict) -> dict:
     for kind, fields in (('gp', {'question', 'facts'}), ('qa', {'question', 'facts', 'filter'})):
         path = checked(prompt_path(profile, kind))
         prompt = '\n'.join(line.strip() for line in path.read_text(encoding='utf-8').splitlines())
-        names = {field for _, field, _, _ in string.Formatter().parse(prompt) if field}
-        if names != fields:
-            raise RuntimeError(f'{kind}提示词占位符异常：{names}')
-        prompt.format(**{name: 'PRECHECK' for name in fields})
+        templates = prompt.split('\n--- SSR Llama format retry ---\n') if kind == 'qa' else [prompt]
+        if len(templates) > 2:
+            raise RuntimeError('QA 提示词最多可包含一份格式补答模板。')
         required = ('<fact>', '</fact>', '<time>', '</time>', 'Slot selection:') if kind == 'gp' else ('So the answer is',)
-        if any(token not in prompt for token in required):
-            raise RuntimeError(f'{kind}提示词缺少已确认的槽位/输出协议。')
+        for template in templates:
+            names = {field for _, field, _, _ in string.Formatter().parse(template) if field}
+            if names != fields:
+                raise RuntimeError(f'{kind}提示词占位符异常：{names}')
+            template.format(**{name: 'PRECHECK' for name in fields})
+            if any(token not in template for token in required):
+                raise RuntimeError(f'{kind}提示词缺少已确认的槽位/输出协议。')
     for filename in ('multitq_text_index.pkl', 'multitq_graph_retriever.pkl'):
         checked('artifacts/shared/indexes/' + filename, False)
     bge = 'models/bge-m3/'

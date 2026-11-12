@@ -65,9 +65,15 @@ async def batch_get_query_graph_patterns(
     return await tqdm_asyncio.gather(*tasks, desc="Extract graph patterns", total=len(tasks))
 
 
-async def get_qa_result(prompt_text: str, llm_client):
-    response, _ = await llm_client.request(prompt=prompt_text, temperature=0, max_tokens=4096, use_cache=True)
+async def get_qa_result(prompt_text: str, llm_client, retry_prompt_text: str | None = None):
+    response, request_ok = await llm_client.request(prompt=prompt_text, temperature=0, max_tokens=4096, use_cache=True)
     answer_pattern = "So the answer is"
+    if request_ok and retry_prompt_text is not None and answer_pattern not in response:
+        response, retry_ok = await llm_client.request(
+            prompt=retry_prompt_text, temperature=0, max_tokens=4096, use_cache=True,
+        )
+        if not retry_ok:
+            return "ERROR", "ERROR: invalid response format"
     if answer_pattern not in response:
         return "ERROR", "ERROR: invalid response format"
 
@@ -88,13 +94,18 @@ async def batch_run_qa(
     filters: list[str] | None = None,
 ):
     instruction = read_prompt(prompt_path)
+    instruction, _, retry_instruction = instruction.partition("\n--- SSR Llama format retry ---\n")
     semaphore = asyncio.Semaphore(concurrency)
     filters = filters or [""] * len(queries)
 
     async def _worker(question: str, facts: list[str], filter_text: str):
         prompt_text = instruction.format(question=question, facts=facts, filter=filter_text)
+        retry_prompt_text = (
+            retry_instruction.format(question=question, facts=facts, filter=filter_text)
+            if retry_instruction else None
+        )
         async with semaphore:
-            return await get_qa_result(prompt_text, llm_client)
+            return await get_qa_result(prompt_text, llm_client, retry_prompt_text)
 
     tasks = [_worker(q, facts, f) for q, facts, f in zip(queries, facts_list, filters)]
     results = await tqdm_asyncio.gather(*tasks, desc="Run QA", total=len(tasks))
