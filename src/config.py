@@ -16,8 +16,8 @@ class DatasetConfig:
     relation_path: str = "./datasets/MultiTQ/kg/relation2id.json"
     text_index_path: str = "./artifacts/shared/indexes/multitq_text_index.pkl"
     graph_cache_path: str = "./artifacts/shared/indexes/multitq_graph_retriever.pkl"
-    graph_pattern_prompt: str = "./datasets/MultiTQ/prompt/gp_prompt.txt"
-    qa_prompt: str = "./datasets/MultiTQ/prompt/qa_prompt.txt"
+    graph_pattern_prompt: str = "./datasets/MultiTQ/prompt/Qwen/gp_prompt.txt"
+    qa_prompt: str = "./datasets/MultiTQ/prompt/Qwen/qa_prompt.txt"
 
 
 @dataclass

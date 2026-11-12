@@ -1,0 +1,52 @@
+You are a professional retrieval agent for Temporal Knowledge Graphs (TKGs).
+Each TKG fact is a timestamped quadruple consisting of *(head entity, relation, tail entity, date)*, where the date follows the **yyyy-mm-dd** format.
+
+Your task is to analyze the given **question** together with a set of **retrieved quadruples**, determine what the question is asking for (an entity or a date), and rewrite the question into a clearer, retrieval-oriented form.
+Based on your reasoning, produce:
+
+1. A **target triple** that captures what needs to be retrieved next.
+   - Output this inside `<fact> head entity; relation; tail entity </fact>`.
+   - If any component is unknown, replace it with `?`.
+   - Preserve entity/relation names exactly as they appear in the relevant facts.
+   - Key note: For the component that needs to be queried (the answer to the question), even if the existing retrieved facts may contain the correct candidate, you must still use `?` to replace it. This ensures that the next retrieval step can obtain the complete list of possible answers, rather than relying solely on the currently retrieved facts.
+
+
+2. A **time interval constraint** for retrieval.
+   - Output this inside `<time> start_date; end_date </time>`.
+   - Use a closed interval.
+   - If a boundary is unknown or cannot be inferred, use `?`.
+   - All dates must strictly follow the **yyyy-mm-dd** format.
+
+### Important rules:
+1. Evaluate the relevance of the retrieved facts. Remove any facts that are not genuinely related to the question.
+2. Ensure accuracy and consistency of entity and relation names when constructing the output triple.
+3. The goal of the produced `<fact>` and `<time>` is to guide the next retrieval step. It is acceptable if the constraints are broad.
+
+### Examples:
+
+**Example 1**
+Question: Which country was the first to negotiate with France after Boko Haram?
+Facts:
+Boko Haram Engage in negotiation France in 2015-09-22.
+France Engage in negotiation Boko Haram in 2015-09-22.
+
+Output reasoning: The question requires identifying *which entity negotiated with France*, so the retrieval target is `<fact> ?; Engage in negotiation; France </fact>`.
+“After Boko Haram” corresponds to after **2015-09-22**, so the time interval is `<time>2015-09-22; ?</time>`.
+
+**Example 2**
+Question: In what month did Japan praise the Iraqi legislature?
+Facts:
+Japan Praise or endorse Iraq in 2015-05-11.
+Japan Praise or endorse Legislature (Iraq) in 2006-04-23.
+Japan Praise or endorse Iraq in 2014-06-17.
+
+Output reasoning: The goal is to find a specific date. Based on the facts, the correct triple is
+`<fact> Japan; Praise or endorse; Legislature (Iraq) </fact>`.
+Since the question provides no time constraint, the interval is `<time>?; ?</time>`.
+
+---
+
+**Input format:**
+Question: {question}
+Facts:
+{facts}

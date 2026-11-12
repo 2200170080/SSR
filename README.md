@@ -116,8 +116,9 @@ SSR/
 │   ├── kg/                         # KG、entity2id.json、relation2id.json
 │   ├── questions/test.json         # 54584 条原始问题
 │   └── prompt/
-│       ├── gp_prompt.txt           # 当前生效的 GP 提示词
-│       └── qa_prompt.txt           # 当前生效的 QA 提示词
+│       ├── Qwen/                   # gp_prompt.txt、qa_prompt.txt
+│       ├── Llama/                  # gp_prompt.txt、qa_prompt.txt
+│       └── GPT/                    # 作者原版 gp_prompt.txt、qa_prompt.txt
 ├── models/                         # 本机权重，Git 忽略
 │   ├── bge-m3/
 │   ├── qwen14b-awq/
@@ -163,7 +164,7 @@ SSR/
 | 项目根目录 | `$HOME/SSR`；本文命令均先进入此处 |
 | 实验解释器 | `$HOME/miniconda3/envs/ssr/bin/python` |
 | 模型服务可执行文件 | `$HOME/miniconda3/envs/vllm/bin/vllm` |
-| 生效提示词 | `datasets/MultiTQ/prompt/` |
+| 提示词目录 | `datasets/MultiTQ/prompt/{Qwen,Llama,GPT}/`，每套各含 GP 与 QA |
 | 本地接口 | `http://127.0.0.1:8000/v1`，客户端 key 为 `dummy` |
 | 14B / 32B 模型别名 | `qwen14b` / `qwen32b-gp` |
 
@@ -173,7 +174,7 @@ SSR/
 
 | 检查命令 | 判据 |
 |---|---|
-| `ls datasets/MultiTQ/prompt` | 存在两份生效提示词 |
+| `ls datasets/MultiTQ/prompt/{Qwen,Llama,GPT}` | 每套含 `gp_prompt.txt` 和 `qa_prompt.txt` |
 | `ls artifacts/shared/indexes` | 已部署环境有两个 `.pkl` 和两份 `.npy` |
 | `ls scripts/full-evaluation` | 有两份 shell 入口及共享 `launcher.py` |
 
@@ -264,7 +265,7 @@ git status --short
 
 ### 4.1 MultiTQ 输入
 
-本仓库已跟踪 MultiTQ 的 KG、ID 映射、测试集与两份提示词。数据来源为 [MultiTQ 作者项目](https://github.com/czy1999/MultiTQ)，也可参考[原 README 提供的 Hugging Face 数据链接](https://huggingface.co/datasets/chenziyang/MultiTQ)。先检查现有文件，避免重复下载或覆盖生效提示词。
+本仓库已跟踪 MultiTQ 的 KG、ID 映射、测试集与三套提示词。数据来源为 [MultiTQ 作者项目](https://github.com/czy1999/MultiTQ)，也可参考[原 README 提供的 Hugging Face 数据链接](https://huggingface.co/datasets/chenziyang/MultiTQ)。先检查现有文件，避免重复下载或覆盖生效提示词。
 
 ```bash
 cd "$HOME/SSR"
@@ -273,8 +274,12 @@ import json
 from pathlib import Path
 p = Path('datasets/MultiTQ')
 for name in ('kg/full.txt', 'kg/entity2id.json', 'kg/relation2id.json',
-             'questions/test.json', 'prompt/gp_prompt.txt', 'prompt/qa_prompt.txt'):
+             'questions/test.json'):
     assert (p / name).is_file(), f'MISSING: {p / name}'
+for family in ('Qwen', 'Llama', 'GPT'):
+    for stage in ('gp', 'qa'):
+        path = p / 'prompt' / family / f'{stage}_prompt.txt'
+        assert path.is_file(), f'MISSING: {path}'
 with (p / 'kg/full.txt').open(encoding='utf-8') as stream:
     facts = sum(1 for line in stream if line.strip())
 questions = json.loads((p / 'questions/test.json').read_text(encoding='utf-8'))
@@ -424,7 +429,20 @@ PY
 
 ## 6. 提示词与复现范围
 
-当前生效提示词统一为 [gp_prompt.txt](datasets/MultiTQ/prompt/gp_prompt.txt) 和 [qa_prompt.txt](datasets/MultiTQ/prompt/qa_prompt.txt)。新实验不从历史归档中复制提示词。
+启动器按模型选择提示词目录。预检和实际运行读取同一对文件，运行指纹记录两份文件的路径和 SHA-256。
+
+| 提示词目录 | 文件 | 用途 |
+|---|---|---|
+| Qwen | [GP](datasets/MultiTQ/prompt/Qwen/gp_prompt.txt) / [QA](datasets/MultiTQ/prompt/Qwen/qa_prompt.txt) | Qwen 14B、32B 启动器和原生入口默认值 |
+| Llama | [GP](datasets/MultiTQ/prompt/Llama/gp_prompt.txt) / [QA](datasets/MultiTQ/prompt/Llama/qa_prompt.txt) | Llama 3.1 8B 启动器 |
+| GPT | [GP](datasets/MultiTQ/prompt/GPT/gp_prompt.txt) / [QA](datasets/MultiTQ/prompt/GPT/qa_prompt.txt) | 作者原版模板，供 GPT 实验显式指定 |
+
+Qwen 保留原本地提示词。Llama 目录在迁移时使用同一对文件初始化，之后可独立维护。新实验使用所选目录下的文件。提示词迁移前的运行指纹仍记录原路径，需为新配置创建独立运行目录。
+
+GPT 文件逐字节保留作者仓库固定提交 `1003f62206869613f0e22084bbf2b5620ad65cff` 中的原版：
+
+- [GP 原文件](https://github.com/zhangli-coding/SSR/blob/1003f62206869613f0e22084bbf2b5620ad65cff/src/datasets/MultiTQ/prompt/gp_prompt.txt)，SHA-256 `8bf56862b15df9d3efbfd1e0a4932244f13a019645a5bf5918a1e1f190b34d75`
+- [QA 原文件](https://github.com/zhangli-coding/SSR/blob/1003f62206869613f0e22084bbf2b5620ad65cff/src/datasets/MultiTQ/prompt/qa_prompt.txt)，SHA-256 `cdbc2b264b7299fcf2d44c1b1a54336f91abfdbea3f16421ddc0ad3a22ba9be0`
 
 | 项目 | 当前实现 |
 |---|---|
@@ -445,8 +463,8 @@ QA 的事实预算为 50。当前采样函数在候选超过 50 条时，因抽�
 
 | 检查命令 | 判据 |
 |---|---|
-| `grep -n 'Slot selection' datasets/MultiTQ/prompt/gp_prompt.txt` | 中央 GP 提示词包含已接受的槽位规则 |
-| `grep -n 'So the answer is' datasets/MultiTQ/prompt/qa_prompt.txt` | QA 提示词包含最终答案协议 |
+| `grep -n 'Slot selection' datasets/MultiTQ/prompt/Qwen/gp_prompt.txt` | Qwen GP 提示词包含槽位规则 |
+| `grep -n 'So the answer is' datasets/MultiTQ/prompt/Qwen/qa_prompt.txt` | Qwen QA 提示词包含最终答案协议 |
 | `git diff -- datasets/MultiTQ/prompt` | 能追溯实际提示词修改，运行中不随意覆盖 |
 
 ## 7. 模型服务与启动检查
@@ -630,8 +648,8 @@ set -o pipefail
   --base-url http://127.0.0.1:8000/v1 --api-key dummy \
   --llm-model-name qwen32b-gp --concurrency 8 --random-seed 42 \
   --text-top-k 100 --qa-retrieve-cnt 50 \
-  --graph-pattern-prompt datasets/MultiTQ/prompt/gp_prompt.txt \
-  --qa-prompt datasets/MultiTQ/prompt/qa_prompt.txt \
+  --graph-pattern-prompt datasets/MultiTQ/prompt/Qwen/gp_prompt.txt \
+  --qa-prompt datasets/MultiTQ/prompt/Qwen/qa_prompt.txt \
   --cache-path "$RUN_DIR/llm_cache.jsonl" --sample-size 20 \
   2>&1 | tee "$RUN_DIR/run.log"
 ```

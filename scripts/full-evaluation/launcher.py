@@ -141,7 +141,7 @@ def preflight(root: Path, profile: dict) -> dict:
         if not isinstance(ids[kind], dict) or not ids[kind]:
             raise RuntimeError(f'{kind}2id必须是非空JSON对象。')
     for kind, fields in (('gp', {'question', 'facts'}), ('qa', {'question', 'facts', 'filter'})):
-        path = checked(f'datasets/MultiTQ/prompt/{kind}_prompt.txt')
+        path = checked(prompt_path(profile, kind))
         prompt = '\n'.join(line.strip() for line in path.read_text(encoding='utf-8').splitlines())
         names = {field for _, field, _, _ in string.Formatter().parse(prompt) if field}
         if names != fields:
@@ -464,14 +464,17 @@ from pathlib import Path
 
 PROFILES = {
     '14': dict(alias='qwen14b', model_rel='models/qwen14b-awq',
+               prompt_dir='datasets/MultiTQ/prompt/Qwen',
                artifact_rel='artifacts/qwen2.5-14b-awq', max_seqs=64),
     '32': dict(alias='qwen32b-gp', model_rel='models/qwen32b-awq',
+               prompt_dir='datasets/MultiTQ/prompt/Qwen',
                artifact_rel='artifacts/qwen2.5-32b-awq', max_seqs=8,
                batched_tokens=2048),
     'llama31-8b': dict(
         alias='llama31-8b', model_type='llama', dtype='bfloat16',
         model_rel='models/llama-3.1-8b-instruct',
         generation_rel='models/llama-3.1-8b-instruct',
+        prompt_dir='datasets/MultiTQ/prompt/Llama',
         artifact_rel='artifacts/llama-3.1-8b-instruct',
         max_seqs=8, max_model_len=16384, batched_tokens=2048,
         session='ssr-llama31-8b-full',
@@ -518,6 +521,10 @@ def check_processes(root):
             continue
 
 
+def prompt_path(profile, kind):
+    return f'{profile["prompt_dir"]}/{kind}_prompt.txt'
+
+
 def pipeline_command(root, profile, run):
     return [sys.executable, '-u', str(root / 'src/run_pipeline.py'),
             '--run-text-retrieval', '--run-graph-retrieval', '--run-graph-qa',
@@ -531,8 +538,8 @@ def pipeline_command(root, profile, run):
             '--text-retriever-model-name', str(root / 'models/bge-m3'),
             '--device', 'cuda:0', '--text-top-k', '100', '--qa-retrieve-cnt', '50',
             '--concurrency', '8', '--random-seed', '42',
-            '--graph-pattern-prompt', 'datasets/MultiTQ/prompt/gp_prompt.txt',
-            '--qa-prompt', 'datasets/MultiTQ/prompt/qa_prompt.txt',
+            '--graph-pattern-prompt', prompt_path(profile, 'gp'),
+            '--qa-prompt', prompt_path(profile, 'qa'),
             '--base-url', 'http://127.0.0.1:8000/v1', '--api-key', 'dummy',
             '--llm-model-name', profile['alias'],
             '--cache-path', str(run / 'llm_cache.jsonl')]
