@@ -118,7 +118,7 @@
     "verification": "大权重/索引/NPY仅结构与size/mtime校验，非全文件哈希。"
   },
   "created_at": "2026-11-11T11:31:44",
-  "status": "running",
+  "status": "completed",
   "command": [
     "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/bin/python",
     "-u",
@@ -165,7 +165,7 @@
     "--cache-path",
     "/root/user/cs_tcci_zengdexin/SSR/artifacts/llama-3.1-8b-instruct/runs/full-20261111-113144-446964/llm_cache.jsonl"
   ],
-  "updated_at": "2026-11-11T22:49:54",
+  "updated_at": "2026-11-12T22:17:32",
   "service": {
     "state": "target",
     "model_root": "/root/user/cs_tcci_zengdexin/SSR/models/llama-3.1-8b-instruct",
@@ -202,5 +202,12 @@
     ],
     "generation_config_verified": true
   },
-  "started_at": "2026-11-11T22:49:54"
+  "started_at": "2026-11-11T22:49:54",
+  "exit_code": 0,
+  "metrics": {
+    "accuracy": 0.5893,
+    "correct": 32164,
+    "total": 54584
+  },
+  "finished_at": "2026-11-12T22:17:32"
 }
