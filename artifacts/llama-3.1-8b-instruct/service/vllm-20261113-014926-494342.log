@@ -12,3 +12,10 @@ WARNING 11-13 01:51:38 [topk_topp_sampler.py:69] FlashInfer is not available. Fa
 INFO 11-13 01:51:39 [gpu_model_runner.py:1329] Starting to load model /root/user/cs_tcci_zengdexin/SSR/models/llama-3.1-8b-instruct...
 Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
 Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:18<00:54, 18.17s/it]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:35<00:35, 17.78s/it]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:39<00:11, 11.60s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:57<00:00, 13.93s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:57<00:00, 14.35s/it]
+
+INFO 11-13 01:52:41 [loader.py:458] Loading weights took 57.53 seconds
+INFO 11-13 01:52:41 [gpu_model_runner.py:1347] Model loading took 14.9889 GiB and 62.316620 seconds
