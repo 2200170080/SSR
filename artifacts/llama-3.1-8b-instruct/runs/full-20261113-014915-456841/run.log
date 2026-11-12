@@ -1,0 +1,12 @@
+
+=== attempt 2026-11-13T01:54:53 ===
+
+========== Load dataset ==========
+[Info] Loaded 54584 questions from datasets/MultiTQ/questions/test.json
+
+========== Step 1: Text retrieval ==========
+[Step] Load cached text retrieval index: artifacts/shared/indexes/multitq_text_index.pkl
+
+Encoding texts:   0%|          | 0/107 [00:00<?, ?it/s]
+Encoding texts:   1%|          | 1/107 [00:01<01:49,  1.03s/it]
+Encoding texts:   2%|▏         | 2/107 [00:01<01:07,  1.56it/s]
