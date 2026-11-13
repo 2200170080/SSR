@@ -26865,3 +26865,4 @@ INFO:     127.0.0.1:48050 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:48036 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO 11-13 14:51:02 [loggers.py:111] Engine 000: Avg prompt throughput: 4283.0 tokens/s, Avg generation throughput: 168.4 tokens/s, Running: 8 reqs, Waiting: 3 reqs, GPU KV cache usage: 9.0%, Prefix cache hit rate: 37.1%
 INFO 11-13 14:51:12 [loggers.py:111] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 37.1%
+INFO:     127.0.0.1:53330 - "GET /v1/models HTTP/1.1" 200 OK
