@@ -6,3 +6,22 @@ INFO 11-13 11:44:26 [config.py:2003] Chunked prefill is enabled with max_num_bat
 INFO 11-13 11:44:31 [__init__.py:239] Automatically detected platform cuda.
 INFO 11-13 11:44:35 [core.py:58] Initializing a V1 LLM engine (v0.8.5) with config: model='/root/user/cs_tcci_zengdexin/SSR/models/llama-3.1-8b-instruct', speculative_config=None, tokenizer='/root/user/cs_tcci_zengdexin/SSR/models/llama-3.1-8b-instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='auto', reasoning_backend=None), observability_config=ObservabilityConfig(show_hidden_metrics=False, otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=None, served_model_name=llama31-8b, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"level":3,"custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":512}
 WARNING 11-13 11:44:36 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7fbd3a7c2920>
+INFO 11-13 11:44:39 [parallel_state.py:1004] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0
+INFO 11-13 11:44:39 [cuda.py:221] Using Flash Attention backend on V1 engine.
+WARNING 11-13 11:44:39 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 11-13 11:44:40 [gpu_model_runner.py:1329] Starting to load model /root/user/cs_tcci_zengdexin/SSR/models/llama-3.1-8b-instruct...
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:02<00:06,  2.19s/it]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:04<00:04,  2.37s/it]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:05<00:01,  1.66s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:07<00:00,  1.88s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:07<00:00,  1.93s/it]
+
+INFO 11-13 11:44:49 [loader.py:458] Loading weights took 8.08 seconds
+INFO 11-13 11:44:49 [gpu_model_runner.py:1347] Model loading took 14.9889 GiB and 8.560793 seconds
+INFO 11-13 11:44:58 [backends.py:420] Using cache directory: /root/user/cs_tcci_zengdexin/.cache/vllm/torch_compile_cache/06c1985a69/rank_0_0 for vLLM's torch.compile
+INFO 11-13 11:44:58 [backends.py:430] Dynamo bytecode transform time: 8.81 s
+INFO 11-13 11:45:31 [backends.py:118] Directly load the compiled graph(s) for shape None from the cache, took 32.533 s
+INFO 11-13 11:45:34 [monitor.py:33] torch.compile takes 8.81 s in total
+INFO 11-13 11:45:37 [kv_cache_utils.py:634] GPU KV cache size: 183,792 tokens
+INFO 11-13 11:45:37 [kv_cache_utils.py:637] Maximum concurrency for 16,384 tokens per request: 11.22x
