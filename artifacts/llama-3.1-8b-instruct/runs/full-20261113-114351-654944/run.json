@@ -1,0 +1,171 @@
+{
+  "profile": {
+    "alias": "llama31-8b",
+    "model_type": "llama",
+    "dtype": "bfloat16",
+    "model_rel": "models/llama-3.1-8b-instruct",
+    "generation_rel": "models/llama-3.1-8b-instruct",
+    "prompt_dir": "datasets/MultiTQ/prompt/Llama",
+    "artifact_rel": "artifacts/llama-3.1-8b-instruct",
+    "max_seqs": 8,
+    "max_model_len": 16384,
+    "batched_tokens": 2048,
+    "session": "ssr-llama31-8b-full"
+  },
+  "fingerprint": {
+    "profile": {
+      "alias": "llama31-8b",
+      "model_type": "llama",
+      "dtype": "bfloat16",
+      "model_rel": "models/llama-3.1-8b-instruct",
+      "generation_rel": "models/llama-3.1-8b-instruct",
+      "prompt_dir": "datasets/MultiTQ/prompt/Llama",
+      "artifact_rel": "artifacts/llama-3.1-8b-instruct",
+      "max_seqs": 8,
+      "max_model_len": 16384,
+      "batched_tokens": 2048,
+      "session": "ssr-llama31-8b-full"
+    },
+    "sha256": {
+      "datasets/MultiTQ/questions/test.json": "d9bf3bf23b489ecc76c7940510c718260a42350d934a6edc1c1c7efcd5238fee",
+      "datasets/MultiTQ/kg/full.txt": "b94b31a86dc9f8dd40c8a95ec5c224f85a9a0793df0d40efad710cfda2f3944e",
+      "datasets/MultiTQ/kg/entity2id.json": "50529c68e783dbc684eb2dfe249df6f5d49bf571cd24000e9aaad747b7f130bf",
+      "datasets/MultiTQ/kg/relation2id.json": "4b655249097806633197ce996460c67cda688f560b460fc31a07028c954b8671",
+      "datasets/MultiTQ/prompt/Llama/gp_prompt.txt": "5bf19328525feebbcf27c168fc5509667bfe8b812c04f5a648958ccbd91e644a",
+      "datasets/MultiTQ/prompt/Llama/qa_prompt.txt": "d9c4d8b8bb6025b92b314e01b4775c10b8be512860cf1fb7b96d9f8285bad03d",
+      "models/bge-m3/config.json": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+      "models/llama-3.1-8b-instruct/config.json": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "models/bge-m3/tokenizer_config.json": "a62b2b6784f990259fddef5f16388693a8043be4f69179e6a5257eeb3f9abac4",
+      "models/bge-m3/tokenizer.json": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
+      "models/bge-m3/sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+      "models/bge-m3/special_tokens_map.json": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835",
+      "models/llama-3.1-8b-instruct/tokenizer_config.json": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "models/llama-3.1-8b-instruct/tokenizer.json": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+      "models/llama-3.1-8b-instruct/special_tokens_map.json": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "models/llama-3.1-8b-instruct/model.safetensors.index.json": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+      "models/llama-3.1-8b-instruct/generation_config.json": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd",
+      "src/config.py": "996e5d7cad1c1595f6e74389dfa9bdffa27d71fa039c5101763360ed603e4d44",
+      "src/retriever/graph_retriever.py": "a2933e7370b035ad0d66c5957b43aa5824e858eb7e3190638b58f357f28b9dc2",
+      "src/retriever/text_retriever.py": "366d175d8d386a3595092356e109d6a9ab36ebb6ae3f9f22fbfe372c5d145eeb",
+      "src/run_pipeline.py": "e6cd9e76b878fbd47437ad5c1041f0424a1dfc670468d7bc4d82126ad70cec5c",
+      "src/utils/client.py": "1286928045d2bd67ac5171a78de5dad4f39ea240c24f3e5ed140220aa545d646",
+      "src/utils/eval_utils.py": "db4a6283978df35c4c72fb198a6dbbf3fe9ce6942017e906d1a5541a7b75dcbf",
+      "src/utils/io_utils.py": "f14614da4da14ba4327f0914f796f381cddf55a2a8f8d3a2b44caf4224d41487",
+      "src/utils/query_process.py": "58c344bde4cb115faa11376f9dfec1b035e3d25b8145032e80d3617316ceec2a",
+      "src/utils/sample_utils.py": "25399d651257f868f859dd789b285bd7779f074c47d5ff8562707efb5aa99567",
+      "scripts/full-evaluation/launcher.py": "991989399a2b2e78877613bbb848b7ebbe108531e8fc15a244f01a4cbdfbab2a",
+      "scripts/full-evaluation/run-14b.sh": "41ed0131abc16fb0a2034f9d3cac02c85ecc2d5efd3098400bf7268f8e922861",
+      "scripts/full-evaluation/run-32b.sh": "b51d684ecf89db8df0bbff7c19ba6a39655be9bcfef1616e6bc232f6bd009219",
+      "scripts/full-evaluation/run-llama31-8b.sh": "270677d67b7f1f4225e1331c742d81735d686d3e2bf3354929c32afc5256fb49"
+    },
+    "assets_stat": {
+      "artifacts/shared/indexes/multitq_text_index.pkl": {
+        "size": 1923413563,
+        "mtime_ns": 1793635479127620244
+      },
+      "artifacts/shared/indexes/multitq_graph_retriever.pkl": {
+        "size": 119562001,
+        "mtime_ns": 1793638730908743875
+      },
+      "artifacts/shared/indexes/MultiTQ_entity_embeddings.npy": {
+        "size": 42958976,
+        "mtime_ns": 1793638722944704964
+      },
+      "artifacts/shared/indexes/MultiTQ_relation_embeddings.npy": {
+        "size": 1028224,
+        "mtime_ns": 1793638723180706116
+      },
+      "models/bge-m3/pytorch_model.bin": {
+        "size": 2271145830,
+        "mtime_ns": 1793500896746158584
+      },
+      "models/llama-3.1-8b-instruct/model-00001-of-00004.safetensors": {
+        "size": 4976698672,
+        "mtime_ns": 1794367491628494989
+      },
+      "models/llama-3.1-8b-instruct/model-00002-of-00004.safetensors": {
+        "size": 4999802720,
+        "mtime_ns": 1794367477508449653
+      },
+      "models/llama-3.1-8b-instruct/model-00003-of-00004.safetensors": {
+        "size": 4915916176,
+        "mtime_ns": 1794367480136458206
+      },
+      "models/llama-3.1-8b-instruct/model-00004-of-00004.safetensors": {
+        "size": 1168138808,
+        "mtime_ns": 1794367227095350212
+      }
+    },
+    "environments": {
+      "ssr": {
+        "python": "3.10.22 (main, Oct 29 2026, 20:33:25) [GCC 14.3.0]",
+        "packages": {
+          "numpy": "1.26.4",
+          "torch": "2.4.1",
+          "transformers": "4.44.2",
+          "faiss": "1.8.0.post1",
+          "openai": "1.109.1",
+          "tqdm": "4.70.1"
+        }
+      },
+      "vllm": {
+        "python": "3.10.22 (main, Oct 29 2026, 20:33:25) [GCC 14.3.0]",
+        "packages": {
+          "vllm": "0.8.5",
+          "torch": "2.6.0"
+        }
+      },
+      "gpu": "NVIDIA RTX A6000"
+    },
+    "verification": "大权重/索引/NPY仅结构与size/mtime校验，非全文件哈希。"
+  },
+  "created_at": "2026-11-13T11:43:51",
+  "status": "checking_service",
+  "command": [
+    "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/bin/python",
+    "-u",
+    "/root/user/cs_tcci_zengdexin/SSR/src/run_pipeline.py",
+    "--run-text-retrieval",
+    "--run-graph-retrieval",
+    "--run-graph-qa",
+    "--kg-path",
+    "datasets/MultiTQ/kg/full.txt",
+    "--qa-path",
+    "datasets/MultiTQ/questions/test.json",
+    "--entity-path",
+    "datasets/MultiTQ/kg/entity2id.json",
+    "--relation-path",
+    "datasets/MultiTQ/kg/relation2id.json",
+    "--dataset-name",
+    "MultiTQ",
+    "--text-index-path",
+    "artifacts/shared/indexes/multitq_text_index.pkl",
+    "--graph-cache-path",
+    "artifacts/shared/indexes/multitq_graph_retriever.pkl",
+    "--text-retriever-model-name",
+    "/root/user/cs_tcci_zengdexin/SSR/models/bge-m3",
+    "--device",
+    "cuda:0",
+    "--text-top-k",
+    "100",
+    "--qa-retrieve-cnt",
+    "50",
+    "--concurrency",
+    "8",
+    "--random-seed",
+    "42",
+    "--graph-pattern-prompt",
+    "datasets/MultiTQ/prompt/Llama/gp_prompt.txt",
+    "--qa-prompt",
+    "datasets/MultiTQ/prompt/Llama/qa_prompt.txt",
+    "--base-url",
+    "http://127.0.0.1:8000/v1",
+    "--api-key",
+    "dummy",
+    "--llm-model-name",
+    "llama31-8b",
+    "--cache-path",
+    "/root/user/cs_tcci_zengdexin/SSR/artifacts/llama-3.1-8b-instruct/runs/full-20261113-114351-654944/llm_cache.jsonl"
+  ],
+  "updated_at": "2026-11-13T11:43:51"
+}
