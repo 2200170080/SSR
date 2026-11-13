@@ -556,3 +556,14 @@ INFO:     127.0.0.1:33624 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:33624 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:33624 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO 11-13 12:24:20 [loggers.py:111] Engine 000: Avg prompt throughput: 713.8 tokens/s, Avg generation throughput: 136.6 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 6.3%, Prefix cache hit rate: 72.4%
+INFO 11-13 12:24:30 [loggers.py:111] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 139.2 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 7.0%, Prefix cache hit rate: 72.4%
+INFO 11-13 12:24:40 [loggers.py:111] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 136.4 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 7.8%, Prefix cache hit rate: 72.4%
+INFO 11-13 12:24:50 [loggers.py:111] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 137.6 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 8.5%, Prefix cache hit rate: 72.4%
+INFO:     127.0.0.1:33596 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33596 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 12:25:00 [loggers.py:111] Engine 000: Avg prompt throughput: 380.0 tokens/s, Avg generation throughput: 135.5 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 6.6%, Prefix cache hit rate: 72.3%
+INFO:     127.0.0.1:33596 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 12:25:10 [loggers.py:111] Engine 000: Avg prompt throughput: 224.8 tokens/s, Avg generation throughput: 135.4 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 7.4%, Prefix cache hit rate: 72.2%
+INFO:     127.0.0.1:33596 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 12:25:20 [loggers.py:111] Engine 000: Avg prompt throughput: 224.9 tokens/s, Avg generation throughput: 135.5 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 8.0%, Prefix cache hit rate: 72.1%
+INFO:     127.0.0.1:33596 - "POST /v1/chat/completions HTTP/1.1" 200 OK
