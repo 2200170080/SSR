@@ -85,6 +85,21 @@ async def get_qa_result(prompt_text: str, llm_client, retry_prompt_text: str | N
     return answer, response
 
 
+QUESTION_GRAIN = re.compile('^(?:in\\s+)?(?:which|what)\\s+(year|month)\\b|^(?:can|could)\\s+you\\s+tell\\s+me\\s+(?:the\\s+(?:exact|specific)\\s+|(?:exactly\\s+)?in\\s+which\\s+)(year|month)\\b', re.IGNORECASE)
+GRAIN_HINT = {'year': 'In the final "So the answer is:" line, give a supported date as YYYY (four-digit year only). Omit the month and day.', 'month': 'In the final "So the answer is:" line, give a supported date as YYYY-MM (four-digit year and two-digit month). Omit the day.'}
+
+
+def target_grain(question: str) -> str | None:
+    match = QUESTION_GRAIN.match(question.strip())
+    return (match[1] or match[2]).lower() if match else None
+
+
+def with_date_grain(rendered_prompt: str, grain: str | None) -> str:
+    if grain is None:
+        return rendered_prompt
+    return rendered_prompt + "\n" + GRAIN_HINT[grain]
+
+
 async def batch_run_qa(
     queries: list[str],
     facts_list: list[list[str]],
@@ -104,6 +119,10 @@ async def batch_run_qa(
             retry_instruction.format(question=question, facts=facts, filter=filter_text)
             if retry_instruction else None
         )
+        if retry_prompt_text is not None:
+            grain = target_grain(question)
+            prompt_text = with_date_grain(prompt_text, grain)
+            retry_prompt_text = with_date_grain(retry_prompt_text, grain)
         async with semaphore:
             return await get_qa_result(prompt_text, llm_client, retry_prompt_text)
 
