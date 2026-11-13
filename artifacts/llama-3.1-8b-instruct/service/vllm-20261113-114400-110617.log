@@ -30297,3 +30297,43 @@ INFO:     127.0.0.1:46062 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:52876 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:58522 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:58506 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52180 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58522 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46062 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 19:04:43 [loggers.py:111] Engine 000: Avg prompt throughput: 2168.3 tokens/s, Avg generation throughput: 249.8 tokens/s, Running: 8 reqs, Waiting: 0 reqs, GPU KV cache usage: 6.3%, Prefix cache hit rate: 77.0%
+INFO:     127.0.0.1:55846 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52876 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52180 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46062 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58522 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55850 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52180 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 19:04:53 [loggers.py:111] Engine 000: Avg prompt throughput: 1893.5 tokens/s, Avg generation throughput: 264.1 tokens/s, Running: 8 reqs, Waiting: 0 reqs, GPU KV cache usage: 4.6%, Prefix cache hit rate: 77.1%
+INFO:     127.0.0.1:55846 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52876 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46062 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57358 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46062 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52180 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 19:05:03 [loggers.py:111] Engine 000: Avg prompt throughput: 1344.1 tokens/s, Avg generation throughput: 269.9 tokens/s, Running: 8 reqs, Waiting: 0 reqs, GPU KV cache usage: 4.7%, Prefix cache hit rate: 77.1%
+INFO:     127.0.0.1:46062 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40734 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40730 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 19:05:13 [loggers.py:111] Engine 000: Avg prompt throughput: 1132.9 tokens/s, Avg generation throughput: 261.5 tokens/s, Running: 8 reqs, Waiting: 0 reqs, GPU KV cache usage: 6.8%, Prefix cache hit rate: 77.0%
+INFO:     127.0.0.1:41762 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 19:05:23 [loggers.py:111] Engine 000: Avg prompt throughput: 669.7 tokens/s, Avg generation throughput: 265.1 tokens/s, Running: 8 reqs, Waiting: 0 reqs, GPU KV cache usage: 7.8%, Prefix cache hit rate: 77.1%
+INFO:     127.0.0.1:57348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40730 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 19:05:33 [loggers.py:111] Engine 000: Avg prompt throughput: 401.4 tokens/s, Avg generation throughput: 257.6 tokens/s, Running: 8 reqs, Waiting: 0 reqs, GPU KV cache usage: 8.6%, Prefix cache hit rate: 77.1%
+INFO:     127.0.0.1:41778 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
