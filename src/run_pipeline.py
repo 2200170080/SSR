@@ -4,6 +4,9 @@ import argparse
 import asyncio
 import os
 import pickle
+import re
+from calendar import monthrange
+from datetime import date, timedelta
 
 from config import DatasetConfig, LLMConfig, ModelConfig, ensure_parent_dir
 from retriever.graph_retriever import GraphRetriever
@@ -59,6 +62,41 @@ def run_text_retrieval(queries, answers, args):
     return text_results_text
 
 
+_MONTH_BOUNDARY_QUESTION = re.compile(
+    r"^(Before|After) ([a-z]+)\.?[,]? (\d{4}),", re.IGNORECASE
+)
+_MONTH_NAMES = (
+    "january", "february", "march", "april", "may", "june",
+    "july", "august", "september", "october", "november", "december",
+)
+_MONTH_NUMBER = {
+    label: number
+    for number, name in enumerate(_MONTH_NAMES, 1)
+    for label in (name, name[:3])
+}
+
+
+def correct_llama_month_boundary(question: str, time_pattern: tuple[str, str]) -> tuple[str, str]:
+    match = _MONTH_BOUNDARY_QUESTION.match(question)
+    if not match:
+        return time_pattern
+    direction, month_name, year_text = match.groups()
+    month = _MONTH_NUMBER.get(month_name.lower())
+    year = int(year_text)
+    if month is None or not 1 <= year <= 9999:
+        return time_pattern
+    start = date(year, month, 1)
+    end = date(year, month, monthrange(year, month)[1])
+    if time_pattern != (start.isoformat(), end.isoformat()):
+        return time_pattern
+    # Graph retrieval treats both ends as inclusive.
+    if direction.lower() == "after" and end < date.max:
+        return (end + timedelta(days=1)).isoformat(), "?"
+    if direction.lower() == "before" and start > date.min:
+        return "?", (start - timedelta(days=1)).isoformat()
+    return time_pattern
+
+
 async def run_graph_retrieval(queries, answers, text_results_text, args, llm_client):
     print("\n========== Step 2: Graph pattern extraction + graph retrieval ==========")
     graph_retriever = build_graph_retriever(args)
@@ -72,6 +110,12 @@ async def run_graph_retrieval(queries, answers, text_results_text, args, llm_cli
         qa_retrieve_cnt=args.qa_retrieve_cnt,
         concurrency=args.concurrency,
     )
+
+    if args.dataset_name == "MultiTQ" and args.llm_model_name == "llama31-8b":
+        graph_patterns = [
+            (fact_pattern, correct_llama_month_boundary(question, time_pattern))
+            for question, (fact_pattern, time_pattern) in zip(queries, graph_patterns)
+        ]
 
     print("[Step] Retrieve graph facts with parsed graph patterns")
     graph_results_text = []
