@@ -152,6 +152,7 @@ async def run_graph_qa(queries, answers, qtypes, atypes, graph_patterns, graph_r
         llm_client=llm_client,
         concurrency=args.concurrency,
         filters=filter_texts,
+        answer_types=atypes,
     )
     metrics = evaluate_qa(answers, predictions, qtypes=qtypes, atypes=atypes)
     print_qa_metrics("Graph QA", metrics)

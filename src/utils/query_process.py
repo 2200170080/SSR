@@ -100,6 +100,10 @@ def with_date_grain(rendered_prompt: str, grain: str | None) -> str:
     return rendered_prompt + "\n" + GRAIN_HINT[grain]
 
 
+SLOT_QUESTION = re.compile('\\b(?:which country|with which country|with whom) did\\b', re.IGNORECASE)
+SLOT_HINT = 'Before writing the final answer, check who did what to whom in the supporting facts. Put the participant asked for by the question first, excluding the other participant given in the question.'
+
+
 async def batch_run_qa(
     queries: list[str],
     facts_list: list[list[str]],
@@ -107,13 +111,19 @@ async def batch_run_qa(
     llm_client,
     concurrency: int,
     filters: list[str] | None = None,
+    answer_types: list[str] | None = None,
 ):
     instruction = read_prompt(prompt_path)
     instruction, _, retry_instruction = instruction.partition("\n--- SSR Llama format retry ---\n")
     semaphore = asyncio.Semaphore(concurrency)
     filters = filters or [""] * len(queries)
 
-    async def _worker(question: str, facts: list[str], filter_text: str):
+    if answer_types is None:
+        answer_types = [""] * len(queries)
+    elif len(answer_types) != len(queries):
+        raise ValueError("Expected one answer type per question")
+
+    async def _worker(question: str, facts: list[str], filter_text: str, answer_type: str):
         prompt_text = instruction.format(question=question, facts=facts, filter=filter_text)
         retry_prompt_text = (
             retry_instruction.format(question=question, facts=facts, filter=filter_text)
@@ -123,10 +133,18 @@ async def batch_run_qa(
             grain = target_grain(question)
             prompt_text = with_date_grain(prompt_text, grain)
             retry_prompt_text = with_date_grain(retry_prompt_text, grain)
+        if (getattr(llm_client, "model_name", None) == "llama31-8b"
+                and answer_type == "entity" and SLOT_QUESTION.search(question)):
+            prompt_text += "\n" + SLOT_HINT
+            if retry_prompt_text is not None:
+                retry_prompt_text += "\n" + SLOT_HINT
         async with semaphore:
             return await get_qa_result(prompt_text, llm_client, retry_prompt_text)
 
-    tasks = [_worker(q, facts, f) for q, facts, f in zip(queries, facts_list, filters)]
+    tasks = [
+        _worker(question, facts, condition, answer_type)
+        for question, facts, condition, answer_type in zip(queries, facts_list, filters, answer_types)
+    ]
     results = await tqdm_asyncio.gather(*tasks, desc="Run QA", total=len(tasks))
     raw_outputs = [x[1] for x in results]
     answers = [x[0] for x in results]
