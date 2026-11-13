@@ -120,7 +120,7 @@
     "verification": "大权重/索引/NPY仅结构与size/mtime校验，非全文件哈希。"
   },
   "created_at": "2026-11-13T11:43:51",
-  "status": "checking_service",
+  "status": "running",
   "command": [
     "/root/user/cs_tcci_zengdexin/miniconda3/envs/ssr/bin/python",
     "-u",
@@ -167,5 +167,42 @@
     "--cache-path",
     "/root/user/cs_tcci_zengdexin/SSR/artifacts/llama-3.1-8b-instruct/runs/full-20261113-114351-654944/llm_cache.jsonl"
   ],
-  "updated_at": "2026-11-13T11:43:51"
+  "updated_at": "2026-11-13T11:46:55",
+  "service": {
+    "state": "target",
+    "model_root": "/root/user/cs_tcci_zengdexin/SSR/models/llama-3.1-8b-instruct",
+    "aliases": [
+      "llama31-8b"
+    ],
+    "pid": 2861099,
+    "start": "207042924",
+    "reused": false,
+    "logfile": "/root/user/cs_tcci_zengdexin/SSR/artifacts/llama-3.1-8b-instruct/service/vllm-20261113-114400-110617.log",
+    "command": [
+      "/root/user/cs_tcci_zengdexin/miniconda3/envs/vllm/bin/vllm",
+      "serve",
+      "/root/user/cs_tcci_zengdexin/SSR/models/llama-3.1-8b-instruct",
+      "--served-model-name",
+      "llama31-8b",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8000",
+      "--dtype",
+      "bfloat16",
+      "--max-model-len",
+      "16384",
+      "--max-num-seqs",
+      "8",
+      "--gpu-memory-utilization",
+      "0.80",
+      "--generation-config",
+      "/root/user/cs_tcci_zengdexin/SSR/models/llama-3.1-8b-instruct",
+      "--disable-log-requests",
+      "--max-num-batched-tokens",
+      "2048"
+    ],
+    "generation_config_verified": true
+  },
+  "started_at": "2026-11-13T11:46:55"
 }
