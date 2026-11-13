@@ -29574,3 +29574,11 @@ INFO:     127.0.0.1:49822 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:55660 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO:     127.0.0.1:49822 - "POST /v1/chat/completions HTTP/1.1" 200 OK
 INFO 11-13 17:24:53 [loggers.py:111] Engine 000: Avg prompt throughput: 817.1 tokens/s, Avg generation throughput: 140.5 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 3.8%, Prefix cache hit rate: 76.8%
+INFO 11-13 17:25:03 [loggers.py:111] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 144.4 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 4.6%, Prefix cache hit rate: 76.8%
+INFO 11-13 17:25:13 [loggers.py:111] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 143.2 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 5.4%, Prefix cache hit rate: 76.8%
+INFO:     127.0.0.1:40610 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 17:25:23 [loggers.py:111] Engine 000: Avg prompt throughput: 216.1 tokens/s, Avg generation throughput: 141.3 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 5.6%, Prefix cache hit rate: 76.7%
+INFO:     127.0.0.1:40610 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO 11-13 17:25:33 [loggers.py:111] Engine 000: Avg prompt throughput: 212.6 tokens/s, Avg generation throughput: 141.8 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 6.3%, Prefix cache hit rate: 76.8%
+INFO 11-13 17:25:43 [loggers.py:111] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 140.4 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 7.0%, Prefix cache hit rate: 76.8%
+INFO 11-13 17:25:53 [loggers.py:111] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 140.0 tokens/s, Running: 4 reqs, Waiting: 0 reqs, GPU KV cache usage: 7.8%, Prefix cache hit rate: 76.8%
